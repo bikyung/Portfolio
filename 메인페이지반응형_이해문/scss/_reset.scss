@@ -11,3 +11,10 @@ ul,ol,li {
 a {
   text-decoration: none;
 }
+
+.hidden {
+  position: absolute;
+  left : 0;
+  top: -9999px;
+  opacity: 0;
+}

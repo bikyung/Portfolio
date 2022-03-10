@@ -1,5 +1,6 @@
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
 @font-face {
   font-family: "GmarketSansMedium";
   src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff") format("woff");
@@ -20,6 +21,13 @@ a {
   text-decoration: none;
 }
 
+.hidden {
+  position: absolute;
+  left: 0;
+  top: -9999px;
+  opacity: 0;
+}
+
 @font-face {
   font-family: "GmarketSansMedium";
   src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff") format("woff");
@@ -38,6 +46,13 @@ ul, ol, li {
 
 a {
   text-decoration: none;
+}
+
+.hidden {
+  position: absolute;
+  left: 0;
+  top: -9999px;
+  opacity: 0;
 }
 
 #header_sub {
@@ -229,6 +244,11 @@ a {
 /* contents ---------------------------------------------*/
 .contents {
   width: 100%;
+  /* footer ------------------------------------------*/
+  /* tablet --------------------------------------------------*/
+  /* contents ------------------------------------------------------*/
+  /* footer --------------------------------------------------------*/
+  /* mobile ------------------------------------------------------*/
 }
 .contents .sub_visual img {
   width: 100%;
@@ -243,16 +263,13 @@ a {
   text-align: center;
   font: bold 30px/1 "GmarketSansMedium";
   letter-spacing: 2px;
+  text-shadow: 5px 5px 5px grey;
 }
-.contents .inner span {
+.contents .inner .arrow {
   background: url(../img/subpage01/arrow.png) no-repeat center/cover;
   width: 30px;
   height: 20px;
-  text-indent: -9999px;
-  position: absolute;
-  left: 50%;
-  top: 60%;
-  transform: translate(-50%, -50%);
+  margin: 30px auto;
 }
 .contents .model1 {
   margin-top: 100px;
@@ -264,160 +281,526 @@ a {
   padding: 100px;
   font: bold 40px/1 "GmarketSansMedium";
   width: 100%;
+  text-shadow: 5px 5px 5px grey;
 }
-.contents .model1 .inner {
+.contents .model2 {
+  margin-top: 100px;
+}
+.contents .model2 h1 {
+  color: #fff;
+  background: url(../img/subpage01/main03.jpg) no-repeat center/cover;
+  height: 500px;
+  padding: 100px;
+  font: bold 40px/1 "GmarketSansMedium";
+  width: 100%;
+  text-shadow: 5px 5px 5px grey;
+}
+.contents .model3 {
+  margin-top: 100px;
+}
+.contents .model3 h1 {
+  color: #fff;
+  background: url(../img/subpage01/main05.jpg) no-repeat center/cover;
+  height: 500px;
+  padding: 100px;
+  font: bold 40px/1 "GmarketSansMedium";
+  width: 100%;
+  text-shadow: 5px 5px 30px gray;
+}
+.contents .model4 {
+  margin-top: 100px;
+}
+.contents .model4 h1 {
+  color: #fff;
+  background: url(../img/subpage01/main01.jpg) no-repeat center/cover;
+  height: 500px;
+  padding: 100px;
+  font: bold 40px/1 "GmarketSansMedium";
+  width: 100%;
+  text-shadow: 5px 5px 5px grey;
+}
+.contents .model5 {
+  margin-top: 100px;
+}
+.contents .model5 h1 {
+  color: #fff;
+  background: url(../img/subpage01/main02.jpg) no-repeat center/cover;
+  height: 500px;
+  padding: 100px;
+  font: bold 40px/1 "GmarketSansMedium";
+  width: 100%;
+  text-shadow: 5px 5px 5px grey;
+}
+.contents .info {
   width: 1180px;
   margin: 0 auto;
 }
-.contents .model1 .inner ul::after {
+.contents .info .wrap {
+  margin: 50px 0;
+}
+.contents .info .wrap::after {
   content: "";
   display: block;
   clear: both;
 }
-.contents .model1 .inner ul li {
+.contents .info .wrap article {
   float: left;
-}
-.contents .model1 .inner ul li a img {
   width: 280px;
+  height: 100%;
+  margin-right: 20px;
+  transition: all 0.7s;
+  opacity: 0.7;
 }
-
-/* footer ------------------------------------------*/
-#footer_sub {
+.contents .info .wrap article:last-of-type {
+  margin-right: 0;
+}
+.contents .info .wrap article:hover {
+  transform: scale(1.1);
+  opacity: 1;
+}
+.contents .info .wrap article:hover h2 {
+  color: #4fb627;
+}
+.contents .info .wrap article:hover span {
+  color: #fff;
+}
+.contents .info .wrap article .pic a img {
+  width: 100%;
+  border: 3px solid #4fb627;
+}
+.contents .info .wrap article .pic h2 {
+  color: #fff;
+  font: bold 20px/1 "GmarketSansMedium";
+  display: block;
+  margin-top: 10px;
+  padding: 30px 0 10px;
+  cursor: pointer;
+}
+.contents .info .wrap article .pic span:last-of-type {
+  display: block;
+  color: #999;
+  font: normal 13px/1 "GmarketSansMedium";
+  cursor: pointer;
+}
+.contents #footer_sub {
   width: 100%;
   background: #131212;
   padding-top: 50px;
 }
-#footer_sub .inner {
+.contents #footer_sub .inner {
   width: 1180px;
   margin: 0 auto;
 }
-#footer_sub .inner .gnb {
+.contents #footer_sub .inner .gnb {
   text-align: center;
   margin-bottom: 30px;
 }
-#footer_sub .inner .gnb li {
+.contents #footer_sub .inner .gnb li {
   display: inline-block;
 }
-#footer_sub .inner .gnb li:not(:last-child) {
+.contents #footer_sub .inner .gnb li:not(:last-child) {
   margin-right: 30px;
 }
-#footer_sub .inner .gnb li a {
+.contents #footer_sub .inner .gnb li a {
   display: block;
   padding: 20px;
   color: #999;
 }
-#footer_sub .inner .gnb li a:hover {
+.contents #footer_sub .inner .gnb li a:hover {
   color: #fff;
 }
-#footer_sub .inner address {
+.contents #footer_sub .inner address {
   color: #999;
   font: normal 16px/1.3 "arial";
   text-align: center;
 }
-#footer_sub .inner .sns {
+.contents #footer_sub .inner .sns {
   display: flex;
   justify-content: center;
   margin: 50px;
 }
-#footer_sub .inner .sns li:not(:last-child) {
+.contents #footer_sub .inner .sns li:not(:last-child) {
   margin-right: 50px;
 }
-#footer_sub .inner .sns li a {
+.contents #footer_sub .inner .sns li a {
   font-size: 30px;
   color: #999;
   display: block;
   padding: 10px;
 }
-#footer_sub .inner .sns li a:hover {
+.contents #footer_sub .inner .sns li a:hover {
   color: #4fb627;
 }
-#footer_sub .inner .footerLogo h1 {
+.contents #footer_sub .inner .footerLogo h1 {
   width: 150px;
   margin: 0 auto;
 }
-#footer_sub .inner .footerLogo h1 img {
+.contents #footer_sub .inner .footerLogo h1 img {
   width: 100%;
 }
-#footer_sub .inner .footerLogo p {
+.contents #footer_sub .inner .footerLogo p {
   color: #999;
   text-align: center;
   padding: 30px 0;
 }
-
-/* tablet --------------------------------------------------*/
 @media screen and (max-width: 1179px) {
-  /* header -------------------------------------------------------------*/
-  #header_sub .inner {
+  .contents {
+    /* header -------------------------------------------------------------*/
+    /* contents ---------------------------------------------------------*/
+  }
+  .contents #header_sub .inner {
     width: 100%;
   }
-  #header_sub .inner nav .gnb {
+  .contents #header_sub .inner nav .gnb {
     display: none;
   }
-  #header_sub .inner nav .util {
+  .contents #header_sub .inner nav .util {
     margin-right: 40px;
   }
-  #header_sub .inner nav .util li:last-child {
+  .contents #header_sub .inner nav .util li:last-child {
     margin-right: 10px;
   }
-  #header_sub .inner .btnCall {
+  .contents #header_sub .inner .btnCall {
     display: block;
   }
-  #header_sub .inner .btnCall:hover::before {
+  .contents #header_sub .inner .btnCall:hover::before {
     background: #4fb627;
   }
-  #header_sub .inner .btnCall:hover::after {
+  .contents #header_sub .inner .btnCall:hover::after {
     background: #4fb627;
   }
-  #header_sub .inner .btnCall:hover span {
+  .contents #header_sub .inner .btnCall:hover span {
     background: #4fb627;
     transition-duration: 0s;
   }
-  #header_sub .inner .menuMo .utilMo {
+  .contents #header_sub .inner .menuMo .utilMo {
     display: none;
   }
+  .contents .contents .inner {
+    width: 100%;
+  }
+  .contents .contents .model1 h1 {
+    font: bold 40px/1.3 "GmarketSansMedium";
+  }
+  .contents .contents .model2 h1 {
+    font: bold 40px/1.3 "GmarketSansMedium";
+  }
+  .contents .contents .model3 h1 {
+    font: bold 40px/1.3 "GmarketSansMedium";
+  }
+  .contents .contents .model4 h1 {
+    font: bold 40px/1.3 "GmarketSansMedium";
+  }
+  .contents .contents .model5 h1 {
+    font: bold 40px/1.3 "GmarketSansMedium";
+  }
+  .contents .contents .info {
+    width: 100%;
+  }
+  .contents .contents .info .wrap li {
+    width: 49%;
+  }
+  .contents .contents .info .wrap li h2 {
+    color: #fff;
+    font: bold 20px/1 "GmarketSansMedium";
+    display: block;
+    margin-top: 10px;
+    padding: 30px 0 10px;
+    cursor: pointer;
+  }
+  .contents .contents .info .wrap li span:last-of-type {
+    display: block;
+    color: #999;
+    font: normal 13px/1 "GmarketSansMedium";
+    cursor: pointer;
+  }
 }
-/* footer --------------------------------------------------------*/
-#footer_sub .inner {
+.contents #footer_sub .inner {
   width: 100%;
 }
-#footer_sub .inner .footerLogo h1 {
+.contents #footer_sub .inner .footerLogo h1 {
   min-width: 150px;
 }
-
-/* mobile ------------------------------------------------------*/
 @media screen and (max-width: 539px) {
-  /* header -------------------------------------------------------------*/
-  #header_sub .inner nav .util {
+  .contents {
+    /* header -------------------------------------------------------------*/
+    /* footer ---------------------------------------------------------*/
+  }
+  .contents #header_sub .inner nav .util {
     display: none;
   }
-  #header_sub .inner .menuMo .utilMo {
+  .contents #header_sub .inner .menuMo .utilMo {
     display: block;
   }
-
-  /* footer ---------------------------------------------------------*/
-  #footer_sub .inner {
+  .contents #footer_sub .inner {
     width: 100%;
     padding: 0 10px;
   }
-  #footer_sub .inner .gnb {
+  .contents #footer_sub .inner .gnb {
     text-align: center;
   }
-  #footer_sub .inner .gnb li {
+  .contents #footer_sub .inner .gnb li {
     display: block;
   }
-  #footer_sub .inner .gnb li a {
+  .contents #footer_sub .inner .gnb li a {
     font-size: 14px;
   }
-  #footer_sub .inner .gnb li:not(:last-child) {
+  .contents #footer_sub .inner .gnb li:not(:last-child) {
     margin-right: 0;
   }
-  #footer_sub .inner address {
+  .contents #footer_sub .inner address {
     font-size: 12px;
     text-align: center;
     line-height: 1.5;
   }
-  #footer_sub .inner .footerLogo h1 {
+  .contents #footer_sub .inner .footerLogo h1 {
     min-width: 150px;
+  }
+}
+
+@font-face {
+  font-family: "GmarketSansMedium";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul, ol, li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.hidden {
+  position: absolute;
+  left: 0;
+  top: -9999px;
+  opacity: 0;
+}
+
+.event {
+  background: #fff;
+}
+.event .sub_visual img {
+  width: 100%;
+}
+.event .inner {
+  width: 1180px;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+.event .inner::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+.event .inner h1 {
+  font: bold 50px/1 "GmarketSansMedium";
+  padding: 50px 0;
+}
+.event .inner .search {
+  float: right;
+  margin-bottom: 20px;
+  position: relative;
+}
+.event .inner .search select {
+  padding: 5px 50px 5px 5px;
+}
+.event .inner .search input {
+  padding: 5px 10px;
+}
+.event .inner .search a {
+  font-size: 16px;
+  position: absolute;
+  right: 3px;
+  top: 20%;
+}
+.event .inner .search a i {
+  color: #777;
+}
+.event .inner table {
+  width: 100%;
+  border-top: 3px solid #000;
+  margin-bottom: 50px;
+}
+.event .inner table tr:hover {
+  background: #eee;
+}
+.event .inner table tr th {
+  padding: 15px;
+  background: #e5e5e5;
+}
+.event .inner table tr th:nth-of-type(1), .event .inner table tr th:nth-of-type(3) {
+  width: 10%;
+}
+.event .inner table tr td {
+  padding: 13px;
+  border-bottom: 1px solid #ddd;
+  font-family: "Pretendard";
+}
+.event .inner table tr td:not(:nth-of-type(2)) {
+  text-align: center;
+}
+.event .inner table tr td a {
+  color: #333;
+  font-family: "Pretendard";
+  line-height: 1.4;
+}
+.event .inner .pagination {
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+}
+.event .inner .pagination::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.event .inner .pagination .prev {
+  float: left;
+  width: 30px;
+  height: 30px;
+  font: 30px/30px "Pretendard";
+  color: #111;
+  cursor: pointer;
+  text-align: center;
+}
+.event .inner .pagination .next {
+  float: right;
+  width: 30px;
+  height: 30px;
+  font: 30px/30px "Pretendard";
+  color: #111;
+  cursor: pointer;
+  text-align: center;
+}
+.event .inner .pagination .numbers {
+  display: inline-block;
+  font-size: 0;
+}
+.event .inner .pagination .numbers a {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  color: #666;
+  font: 13px/30px "Pretendard";
+  margin: 0 5px;
+  transition: all 0.7s;
+  cursor: pointer;
+}
+.event .inner .pagination .numbers a:hover {
+  background: #bbb;
+  color: #fff;
+}
+
+/* tablet ----------------------------------------------------------------------------*/
+@media screen and (max-width: 1179px) {
+  .event .inner {
+    width: 100%;
+    padding: 0 20px;
+  }
+  .event .inner table tr th:nth-of-type(1) {
+    width: 13%;
+  }
+  .event .inner table tr th:nth-of-type(3) {
+    width: 8%;
+  }
+  .event .inner table tr td:nth-of-type(1) {
+    width: 8%;
+  }
+  .event .inner table tr td:nth-of-type(8) {
+    width: 8%;
+  }
+  .event .inner .pagination {
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+    padding-bottom: 50px;
+  }
+  .event .inner .pagination::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  .event .inner .pagination .prev {
+    float: left;
+    width: 30px;
+    height: 30px;
+    font: 20px/30px "Pretendard";
+    color: #111;
+    cursor: pointer;
+    text-align: center;
+  }
+  .event .inner .pagination .next {
+    float: right;
+    width: 30px;
+    height: 30px;
+    font: 20px/30px "Pretendard";
+    color: #111;
+    cursor: pointer;
+    text-align: center;
+  }
+  .event .inner .pagination .numbers {
+    display: inline-block;
+    font-size: 0;
+  }
+  .event .inner .pagination .numbers a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    color: #666;
+    font: 16px/30px "Pretendard";
+    margin: 0 5px;
+    transition: all 0.7s;
+    cursor: pointer;
+  }
+  .event .inner .pagination .numbers a:hover {
+    background: #bbb;
+    color: #fff;
+  }
+}
+/* mobile -----------------------------------------------------*/
+@media screen and (max-width: 539px) {
+  .event .inner h1 {
+    float: left;
+    font-size: 30px;
+  }
+  .event .inner .search {
+    width: 100%;
+    padding-top: 10px;
+  }
+  .event .inner .search select {
+    margin-bottom: 10px;
+  }
+  .event .inner .search input {
+    display: none;
+  }
+  .event .inner .search a {
+    display: none;
+  }
+  .event .inner table tr th:nth-of-type(1) {
+    width: 0%;
+    display: none;
+  }
+  .event .inner table tr th:nth-of-type(3) {
+    display: none;
+  }
+  .event .inner table tr td:nth-of-type(1) {
+    display: none;
+  }
+  .event .inner table tr td:nth-of-type(3) {
+    display: none;
+  }
+  .event .inner .pagination {
+    display: none;
   }
 }
 * {
@@ -684,10 +1067,27 @@ body {
   font: bold 18px/1 "arial";
   margin-top: 30px;
   transition: all 0.7s;
+  position: relative;
+}
+#model .inner .wrap article .pic a::after {
+  content: "";
+  width: 100%;
+  height: 0;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: #4fb627;
+  transition: all 0.7s;
 }
 #model .inner .wrap article .pic a:hover {
-  background: #4fb627;
   color: #000;
+}
+#model .inner .wrap article .pic a:hover::after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  z-index: -1;
 }
 #model .inner .wrap article:hover .pic img {
   transform: scale(1.1);
@@ -1004,6 +1404,9 @@ body {
   }
   #news .inner .wrap article:nth-of-type(even) {
     margin-right: 0;
+  }
+  #news .inner .wrap article:nth-of-type(3) {
+    margin-right: 2%;
   }
   #news .inner .wrap article img:hover {
     transform: scale(1.05);
