@@ -11,8 +11,10 @@
 @import "reset.scss";
 @import "모터싸이클.scss";
 @import "뉴스&이벤트.scss";
+@import "join.scss";
 
-
+$tablet : 1179px;
+$mobile : 539px;
 $greenColor: #4fb627;
 $bodyColor: #000;
 $modelfontColor: #cbcaa5;
@@ -248,7 +250,7 @@ body {
   .inner {
     width: 1180px;
     margin: 0 auto;
-    h1 {
+    >h2 {
       color: #fff;
       margin-top: 80px;
       font: bold 30px/1 "arial";
@@ -360,6 +362,7 @@ body {
     }
   }
 }
+
 
 /* content ---------------------------------------------------*/
 
@@ -565,7 +568,7 @@ body {
 
 /* tablet ------------------------------------------------------*/
 
-@media screen and (max-width: 1179px) {
+@media screen and (max-width: $tablet) {
   /* header -------------------------------------------------------------*/
 
   #header .inner {
@@ -721,7 +724,7 @@ body {
 
 /* mobile ---------------------------------------------------*/
 
-@media screen and (max-width: 539px) {
+@media screen and (max-width: $mobile) {
   /* header -------------------------------------------------------------*/
 
   #header {
@@ -824,3 +827,4 @@ body {
     }
   }
 }
+

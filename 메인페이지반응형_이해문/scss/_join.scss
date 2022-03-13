@@ -13,8 +13,6 @@ $mobile: 539px;
 
 @import "reset.scss";
 
-/* header ----------------------------------------------------------------*/
-
 #header_sub {
   width: 100%;
   padding: 30px 0;
@@ -217,119 +215,136 @@ $mobile: 539px;
   }
 }
 
-.event {
+/* join ---------------------------------------------*/
+
+.join {
   background: #fff;
+  width: 100%;
   .sub_visual {
-    img {
-      width: 100%;
+    .pic {
+      background: url(../img/subpage01/submain03.jpg) no-repeat center / cover;
+      height: 450px;
+      margin-bottom: 80px;
+      img {
+        width: 100%;
+      }
+      > h2 {
+        color: #fff;
+        font: bold 40px/1 "Pretendard";
+        padding: 80px;
+      }
     }
   }
   .inner {
     width: 1180px;
     margin: 0 auto;
-    padding-bottom: 50px;
-    &::after {
-      content: "";
-      clear: both;
-      display: block;
+    h2 {
+      color: #000;
+      margin-bottom: 10px;
+      text-align: left;
+      border-bottom: 1px solid #999;
+      font-size: 24px;
     }
-    h1 {
-      font: bold 50px /1 "GmarketSansMedium";
-      padding: 50px 0;
-    }
-    .search {
-      float: right;
-      margin-bottom: 20px;
-      position: relative;
-      select {
-        padding: 5px 50px 5px 5px;
-      }
-      input {
-        padding: 5px 10px;
-      }
-      a {
-        font-size: 16px;
-        position: absolute;
-        right: 3px;
-        top: 20%;
-        i {
-          color: #777;
+    form {
+      padding-bottom: 50px;
+      fieldset {
+        border: none;
+        h3 {
+          text-align: center;
+          color: #000;
+          font: bold 20px/1 "Pretendard";
+          padding: 15px 0;
+          border: 1px solid #999;
+          border-style: solid none solid none;
+          background: linear-gradient(45deg, #eee, #fff);
         }
       }
-    }
-    table {
-      width: 100%;
-      border-top: 3px solid #000;
-      margin-bottom: 50px;
-      tr {
-        &:hover {
-          background: #eee;
-        }
+      table {
+        width: 100%;
         th {
-          padding: 15px;
-          background: #e5e5e5;
-          &:nth-of-type(1),
-          &:nth-of-type(3) {
-            width: 10%;
+          width: 20%;
+          border-bottom: 1px solid #999;
+          border-right: 1px solid #999;
+          text-align: left;
+          padding: 20px 30px;
+          &:not(:last-child)::after {
+            content: "*";
+            margin-left: 15px;
+            color: red;
           }
-        }
-        td {
-          padding: 13px;
-          border-bottom: 1px solid #ddd;
-          font-family: "Pretendard";
-          &:not(:nth-of-type(2)) {
+          &:last-child {
+            border-right: none;
             text-align: center;
           }
-          a {
-            color: #333;
-            font-family: "Pretendard";
-            line-height: 1.4;
+          label {
+            font: bold 18px/1 "Pretendard";
+          }
+          input[type="reset"],
+          input[type="submit"] {
+            color: #fff;
+            width: 150px;
+            height: 40px;
+            border: none;
+            background: #777;
+            margin: 0 10px;
+            cursor: pointer;
+            font: bold 16px/1 "Pretendard";
+          }
+          input[type="radio"] {
+            padding: 5px 0;
+            border: 1px inset #eee;
+            box-shadow: 1px 1px 5px #999;
+            outline: none;
           }
         }
-      }
-    }
-    .pagination {
-      text-align: center;
-      margin: 0 auto;
-      width: 100%;
-      &::after {
-        content: "";
-        display: block;
-        clear: both;
-      }
-      .prev {
-        float: left;
-        width: 30px;
-        height: 30px;
-        font: 30px/30px "Pretendard";
-        color: #111;
-        cursor: pointer;
-        text-align: center;
-      }
-      .next {
-        float: right;
-        width: 30px;
-        height: 30px;
-        font: 30px/30px "Pretendard";
-        color: #111;
-        cursor: pointer;
-        text-align: center;
-      }
-      .numbers {
-        display: inline-block;
-        font-size: 0;
-        a {
-          display: inline-block;
-          width: 30px;
-          height: 30px;
-          color: #666;
-          font: 13px/30px "Pretendard";
-          margin: 0 5px;
-          transition: all 0.7s;
-          cursor: pointer;
-          &:hover {
-            background: #bbb;
-            color: #fff;
+        #addInfo {
+          background: linear-gradient(45deg, #eee, #fff);
+          padding: 15px;
+        }
+        td {
+          border-bottom: 1px solid #999;
+          text-align: left;
+          padding: 20px 30px;
+          input[type="text"],
+          input[type="password"],
+          input[type="tel"],
+          input[type="search"] {
+            padding: 5px 10px;
+            margin-top: 15px;
+            border: 1px inset #eee;
+            box-shadow: 1px 1px 5px #999;
+            outline: none;
+          }
+          input[type="tel"] {
+            width: 10%;
+            padding-left: 5px;
+          }
+          input[type="search"] {
+            width: 60%;
+          }
+          span {
+            padding: 5px 20px;
+            margin-left: 10px;
+            border: 1px inset #eee;
+          }
+          label[for="male"] {
+            margin-right: 50px;
+            input[type="radio"] {
+              margin-right: 10px;
+            }
+          }
+          label[for="female"] {
+            input[type="radio"] {
+              margin-right: 10px;
+            }
+          }
+          #call1 {
+            margin-left: 20px;
+          }
+          p {
+            margin-top: 10px;
+            color: #aaa;
+            font: normal 14px/1 "Pretendard";
           }
         }
       }
@@ -405,7 +420,7 @@ $mobile: 539px;
   }
 }
 
-/* tablet ----------------------------------------------------------------------------*/
+/* tablet --------------------------------------------------*/
 
 @media screen and (max-width: $tablet) {
   /* header -------------------------------------------------------------*/
@@ -446,74 +461,45 @@ $mobile: 539px;
       }
     }
   }
-  .event {
+
+  /* join ---------------------------------------------*/
+
+  .join {
+    .sub_visual {
+      .pic {
+        height: 300px;
+        margin-bottom: 80px;
+        > h2 {
+          font: bold 30px/1 "Pretendard";
+          padding: 60px;
+        }
+      }
+    }
     .inner {
       width: 100%;
-      padding: 0 20px;
-      table {
-        tr {
+      padding: 0 20px; 
+      form {
+        table {
           th {
-            &:nth-of-type(1) {
-              width: 13%;
+            &:not(:last-child)::after {
+              margin-left: 10px;
             }
-            &:nth-of-type(3) {
-              width: 8%;
+            label {
+              font: bold 16px/1 "Pretendard";
             }
           }
           td {
-            &:nth-of-type(1) {
-              width: 8%;
+            input[type="text"],
+            input[type="password"],
+            input[type="tel"],
+            input[type="search"] {
+              margin-top: 0;
             }
-            &:nth-of-type(8) {
-              width: 8%;
+            input[type="tel"] {
+              width: 15%;
             }
-          }
-        }
-      }
-      .pagination {
-        text-align: center;
-        margin: 0 auto;
-        width: 100%;
-        position: relative;
-        padding-bottom: 50px;
-        &::after {
-          content: "";
-          display: block;
-          clear: both;
-        }
-        .prev {
-          float: left;
-          width: 30px;
-          height: 30px;
-          font: 20px/30px "Pretendard";
-          color: #111;
-          cursor: pointer;
-          text-align: center;
-        }
-        .next {
-          float: right;
-          width: 30px;
-          height: 30px;
-          font: 20px/30px "Pretendard";
-          color: #111;
-          cursor: pointer;
-          text-align: center;
-        }
-        .numbers {
-          display: inline-block;
-          font-size: 0;
-          a {
-            display: inline-block;
-            width: 30px;
-            height: 30px;
-            color: #666;
-            font: 16px/30px "Pretendard";
-            margin: 0 5px;
-            transition: all 0.7s;
-            cursor: pointer;
-            &:hover {
-              background: #bbb;
-              color: #fff;
+            input[type="search"] {
+              width: 70%;
             }
           }
         }
@@ -535,7 +521,7 @@ $mobile: 539px;
   }
 }
 
-/* mobile -----------------------------------------------------*/
+/* mobile ------------------------------------------------------*/
 
 @media screen and (max-width: $mobile) {
   /* header -------------------------------------------------------------*/
@@ -554,51 +540,72 @@ $mobile: 539px;
       }
     }
   }
-  .event {
+
+  /* join ---------------------------------------------*/
+
+  .join {
+    .sub_visual {
+      .pic {
+        height: 200px;
+        margin-bottom: 50px;
+        > h2 {
+          font: bold 25px/1 "Pretendard";
+          padding: 30px;
+        }
+      }
+    }
     .inner {
-      h1 {
-        float: left;
-        font-size: 30px;
+      h2 {
+        font-size: 20px;
       }
-      .search {
-        width: 100%;
-        padding-top: 10px;
-        select {
-          margin-bottom: 10px;
-        }
-        input {
-          display: none;
-        }
-        a {
-          display: none;
-        }
-      }
-      table {
-        tr {
+      form {
+        table {
           th {
-            &:nth-of-type(1) {
-              width: 0%;
-              display: none;
+            display: none;
+            &:last-child {
+              display: block;
+              width: 100%;
             }
-            &:nth-of-type(3) {
-              display: none;
+            input[type="reset"],
+            input[type="submit"] {
+              width: 38%;
+              margin: 0 5%;
             }
           }
+          #addInfo {
+            padding: 15px 0;
+            display: block;
+            text-align: center;
+            width: 100%;
+          }
+  
           td {
-            &:nth-of-type(1) {
-              display: none;
+            padding: 20px 10px;
+            input[type="text"],
+            input[type="password"],
+            input[type="tel"],
+            input[type="search"] {
+              width: 100%;
             }
-            &:nth-of-type(3) {
-              display: none;
+            input[type="tel"] {
+              width: 20%;
             }
+            input[type="search"] {
+              width: 75%;
+            }
+            span {
+              padding: 5px 15px;
+            }
+            p {
+              font: normal 13px/1 "Pretendard";
+            }
+
           }
         }
-      }
-      .pagination {
-        display: none;
       }
     }
   }
+
   /* footer ---------------------------------------------------------*/
 
   #footer_sub {

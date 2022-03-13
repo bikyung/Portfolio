@@ -1,6 +1,7 @@
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
 @font-face {
   font-family: "GmarketSansMedium";
   src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff") format("woff");
@@ -28,6 +29,1156 @@ a {
   opacity: 0;
 }
 
+@font-face {
+  font-family: "GmarketSansMedium";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul, ol, li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.hidden {
+  position: absolute;
+  left: 0;
+  top: -9999px;
+  opacity: 0;
+}
+
+/*header ------------------------------------------------------*/
+#header_sub {
+  width: 100%;
+  padding: 30px 0;
+  border-bottom: 1px solid #4fb627;
+}
+#header_sub .inner {
+  width: 1180px;
+  margin: 0 auto;
+  padding: 0 30px;
+  position: relative;
+}
+#header_sub .inner::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#header_sub .inner h1 {
+  max-width: 150px;
+  float: left;
+}
+#header_sub .inner h1 a img {
+  width: 100%;
+  height: 100%;
+  margin-top: 5px;
+}
+#header_sub .inner nav {
+  float: left;
+  width: 70%;
+}
+#header_sub .inner nav::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#header_sub .inner nav .gnb {
+  margin-left: 20px;
+  float: left;
+}
+#header_sub .inner nav .gnb::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#header_sub .inner nav .gnb li {
+  float: left;
+}
+#header_sub .inner nav .gnb li a {
+  display: block;
+  font: normal 24px/1 "Pretendard";
+  color: #fff;
+  padding: 15px 10px;
+  transition: all 0.7s;
+}
+#header_sub .inner nav .gnb li:hover a {
+  background: #4fb627;
+  color: #cbcaa5;
+}
+#header_sub .inner nav .util {
+  height: 100%;
+  margin-top: 5px;
+  position: absolute;
+  right: 35px;
+  top: 0;
+}
+#header_sub .inner nav .util::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#header_sub .inner nav .util li {
+  float: right;
+}
+#header_sub .inner nav .util li:hover a {
+  color: #4fb627;
+}
+#header_sub .inner nav .util li a {
+  display: block;
+  margin-left: 20px;
+  font-size: 24px;
+  line-height: 2;
+  color: #fff;
+}
+#header_sub .inner .btnCall {
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  display: none;
+}
+#header_sub .inner .btnCall::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: bottom 0.5s, transform 0.5s 0.5s;
+}
+#header_sub .inner .btnCall::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: top 0.5s, transform 0.5s 0.5s;
+}
+#header_sub .inner .btnCall span {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -1px;
+  text-indent: -9999px;
+  transition: all 0.5s;
+}
+#header_sub .inner .btnCall.on span {
+  transform: translateX(100%);
+  opacity: 0;
+}
+#header_sub .inner .btnCall.on::after {
+  bottom: 50%;
+  margin-bottom: -1px;
+  transform: rotate(-45deg);
+}
+#header_sub .inner .btnCall.on::before {
+  top: 50%;
+  margin-top: -1px;
+  transform: rotate(45deg);
+}
+#header_sub .inner .menuMo {
+  width: 300px;
+  height: 100vh;
+  background: #151615;
+  position: fixed;
+  top: 10%;
+  right: -300px;
+  padding: 80px 30px;
+  z-index: 10;
+  transition: 0.7s;
+}
+#header_sub .inner .menuMo.on {
+  right: 0;
+}
+#header_sub .inner .menuMo .gnbMo li a {
+  display: block;
+  width: 100%;
+  padding: 20px 0;
+  border-bottom: 1px solid #444;
+  font: bold 14px/1 "arial";
+  color: #888;
+  text-align: center;
+}
+#header_sub .inner .menuMo .gnbMo li:hover a {
+  background: #4fb627;
+  color: #fff;
+}
+#header_sub .inner .menuMo .utilMo {
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 30px;
+  margin-left: 50px;
+}
+#header_sub .inner .menuMo .utilMo li {
+  float: left;
+}
+#header_sub .inner .menuMo .utilMo li a {
+  margin-right: 30px;
+  font-size: 26px;
+  color: #999;
+  display: block;
+}
+#header_sub .inner .menuMo .utilMo li:hover a {
+  color: #4fb627;
+}
+
+/* contents ---------------------------------------------*/
+.contents {
+  width: 100%;
+}
+.contents .sub_visual img {
+  width: 100%;
+  margin-bottom: 50px;
+}
+.contents .inner {
+  width: 1180px;
+  margin: 0 auto 150px;
+}
+.contents .inner > h2 {
+  color: #fff;
+  text-align: center;
+  font: bold 30px/1 "GmarketSansMedium";
+  letter-spacing: 2px;
+}
+.contents .inner .arrow {
+  background: url(../img/subpage01/arrow.png) no-repeat center/cover;
+  width: 30px;
+  height: 20px;
+  margin: 30px auto;
+}
+.contents .model1 {
+  margin-top: 100px;
+}
+.contents .model1 > h2 {
+  color: #fff;
+  background: url(../img/subpage01/main06.jpg) no-repeat center/cover;
+  height: 500px;
+  padding: 100px;
+  font: bold 40px/1 "GmarketSansMedium";
+  width: 100%;
+}
+.contents .model2 {
+  margin-top: 100px;
+}
+.contents .model2 > h2 {
+  color: #fff;
+  background: url(../img/subpage01/main03.jpg) no-repeat center/cover;
+  height: 500px;
+  padding: 100px;
+  font: bold 40px/1 "GmarketSansMedium";
+  width: 100%;
+}
+.contents .model3 {
+  margin-top: 100px;
+}
+.contents .model3 > h2 {
+  color: #fff;
+  background: url(../img/subpage01/main05.jpg) no-repeat center/cover;
+  height: 500px;
+  padding: 100px;
+  font: bold 40px/1 "GmarketSansMedium";
+  width: 100%;
+}
+.contents .model4 {
+  margin-top: 100px;
+}
+.contents .model4 > h2 {
+  color: #fff;
+  background: url(../img/subpage01/main01.jpg) no-repeat center/cover;
+  height: 500px;
+  padding: 100px;
+  font: bold 40px/1 "GmarketSansMedium";
+  width: 100%;
+}
+.contents .model5 {
+  margin-top: 100px;
+}
+.contents .model5 > h2 {
+  color: #fff;
+  background: url(../img/subpage01/main02.jpg) no-repeat center/cover;
+  height: 500px;
+  padding: 100px;
+  font: bold 40px/1 "GmarketSansMedium";
+  width: 100%;
+}
+.contents .info {
+  width: 1180px;
+  margin: 0 auto;
+}
+.contents .info .wrap {
+  margin: 50px 0;
+}
+.contents .info .wrap::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.contents .info .wrap article {
+  float: left;
+  width: 280px;
+  height: 400px;
+  margin-right: 20px;
+  transition: all 0.7s;
+  opacity: 0.7;
+}
+.contents .info .wrap article:last-of-type {
+  margin-right: 0;
+}
+.contents .info .wrap article:hover {
+  transform: scale(1.1);
+  opacity: 1;
+}
+.contents .info .wrap article:hover h2 {
+  color: #4fb627;
+}
+.contents .info .wrap article:hover span {
+  color: #fff;
+}
+.contents .info .wrap article .pic a img {
+  width: 100%;
+  border: 3px solid #4fb627;
+}
+.contents .info .wrap article .pic h2 {
+  color: #fff;
+  font: bold 20px/1 "GmarketSansMedium";
+  display: block;
+  margin-top: 10px;
+  padding: 30px 0 10px;
+  cursor: pointer;
+}
+.contents .info .wrap article .pic span {
+  display: block;
+  color: #999;
+  font: normal 13px/1 "GmarketSansMedium";
+  cursor: pointer;
+}
+
+/* footer ------------------------------------------*/
+#footer_sub {
+  width: 100%;
+  background: #131212;
+  padding-top: 50px;
+}
+#footer_sub .inner {
+  width: 1180px;
+  margin: 0 auto;
+}
+#footer_sub .inner .gnb {
+  text-align: center;
+  margin-bottom: 30px;
+}
+#footer_sub .inner .gnb li {
+  display: inline-block;
+}
+#footer_sub .inner .gnb li:not(:last-child) {
+  margin-right: 30px;
+}
+#footer_sub .inner .gnb li a {
+  display: block;
+  padding: 20px;
+  color: #999;
+}
+#footer_sub .inner .gnb li a:hover {
+  color: #fff;
+}
+#footer_sub .inner address {
+  color: #999;
+  font: normal 16px/1.3 "arial";
+  text-align: center;
+}
+#footer_sub .inner .sns {
+  display: flex;
+  justify-content: center;
+  margin: 50px;
+}
+#footer_sub .inner .sns li:not(:last-child) {
+  margin-right: 50px;
+}
+#footer_sub .inner .sns li a {
+  font-size: 30px;
+  color: #999;
+  display: block;
+  padding: 10px;
+}
+#footer_sub .inner .sns li a:hover {
+  color: #4fb627;
+}
+#footer_sub .inner .footerLogo h1 {
+  width: 150px;
+  margin: 0 auto;
+}
+#footer_sub .inner .footerLogo h1 img {
+  width: 100%;
+}
+#footer_sub .inner .footerLogo p {
+  color: #999;
+  text-align: center;
+  padding: 30px 0;
+}
+
+/* tablet --------------------------------------------------*/
+@media screen and (max-width: 1179px) {
+  /* header -------------------------------------------------------------*/
+  #header_sub .inner {
+    width: 100%;
+  }
+  #header_sub .inner nav .gnb {
+    display: none;
+  }
+  #header_sub .inner nav .util {
+    margin-right: 40px;
+  }
+  #header_sub .inner nav .util li:last-child {
+    margin-right: 10px;
+  }
+  #header_sub .inner .btnCall {
+    display: block;
+  }
+  #header_sub .inner .btnCall:hover::before {
+    background: #4fb627;
+  }
+  #header_sub .inner .btnCall:hover::after {
+    background: #4fb627;
+  }
+  #header_sub .inner .btnCall:hover span {
+    background: #4fb627;
+    transition-duration: 0s;
+  }
+  #header_sub .inner .menuMo .utilMo {
+    display: none;
+  }
+
+  /* contents ---------------------------------------------------------*/
+  .contents .inner {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .contents .model1 {
+    margin-top: 60px;
+  }
+  .contents .model1 > h2 {
+    padding: 60px;
+    font: bold 30px/1.3 "GmarketSansMedium";
+  }
+  .contents .model2 {
+    margin-top: 60px;
+  }
+  .contents .model2 > h2 {
+    padding: 60px;
+    font: bold 30px/1.3 "GmarketSansMedium";
+  }
+  .contents .model3 {
+    margin-top: 60px;
+  }
+  .contents .model3 > h2 {
+    padding: 100px;
+    font: bold 30px/1.3 "GmarketSansMedium";
+  }
+  .contents .model4 {
+    margin-top: 60px;
+  }
+  .contents .model4 > h2 {
+    padding: 60px;
+    font: bold 30px/1.3 "GmarketSansMedium";
+  }
+  .contents .model5 {
+    margin-top: 60px;
+  }
+  .contents .model5 > h2 {
+    padding: 60px;
+    font: bold 30px/1.3 "GmarketSansMedium";
+  }
+  .contents .info {
+    width: 100%;
+  }
+  .contents .info .wrap article {
+    width: 49%;
+    margin-right: 2%;
+    height: 100%;
+  }
+  .contents .info .wrap article:nth-of-type(2), .contents .info .wrap article:last-of-type {
+    margin-right: 0;
+  }
+  .contents .info .wrap article .pic {
+    padding: 30px;
+  }
+  .contents .info .wrap article .pic h2 {
+    margin-top: 0;
+  }
+}
+/* contents ------------------------------------------------------*/
+/* footer --------------------------------------------------------*/
+#footer_sub .inner {
+  width: 100%;
+}
+#footer_sub .inner .footerLogo h1 {
+  min-width: 150px;
+}
+
+/* mobile ------------------------------------------------------*/
+@media screen and (max-width: 539px) {
+  /* header -------------------------------------------------------------*/
+  #header_sub .inner nav .util {
+    display: none;
+  }
+  #header_sub .inner .menuMo .utilMo {
+    display: block;
+  }
+
+  /* contents ---------------------------------------------------------*/
+  .contents .inner > h2 {
+    font: bold 20px/1.3 "GmarketSansMedium";
+  }
+  .contents .model1 > h2 {
+    height: 200px;
+    padding: 30px;
+    font: bold 16px/1.3 "GmarketSansMedium";
+  }
+  .contents .model2 > h2 {
+    height: 200px;
+    padding: 30px;
+    font: bold 16px/1.3 "GmarketSansMedium";
+  }
+  .contents .model3 > h2 {
+    height: 200px;
+    padding: 30px;
+    font: bold 16px/1.3 "GmarketSansMedium";
+  }
+  .contents .model4 > h2 {
+    height: 200px;
+    padding: 30px;
+    font: bold 16px/1.3 "GmarketSansMedium";
+  }
+  .contents .model5 > h2 {
+    height: 200px;
+    padding: 30px;
+    font: bold 16px/1.3 "GmarketSansMedium";
+  }
+  .contents .info {
+    width: 100%;
+  }
+  .contents .info .wrap article {
+    width: 100%;
+    margin-right: 0;
+  }
+  .contents .info .wrap article .pic {
+    padding: 20px;
+  }
+
+  /* footer ---------------------------------------------------------*/
+  #footer_sub .inner {
+    width: 100%;
+    padding: 0 10px;
+  }
+  #footer_sub .inner .gnb {
+    text-align: center;
+  }
+  #footer_sub .inner .gnb li {
+    display: block;
+  }
+  #footer_sub .inner .gnb li a {
+    font-size: 14px;
+  }
+  #footer_sub .inner .gnb li:not(:last-child) {
+    margin-right: 0;
+  }
+  #footer_sub .inner address {
+    font-size: 12px;
+    text-align: center;
+    line-height: 1.5;
+  }
+  #footer_sub .inner .footerLogo h1 {
+    min-width: 150px;
+  }
+}
+@font-face {
+  font-family: "GmarketSansMedium";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul, ol, li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.hidden {
+  position: absolute;
+  left: 0;
+  top: -9999px;
+  opacity: 0;
+}
+
+/* header ----------------------------------------------------------------*/
+#header_sub {
+  width: 100%;
+  padding: 30px 0;
+  border-bottom: 1px solid #4fb627;
+}
+#header_sub .inner {
+  width: 1180px;
+  margin: 0 auto;
+  padding: 0 30px;
+  position: relative;
+}
+#header_sub .inner::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#header_sub .inner h1 {
+  max-width: 150px;
+  float: left;
+}
+#header_sub .inner h1 a img {
+  width: 100%;
+  height: 100%;
+  margin-top: 5px;
+}
+#header_sub .inner nav {
+  float: left;
+  width: 70%;
+}
+#header_sub .inner nav::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#header_sub .inner nav .gnb {
+  margin-left: 20px;
+  float: left;
+}
+#header_sub .inner nav .gnb::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#header_sub .inner nav .gnb li {
+  float: left;
+}
+#header_sub .inner nav .gnb li a {
+  display: block;
+  font: normal 24px/1 "Pretendard";
+  color: #fff;
+  padding: 15px 10px;
+  transition: all 0.7s;
+}
+#header_sub .inner nav .gnb li:hover a {
+  background: #4fb627;
+  color: #cbcaa5;
+}
+#header_sub .inner nav .util {
+  height: 100%;
+  margin-top: 5px;
+  position: absolute;
+  right: 35px;
+  top: 0;
+}
+#header_sub .inner nav .util::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#header_sub .inner nav .util li {
+  float: right;
+}
+#header_sub .inner nav .util li:hover a {
+  color: #4fb627;
+}
+#header_sub .inner nav .util li a {
+  display: block;
+  margin-left: 20px;
+  font-size: 24px;
+  line-height: 2;
+  color: #fff;
+}
+#header_sub .inner .btnCall {
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  display: none;
+}
+#header_sub .inner .btnCall::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: bottom 0.5s, transform 0.5s 0.5s;
+}
+#header_sub .inner .btnCall::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: top 0.5s, transform 0.5s 0.5s;
+}
+#header_sub .inner .btnCall span {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -1px;
+  text-indent: -9999px;
+  transition: all 0.5s;
+}
+#header_sub .inner .btnCall.on span {
+  transform: translateX(100%);
+  opacity: 0;
+}
+#header_sub .inner .btnCall.on::after {
+  bottom: 50%;
+  margin-bottom: -1px;
+  transform: rotate(-45deg);
+}
+#header_sub .inner .btnCall.on::before {
+  top: 50%;
+  margin-top: -1px;
+  transform: rotate(45deg);
+}
+#header_sub .inner .menuMo {
+  width: 300px;
+  height: 100vh;
+  background: #151615;
+  position: fixed;
+  top: 10%;
+  right: -300px;
+  padding: 80px 30px;
+  z-index: 10;
+  transition: 0.7s;
+}
+#header_sub .inner .menuMo.on {
+  right: 0;
+}
+#header_sub .inner .menuMo .gnbMo li a {
+  display: block;
+  width: 100%;
+  padding: 20px 0;
+  border-bottom: 1px solid #444;
+  font: bold 14px/1 "arial";
+  color: #888;
+  text-align: center;
+}
+#header_sub .inner .menuMo .gnbMo li:hover a {
+  background: #4fb627;
+  color: #fff;
+}
+#header_sub .inner .menuMo .utilMo {
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 30px;
+  margin-left: 50px;
+}
+#header_sub .inner .menuMo .utilMo li {
+  float: left;
+}
+#header_sub .inner .menuMo .utilMo li a {
+  margin-right: 30px;
+  font-size: 26px;
+  color: #999;
+  display: block;
+}
+#header_sub .inner .menuMo .utilMo li:hover a {
+  color: #4fb627;
+}
+
+.event {
+  background: #fff;
+}
+.event .sub_visual img {
+  width: 100%;
+}
+.event .inner {
+  width: 1180px;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+.event .inner::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+.event .inner h1 {
+  font: bold 50px/1 "GmarketSansMedium";
+  padding: 50px 0;
+}
+.event .inner .search {
+  float: right;
+  margin-bottom: 20px;
+  position: relative;
+}
+.event .inner .search select {
+  padding: 5px 50px 5px 5px;
+}
+.event .inner .search input {
+  padding: 5px 10px;
+}
+.event .inner .search a {
+  font-size: 16px;
+  position: absolute;
+  right: 3px;
+  top: 20%;
+}
+.event .inner .search a i {
+  color: #777;
+}
+.event .inner table {
+  width: 100%;
+  border-top: 3px solid #000;
+  margin-bottom: 50px;
+}
+.event .inner table tr:hover {
+  background: #eee;
+}
+.event .inner table tr th {
+  padding: 15px;
+  background: #e5e5e5;
+}
+.event .inner table tr th:nth-of-type(1), .event .inner table tr th:nth-of-type(3) {
+  width: 10%;
+}
+.event .inner table tr td {
+  padding: 13px;
+  border-bottom: 1px solid #ddd;
+  font-family: "Pretendard";
+}
+.event .inner table tr td:not(:nth-of-type(2)) {
+  text-align: center;
+}
+.event .inner table tr td a {
+  color: #333;
+  font-family: "Pretendard";
+  line-height: 1.4;
+}
+.event .inner .pagination {
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+}
+.event .inner .pagination::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.event .inner .pagination .prev {
+  float: left;
+  width: 30px;
+  height: 30px;
+  font: 30px/30px "Pretendard";
+  color: #111;
+  cursor: pointer;
+  text-align: center;
+}
+.event .inner .pagination .next {
+  float: right;
+  width: 30px;
+  height: 30px;
+  font: 30px/30px "Pretendard";
+  color: #111;
+  cursor: pointer;
+  text-align: center;
+}
+.event .inner .pagination .numbers {
+  display: inline-block;
+  font-size: 0;
+}
+.event .inner .pagination .numbers a {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  color: #666;
+  font: 13px/30px "Pretendard";
+  margin: 0 5px;
+  transition: all 0.7s;
+  cursor: pointer;
+}
+.event .inner .pagination .numbers a:hover {
+  background: #bbb;
+  color: #fff;
+}
+
+/* footer ------------------------------------------*/
+#footer_sub {
+  width: 100%;
+  background: #131212;
+  padding-top: 50px;
+}
+#footer_sub .inner {
+  width: 1180px;
+  margin: 0 auto;
+}
+#footer_sub .inner .gnb {
+  text-align: center;
+  margin-bottom: 30px;
+}
+#footer_sub .inner .gnb li {
+  display: inline-block;
+}
+#footer_sub .inner .gnb li:not(:last-child) {
+  margin-right: 30px;
+}
+#footer_sub .inner .gnb li a {
+  display: block;
+  padding: 20px;
+  color: #999;
+}
+#footer_sub .inner .gnb li a:hover {
+  color: #fff;
+}
+#footer_sub .inner address {
+  color: #999;
+  font: normal 16px/1.3 "arial";
+  text-align: center;
+}
+#footer_sub .inner .sns {
+  display: flex;
+  justify-content: center;
+  margin: 50px;
+}
+#footer_sub .inner .sns li:not(:last-child) {
+  margin-right: 50px;
+}
+#footer_sub .inner .sns li a {
+  font-size: 30px;
+  color: #999;
+  display: block;
+  padding: 10px;
+}
+#footer_sub .inner .sns li a:hover {
+  color: #4fb627;
+}
+#footer_sub .inner .footerLogo h1 {
+  width: 150px;
+  margin: 0 auto;
+}
+#footer_sub .inner .footerLogo h1 img {
+  width: 100%;
+}
+#footer_sub .inner .footerLogo p {
+  color: #999;
+  text-align: center;
+  padding: 30px 0;
+}
+
+/* tablet ----------------------------------------------------------------------------*/
+@media screen and (max-width: 1179px) {
+  /* header -------------------------------------------------------------*/
+  #header_sub .inner {
+    width: 100%;
+  }
+  #header_sub .inner nav .gnb {
+    display: none;
+  }
+  #header_sub .inner nav .util {
+    margin-right: 40px;
+  }
+  #header_sub .inner nav .util li:last-child {
+    margin-right: 10px;
+  }
+  #header_sub .inner .btnCall {
+    display: block;
+  }
+  #header_sub .inner .btnCall:hover::before {
+    background: #4fb627;
+  }
+  #header_sub .inner .btnCall:hover::after {
+    background: #4fb627;
+  }
+  #header_sub .inner .btnCall:hover span {
+    background: #4fb627;
+    transition-duration: 0s;
+  }
+  #header_sub .inner .menuMo .utilMo {
+    display: none;
+  }
+
+  .event .inner {
+    width: 100%;
+    padding: 0 20px;
+  }
+  .event .inner table tr th:nth-of-type(1) {
+    width: 13%;
+  }
+  .event .inner table tr th:nth-of-type(3) {
+    width: 8%;
+  }
+  .event .inner table tr td:nth-of-type(1) {
+    width: 8%;
+  }
+  .event .inner table tr td:nth-of-type(8) {
+    width: 8%;
+  }
+  .event .inner .pagination {
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+    padding-bottom: 50px;
+  }
+  .event .inner .pagination::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  .event .inner .pagination .prev {
+    float: left;
+    width: 30px;
+    height: 30px;
+    font: 20px/30px "Pretendard";
+    color: #111;
+    cursor: pointer;
+    text-align: center;
+  }
+  .event .inner .pagination .next {
+    float: right;
+    width: 30px;
+    height: 30px;
+    font: 20px/30px "Pretendard";
+    color: #111;
+    cursor: pointer;
+    text-align: center;
+  }
+  .event .inner .pagination .numbers {
+    display: inline-block;
+    font-size: 0;
+  }
+  .event .inner .pagination .numbers a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    color: #666;
+    font: 16px/30px "Pretendard";
+    margin: 0 5px;
+    transition: all 0.7s;
+    cursor: pointer;
+  }
+  .event .inner .pagination .numbers a:hover {
+    background: #bbb;
+    color: #fff;
+  }
+
+  /* footer --------------------------------------------------------*/
+  #footer_sub .inner {
+    width: 100%;
+  }
+  #footer_sub .inner .footerLogo h1 {
+    min-width: 150px;
+  }
+}
+/* mobile -----------------------------------------------------*/
+@media screen and (max-width: 539px) {
+  /* header -------------------------------------------------------------*/
+  #header_sub .inner nav .util {
+    display: none;
+  }
+  #header_sub .inner .menuMo .utilMo {
+    display: block;
+  }
+
+  .event .inner h1 {
+    float: left;
+    font-size: 30px;
+  }
+  .event .inner .search {
+    width: 100%;
+    padding-top: 10px;
+  }
+  .event .inner .search select {
+    margin-bottom: 10px;
+  }
+  .event .inner .search input {
+    display: none;
+  }
+  .event .inner .search a {
+    display: none;
+  }
+  .event .inner table tr th:nth-of-type(1) {
+    width: 0%;
+    display: none;
+  }
+  .event .inner table tr th:nth-of-type(3) {
+    display: none;
+  }
+  .event .inner table tr td:nth-of-type(1) {
+    display: none;
+  }
+  .event .inner table tr td:nth-of-type(3) {
+    display: none;
+  }
+  .event .inner .pagination {
+    display: none;
+  }
+
+  /* footer ---------------------------------------------------------*/
+  #footer_sub .inner {
+    width: 100%;
+    padding: 0 10px;
+  }
+  #footer_sub .inner .gnb {
+    text-align: center;
+  }
+  #footer_sub .inner .gnb li {
+    display: block;
+  }
+  #footer_sub .inner .gnb li a {
+    font-size: 14px;
+  }
+  #footer_sub .inner .gnb li:not(:last-child) {
+    margin-right: 0;
+  }
+  #footer_sub .inner address {
+    font-size: 12px;
+    text-align: center;
+    line-height: 1.5;
+  }
+  #footer_sub .inner .footerLogo h1 {
+    min-width: 150px;
+  }
+}
 @font-face {
   font-family: "GmarketSansMedium";
   src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff") format("woff");
@@ -241,566 +1392,359 @@ a {
   color: #4fb627;
 }
 
-/* contents ---------------------------------------------*/
-.contents {
+/* join ---------------------------------------------*/
+.join {
+  background: #fff;
   width: 100%;
-  /* footer ------------------------------------------*/
-  /* tablet --------------------------------------------------*/
-  /* contents ------------------------------------------------------*/
-  /* footer --------------------------------------------------------*/
-  /* mobile ------------------------------------------------------*/
 }
-.contents .sub_visual img {
+.join .sub_visual .pic {
+  background: url(../img/subpage01/submain03.jpg) no-repeat center/cover;
+  height: 450px;
+  margin-bottom: 80px;
+}
+.join .sub_visual .pic img {
   width: 100%;
-  margin-bottom: 50px;
 }
-.contents .inner {
-  width: 1180px;
-  margin: 0 auto 150px;
-}
-.contents .inner > h1 {
+.join .sub_visual .pic > h2 {
   color: #fff;
-  text-align: center;
-  font: bold 30px/1 "GmarketSansMedium";
-  letter-spacing: 2px;
-  text-shadow: 5px 5px 5px grey;
+  font: bold 40px/1 "Pretendard";
+  padding: 80px;
 }
-.contents .inner .arrow {
-  background: url(../img/subpage01/arrow.png) no-repeat center/cover;
-  width: 30px;
-  height: 20px;
-  margin: 30px auto;
-}
-.contents .model1 {
-  margin-top: 100px;
-}
-.contents .model1 h1 {
-  color: #fff;
-  background: url(../img/subpage01/main06.jpg) no-repeat center/cover;
-  height: 500px;
-  padding: 100px;
-  font: bold 40px/1 "GmarketSansMedium";
-  width: 100%;
-  text-shadow: 5px 5px 5px grey;
-}
-.contents .model2 {
-  margin-top: 100px;
-}
-.contents .model2 h1 {
-  color: #fff;
-  background: url(../img/subpage01/main03.jpg) no-repeat center/cover;
-  height: 500px;
-  padding: 100px;
-  font: bold 40px/1 "GmarketSansMedium";
-  width: 100%;
-  text-shadow: 5px 5px 5px grey;
-}
-.contents .model3 {
-  margin-top: 100px;
-}
-.contents .model3 h1 {
-  color: #fff;
-  background: url(../img/subpage01/main05.jpg) no-repeat center/cover;
-  height: 500px;
-  padding: 100px;
-  font: bold 40px/1 "GmarketSansMedium";
-  width: 100%;
-  text-shadow: 5px 5px 30px gray;
-}
-.contents .model4 {
-  margin-top: 100px;
-}
-.contents .model4 h1 {
-  color: #fff;
-  background: url(../img/subpage01/main01.jpg) no-repeat center/cover;
-  height: 500px;
-  padding: 100px;
-  font: bold 40px/1 "GmarketSansMedium";
-  width: 100%;
-  text-shadow: 5px 5px 5px grey;
-}
-.contents .model5 {
-  margin-top: 100px;
-}
-.contents .model5 h1 {
-  color: #fff;
-  background: url(../img/subpage01/main02.jpg) no-repeat center/cover;
-  height: 500px;
-  padding: 100px;
-  font: bold 40px/1 "GmarketSansMedium";
-  width: 100%;
-  text-shadow: 5px 5px 5px grey;
-}
-.contents .info {
+.join .inner {
   width: 1180px;
   margin: 0 auto;
 }
-.contents .info .wrap {
-  margin: 50px 0;
+.join .inner h2 {
+  color: #000;
+  margin-bottom: 10px;
+  text-align: left;
+  border-bottom: 1px solid #999;
+  font-size: 24px;
 }
-.contents .info .wrap::after {
-  content: "";
-  display: block;
-  clear: both;
+.join .inner form {
+  padding-bottom: 50px;
 }
-.contents .info .wrap article {
-  float: left;
-  width: 280px;
-  height: 100%;
-  margin-right: 20px;
-  transition: all 0.7s;
-  opacity: 0.7;
+.join .inner form fieldset {
+  border: none;
 }
-.contents .info .wrap article:last-of-type {
-  margin-right: 0;
+.join .inner form fieldset h3 {
+  text-align: center;
+  color: #000;
+  font: bold 20px/1 "Pretendard";
+  padding: 15px 0;
+  border: 1px solid #999;
+  border-style: solid none solid none;
+  background: linear-gradient(45deg, #eee, #fff);
 }
-.contents .info .wrap article:hover {
-  transform: scale(1.1);
-  opacity: 1;
-}
-.contents .info .wrap article:hover h2 {
-  color: #4fb627;
-}
-.contents .info .wrap article:hover span {
-  color: #fff;
-}
-.contents .info .wrap article .pic a img {
+.join .inner form table {
   width: 100%;
-  border: 3px solid #4fb627;
 }
-.contents .info .wrap article .pic h2 {
+.join .inner form table th {
+  width: 20%;
+  border-bottom: 1px solid #999;
+  border-right: 1px solid #999;
+  text-align: left;
+  padding: 20px 30px;
+}
+.join .inner form table th:not(:last-child)::after {
+  content: "*";
+  margin-left: 15px;
+  color: red;
+}
+.join .inner form table th:last-child {
+  border-right: none;
+  text-align: center;
+}
+.join .inner form table th label {
+  font: bold 18px/1 "Pretendard";
+}
+.join .inner form table th input[type=reset],
+.join .inner form table th input[type=submit] {
   color: #fff;
-  font: bold 20px/1 "GmarketSansMedium";
-  display: block;
+  width: 150px;
+  height: 40px;
+  border: none;
+  background: #777;
+  margin: 0 10px;
+  cursor: pointer;
+  font: bold 16px/1 "Pretendard";
+}
+.join .inner form table th input[type=radio] {
+  padding: 5px 0;
+  border: 1px inset #eee;
+  box-shadow: 1px 1px 5px #999;
+  outline: none;
+}
+.join .inner form table #addInfo {
+  background: linear-gradient(45deg, #eee, #fff);
+  padding: 15px;
+}
+.join .inner form table td {
+  border-bottom: 1px solid #999;
+  text-align: left;
+  padding: 20px 30px;
+}
+.join .inner form table td input[type=text],
+.join .inner form table td input[type=password],
+.join .inner form table td input[type=tel],
+.join .inner form table td input[type=search] {
+  padding: 5px 10px;
+  margin-top: 15px;
+  border: 1px inset #eee;
+  box-shadow: 1px 1px 5px #999;
+  outline: none;
+}
+.join .inner form table td input[type=tel] {
+  width: 10%;
+  padding-left: 5px;
+}
+.join .inner form table td input[type=search] {
+  width: 60%;
+}
+.join .inner form table td span {
+  padding: 5px 20px;
+  margin-left: 10px;
+  border: 1px inset #eee;
+}
+.join .inner form table td label[for=male] {
+  margin-right: 50px;
+}
+.join .inner form table td label[for=male] input[type=radio] {
+  margin-right: 10px;
+}
+.join .inner form table td label[for=female] input[type=radio] {
+  margin-right: 10px;
+}
+.join .inner form table td #call1 {
+  margin-left: 20px;
+}
+.join .inner form table td p {
   margin-top: 10px;
-  padding: 30px 0 10px;
-  cursor: pointer;
+  color: #aaa;
+  font: normal 14px/1 "Pretendard";
 }
-.contents .info .wrap article .pic span:last-of-type {
-  display: block;
-  color: #999;
-  font: normal 13px/1 "GmarketSansMedium";
-  cursor: pointer;
-}
-.contents #footer_sub {
+
+/* footer ------------------------------------------*/
+#footer_sub {
   width: 100%;
   background: #131212;
   padding-top: 50px;
 }
-.contents #footer_sub .inner {
+#footer_sub .inner {
   width: 1180px;
   margin: 0 auto;
 }
-.contents #footer_sub .inner .gnb {
+#footer_sub .inner .gnb {
   text-align: center;
   margin-bottom: 30px;
 }
-.contents #footer_sub .inner .gnb li {
+#footer_sub .inner .gnb li {
   display: inline-block;
 }
-.contents #footer_sub .inner .gnb li:not(:last-child) {
+#footer_sub .inner .gnb li:not(:last-child) {
   margin-right: 30px;
 }
-.contents #footer_sub .inner .gnb li a {
+#footer_sub .inner .gnb li a {
   display: block;
   padding: 20px;
   color: #999;
 }
-.contents #footer_sub .inner .gnb li a:hover {
+#footer_sub .inner .gnb li a:hover {
   color: #fff;
 }
-.contents #footer_sub .inner address {
+#footer_sub .inner address {
   color: #999;
   font: normal 16px/1.3 "arial";
   text-align: center;
 }
-.contents #footer_sub .inner .sns {
+#footer_sub .inner .sns {
   display: flex;
   justify-content: center;
   margin: 50px;
 }
-.contents #footer_sub .inner .sns li:not(:last-child) {
+#footer_sub .inner .sns li:not(:last-child) {
   margin-right: 50px;
 }
-.contents #footer_sub .inner .sns li a {
+#footer_sub .inner .sns li a {
   font-size: 30px;
   color: #999;
   display: block;
   padding: 10px;
 }
-.contents #footer_sub .inner .sns li a:hover {
+#footer_sub .inner .sns li a:hover {
   color: #4fb627;
 }
-.contents #footer_sub .inner .footerLogo h1 {
+#footer_sub .inner .footerLogo h1 {
   width: 150px;
   margin: 0 auto;
 }
-.contents #footer_sub .inner .footerLogo h1 img {
+#footer_sub .inner .footerLogo h1 img {
   width: 100%;
 }
-.contents #footer_sub .inner .footerLogo p {
+#footer_sub .inner .footerLogo p {
   color: #999;
   text-align: center;
   padding: 30px 0;
 }
+
+/* tablet --------------------------------------------------*/
 @media screen and (max-width: 1179px) {
-  .contents {
-    /* header -------------------------------------------------------------*/
-    /* contents ---------------------------------------------------------*/
-  }
-  .contents #header_sub .inner {
+  /* header -------------------------------------------------------------*/
+  #header_sub .inner {
     width: 100%;
   }
-  .contents #header_sub .inner nav .gnb {
+  #header_sub .inner nav .gnb {
     display: none;
   }
-  .contents #header_sub .inner nav .util {
+  #header_sub .inner nav .util {
     margin-right: 40px;
   }
-  .contents #header_sub .inner nav .util li:last-child {
+  #header_sub .inner nav .util li:last-child {
     margin-right: 10px;
   }
-  .contents #header_sub .inner .btnCall {
+  #header_sub .inner .btnCall {
     display: block;
   }
-  .contents #header_sub .inner .btnCall:hover::before {
+  #header_sub .inner .btnCall:hover::before {
     background: #4fb627;
   }
-  .contents #header_sub .inner .btnCall:hover::after {
+  #header_sub .inner .btnCall:hover::after {
     background: #4fb627;
   }
-  .contents #header_sub .inner .btnCall:hover span {
+  #header_sub .inner .btnCall:hover span {
     background: #4fb627;
     transition-duration: 0s;
   }
-  .contents #header_sub .inner .menuMo .utilMo {
+  #header_sub .inner .menuMo .utilMo {
     display: none;
   }
-  .contents .contents .inner {
+
+  /* join ---------------------------------------------*/
+  .join .sub_visual .pic {
+    height: 300px;
+    margin-bottom: 80px;
+  }
+  .join .sub_visual .pic > h2 {
+    font: bold 30px/1 "Pretendard";
+    padding: 60px;
+  }
+  .join .inner {
+    width: 100%;
+    padding: 0 20px;
+  }
+  .join .inner form table th:not(:last-child)::after {
+    margin-left: 10px;
+  }
+  .join .inner form table th label {
+    font: bold 16px/1 "Pretendard";
+  }
+  .join .inner form table td input[type=text],
+.join .inner form table td input[type=password],
+.join .inner form table td input[type=tel],
+.join .inner form table td input[type=search] {
+    margin-top: 0;
+  }
+  .join .inner form table td input[type=tel] {
+    width: 15%;
+  }
+  .join .inner form table td input[type=search] {
+    width: 70%;
+  }
+
+  /* footer --------------------------------------------------------*/
+  #footer_sub .inner {
     width: 100%;
   }
-  .contents .contents .model1 h1 {
-    font: bold 40px/1.3 "GmarketSansMedium";
-  }
-  .contents .contents .model2 h1 {
-    font: bold 40px/1.3 "GmarketSansMedium";
-  }
-  .contents .contents .model3 h1 {
-    font: bold 40px/1.3 "GmarketSansMedium";
-  }
-  .contents .contents .model4 h1 {
-    font: bold 40px/1.3 "GmarketSansMedium";
-  }
-  .contents .contents .model5 h1 {
-    font: bold 40px/1.3 "GmarketSansMedium";
-  }
-  .contents .contents .info {
-    width: 100%;
-  }
-  .contents .contents .info .wrap li {
-    width: 49%;
-  }
-  .contents .contents .info .wrap li h2 {
-    color: #fff;
-    font: bold 20px/1 "GmarketSansMedium";
-    display: block;
-    margin-top: 10px;
-    padding: 30px 0 10px;
-    cursor: pointer;
-  }
-  .contents .contents .info .wrap li span:last-of-type {
-    display: block;
-    color: #999;
-    font: normal 13px/1 "GmarketSansMedium";
-    cursor: pointer;
+  #footer_sub .inner .footerLogo h1 {
+    min-width: 150px;
   }
 }
-.contents #footer_sub .inner {
-  width: 100%;
-}
-.contents #footer_sub .inner .footerLogo h1 {
-  min-width: 150px;
-}
+/* mobile ------------------------------------------------------*/
 @media screen and (max-width: 539px) {
-  .contents {
-    /* header -------------------------------------------------------------*/
-    /* footer ---------------------------------------------------------*/
-  }
-  .contents #header_sub .inner nav .util {
+  /* header -------------------------------------------------------------*/
+  #header_sub .inner nav .util {
     display: none;
   }
-  .contents #header_sub .inner .menuMo .utilMo {
+  #header_sub .inner .menuMo .utilMo {
     display: block;
   }
-  .contents #footer_sub .inner {
+
+  /* join ---------------------------------------------*/
+  .join .sub_visual .pic {
+    height: 200px;
+    margin-bottom: 50px;
+  }
+  .join .sub_visual .pic > h2 {
+    font: bold 25px/1 "Pretendard";
+    padding: 30px;
+  }
+  .join .inner h2 {
+    font-size: 20px;
+  }
+  .join .inner form table th {
+    display: none;
+  }
+  .join .inner form table th:last-child {
+    display: block;
+    width: 100%;
+  }
+  .join .inner form table th input[type=reset],
+.join .inner form table th input[type=submit] {
+    width: 38%;
+    margin: 0 5%;
+  }
+  .join .inner form table #addInfo {
+    padding: 15px 0;
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
+  .join .inner form table td {
+    padding: 20px 10px;
+  }
+  .join .inner form table td input[type=text],
+.join .inner form table td input[type=password],
+.join .inner form table td input[type=tel],
+.join .inner form table td input[type=search] {
+    width: 100%;
+  }
+  .join .inner form table td input[type=tel] {
+    width: 20%;
+  }
+  .join .inner form table td input[type=search] {
+    width: 75%;
+  }
+  .join .inner form table td span {
+    padding: 5px 15px;
+  }
+  .join .inner form table td p {
+    font: normal 13px/1 "Pretendard";
+  }
+
+  /* footer ---------------------------------------------------------*/
+  #footer_sub .inner {
     width: 100%;
     padding: 0 10px;
   }
-  .contents #footer_sub .inner .gnb {
+  #footer_sub .inner .gnb {
     text-align: center;
   }
-  .contents #footer_sub .inner .gnb li {
+  #footer_sub .inner .gnb li {
     display: block;
   }
-  .contents #footer_sub .inner .gnb li a {
+  #footer_sub .inner .gnb li a {
     font-size: 14px;
   }
-  .contents #footer_sub .inner .gnb li:not(:last-child) {
+  #footer_sub .inner .gnb li:not(:last-child) {
     margin-right: 0;
   }
-  .contents #footer_sub .inner address {
+  #footer_sub .inner address {
     font-size: 12px;
     text-align: center;
     line-height: 1.5;
   }
-  .contents #footer_sub .inner .footerLogo h1 {
+  #footer_sub .inner .footerLogo h1 {
     min-width: 150px;
-  }
-}
-
-@font-face {
-  font-family: "GmarketSansMedium";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-ul, ol, li {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-}
-
-.hidden {
-  position: absolute;
-  left: 0;
-  top: -9999px;
-  opacity: 0;
-}
-
-.event {
-  background: #fff;
-}
-.event .sub_visual img {
-  width: 100%;
-}
-.event .inner {
-  width: 1180px;
-  margin: 0 auto;
-  padding-bottom: 50px;
-}
-.event .inner::after {
-  content: "";
-  clear: both;
-  display: block;
-}
-.event .inner h1 {
-  font: bold 50px/1 "GmarketSansMedium";
-  padding: 50px 0;
-}
-.event .inner .search {
-  float: right;
-  margin-bottom: 20px;
-  position: relative;
-}
-.event .inner .search select {
-  padding: 5px 50px 5px 5px;
-}
-.event .inner .search input {
-  padding: 5px 10px;
-}
-.event .inner .search a {
-  font-size: 16px;
-  position: absolute;
-  right: 3px;
-  top: 20%;
-}
-.event .inner .search a i {
-  color: #777;
-}
-.event .inner table {
-  width: 100%;
-  border-top: 3px solid #000;
-  margin-bottom: 50px;
-}
-.event .inner table tr:hover {
-  background: #eee;
-}
-.event .inner table tr th {
-  padding: 15px;
-  background: #e5e5e5;
-}
-.event .inner table tr th:nth-of-type(1), .event .inner table tr th:nth-of-type(3) {
-  width: 10%;
-}
-.event .inner table tr td {
-  padding: 13px;
-  border-bottom: 1px solid #ddd;
-  font-family: "Pretendard";
-}
-.event .inner table tr td:not(:nth-of-type(2)) {
-  text-align: center;
-}
-.event .inner table tr td a {
-  color: #333;
-  font-family: "Pretendard";
-  line-height: 1.4;
-}
-.event .inner .pagination {
-  text-align: center;
-  margin: 0 auto;
-  width: 100%;
-}
-.event .inner .pagination::after {
-  content: "";
-  display: block;
-  clear: both;
-}
-.event .inner .pagination .prev {
-  float: left;
-  width: 30px;
-  height: 30px;
-  font: 30px/30px "Pretendard";
-  color: #111;
-  cursor: pointer;
-  text-align: center;
-}
-.event .inner .pagination .next {
-  float: right;
-  width: 30px;
-  height: 30px;
-  font: 30px/30px "Pretendard";
-  color: #111;
-  cursor: pointer;
-  text-align: center;
-}
-.event .inner .pagination .numbers {
-  display: inline-block;
-  font-size: 0;
-}
-.event .inner .pagination .numbers a {
-  display: inline-block;
-  width: 30px;
-  height: 30px;
-  color: #666;
-  font: 13px/30px "Pretendard";
-  margin: 0 5px;
-  transition: all 0.7s;
-  cursor: pointer;
-}
-.event .inner .pagination .numbers a:hover {
-  background: #bbb;
-  color: #fff;
-}
-
-/* tablet ----------------------------------------------------------------------------*/
-@media screen and (max-width: 1179px) {
-  .event .inner {
-    width: 100%;
-    padding: 0 20px;
-  }
-  .event .inner table tr th:nth-of-type(1) {
-    width: 13%;
-  }
-  .event .inner table tr th:nth-of-type(3) {
-    width: 8%;
-  }
-  .event .inner table tr td:nth-of-type(1) {
-    width: 8%;
-  }
-  .event .inner table tr td:nth-of-type(8) {
-    width: 8%;
-  }
-  .event .inner .pagination {
-    text-align: center;
-    margin: 0 auto;
-    width: 100%;
-    position: relative;
-    padding-bottom: 50px;
-  }
-  .event .inner .pagination::after {
-    content: "";
-    display: block;
-    clear: both;
-  }
-  .event .inner .pagination .prev {
-    float: left;
-    width: 30px;
-    height: 30px;
-    font: 20px/30px "Pretendard";
-    color: #111;
-    cursor: pointer;
-    text-align: center;
-  }
-  .event .inner .pagination .next {
-    float: right;
-    width: 30px;
-    height: 30px;
-    font: 20px/30px "Pretendard";
-    color: #111;
-    cursor: pointer;
-    text-align: center;
-  }
-  .event .inner .pagination .numbers {
-    display: inline-block;
-    font-size: 0;
-  }
-  .event .inner .pagination .numbers a {
-    display: inline-block;
-    width: 30px;
-    height: 30px;
-    color: #666;
-    font: 16px/30px "Pretendard";
-    margin: 0 5px;
-    transition: all 0.7s;
-    cursor: pointer;
-  }
-  .event .inner .pagination .numbers a:hover {
-    background: #bbb;
-    color: #fff;
-  }
-}
-/* mobile -----------------------------------------------------*/
-@media screen and (max-width: 539px) {
-  .event .inner h1 {
-    float: left;
-    font-size: 30px;
-  }
-  .event .inner .search {
-    width: 100%;
-    padding-top: 10px;
-  }
-  .event .inner .search select {
-    margin-bottom: 10px;
-  }
-  .event .inner .search input {
-    display: none;
-  }
-  .event .inner .search a {
-    display: none;
-  }
-  .event .inner table tr th:nth-of-type(1) {
-    width: 0%;
-    display: none;
-  }
-  .event .inner table tr th:nth-of-type(3) {
-    display: none;
-  }
-  .event .inner table tr td:nth-of-type(1) {
-    display: none;
-  }
-  .event .inner table tr td:nth-of-type(3) {
-    display: none;
-  }
-  .event .inner .pagination {
-    display: none;
   }
 }
 * {
@@ -1014,7 +1958,7 @@ body {
   width: 1180px;
   margin: 0 auto;
 }
-#model .inner h1 {
+#model .inner > h2 {
   color: #fff;
   margin-top: 80px;
   font: bold 30px/1 "arial";
