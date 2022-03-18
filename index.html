@@ -1,173 +1,196 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="main.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+  <title>main page layout</title>
+  <link rel="stylesheet" href="css/style.css">
   <script src="https://kit.fontawesome.com/e5fcbbc04c.js" crossorigin="anonymous"></script>
-  <title>PORTFOLIO</title>
+  <script defer src="js/main.js"></script>
 </head>
 
 <body>
-  <section class="container">
-      <article class="inner">
-        <h1>PORTFOLIO&nbsp;PROFILE</h1>
-        <aside class="inner__left">
-          <div class="left__Square"></div>
-          <h1>RESUME</h1>
-          <div class="left__content left__common">
-            <h2>ABOUT ME</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea, fugiat ipsum commodi debitis voluptate
-              repudiandae.</p>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-          </div>
-          <div class="left__skills left__common">
-            <h2>PERSONAL SKILLS</h2>
-            <ul>
-              <li>
-                <span>HTML</span>
-                <progress value="85" max="100"></progress>
-              </li>
-              <li>
-                <span>CSS</span>
-                <progress value="70" max="100"></progress>
-              </li>
-              <li>
-                <span>JQUERY</span>
-                <progress value="30" max="100"></progress>
-              </li>
-              <li>
-                <span>JAVASCRIPT</span>
-                <progress value="40" max="100"></progress>
-              </li>
-            </ul>
-          </div>
-          <div class="left__contact left__common">
-            <h2>CONTACT US</h2>
-            <ul>
-              <li>
-                <a href="#"><i class="fa-solid fa-phone fa-2x"></i></a>
-                <div>
-                  <span>Phone</span>
-                  <span>+82 1032860058</span>
-                </div>
-              </li>
-              <li>
-                <a href="#"><i class="fa-solid fa-envelope fa-2x"></i></a>
-                <div>
-                  <span>Email</span>
-                  <span>lhmun1129@naver.com</span>
-                </div>
-              </li>
-              <li>
-                <a href="#"><i class="fa-brands fa-instagram fa-2x"></i></a>
-                <div>
-                  <span>Instagam</span>
-                  <span>adress,location</span>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </aside>
+  <header id="header">
+    <div class="inner">
+      <h1><a href="index.html"><img src="img/logo.png" alt="logo"></a></h1>
+      <nav>
+        <ul class="gnb">
+          <li><a href="모터싸이클.html">모터사이클</a></li>
+          <li><a href="#">제트스키</a></li>
+          <li><a href="#">딜러찾기</a></li>
+          <li><a href="#">서비스</a></li>
+          <li><a href="뉴스&이벤트.html">뉴스&이벤트</a></li>
+        </ul>
 
-        <div class="inner__right">
-          <div class="profile__image">
-            <!-- <img src="image/KakaoTalk_20211021_112953280.jpg" alt=""> -->
+        <ul class="util">
+          <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+          <li><a href="#"><i class="fa-solid fa-user"></i></a></li>
+          <li><a href="join.html"><i class="fa-solid fa-headset"></i></a></li>
+        </ul>
+      </nav>
+
+      <a href="#" class="btnCall">
+        <span>메뉴호출</span>
+      </a>
+      <nav class="menuMo">
+        <ul class="gnbMo">
+          <li><a href="모터싸이클.html">모터사이클</a></li>
+          <li><a href="#">제트스키</a></li>
+          <li><a href="#">딜러찾기</a></li>
+          <li><a href="#">서비스</a></li>
+          <li><a href="뉴스&이벤트.html">뉴스&이벤트</a></li>
+        </ul>
+
+        <ul class="utilMo">
+          <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+          <li><a href="#"><i class="fa-solid fa-user"></i></a></li>
+          <li><a href="join.html"><i class="fa-solid fa-headset"></i></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="visual">
+    <h2 class="hidden">메인이미지</h2>
+    <img src="img/motor_main.jpg" alt="main">
+  </section>
+
+  <section id="model">
+    <div class="inner">
+      <h2>OUR MODELS</h2>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat, tenetur.</p>
+      <div class="wrap">
+        <article>
+          <div class="pic">
+            <h2>NINJA®H2</h2>
+            <img src="img/mc01.jpg" alt="model">
+            <a href="#">자세히 보기</a>
           </div>
-          <div class="profile__name">
-            <h2>NICOLE <strong>DIXON</strong></h2>
-            <p>CREATIVE&nbsp;DESIGNER</p>
+        </article>
+        <article>
+          <div class="pic">
+            <h2>NINJA®ZX-R10</h2>
+            <img src="img/mc02.jpg" alt="model">
+            <a href="#">자세히 보기</a>
           </div>
-          <div class="right__experience">
-            <div class="right__Square"></div>
-            <h3>EXPERIENCE</h3>
-            <div class="right__experience--contents">
-              <div class="experience__content">
-                <h3>GRAPHIC DESIGNER</h3>
-                <span>2009&nbsp;-&nbsp;2010</span>
-              </div>
-              <div class="experience__content">
-                <h3>GRAPHI CDESIGNER</h3>
-                <span>2009&nbsp;-&nbsp;2010</span>
-              </div>
-              <div class="experience__content">
-                <h3>GRAPHIC DESIGNER</h3>
-                <span>2009&nbsp;-&nbsp;2010</span>
-              </div>
-            </div>
-            <div class="right__experience--info">
-              <div class="experience__description">
-                <h3>Lorem ipsum dolor sit amet.</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia reiciendis soluta neque magnam
-                  sed
-                  perspiciatis!</p>
-                <ul>
-                  <li>Lorem ipsum dolor sit amet.</li>
-                  <li>Lorem ipsum dolor sit amet.</li>
-                </ul>
-              </div>
-              <div class="experience__description">
-                <h3>Lorem ipsum dolor sit amet.</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia reiciendis soluta neque magnam
-                  sed
-                  perspiciatis!</p>
-                <ul>
-                  <li>Lorem ipsum dolor sit amet.</li>
-                  <li>Lorem ipsum dolor sit amet.</li>
-                </ul>
-              </div>
-              <div class="experience__description">
-                <h3>Lorem ipsum dolor sit amet.</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia reiciendis soluta neque magnam
-                  sed
-                  perspiciatis!</p>
-                <ul>
-                  <li>Lorem ipsum dolor sit amet.</li>
-                  <li>Lorem ipsum dolor sit amet.</li>
-                </ul>
-              </div>
-            </div>
+        </article>
+        <article>
+          <div class="pic">
+            <h2>Z H2</h2>
+            <img src="img/mc03.jpg" alt="model">
+            <a href="#">자세히 보기</a>
           </div>
-          <div class="right__education">
-            <h2>EDUCATION</h2>
-            <div class="right__education--contents">
-              <div class="education__content">
-                <h3>GRAPHIC DESIGNER</h3>
-                <span>2009&nbsp;-&nbsp;2010</span>
-              </div>
-              <div class="education__content">
-                <h3>GRAPHIC DESIGNER</h3>
-                <span>2009&nbsp;-&nbsp;2010</span>
-              </div>
-            </div>
-            <div class="right__education--info">
-              <div class="education__description">
-                <h3>Lorem ipsum dolor sit amet.</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia reiciendis soluta neque magnam
-                  sed
-                  perspiciatis!</p>
-                <ul>
-                  <li>Lorem ipsum dolor sit amet.</li>
-                  <li>Lorem ipsum dolor sit amet.</li>
-                </ul>
-              </div>
-              <div class="education__description">
-                <h3>Lorem ipsum dolor sit amet.</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia reiciendis soluta neque magnam
-                  sed perspiciatis!</p>
-                <ul>
-                  <li>Lorem ipsum dolor sit amet.</li>
-                  <li>Lorem ipsum dolor sit amet.</li>
-                </ul>
-              </div>
-            </div>
+        </article>
+        <article>
+          <div class="pic">
+            <h2>NINJA®H2 SX SE+</h2>
+            <img src="img/mc04.jpg" alt="model">
+            <a href="#">자세히 보기</a>
           </div>
-          <div class="footer"></div>
-      </article>
-    </section>
+        </article>
+        <ul class="indicator">
+          <li>1</li>
+          <li>2</li>
+          <li>3</li>
+          <li>4</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="content">
+    <h2 class="hidden">컨텐츠</h2>
+    <div class="inner">
+      <div class="wrap">
+        <article>
+          <h1>LOOK BOOK</h1>
+          <h2>의류 및 머천다이징 룩북</h2>
+          <a href="#"><img src="img/content01.jpg" alt="content"></a>
+        </article>
+        <article>
+          <h1>WARRANTY</h1>
+          <h2>가와사키 보증안내</h2>
+          <a href="#"><img src="img/content02.jpg" alt="content"></a>
+        </article>
+        <article>
+          <h1>DEALERS</h1>
+          <h2>딜러 찾기</h2>
+          <a href="#"><img src="img/content03.jpg" alt="content"></a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery">
+    <h2 class="hidden">gallery</h2>
+    <div class="image">배경이미지</div>
+  </section>
+
+  <section id="news">
+    <div class="inner">
+      <h1>NEWS & EVENT</h1>
+      <div class="wrap">
+        <article>
+          <img src="img/news1.png" alt="news">
+          <h2>최고의 경량 스트리트 바이크: 가와사키 Z400</h2>
+          <a href="#">자세히 보기</a>
+        </article>
+        <article>
+          <img src="img/news2.png" alt="news">
+          <h2>1970 년대 Z1 오토바이 용 실린더 헤드 재현</h2>
+          <a href="#">자세히 보기</a>
+        </article>
+        <article>
+          <img src="img/news3.png" alt="news">
+          <h2>최고의 경량 스트리트 바이크: 가와사키 Z400</h2>
+          <a href="#">자세히 보기</a>
+        </article>
+        <article>
+          <img src="img/news4.png" alt="news">
+          <h2>새로운 Z H2 라스 베이거스에서 잭팟 터뜨리다!</h2>
+          <a href="#">자세히 보기</a>
+        </article>
+        <article>
+          <img src="img/news5.png" alt="news">
+          <h2>가와사키 수퍼 차저 EICMA</h2>
+          <a href="#">자세히 보기</a>
+        </article>
+        <article>
+          <img src="img/news6.png" alt="news">
+          <h2>Horiuchi Yuji, 가와사키 EICMA 기조 연설</h2>
+          <a href="#">자세히 보기</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <footer id="footer">
+    <div class="inner">
+      <ul class="gnb">
+        <li><a href="#">개인정보취급방침</a></li>
+        <li><a href="#"> 이용약관</a></li>
+        <li><a href="#">쿠키사용정보</a></li>
+        <li><a href="기업소개.html">기업소개</a></li>
+      </ul>
+
+      <address>
+        공식수입원 대전기계공업 주식회사 대표자 : 김재일 사업자등록번호 : 204-81-12238
+        <p>주소:경기도 평택시 서탄면 수월암4길 239</p>
+      </address>
+
+      <ul class="sns">
+        <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-youtube-square"></i></a></li>
+      </ul>
+      <div class="footerLogo">
+        <h1><a href="#"><img src="img/logo.png" alt="logo"></a></h1>
+        <p>© Copyright 2022 Daijeon Machinery Co Ltd.<br>All rights reserved. </p>
+      </div>
+    </div>
+  </footer>
 </body>
 
 </html>
