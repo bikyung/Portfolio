@@ -1,0 +1,259 @@
+.event {
+  background: #fff;
+  width: 100%;
+  .sub_visual {
+    width: 100%;
+    .swiper {
+      width: 100%;
+      height: 100%;
+      position: relative;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+    }
+  }
+  .inner {
+    width: 1180px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+    &::after {
+      content: "";
+      clear: both;
+      display: block;
+    }
+    h1 {
+      font: bold 50px /1 "GmarketSansMedium";
+      padding: 50px 0;
+    }
+    .search {
+      float: right;
+      margin-bottom: 20px;
+      position: relative;
+      select {
+        padding: 5px 50px 5px 5px;
+      }
+      input {
+        padding: 5px 10px;
+      }
+      a {
+        font-size: 16px;
+        position: absolute;
+        right: 3px;
+        top: 20%;
+        i {
+          color: #777;
+        }
+      }
+    }
+    table {
+      width: 100%;
+      border-top: 3px solid #000;
+      margin-bottom: 50px;
+      tr {
+        &:hover {
+          background: #eee;
+        }
+        th {
+          padding: 15px;
+          background: #e5e5e5;
+          &:nth-of-type(1),
+          &:nth-of-type(3) {
+            width: 10%;
+          }
+        }
+        td {
+          padding: 13px;
+          border-bottom: 1px solid #ddd;
+          font-family: "Pretendard";
+          &:not(:nth-of-type(2)) {
+            text-align: center;
+          }
+          a {
+            color: #333;
+            font-family: "Pretendard";
+            line-height: 1.4;
+          }
+        }
+      }
+    }
+    .pagination {
+      text-align: center;
+      margin: 0 auto;
+      width: 100%;
+      &::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+      .prev {
+        float: left;
+        width: 30px;
+        height: 30px;
+        font: 30px/30px "Pretendard";
+        color: #111;
+        cursor: pointer;
+        text-align: center;
+      }
+      .next {
+        float: right;
+        width: 30px;
+        height: 30px;
+        font: 30px/30px "Pretendard";
+        color: #111;
+        cursor: pointer;
+        text-align: center;
+      }
+      .numbers {
+        display: inline-block;
+        font-size: 0;
+        a {
+          display: inline-block;
+          width: 30px;
+          height: 30px;
+          color: #666;
+          font: 13px/30px "Pretendard";
+          margin: 0 5px;
+          transition: all 0.7s;
+          cursor: pointer;
+          &:hover {
+            background: #bbb;
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* tablet ----------------------------------------------------------------------------*/
+
+@media screen and (max-width: $tablet) {
+
+  .event {
+    .inner {
+      width: 100%;
+      padding: 0 20px;
+      table {
+        tr {
+          th {
+            &:nth-of-type(1) {
+              width: 13%;
+            }
+            &:nth-of-type(3) {
+              width: 8%;
+            }
+          }
+          td {
+            &:nth-of-type(1) {
+              width: 8%;
+            }
+            &:nth-of-type(8) {
+              width: 8%;
+            }
+          }
+        }
+      }
+      .pagination {
+        text-align: center;
+        margin: 0 auto;
+        width: 100%;
+        position: relative;
+        padding-bottom: 50px;
+        &::after {
+          content: "";
+          display: block;
+          clear: both;
+        }
+        .prev {
+          float: left;
+          width: 30px;
+          height: 30px;
+          font: 20px/30px "Pretendard";
+          color: #111;
+          cursor: pointer;
+          text-align: center;
+        }
+        .next {
+          float: right;
+          width: 30px;
+          height: 30px;
+          font: 20px/30px "Pretendard";
+          color: #111;
+          cursor: pointer;
+          text-align: center;
+        }
+        .numbers {
+          display: inline-block;
+          font-size: 0;
+          a {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            color: #666;
+            font: 16px/30px "Pretendard";
+            margin: 0 5px;
+            transition: all 0.7s;
+            cursor: pointer;
+            &:hover {
+              background: #bbb;
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* mobile -----------------------------------------------------*/
+
+@media screen and (max-width: $mobile) {
+  
+  .event {
+    .inner {
+      h1 {
+        float: left;
+        font-size: 30px;
+      }
+      .search {
+        width: 100%;
+        padding-top: 10px;
+        select {
+          margin-bottom: 10px;
+        }
+        input {
+          display: none;
+        }
+        a {
+          display: none;
+        }
+      }
+      table {
+        tr {
+          th {
+            &:nth-of-type(1) {
+              width: 0%;
+              display: none;
+            }
+            &:nth-of-type(3) {
+              display: none;
+            }
+          }
+          td {
+            &:nth-of-type(1) {
+              display: none;
+            }
+            &:nth-of-type(3) {
+              display: none;
+            }
+          }
+        }
+      }
+      .pagination {
+        display: none;
+      }
+    }
+  }
+}
