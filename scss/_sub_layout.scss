@@ -48,10 +48,11 @@ $mobile : 539px;
           float: left;
           a {
             display: block;
-            font: normal 24px/1 "Pretendard";
+            font: normal 16px/1 "Orbitron";
             color: #fff;
             padding: 15px 10px;
             transition: all 0.7s;
+            letter-spacing: 1px;
           }
           &:hover {
             a {
@@ -66,7 +67,7 @@ $mobile : 539px;
         margin-top: 5px;
         position: absolute;
         right: 35px;
-        top: 0;
+        top: 8px;
         &::after {
           content: "";
           display: block;
@@ -82,7 +83,7 @@ $mobile : 539px;
           a {
             display: block;
             margin-left: 20px;
-            font-size: 24px;
+            font-size: 16px;
             line-height: 2;
             color: #fff;
           }

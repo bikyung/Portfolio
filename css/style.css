@@ -1,4 +1,5 @@
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap");
 @font-face {
   font-family: "GmarketSansMedium";
   src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff") format("woff");
@@ -80,10 +81,11 @@ a {
 }
 #header_sub .inner nav .gnb li a {
   display: block;
-  font: normal 24px/1 "Pretendard";
+  font: normal 16px/1 "Orbitron";
   color: #fff;
   padding: 15px 10px;
   transition: all 0.7s;
+  letter-spacing: 1px;
 }
 #header_sub .inner nav .gnb li:hover a {
   background: #4fb627;
@@ -94,7 +96,7 @@ a {
   margin-top: 5px;
   position: absolute;
   right: 35px;
-  top: 0;
+  top: 8px;
 }
 #header_sub .inner nav .util::after {
   content: "";
@@ -110,7 +112,7 @@ a {
 #header_sub .inner nav .util li a {
   display: block;
   margin-left: 20px;
-  font-size: 24px;
+  font-size: 16px;
   line-height: 2;
   color: #fff;
 }
@@ -378,9 +380,17 @@ a {
 .contents {
   width: 100%;
 }
-.contents .sub_visual img {
+.contents .sub_visual {
   width: 100%;
-  margin-bottom: 50px;
+}
+.contents .sub_visual .swiper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.contents .sub_visual .swiper-slide img {
+  display: block;
+  width: 100%;
 }
 .contents .inner {
   width: 1180px;
@@ -389,8 +399,9 @@ a {
 .contents .inner > h2 {
   color: #fff;
   text-align: center;
-  font: bold 30px/1 "GmarketSansMedium";
+  font: bold 40px/1 "orbitron";
   letter-spacing: 2px;
+  margin-top: 50px;
 }
 .contents .inner .arrow {
   background: url(../img/subpage01/arrow.png) no-repeat center/cover;
@@ -398,60 +409,50 @@ a {
   height: 20px;
   margin: 30px auto;
 }
-.contents .model1 {
-  margin-top: 100px;
-}
 .contents .model1 > h2 {
   color: #fff;
   background: url(../img/subpage01/main06.jpg) no-repeat center/cover;
   height: 500px;
   padding: 100px;
-  font: bold 40px/1 "GmarketSansMedium";
+  font: bold 35px/1 "orbitron";
   width: 100%;
-}
-.contents .model2 {
-  margin-top: 100px;
+  letter-spacing: 2px;
 }
 .contents .model2 > h2 {
   color: #fff;
   background: url(../img/subpage01/main03.jpg) no-repeat center/cover;
   height: 500px;
   padding: 100px;
-  font: bold 40px/1 "GmarketSansMedium";
+  font: bold 35px/1 "orbitron";
   width: 100%;
-}
-.contents .model3 {
-  margin-top: 100px;
+  letter-spacing: 2px;
 }
 .contents .model3 > h2 {
   color: #fff;
   background: url(../img/subpage01/main05.jpg) no-repeat center/cover;
   height: 500px;
   padding: 100px;
-  font: bold 40px/1 "GmarketSansMedium";
+  font: bold 35px/1 "orbitron";
   width: 100%;
-}
-.contents .model4 {
-  margin-top: 100px;
+  letter-spacing: 2px;
 }
 .contents .model4 > h2 {
   color: #fff;
   background: url(../img/subpage01/main01.jpg) no-repeat center/cover;
   height: 500px;
   padding: 100px;
-  font: bold 40px/1 "GmarketSansMedium";
+  font: bold 35px/1 "orbitron";
   width: 100%;
-}
-.contents .model5 {
-  margin-top: 100px;
+  letter-spacing: 2px;
 }
 .contents .model5 > h2 {
   color: #fff;
   background: url(../img/subpage01/main02.jpg) no-repeat center/cover;
   height: 500px;
   padding: 100px;
-  font: bold 40px/1 "GmarketSansMedium";
+  font: bold 35px/1 "orbitron";
   width: 100%;
+  letter-spacing: 2px;
 }
 .contents .info {
   width: 1180px;
@@ -608,8 +609,18 @@ a {
 }
 .event {
   background: #fff;
+  width: 100%;
 }
-.event .sub_visual img {
+.event .sub_visual {
+  width: 100%;
+}
+.event .sub_visual .swiper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.event .sub_visual .swiper-slide img {
+  display: block;
   width: 100%;
 }
 .event .inner {
@@ -1541,6 +1552,3990 @@ a {
     color: #b7fa00;
   }
 }
+.bikeType {
+  width: 100%;
+  margin-bottom: 50px;
+}
+.bikeType .swiper-slide img {
+  width: 100%;
+}
+.bikeType .inner {
+  width: 1180px;
+  margin: 0 auto;
+}
+.bikeType .inner h1 {
+  font: bold 30px/1 "orbitron";
+  letter-spacing: 1px;
+}
+.bikeType .inner .wrap {
+  width: 100%;
+}
+.bikeType .inner .wrap article {
+  display: flex;
+}
+.bikeType .inner .wrap article:nth-of-type(even) {
+  flex-direction: row-reverse;
+}
+.bikeType .inner .wrap article .pic {
+  flex: 1 50%;
+  font-size: 0;
+}
+.bikeType .inner .wrap article .pic img {
+  width: 100%;
+}
+.bikeType .inner .wrap article .info {
+  padding: 30px;
+  flex: 1 50%;
+  margin-top: 30px;
+}
+.bikeType .inner .wrap article .info h2 {
+  width: 100%;
+  margin-bottom: 15px;
+  font: bold 26px/1 "Pretendard";
+}
+.bikeType .inner .wrap article .info h3 {
+  width: 100%;
+  margin-bottom: 20px;
+  color: #aaa;
+  font: normal 20px/1 "Pretendard";
+}
+.bikeType .inner .wrap article .info p {
+  width: 100%;
+  color: #777;
+  font: normal 15px/1.3 "GmarketSansMedium";
+}
+
+.spec .inner {
+  width: 1180px;
+  margin: 0 auto;
+}
+.spec .inner > h1 {
+  color: #fff;
+  text-align: center;
+  padding: 30px 0;
+  border-bottom: 2px solid #4fb627;
+  font: bold 30px/1 "orbitron";
+  letter-spacing: 1px;
+  margin: 30px 0;
+}
+.spec .inner .pic1 {
+  width: 540px;
+  margin: 0 auto;
+}
+.spec .inner .pic1 img {
+  width: 100%;
+}
+.spec .inner > ul {
+  margin: 50px 0;
+  display: flex;
+  color: #fff;
+  justify-content: space-around;
+  width: 100%;
+}
+.spec .inner > ul > li {
+  display: flex;
+  flex: 1 33%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.spec .inner > ul > li:nth-of-type(2) {
+  border-right: 1px solid #eee;
+  border-left: 1px solid #eee;
+}
+.spec .inner > ul > li strong {
+  margin-bottom: 30px;
+  font: bold 18px/1 "Pretendard";
+}
+.spec .inner > ul > li img {
+  width: 40px;
+  margin-bottom: 20px;
+}
+.spec .inner > ul > li span {
+  font: normal 16px/1 "Pretendard";
+}
+.spec .inner .info {
+  width: 100%;
+}
+.spec .inner .info h2 {
+  margin-top: 100px;
+  color: #fff;
+  padding: 10px 0;
+  font: bold 24px/1 "Orbitron";
+}
+.spec .inner .info .wrap {
+  display: flex;
+  margin-bottom: 50px;
+}
+.spec .inner .info .wrap .pic {
+  width: 100%;
+  height: 100%;
+  flex: 1 50%;
+}
+.spec .inner .info .wrap .pic img {
+  width: 100%;
+}
+.spec .inner .info .wrap .txt {
+  flex: 1 50%;
+  width: 100%;
+}
+.spec .inner .info .wrap .txt > ul {
+  width: 100%;
+  height: 100%;
+  display: block;
+  padding-left: 30px;
+}
+.spec .inner .info .wrap .txt > ul li {
+  padding: 20px 0 20px 20px;
+  border-bottom: 1px solid #777;
+  display: flex;
+  justify-content: space-between;
+}
+.spec .inner .info .wrap .txt > ul li:last-of-type {
+  border-bottom: none;
+}
+.spec .inner .info .wrap .txt > ul li span {
+  color: #aaa;
+  margin-right: 10px;
+}
+.spec .inner .info .wrap .txt > ul li strong {
+  color: #fff;
+  position: relative;
+  left: 0;
+}
+.spec .inner .info .wrap .txt > ul li strong:hover::after {
+  opacity: 1;
+  transform: translateY(10px);
+}
+.spec .inner .info .wrap .txt > ul li strong::before {
+  content: ">";
+  margin-right: 10px;
+  font: 18px/1 "Pretendard";
+}
+.spec .inner .info .wrap .txt > ul li strong::after {
+  content: "";
+  position: absolute;
+  background: #fff;
+  width: 100%;
+  height: 2px;
+  left: 0;
+  bottom: 0;
+  opacity: 0;
+  transition: all 0.7s;
+  transform: translateY(30px);
+}
+
+@media screen and (max-width: 1179px) {
+  .bikeType .inner {
+    width: 100%;
+    padding: 0 20px;
+  }
+  .bikeType .inner .wrap article {
+    width: 100%;
+  }
+  .bikeType .inner .wrap article .pic {
+    flex: 1 35%;
+  }
+  .bikeType .inner .wrap article .info {
+    width: 100%;
+    padding: 10px;
+    flex: 1 65%;
+    margin-top: 0px;
+  }
+  .bikeType .inner .wrap article .info h2 {
+    margin-bottom: 10px;
+    font: bold 18px/1 "Pretendard";
+  }
+  .bikeType .inner .wrap article .info h3 {
+    margin-bottom: 10px;
+    font: normal 16px/1 "Pretendard";
+  }
+  .bikeType .inner .wrap article .info p {
+    color: #777;
+    font: normal 12px/1.3 "GmarketSansMedium";
+  }
+
+  .spec .inner {
+    width: 100%;
+    padding: 0 20px;
+  }
+  .spec .inner .pic1 {
+    width: 50%;
+  }
+  .spec .inner .info h2 {
+    font: bold 20px/1 "Orbitron";
+  }
+  .spec .inner .info .wrap .txt > ul {
+    padding-left: 10px;
+  }
+  .spec .inner .info .wrap .txt > ul li {
+    padding: 20px 0 20px 10px;
+  }
+  .spec .inner .info .wrap .txt > ul li span {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 539px) {
+  .bikeType .inner .wrap article {
+    margin-bottom: 20px;
+    flex-direction: column;
+  }
+  .bikeType .inner .wrap article:nth-of-type(even) {
+    flex-direction: column;
+  }
+  .bikeType .inner .wrap article .info {
+    margin-top: 20px;
+  }
+
+  .spec .inner .pic1 {
+    width: 100%;
+  }
+  .spec .inner .specs {
+    flex-direction: column;
+  }
+  .spec .inner .specs > li:nth-of-type(2) {
+    border-right: none;
+    border-left: none;
+  }
+  .spec .inner .info .wrap {
+    flex-direction: column;
+  }
+}
+.bikeType1 {
+  width: 100%;
+  margin-bottom: 50px;
+}
+.bikeType1 .swiper-slide img {
+  width: 100%;
+}
+.bikeType1 .inner {
+  width: 1180px;
+  margin: 0 auto;
+}
+.bikeType1 .inner h1 {
+  font: bold 30px/1 "orbitron";
+  letter-spacing: 1px;
+}
+.bikeType1 .inner .wrap {
+  width: 100%;
+}
+.bikeType1 .inner .wrap article {
+  display: flex;
+}
+.bikeType1 .inner .wrap article:nth-of-type(even) {
+  flex-direction: row-reverse;
+}
+.bikeType1 .inner .wrap article .pic {
+  flex: 1 50%;
+  font-size: 0;
+}
+.bikeType1 .inner .wrap article .pic img {
+  width: 100%;
+}
+.bikeType1 .inner .wrap article .info {
+  padding: 30px;
+  flex: 1 50%;
+  margin-top: 30px;
+}
+.bikeType1 .inner .wrap article .info h2 {
+  width: 100%;
+  margin-bottom: 15px;
+  font: bold 26px/1 "Pretendard";
+}
+.bikeType1 .inner .wrap article .info h3 {
+  width: 100%;
+  margin-bottom: 20px;
+  color: #aaa;
+  font: normal 20px/1 "Pretendard";
+}
+.bikeType1 .inner .wrap article .info p {
+  width: 100%;
+  color: #777;
+  font: normal 15px/1.3 "GmarketSansMedium";
+}
+
+.spec .inner {
+  width: 1180px;
+  margin: 0 auto;
+}
+.spec .inner > h1 {
+  color: #fff;
+  text-align: center;
+  padding: 30px 0;
+  border-bottom: 2px solid #4fb627;
+  font: bold 30px/1 "orbitron";
+  letter-spacing: 1px;
+  margin: 30px 0;
+}
+.spec .inner .pic1 {
+  width: 540px;
+  margin: 0 auto;
+}
+.spec .inner .pic1 img {
+  width: 100%;
+}
+.spec .inner > ul {
+  margin: 50px 0;
+  display: flex;
+  color: #fff;
+  justify-content: space-around;
+  width: 100%;
+}
+.spec .inner > ul > li {
+  display: flex;
+  flex: 1 33%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.spec .inner > ul > li:nth-of-type(2) {
+  border-right: 1px solid #eee;
+  border-left: 1px solid #eee;
+}
+.spec .inner > ul > li strong {
+  margin-bottom: 30px;
+  font: bold 18px/1 "Pretendard";
+}
+.spec .inner > ul > li img {
+  width: 40px;
+  margin-bottom: 20px;
+}
+.spec .inner > ul > li span {
+  font: normal 16px/1 "Pretendard";
+}
+.spec .inner .info {
+  width: 100%;
+}
+.spec .inner .info h2 {
+  margin-top: 100px;
+  color: #fff;
+  padding: 10px 0;
+  font: bold 24px/1 "Orbitron";
+}
+.spec .inner .info .wrap {
+  display: flex;
+  margin-bottom: 50px;
+}
+.spec .inner .info .wrap .pic {
+  width: 100%;
+  height: 100%;
+  flex: 1 50%;
+}
+.spec .inner .info .wrap .pic img {
+  width: 100%;
+}
+.spec .inner .info .wrap .txt {
+  flex: 1 50%;
+  width: 100%;
+}
+.spec .inner .info .wrap .txt > ul {
+  width: 100%;
+  height: 100%;
+  display: block;
+  padding-left: 30px;
+}
+.spec .inner .info .wrap .txt > ul li {
+  padding: 20px 0 20px 20px;
+  border-bottom: 1px solid #777;
+  display: flex;
+  justify-content: space-between;
+}
+.spec .inner .info .wrap .txt > ul li:last-of-type {
+  border-bottom: none;
+}
+.spec .inner .info .wrap .txt > ul li span {
+  color: #aaa;
+  margin-right: 10px;
+}
+.spec .inner .info .wrap .txt > ul li strong {
+  color: #fff;
+  position: relative;
+  left: 0;
+}
+.spec .inner .info .wrap .txt > ul li strong:hover::after {
+  opacity: 1;
+  transform: translateY(10px);
+}
+.spec .inner .info .wrap .txt > ul li strong::before {
+  content: ">";
+  margin-right: 10px;
+  font: 18px/1 "Pretendard";
+}
+.spec .inner .info .wrap .txt > ul li strong::after {
+  content: "";
+  position: absolute;
+  background: #fff;
+  width: 100%;
+  height: 2px;
+  left: 0;
+  bottom: 0;
+  opacity: 0;
+  transition: all 0.7s;
+  transform: translateY(30px);
+}
+
+@media screen and (max-width: 1179px) {
+  .bikeType .inner {
+    width: 100%;
+    padding: 0 20px;
+  }
+  .bikeType .inner .wrap article {
+    width: 100%;
+  }
+  .bikeType .inner .wrap article .pic {
+    flex: 1 35%;
+  }
+  .bikeType .inner .wrap article .info {
+    width: 100%;
+    padding: 10px;
+    flex: 1 65%;
+    margin-top: 0px;
+  }
+  .bikeType .inner .wrap article .info h2 {
+    margin-bottom: 10px;
+    font: bold 18px/1 "Pretendard";
+  }
+  .bikeType .inner .wrap article .info h3 {
+    margin-bottom: 10px;
+    font: normal 16px/1 "Pretendard";
+  }
+  .bikeType .inner .wrap article .info p {
+    color: #777;
+    font: normal 12px/1.3 "GmarketSansMedium";
+  }
+
+  .spec .inner {
+    width: 100%;
+    padding: 0 20px;
+  }
+  .spec .inner .pic1 {
+    width: 50%;
+  }
+  .spec .inner .info h2 {
+    font: bold 20px/1 "Orbitron";
+  }
+  .spec .inner .info .wrap .txt > ul {
+    padding-left: 10px;
+  }
+  .spec .inner .info .wrap .txt > ul li {
+    padding: 20px 0 20px 10px;
+  }
+  .spec .inner .info .wrap .txt > ul li span {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 539px) {
+  .bikeType .inner .wrap article {
+    margin-bottom: 20px;
+    flex-direction: column;
+  }
+  .bikeType .inner .wrap article:nth-of-type(even) {
+    flex-direction: column;
+  }
+  .bikeType .inner .wrap article .info {
+    margin-top: 20px;
+  }
+
+  .spec .inner .pic1 {
+    width: 100%;
+  }
+  .spec .inner .specs {
+    flex-direction: column;
+  }
+  .spec .inner .specs > li:nth-of-type(2) {
+    border-right: none;
+    border-left: none;
+  }
+  .spec .inner .info .wrap {
+    flex-direction: column;
+  }
+}
+.bikeType2 {
+  width: 100%;
+  margin-bottom: 50px;
+}
+.bikeType2 .swiper-slide img {
+  width: 100%;
+}
+.bikeType2 .inner {
+  width: 1180px;
+  margin: 0 auto;
+}
+.bikeType2 .inner h1 {
+  font: bold 30px/1 "orbitron";
+  letter-spacing: 1px;
+}
+.bikeType2 .inner .wrap {
+  width: 100%;
+}
+.bikeType2 .inner .wrap article {
+  display: flex;
+}
+.bikeType2 .inner .wrap article:nth-of-type(even) {
+  flex-direction: row-reverse;
+}
+.bikeType2 .inner .wrap article .pic {
+  flex: 1 50%;
+  font-size: 0;
+}
+.bikeType2 .inner .wrap article .pic img {
+  width: 100%;
+}
+.bikeType2 .inner .wrap article .info {
+  padding: 30px;
+  flex: 1 50%;
+  margin-top: 30px;
+}
+.bikeType2 .inner .wrap article .info h2 {
+  width: 100%;
+  margin-bottom: 15px;
+  font: bold 26px/1 "Pretendard";
+}
+.bikeType2 .inner .wrap article .info h3 {
+  width: 100%;
+  margin-bottom: 20px;
+  color: #aaa;
+  font: normal 20px/1 "Pretendard";
+}
+.bikeType2 .inner .wrap article .info p {
+  width: 100%;
+  color: #777;
+  font: normal 15px/1.3 "GmarketSansMedium";
+}
+
+.spec .inner {
+  width: 1180px;
+  margin: 0 auto;
+}
+.spec .inner > h1 {
+  color: #fff;
+  text-align: center;
+  padding: 30px 0;
+  border-bottom: 2px solid #4fb627;
+  font: bold 30px/1 "orbitron";
+  letter-spacing: 1px;
+  margin: 30px 0;
+}
+.spec .inner .pic1 {
+  width: 540px;
+  margin: 0 auto;
+}
+.spec .inner .pic1 img {
+  width: 100%;
+}
+.spec .inner > ul {
+  margin: 50px 0;
+  display: flex;
+  color: #fff;
+  justify-content: space-around;
+  width: 100%;
+}
+.spec .inner > ul > li {
+  display: flex;
+  flex: 1 33%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.spec .inner > ul > li:nth-of-type(2) {
+  border-right: 1px solid #eee;
+  border-left: 1px solid #eee;
+}
+.spec .inner > ul > li strong {
+  margin-bottom: 30px;
+  font: bold 18px/1 "Pretendard";
+}
+.spec .inner > ul > li img {
+  width: 40px;
+  margin-bottom: 20px;
+}
+.spec .inner > ul > li span {
+  font: normal 16px/1 "Pretendard";
+}
+.spec .inner .info {
+  width: 100%;
+}
+.spec .inner .info h2 {
+  margin-top: 100px;
+  color: #fff;
+  padding: 10px 0;
+  font: bold 24px/1 "Orbitron";
+}
+.spec .inner .info .wrap {
+  display: flex;
+  margin-bottom: 50px;
+}
+.spec .inner .info .wrap .pic {
+  width: 100%;
+  height: 100%;
+  flex: 1 50%;
+}
+.spec .inner .info .wrap .pic img {
+  width: 100%;
+}
+.spec .inner .info .wrap .txt {
+  flex: 1 50%;
+  width: 100%;
+}
+.spec .inner .info .wrap .txt > ul {
+  width: 100%;
+  height: 100%;
+  display: block;
+  padding-left: 30px;
+}
+.spec .inner .info .wrap .txt > ul li {
+  padding: 20px 0 20px 20px;
+  border-bottom: 1px solid #777;
+  display: flex;
+  justify-content: space-between;
+}
+.spec .inner .info .wrap .txt > ul li:last-of-type {
+  border-bottom: none;
+}
+.spec .inner .info .wrap .txt > ul li span {
+  color: #aaa;
+  margin-right: 10px;
+}
+.spec .inner .info .wrap .txt > ul li strong {
+  color: #fff;
+  position: relative;
+  left: 0;
+}
+.spec .inner .info .wrap .txt > ul li strong:hover::after {
+  opacity: 1;
+  transform: translateY(10px);
+}
+.spec .inner .info .wrap .txt > ul li strong::before {
+  content: ">";
+  margin-right: 10px;
+  font: 18px/1 "Pretendard";
+}
+.spec .inner .info .wrap .txt > ul li strong::after {
+  content: "";
+  position: absolute;
+  background: #fff;
+  width: 100%;
+  height: 2px;
+  left: 0;
+  bottom: 0;
+  opacity: 0;
+  transition: all 0.7s;
+  transform: translateY(30px);
+}
+
+@media screen and (max-width: 1179px) {
+  .bikeType .inner {
+    width: 100%;
+    padding: 0 20px;
+  }
+  .bikeType .inner .wrap article {
+    width: 100%;
+  }
+  .bikeType .inner .wrap article .pic {
+    flex: 1 35%;
+  }
+  .bikeType .inner .wrap article .info {
+    width: 100%;
+    padding: 10px;
+    flex: 1 65%;
+    margin-top: 0px;
+  }
+  .bikeType .inner .wrap article .info h2 {
+    margin-bottom: 10px;
+    font: bold 18px/1 "Pretendard";
+  }
+  .bikeType .inner .wrap article .info h3 {
+    margin-bottom: 10px;
+    font: normal 16px/1 "Pretendard";
+  }
+  .bikeType .inner .wrap article .info p {
+    color: #777;
+    font: normal 12px/1.3 "GmarketSansMedium";
+  }
+
+  .spec .inner {
+    width: 100%;
+    padding: 0 20px;
+  }
+  .spec .inner .pic1 {
+    width: 50%;
+  }
+  .spec .inner .info h2 {
+    font: bold 20px/1 "Orbitron";
+  }
+  .spec .inner .info .wrap .txt > ul {
+    padding-left: 10px;
+  }
+  .spec .inner .info .wrap .txt > ul li {
+    padding: 20px 0 20px 10px;
+  }
+  .spec .inner .info .wrap .txt > ul li span {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 539px) {
+  .bikeType .inner .wrap article {
+    margin-bottom: 20px;
+    flex-direction: column;
+  }
+  .bikeType .inner .wrap article:nth-of-type(even) {
+    flex-direction: column;
+  }
+  .bikeType .inner .wrap article .info {
+    margin-top: 20px;
+  }
+
+  .spec .inner .pic1 {
+    width: 100%;
+  }
+  .spec .inner .specs {
+    flex-direction: column;
+  }
+  .spec .inner .specs > li:nth-of-type(2) {
+    border-right: none;
+    border-left: none;
+  }
+  .spec .inner .info .wrap {
+    flex-direction: column;
+  }
+}
+.bikeType3 {
+  width: 100%;
+  margin-bottom: 50px;
+}
+.bikeType3 .swiper-slide img {
+  width: 100%;
+}
+.bikeType3 .inner {
+  width: 1180px;
+  margin: 0 auto;
+}
+.bikeType3 .inner h1 {
+  font: bold 30px/1 "orbitron";
+  letter-spacing: 1px;
+}
+.bikeType3 .inner .wrap {
+  width: 100%;
+}
+.bikeType3 .inner .wrap article {
+  display: flex;
+}
+.bikeType3 .inner .wrap article:nth-of-type(even) {
+  flex-direction: row-reverse;
+}
+.bikeType3 .inner .wrap article .pic {
+  flex: 1 50%;
+  font-size: 0;
+}
+.bikeType3 .inner .wrap article .pic img {
+  width: 100%;
+}
+.bikeType3 .inner .wrap article .info {
+  padding: 30px;
+  flex: 1 50%;
+  margin-top: 30px;
+}
+.bikeType3 .inner .wrap article .info h2 {
+  width: 100%;
+  margin-bottom: 15px;
+  font: bold 26px/1 "Pretendard";
+}
+.bikeType3 .inner .wrap article .info h3 {
+  width: 100%;
+  margin-bottom: 20px;
+  color: #aaa;
+  font: normal 20px/1 "Pretendard";
+}
+.bikeType3 .inner .wrap article .info p {
+  width: 100%;
+  color: #777;
+  font: normal 15px/1.3 "GmarketSansMedium";
+}
+
+.spec .inner {
+  width: 1180px;
+  margin: 0 auto;
+}
+.spec .inner > h1 {
+  color: #fff;
+  text-align: center;
+  padding: 30px 0;
+  border-bottom: 2px solid #4fb627;
+  font: bold 30px/1 "orbitron";
+  letter-spacing: 1px;
+  margin: 30px 0;
+}
+.spec .inner .pic1 {
+  width: 540px;
+  margin: 0 auto;
+}
+.spec .inner .pic1 img {
+  width: 100%;
+}
+.spec .inner > ul {
+  margin: 50px 0;
+  display: flex;
+  color: #fff;
+  justify-content: space-around;
+  width: 100%;
+}
+.spec .inner > ul > li {
+  display: flex;
+  flex: 1 33%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.spec .inner > ul > li:nth-of-type(2) {
+  border-right: 1px solid #eee;
+  border-left: 1px solid #eee;
+}
+.spec .inner > ul > li strong {
+  margin-bottom: 30px;
+  font: bold 18px/1 "Pretendard";
+}
+.spec .inner > ul > li img {
+  width: 40px;
+  margin-bottom: 20px;
+}
+.spec .inner > ul > li span {
+  font: normal 16px/1 "Pretendard";
+}
+.spec .inner .info {
+  width: 100%;
+}
+.spec .inner .info h2 {
+  margin-top: 100px;
+  color: #fff;
+  padding: 10px 0;
+  font: bold 24px/1 "Orbitron";
+}
+.spec .inner .info .wrap {
+  display: flex;
+  margin-bottom: 50px;
+}
+.spec .inner .info .wrap .pic {
+  width: 100%;
+  height: 100%;
+  flex: 1 50%;
+}
+.spec .inner .info .wrap .pic img {
+  width: 100%;
+}
+.spec .inner .info .wrap .txt {
+  flex: 1 50%;
+  width: 100%;
+}
+.spec .inner .info .wrap .txt > ul {
+  width: 100%;
+  height: 100%;
+  display: block;
+  padding-left: 30px;
+}
+.spec .inner .info .wrap .txt > ul li {
+  padding: 20px 0 20px 20px;
+  border-bottom: 1px solid #777;
+  display: flex;
+  justify-content: space-between;
+}
+.spec .inner .info .wrap .txt > ul li:last-of-type {
+  border-bottom: none;
+}
+.spec .inner .info .wrap .txt > ul li span {
+  color: #aaa;
+  margin-right: 10px;
+}
+.spec .inner .info .wrap .txt > ul li strong {
+  color: #fff;
+  position: relative;
+  left: 0;
+}
+.spec .inner .info .wrap .txt > ul li strong:hover::after {
+  opacity: 1;
+  transform: translateY(10px);
+}
+.spec .inner .info .wrap .txt > ul li strong::before {
+  content: ">";
+  margin-right: 10px;
+  font: 18px/1 "Pretendard";
+}
+.spec .inner .info .wrap .txt > ul li strong::after {
+  content: "";
+  position: absolute;
+  background: #fff;
+  width: 100%;
+  height: 2px;
+  left: 0;
+  bottom: 0;
+  opacity: 0;
+  transition: all 0.7s;
+  transform: translateY(30px);
+}
+
+@media screen and (max-width: 1179px) {
+  .bikeType .inner {
+    width: 100%;
+    padding: 0 20px;
+  }
+  .bikeType .inner .wrap article {
+    width: 100%;
+  }
+  .bikeType .inner .wrap article .pic {
+    flex: 1 35%;
+  }
+  .bikeType .inner .wrap article .info {
+    width: 100%;
+    padding: 10px;
+    flex: 1 65%;
+    margin-top: 0px;
+  }
+  .bikeType .inner .wrap article .info h2 {
+    margin-bottom: 10px;
+    font: bold 18px/1 "Pretendard";
+  }
+  .bikeType .inner .wrap article .info h3 {
+    margin-bottom: 10px;
+    font: normal 16px/1 "Pretendard";
+  }
+  .bikeType .inner .wrap article .info p {
+    color: #777;
+    font: normal 12px/1.3 "GmarketSansMedium";
+  }
+
+  .spec .inner {
+    width: 100%;
+    padding: 0 20px;
+  }
+  .spec .inner .pic1 {
+    width: 50%;
+  }
+  .spec .inner .info h2 {
+    font: bold 20px/1 "Orbitron";
+  }
+  .spec .inner .info .wrap .txt > ul {
+    padding-left: 10px;
+  }
+  .spec .inner .info .wrap .txt > ul li {
+    padding: 20px 0 20px 10px;
+  }
+  .spec .inner .info .wrap .txt > ul li span {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 539px) {
+  .bikeType .inner .wrap article {
+    margin-bottom: 20px;
+    flex-direction: column;
+  }
+  .bikeType .inner .wrap article:nth-of-type(even) {
+    flex-direction: column;
+  }
+  .bikeType .inner .wrap article .info {
+    margin-top: 20px;
+  }
+
+  .spec .inner .pic1 {
+    width: 100%;
+  }
+  .spec .inner .specs {
+    flex-direction: column;
+  }
+  .spec .inner .specs > li:nth-of-type(2) {
+    border-right: none;
+    border-left: none;
+  }
+  .spec .inner .info .wrap {
+    flex-direction: column;
+  }
+}
+.bikeType4 {
+  width: 100%;
+  margin-bottom: 50px;
+}
+.bikeType4 .swiper-slide img {
+  width: 100%;
+}
+.bikeType4 .inner {
+  width: 1180px;
+  margin: 0 auto;
+}
+.bikeType4 .inner h1 {
+  font: bold 30px/1 "orbitron";
+  letter-spacing: 1px;
+}
+.bikeType4 .inner .wrap {
+  width: 100%;
+}
+.bikeType4 .inner .wrap article {
+  display: flex;
+}
+.bikeType4 .inner .wrap article:nth-of-type(even) {
+  flex-direction: row-reverse;
+}
+.bikeType4 .inner .wrap article .pic {
+  flex: 1 50%;
+  font-size: 0;
+}
+.bikeType4 .inner .wrap article .pic img {
+  width: 100%;
+}
+.bikeType4 .inner .wrap article .info {
+  padding: 30px;
+  flex: 1 50%;
+  margin-top: 30px;
+}
+.bikeType4 .inner .wrap article .info h2 {
+  width: 100%;
+  margin-bottom: 15px;
+  font: bold 26px/1 "Pretendard";
+}
+.bikeType4 .inner .wrap article .info h3 {
+  width: 100%;
+  margin-bottom: 20px;
+  color: #aaa;
+  font: normal 20px/1 "Pretendard";
+}
+.bikeType4 .inner .wrap article .info p {
+  width: 100%;
+  color: #777;
+  font: normal 15px/1.3 "GmarketSansMedium";
+}
+
+.spec .inner {
+  width: 1180px;
+  margin: 0 auto;
+}
+.spec .inner > h1 {
+  color: #fff;
+  text-align: center;
+  padding: 30px 0;
+  border-bottom: 2px solid #4fb627;
+  font: bold 30px/1 "orbitron";
+  letter-spacing: 1px;
+  margin: 30px 0;
+}
+.spec .inner .pic1 {
+  width: 540px;
+  margin: 0 auto;
+}
+.spec .inner .pic1 img {
+  width: 100%;
+}
+.spec .inner > ul {
+  margin: 50px 0;
+  display: flex;
+  color: #fff;
+  justify-content: space-around;
+  width: 100%;
+}
+.spec .inner > ul > li {
+  display: flex;
+  flex: 1 33%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.spec .inner > ul > li:nth-of-type(2) {
+  border-right: 1px solid #eee;
+  border-left: 1px solid #eee;
+}
+.spec .inner > ul > li strong {
+  margin-bottom: 30px;
+  font: bold 18px/1 "Pretendard";
+}
+.spec .inner > ul > li img {
+  width: 40px;
+  margin-bottom: 20px;
+}
+.spec .inner > ul > li span {
+  font: normal 16px/1 "Pretendard";
+}
+.spec .inner .info {
+  width: 100%;
+}
+.spec .inner .info h2 {
+  margin-top: 100px;
+  color: #fff;
+  padding: 10px 0;
+  font: bold 24px/1 "Orbitron";
+}
+.spec .inner .info .wrap {
+  display: flex;
+  margin-bottom: 50px;
+}
+.spec .inner .info .wrap .pic {
+  width: 100%;
+  height: 100%;
+  flex: 1 50%;
+}
+.spec .inner .info .wrap .pic img {
+  width: 100%;
+}
+.spec .inner .info .wrap .txt {
+  flex: 1 50%;
+  width: 100%;
+}
+.spec .inner .info .wrap .txt > ul {
+  width: 100%;
+  height: 100%;
+  display: block;
+  padding-left: 30px;
+}
+.spec .inner .info .wrap .txt > ul li {
+  padding: 20px 0 20px 20px;
+  border-bottom: 1px solid #777;
+  display: flex;
+  justify-content: space-between;
+}
+.spec .inner .info .wrap .txt > ul li:last-of-type {
+  border-bottom: none;
+}
+.spec .inner .info .wrap .txt > ul li span {
+  color: #aaa;
+  margin-right: 10px;
+}
+.spec .inner .info .wrap .txt > ul li strong {
+  color: #fff;
+  position: relative;
+  left: 0;
+}
+.spec .inner .info .wrap .txt > ul li strong:hover::after {
+  opacity: 1;
+  transform: translateY(10px);
+}
+.spec .inner .info .wrap .txt > ul li strong::before {
+  content: ">";
+  margin-right: 10px;
+  font: 18px/1 "Pretendard";
+}
+.spec .inner .info .wrap .txt > ul li strong::after {
+  content: "";
+  position: absolute;
+  background: #fff;
+  width: 100%;
+  height: 2px;
+  left: 0;
+  bottom: 0;
+  opacity: 0;
+  transition: all 0.7s;
+  transform: translateY(30px);
+}
+
+@media screen and (max-width: 1179px) {
+  .bikeType .inner {
+    width: 100%;
+    padding: 0 20px;
+  }
+  .bikeType .inner .wrap article {
+    width: 100%;
+  }
+  .bikeType .inner .wrap article .pic {
+    flex: 1 35%;
+  }
+  .bikeType .inner .wrap article .info {
+    width: 100%;
+    padding: 10px;
+    flex: 1 65%;
+    margin-top: 0px;
+  }
+  .bikeType .inner .wrap article .info h2 {
+    margin-bottom: 10px;
+    font: bold 18px/1 "Pretendard";
+  }
+  .bikeType .inner .wrap article .info h3 {
+    margin-bottom: 10px;
+    font: normal 16px/1 "Pretendard";
+  }
+  .bikeType .inner .wrap article .info p {
+    color: #777;
+    font: normal 12px/1.3 "GmarketSansMedium";
+  }
+
+  .spec .inner {
+    width: 100%;
+    padding: 0 20px;
+  }
+  .spec .inner .pic1 {
+    width: 50%;
+  }
+  .spec .inner .info h2 {
+    font: bold 20px/1 "Orbitron";
+  }
+  .spec .inner .info .wrap .txt > ul {
+    padding-left: 10px;
+  }
+  .spec .inner .info .wrap .txt > ul li {
+    padding: 20px 0 20px 10px;
+  }
+  .spec .inner .info .wrap .txt > ul li span {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 539px) {
+  .bikeType .inner .wrap article {
+    margin-bottom: 20px;
+    flex-direction: column;
+  }
+  .bikeType .inner .wrap article:nth-of-type(even) {
+    flex-direction: column;
+  }
+  .bikeType .inner .wrap article .info {
+    margin-top: 20px;
+  }
+
+  .spec .inner .pic1 {
+    width: 100%;
+  }
+  .spec .inner .specs {
+    flex-direction: column;
+  }
+  .spec .inner .specs > li:nth-of-type(2) {
+    border-right: none;
+    border-left: none;
+  }
+  .spec .inner .info .wrap {
+    flex-direction: column;
+  }
+}
+.bikeType5 {
+  width: 100%;
+  margin-bottom: 50px;
+}
+.bikeType5 .swiper-slide img {
+  width: 100%;
+}
+.bikeType5 .inner {
+  width: 1180px;
+  margin: 0 auto;
+}
+.bikeType5 .inner h1 {
+  font: bold 30px/1 "orbitron";
+  letter-spacing: 1px;
+}
+.bikeType5 .inner .wrap {
+  width: 100%;
+}
+.bikeType5 .inner .wrap article {
+  display: flex;
+}
+.bikeType5 .inner .wrap article:nth-of-type(even) {
+  flex-direction: row-reverse;
+}
+.bikeType5 .inner .wrap article .pic {
+  flex: 1 50%;
+  font-size: 0;
+}
+.bikeType5 .inner .wrap article .pic img {
+  width: 100%;
+}
+.bikeType5 .inner .wrap article .info {
+  padding: 30px;
+  flex: 1 50%;
+  margin-top: 30px;
+}
+.bikeType5 .inner .wrap article .info h2 {
+  width: 100%;
+  margin-bottom: 15px;
+  font: bold 26px/1 "Pretendard";
+}
+.bikeType5 .inner .wrap article .info h3 {
+  width: 100%;
+  margin-bottom: 20px;
+  color: #aaa;
+  font: normal 20px/1 "Pretendard";
+}
+.bikeType5 .inner .wrap article .info p {
+  width: 100%;
+  color: #777;
+  font: normal 15px/1.3 "GmarketSansMedium";
+}
+
+.spec .inner {
+  width: 1180px;
+  margin: 0 auto;
+}
+.spec .inner > h1 {
+  color: #fff;
+  text-align: center;
+  padding: 30px 0;
+  border-bottom: 2px solid #4fb627;
+  font: bold 30px/1 "orbitron";
+  letter-spacing: 1px;
+  margin: 30px 0;
+}
+.spec .inner .pic1 {
+  width: 540px;
+  margin: 0 auto;
+}
+.spec .inner .pic1 img {
+  width: 100%;
+}
+.spec .inner > ul {
+  margin: 50px 0;
+  display: flex;
+  color: #fff;
+  justify-content: space-around;
+  width: 100%;
+}
+.spec .inner > ul > li {
+  display: flex;
+  flex: 1 33%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.spec .inner > ul > li:nth-of-type(2) {
+  border-right: 1px solid #eee;
+  border-left: 1px solid #eee;
+}
+.spec .inner > ul > li strong {
+  margin-bottom: 30px;
+  font: bold 18px/1 "Pretendard";
+}
+.spec .inner > ul > li img {
+  width: 40px;
+  margin-bottom: 20px;
+}
+.spec .inner > ul > li span {
+  font: normal 16px/1 "Pretendard";
+}
+.spec .inner .info {
+  width: 100%;
+}
+.spec .inner .info h2 {
+  margin-top: 100px;
+  color: #fff;
+  padding: 10px 0;
+  font: bold 24px/1 "Orbitron";
+}
+.spec .inner .info .wrap {
+  display: flex;
+  margin-bottom: 50px;
+}
+.spec .inner .info .wrap .pic {
+  width: 100%;
+  height: 100%;
+  flex: 1 50%;
+}
+.spec .inner .info .wrap .pic img {
+  width: 100%;
+}
+.spec .inner .info .wrap .txt {
+  flex: 1 50%;
+  width: 100%;
+}
+.spec .inner .info .wrap .txt > ul {
+  width: 100%;
+  height: 100%;
+  display: block;
+  padding-left: 30px;
+}
+.spec .inner .info .wrap .txt > ul li {
+  padding: 20px 0 20px 20px;
+  border-bottom: 1px solid #777;
+  display: flex;
+  justify-content: space-between;
+}
+.spec .inner .info .wrap .txt > ul li:last-of-type {
+  border-bottom: none;
+}
+.spec .inner .info .wrap .txt > ul li span {
+  color: #aaa;
+  margin-right: 10px;
+}
+.spec .inner .info .wrap .txt > ul li strong {
+  color: #fff;
+  position: relative;
+  left: 0;
+}
+.spec .inner .info .wrap .txt > ul li strong:hover::after {
+  opacity: 1;
+  transform: translateY(10px);
+}
+.spec .inner .info .wrap .txt > ul li strong::before {
+  content: ">";
+  margin-right: 10px;
+  font: 18px/1 "Pretendard";
+}
+.spec .inner .info .wrap .txt > ul li strong::after {
+  content: "";
+  position: absolute;
+  background: #fff;
+  width: 100%;
+  height: 2px;
+  left: 0;
+  bottom: 0;
+  opacity: 0;
+  transition: all 0.7s;
+  transform: translateY(30px);
+}
+
+@media screen and (max-width: 1179px) {
+  .bikeType .inner {
+    width: 100%;
+    padding: 0 20px;
+  }
+  .bikeType .inner .wrap article {
+    width: 100%;
+  }
+  .bikeType .inner .wrap article .pic {
+    flex: 1 35%;
+  }
+  .bikeType .inner .wrap article .info {
+    width: 100%;
+    padding: 10px;
+    flex: 1 65%;
+    margin-top: 0px;
+  }
+  .bikeType .inner .wrap article .info h2 {
+    margin-bottom: 10px;
+    font: bold 18px/1 "Pretendard";
+  }
+  .bikeType .inner .wrap article .info h3 {
+    margin-bottom: 10px;
+    font: normal 16px/1 "Pretendard";
+  }
+  .bikeType .inner .wrap article .info p {
+    color: #777;
+    font: normal 12px/1.3 "GmarketSansMedium";
+  }
+
+  .spec .inner {
+    width: 100%;
+    padding: 0 20px;
+  }
+  .spec .inner .pic1 {
+    width: 50%;
+  }
+  .spec .inner .info h2 {
+    font: bold 20px/1 "Orbitron";
+  }
+  .spec .inner .info .wrap .txt > ul {
+    padding-left: 10px;
+  }
+  .spec .inner .info .wrap .txt > ul li {
+    padding: 20px 0 20px 10px;
+  }
+  .spec .inner .info .wrap .txt > ul li span {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 539px) {
+  .bikeType .inner .wrap article {
+    margin-bottom: 20px;
+    flex-direction: column;
+  }
+  .bikeType .inner .wrap article:nth-of-type(even) {
+    flex-direction: column;
+  }
+  .bikeType .inner .wrap article .info {
+    margin-top: 20px;
+  }
+
+  .spec .inner .pic1 {
+    width: 100%;
+  }
+  .spec .inner .specs {
+    flex-direction: column;
+  }
+  .spec .inner .specs > li:nth-of-type(2) {
+    border-right: none;
+    border-left: none;
+  }
+  .spec .inner .info .wrap {
+    flex-direction: column;
+  }
+}
+.bikeType6 {
+  width: 100%;
+  margin-bottom: 50px;
+}
+.bikeType6 .swiper-slide img {
+  width: 100%;
+}
+.bikeType6 .inner {
+  width: 1180px;
+  margin: 0 auto;
+}
+.bikeType6 .inner h1 {
+  font: bold 30px/1 "orbitron";
+  letter-spacing: 1px;
+}
+.bikeType6 .inner .wrap {
+  width: 100%;
+}
+.bikeType6 .inner .wrap article {
+  display: flex;
+}
+.bikeType6 .inner .wrap article:nth-of-type(even) {
+  flex-direction: row-reverse;
+}
+.bikeType6 .inner .wrap article .pic {
+  flex: 1 50%;
+  font-size: 0;
+}
+.bikeType6 .inner .wrap article .pic img {
+  width: 100%;
+}
+.bikeType6 .inner .wrap article .info {
+  padding: 30px;
+  flex: 1 50%;
+  margin-top: 30px;
+}
+.bikeType6 .inner .wrap article .info h2 {
+  width: 100%;
+  margin-bottom: 15px;
+  font: bold 26px/1 "Pretendard";
+}
+.bikeType6 .inner .wrap article .info h3 {
+  width: 100%;
+  margin-bottom: 20px;
+  color: #aaa;
+  font: normal 20px/1 "Pretendard";
+}
+.bikeType6 .inner .wrap article .info p {
+  width: 100%;
+  color: #777;
+  font: normal 15px/1.3 "GmarketSansMedium";
+}
+
+.spec .inner {
+  width: 1180px;
+  margin: 0 auto;
+}
+.spec .inner > h1 {
+  color: #fff;
+  text-align: center;
+  padding: 30px 0;
+  border-bottom: 2px solid #4fb627;
+  font: bold 30px/1 "orbitron";
+  letter-spacing: 1px;
+  margin: 30px 0;
+}
+.spec .inner .pic1 {
+  width: 540px;
+  margin: 0 auto;
+}
+.spec .inner .pic1 img {
+  width: 100%;
+}
+.spec .inner > ul {
+  margin: 50px 0;
+  display: flex;
+  color: #fff;
+  justify-content: space-around;
+  width: 100%;
+}
+.spec .inner > ul > li {
+  display: flex;
+  flex: 1 33%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.spec .inner > ul > li:nth-of-type(2) {
+  border-right: 1px solid #eee;
+  border-left: 1px solid #eee;
+}
+.spec .inner > ul > li strong {
+  margin-bottom: 30px;
+  font: bold 18px/1 "Pretendard";
+}
+.spec .inner > ul > li img {
+  width: 40px;
+  margin-bottom: 20px;
+}
+.spec .inner > ul > li span {
+  font: normal 16px/1 "Pretendard";
+}
+.spec .inner .info {
+  width: 100%;
+}
+.spec .inner .info h2 {
+  margin-top: 100px;
+  color: #fff;
+  padding: 10px 0;
+  font: bold 24px/1 "Orbitron";
+}
+.spec .inner .info .wrap {
+  display: flex;
+  margin-bottom: 50px;
+}
+.spec .inner .info .wrap .pic {
+  width: 100%;
+  height: 100%;
+  flex: 1 50%;
+}
+.spec .inner .info .wrap .pic img {
+  width: 100%;
+}
+.spec .inner .info .wrap .txt {
+  flex: 1 50%;
+  width: 100%;
+}
+.spec .inner .info .wrap .txt > ul {
+  width: 100%;
+  height: 100%;
+  display: block;
+  padding-left: 30px;
+}
+.spec .inner .info .wrap .txt > ul li {
+  padding: 20px 0 20px 20px;
+  border-bottom: 1px solid #777;
+  display: flex;
+  justify-content: space-between;
+}
+.spec .inner .info .wrap .txt > ul li:last-of-type {
+  border-bottom: none;
+}
+.spec .inner .info .wrap .txt > ul li span {
+  color: #aaa;
+  margin-right: 10px;
+}
+.spec .inner .info .wrap .txt > ul li strong {
+  color: #fff;
+  position: relative;
+  left: 0;
+}
+.spec .inner .info .wrap .txt > ul li strong:hover::after {
+  opacity: 1;
+  transform: translateY(10px);
+}
+.spec .inner .info .wrap .txt > ul li strong::before {
+  content: ">";
+  margin-right: 10px;
+  font: 18px/1 "Pretendard";
+}
+.spec .inner .info .wrap .txt > ul li strong::after {
+  content: "";
+  position: absolute;
+  background: #fff;
+  width: 100%;
+  height: 2px;
+  left: 0;
+  bottom: 0;
+  opacity: 0;
+  transition: all 0.7s;
+  transform: translateY(30px);
+}
+
+@media screen and (max-width: 1179px) {
+  .bikeType .inner {
+    width: 100%;
+    padding: 0 20px;
+  }
+  .bikeType .inner .wrap article {
+    width: 100%;
+  }
+  .bikeType .inner .wrap article .pic {
+    flex: 1 35%;
+  }
+  .bikeType .inner .wrap article .info {
+    width: 100%;
+    padding: 10px;
+    flex: 1 65%;
+    margin-top: 0px;
+  }
+  .bikeType .inner .wrap article .info h2 {
+    margin-bottom: 10px;
+    font: bold 18px/1 "Pretendard";
+  }
+  .bikeType .inner .wrap article .info h3 {
+    margin-bottom: 10px;
+    font: normal 16px/1 "Pretendard";
+  }
+  .bikeType .inner .wrap article .info p {
+    color: #777;
+    font: normal 12px/1.3 "GmarketSansMedium";
+  }
+
+  .spec .inner {
+    width: 100%;
+    padding: 0 20px;
+  }
+  .spec .inner .pic1 {
+    width: 50%;
+  }
+  .spec .inner .info h2 {
+    font: bold 20px/1 "Orbitron";
+  }
+  .spec .inner .info .wrap .txt > ul {
+    padding-left: 10px;
+  }
+  .spec .inner .info .wrap .txt > ul li {
+    padding: 20px 0 20px 10px;
+  }
+  .spec .inner .info .wrap .txt > ul li span {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 539px) {
+  .bikeType .inner .wrap article {
+    margin-bottom: 20px;
+    flex-direction: column;
+  }
+  .bikeType .inner .wrap article:nth-of-type(even) {
+    flex-direction: column;
+  }
+  .bikeType .inner .wrap article .info {
+    margin-top: 20px;
+  }
+
+  .spec .inner .pic1 {
+    width: 100%;
+  }
+  .spec .inner .specs {
+    flex-direction: column;
+  }
+  .spec .inner .specs > li:nth-of-type(2) {
+    border-right: none;
+    border-left: none;
+  }
+  .spec .inner .info .wrap {
+    flex-direction: column;
+  }
+}
+.bikeType7 {
+  width: 100%;
+  margin-bottom: 50px;
+}
+.bikeType7 .swiper-slide img {
+  width: 100%;
+}
+.bikeType7 .inner {
+  width: 1180px;
+  margin: 0 auto;
+}
+.bikeType7 .inner h1 {
+  font: bold 30px/1 "orbitron";
+  letter-spacing: 1px;
+}
+.bikeType7 .inner .wrap {
+  width: 100%;
+}
+.bikeType7 .inner .wrap article {
+  display: flex;
+}
+.bikeType7 .inner .wrap article:nth-of-type(even) {
+  flex-direction: row-reverse;
+}
+.bikeType7 .inner .wrap article .pic {
+  flex: 1 50%;
+  font-size: 0;
+}
+.bikeType7 .inner .wrap article .pic img {
+  width: 100%;
+}
+.bikeType7 .inner .wrap article .info {
+  padding: 30px;
+  flex: 1 50%;
+  margin-top: 30px;
+}
+.bikeType7 .inner .wrap article .info h2 {
+  width: 100%;
+  margin-bottom: 15px;
+  font: bold 26px/1 "Pretendard";
+}
+.bikeType7 .inner .wrap article .info h3 {
+  width: 100%;
+  margin-bottom: 20px;
+  color: #aaa;
+  font: normal 20px/1 "Pretendard";
+}
+.bikeType7 .inner .wrap article .info p {
+  width: 100%;
+  color: #777;
+  font: normal 15px/1.3 "GmarketSansMedium";
+}
+
+.spec .inner {
+  width: 1180px;
+  margin: 0 auto;
+}
+.spec .inner > h1 {
+  color: #fff;
+  text-align: center;
+  padding: 30px 0;
+  border-bottom: 2px solid #4fb627;
+  font: bold 30px/1 "orbitron";
+  letter-spacing: 1px;
+  margin: 30px 0;
+}
+.spec .inner .pic1 {
+  width: 540px;
+  margin: 0 auto;
+}
+.spec .inner .pic1 img {
+  width: 100%;
+}
+.spec .inner > ul {
+  margin: 50px 0;
+  display: flex;
+  color: #fff;
+  justify-content: space-around;
+  width: 100%;
+}
+.spec .inner > ul > li {
+  display: flex;
+  flex: 1 33%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.spec .inner > ul > li:nth-of-type(2) {
+  border-right: 1px solid #eee;
+  border-left: 1px solid #eee;
+}
+.spec .inner > ul > li strong {
+  margin-bottom: 30px;
+  font: bold 18px/1 "Pretendard";
+}
+.spec .inner > ul > li img {
+  width: 40px;
+  margin-bottom: 20px;
+}
+.spec .inner > ul > li span {
+  font: normal 16px/1 "Pretendard";
+}
+.spec .inner .info {
+  width: 100%;
+}
+.spec .inner .info h2 {
+  margin-top: 100px;
+  color: #fff;
+  padding: 10px 0;
+  font: bold 24px/1 "Orbitron";
+}
+.spec .inner .info .wrap {
+  display: flex;
+  margin-bottom: 50px;
+}
+.spec .inner .info .wrap .pic {
+  width: 100%;
+  height: 100%;
+  flex: 1 50%;
+}
+.spec .inner .info .wrap .pic img {
+  width: 100%;
+}
+.spec .inner .info .wrap .txt {
+  flex: 1 50%;
+  width: 100%;
+}
+.spec .inner .info .wrap .txt > ul {
+  width: 100%;
+  height: 100%;
+  display: block;
+  padding-left: 30px;
+}
+.spec .inner .info .wrap .txt > ul li {
+  padding: 20px 0 20px 20px;
+  border-bottom: 1px solid #777;
+  display: flex;
+  justify-content: space-between;
+}
+.spec .inner .info .wrap .txt > ul li:last-of-type {
+  border-bottom: none;
+}
+.spec .inner .info .wrap .txt > ul li span {
+  color: #aaa;
+  margin-right: 10px;
+}
+.spec .inner .info .wrap .txt > ul li strong {
+  color: #fff;
+  position: relative;
+  left: 0;
+}
+.spec .inner .info .wrap .txt > ul li strong:hover::after {
+  opacity: 1;
+  transform: translateY(10px);
+}
+.spec .inner .info .wrap .txt > ul li strong::before {
+  content: ">";
+  margin-right: 10px;
+  font: 18px/1 "Pretendard";
+}
+.spec .inner .info .wrap .txt > ul li strong::after {
+  content: "";
+  position: absolute;
+  background: #fff;
+  width: 100%;
+  height: 2px;
+  left: 0;
+  bottom: 0;
+  opacity: 0;
+  transition: all 0.7s;
+  transform: translateY(30px);
+}
+
+@media screen and (max-width: 1179px) {
+  .bikeType .inner {
+    width: 100%;
+    padding: 0 20px;
+  }
+  .bikeType .inner .wrap article {
+    width: 100%;
+  }
+  .bikeType .inner .wrap article .pic {
+    flex: 1 35%;
+  }
+  .bikeType .inner .wrap article .info {
+    width: 100%;
+    padding: 10px;
+    flex: 1 65%;
+    margin-top: 0px;
+  }
+  .bikeType .inner .wrap article .info h2 {
+    margin-bottom: 10px;
+    font: bold 18px/1 "Pretendard";
+  }
+  .bikeType .inner .wrap article .info h3 {
+    margin-bottom: 10px;
+    font: normal 16px/1 "Pretendard";
+  }
+  .bikeType .inner .wrap article .info p {
+    color: #777;
+    font: normal 12px/1.3 "GmarketSansMedium";
+  }
+
+  .spec .inner {
+    width: 100%;
+    padding: 0 20px;
+  }
+  .spec .inner .pic1 {
+    width: 50%;
+  }
+  .spec .inner .info h2 {
+    font: bold 20px/1 "Orbitron";
+  }
+  .spec .inner .info .wrap .txt > ul {
+    padding-left: 10px;
+  }
+  .spec .inner .info .wrap .txt > ul li {
+    padding: 20px 0 20px 10px;
+  }
+  .spec .inner .info .wrap .txt > ul li span {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 539px) {
+  .bikeType .inner .wrap article {
+    margin-bottom: 20px;
+    flex-direction: column;
+  }
+  .bikeType .inner .wrap article:nth-of-type(even) {
+    flex-direction: column;
+  }
+  .bikeType .inner .wrap article .info {
+    margin-top: 20px;
+  }
+
+  .spec .inner .pic1 {
+    width: 100%;
+  }
+  .spec .inner .specs {
+    flex-direction: column;
+  }
+  .spec .inner .specs > li:nth-of-type(2) {
+    border-right: none;
+    border-left: none;
+  }
+  .spec .inner .info .wrap {
+    flex-direction: column;
+  }
+}
+.bikeType8 {
+  width: 100%;
+  margin-bottom: 50px;
+}
+.bikeType8 .swiper-slide img {
+  width: 100%;
+}
+.bikeType8 .inner {
+  width: 1180px;
+  margin: 0 auto;
+}
+.bikeType8 .inner h1 {
+  font: bold 30px/1 "orbitron";
+  letter-spacing: 1px;
+}
+.bikeType8 .inner .wrap {
+  width: 100%;
+}
+.bikeType8 .inner .wrap article {
+  display: flex;
+}
+.bikeType8 .inner .wrap article:nth-of-type(even) {
+  flex-direction: row-reverse;
+}
+.bikeType8 .inner .wrap article .pic {
+  flex: 1 50%;
+  font-size: 0;
+}
+.bikeType8 .inner .wrap article .pic img {
+  width: 100%;
+}
+.bikeType8 .inner .wrap article .info {
+  padding: 30px;
+  flex: 1 50%;
+  margin-top: 30px;
+}
+.bikeType8 .inner .wrap article .info h2 {
+  width: 100%;
+  margin-bottom: 15px;
+  font: bold 26px/1 "Pretendard";
+}
+.bikeType8 .inner .wrap article .info h3 {
+  width: 100%;
+  margin-bottom: 20px;
+  color: #aaa;
+  font: normal 20px/1 "Pretendard";
+}
+.bikeType8 .inner .wrap article .info p {
+  width: 100%;
+  color: #777;
+  font: normal 15px/1.3 "GmarketSansMedium";
+}
+
+.spec .inner {
+  width: 1180px;
+  margin: 0 auto;
+}
+.spec .inner > h1 {
+  color: #fff;
+  text-align: center;
+  padding: 30px 0;
+  border-bottom: 2px solid #4fb627;
+  font: bold 30px/1 "orbitron";
+  letter-spacing: 1px;
+  margin: 30px 0;
+}
+.spec .inner .pic1 {
+  width: 540px;
+  margin: 0 auto;
+}
+.spec .inner .pic1 img {
+  width: 100%;
+}
+.spec .inner > ul {
+  margin: 50px 0;
+  display: flex;
+  color: #fff;
+  justify-content: space-around;
+  width: 100%;
+}
+.spec .inner > ul > li {
+  display: flex;
+  flex: 1 33%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.spec .inner > ul > li:nth-of-type(2) {
+  border-right: 1px solid #eee;
+  border-left: 1px solid #eee;
+}
+.spec .inner > ul > li strong {
+  margin-bottom: 30px;
+  font: bold 18px/1 "Pretendard";
+}
+.spec .inner > ul > li img {
+  width: 40px;
+  margin-bottom: 20px;
+}
+.spec .inner > ul > li span {
+  font: normal 16px/1 "Pretendard";
+}
+.spec .inner .info {
+  width: 100%;
+}
+.spec .inner .info h2 {
+  margin-top: 100px;
+  color: #fff;
+  padding: 10px 0;
+  font: bold 24px/1 "Orbitron";
+}
+.spec .inner .info .wrap {
+  display: flex;
+  margin-bottom: 50px;
+}
+.spec .inner .info .wrap .pic {
+  width: 100%;
+  height: 100%;
+  flex: 1 50%;
+}
+.spec .inner .info .wrap .pic img {
+  width: 100%;
+}
+.spec .inner .info .wrap .txt {
+  flex: 1 50%;
+  width: 100%;
+}
+.spec .inner .info .wrap .txt > ul {
+  width: 100%;
+  height: 100%;
+  display: block;
+  padding-left: 30px;
+}
+.spec .inner .info .wrap .txt > ul li {
+  padding: 20px 0 20px 20px;
+  border-bottom: 1px solid #777;
+  display: flex;
+  justify-content: space-between;
+}
+.spec .inner .info .wrap .txt > ul li:last-of-type {
+  border-bottom: none;
+}
+.spec .inner .info .wrap .txt > ul li span {
+  color: #aaa;
+  margin-right: 10px;
+}
+.spec .inner .info .wrap .txt > ul li strong {
+  color: #fff;
+  position: relative;
+  left: 0;
+}
+.spec .inner .info .wrap .txt > ul li strong:hover::after {
+  opacity: 1;
+  transform: translateY(10px);
+}
+.spec .inner .info .wrap .txt > ul li strong::before {
+  content: ">";
+  margin-right: 10px;
+  font: 18px/1 "Pretendard";
+}
+.spec .inner .info .wrap .txt > ul li strong::after {
+  content: "";
+  position: absolute;
+  background: #fff;
+  width: 100%;
+  height: 2px;
+  left: 0;
+  bottom: 0;
+  opacity: 0;
+  transition: all 0.7s;
+  transform: translateY(30px);
+}
+
+@media screen and (max-width: 1179px) {
+  .bikeType .inner {
+    width: 100%;
+    padding: 0 20px;
+  }
+  .bikeType .inner .wrap article {
+    width: 100%;
+  }
+  .bikeType .inner .wrap article .pic {
+    flex: 1 35%;
+  }
+  .bikeType .inner .wrap article .info {
+    width: 100%;
+    padding: 10px;
+    flex: 1 65%;
+    margin-top: 0px;
+  }
+  .bikeType .inner .wrap article .info h2 {
+    margin-bottom: 10px;
+    font: bold 18px/1 "Pretendard";
+  }
+  .bikeType .inner .wrap article .info h3 {
+    margin-bottom: 10px;
+    font: normal 16px/1 "Pretendard";
+  }
+  .bikeType .inner .wrap article .info p {
+    color: #777;
+    font: normal 12px/1.3 "GmarketSansMedium";
+  }
+
+  .spec .inner {
+    width: 100%;
+    padding: 0 20px;
+  }
+  .spec .inner .pic1 {
+    width: 50%;
+  }
+  .spec .inner .info h2 {
+    font: bold 20px/1 "Orbitron";
+  }
+  .spec .inner .info .wrap .txt > ul {
+    padding-left: 10px;
+  }
+  .spec .inner .info .wrap .txt > ul li {
+    padding: 20px 0 20px 10px;
+  }
+  .spec .inner .info .wrap .txt > ul li span {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 539px) {
+  .bikeType .inner .wrap article {
+    margin-bottom: 20px;
+    flex-direction: column;
+  }
+  .bikeType .inner .wrap article:nth-of-type(even) {
+    flex-direction: column;
+  }
+  .bikeType .inner .wrap article .info {
+    margin-top: 20px;
+  }
+
+  .spec .inner .pic1 {
+    width: 100%;
+  }
+  .spec .inner .specs {
+    flex-direction: column;
+  }
+  .spec .inner .specs > li:nth-of-type(2) {
+    border-right: none;
+    border-left: none;
+  }
+  .spec .inner .info .wrap {
+    flex-direction: column;
+  }
+}
+.bikeType9 {
+  width: 100%;
+  margin-bottom: 50px;
+}
+.bikeType9 .swiper-slide img {
+  width: 100%;
+}
+.bikeType9 .inner {
+  width: 1180px;
+  margin: 0 auto;
+}
+.bikeType9 .inner h1 {
+  font: bold 30px/1 "orbitron";
+  letter-spacing: 1px;
+}
+.bikeType9 .inner .wrap {
+  width: 100%;
+}
+.bikeType9 .inner .wrap article {
+  display: flex;
+}
+.bikeType9 .inner .wrap article:nth-of-type(even) {
+  flex-direction: row-reverse;
+}
+.bikeType9 .inner .wrap article .pic {
+  flex: 1 50%;
+  font-size: 0;
+}
+.bikeType9 .inner .wrap article .pic img {
+  width: 100%;
+}
+.bikeType9 .inner .wrap article .info {
+  padding: 30px;
+  flex: 1 50%;
+  margin-top: 30px;
+}
+.bikeType9 .inner .wrap article .info h2 {
+  width: 100%;
+  margin-bottom: 15px;
+  font: bold 26px/1 "Pretendard";
+}
+.bikeType9 .inner .wrap article .info h3 {
+  width: 100%;
+  margin-bottom: 20px;
+  color: #aaa;
+  font: normal 20px/1 "Pretendard";
+}
+.bikeType9 .inner .wrap article .info p {
+  width: 100%;
+  color: #777;
+  font: normal 15px/1.3 "GmarketSansMedium";
+}
+
+.spec .inner {
+  width: 1180px;
+  margin: 0 auto;
+}
+.spec .inner > h1 {
+  color: #fff;
+  text-align: center;
+  padding: 30px 0;
+  border-bottom: 2px solid #4fb627;
+  font: bold 30px/1 "orbitron";
+  letter-spacing: 1px;
+  margin: 30px 0;
+}
+.spec .inner .pic1 {
+  width: 540px;
+  margin: 0 auto;
+}
+.spec .inner .pic1 img {
+  width: 100%;
+}
+.spec .inner > ul {
+  margin: 50px 0;
+  display: flex;
+  color: #fff;
+  justify-content: space-around;
+  width: 100%;
+}
+.spec .inner > ul > li {
+  display: flex;
+  flex: 1 33%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.spec .inner > ul > li:nth-of-type(2) {
+  border-right: 1px solid #eee;
+  border-left: 1px solid #eee;
+}
+.spec .inner > ul > li strong {
+  margin-bottom: 30px;
+  font: bold 18px/1 "Pretendard";
+}
+.spec .inner > ul > li img {
+  width: 40px;
+  margin-bottom: 20px;
+}
+.spec .inner > ul > li span {
+  font: normal 16px/1 "Pretendard";
+}
+.spec .inner .info {
+  width: 100%;
+}
+.spec .inner .info h2 {
+  margin-top: 100px;
+  color: #fff;
+  padding: 10px 0;
+  font: bold 24px/1 "Orbitron";
+}
+.spec .inner .info .wrap {
+  display: flex;
+  margin-bottom: 50px;
+}
+.spec .inner .info .wrap .pic {
+  width: 100%;
+  height: 100%;
+  flex: 1 50%;
+}
+.spec .inner .info .wrap .pic img {
+  width: 100%;
+}
+.spec .inner .info .wrap .txt {
+  flex: 1 50%;
+  width: 100%;
+}
+.spec .inner .info .wrap .txt > ul {
+  width: 100%;
+  height: 100%;
+  display: block;
+  padding-left: 30px;
+}
+.spec .inner .info .wrap .txt > ul li {
+  padding: 20px 0 20px 20px;
+  border-bottom: 1px solid #777;
+  display: flex;
+  justify-content: space-between;
+}
+.spec .inner .info .wrap .txt > ul li:last-of-type {
+  border-bottom: none;
+}
+.spec .inner .info .wrap .txt > ul li span {
+  color: #aaa;
+  margin-right: 10px;
+}
+.spec .inner .info .wrap .txt > ul li strong {
+  color: #fff;
+  position: relative;
+  left: 0;
+}
+.spec .inner .info .wrap .txt > ul li strong:hover::after {
+  opacity: 1;
+  transform: translateY(10px);
+}
+.spec .inner .info .wrap .txt > ul li strong::before {
+  content: ">";
+  margin-right: 10px;
+  font: 18px/1 "Pretendard";
+}
+.spec .inner .info .wrap .txt > ul li strong::after {
+  content: "";
+  position: absolute;
+  background: #fff;
+  width: 100%;
+  height: 2px;
+  left: 0;
+  bottom: 0;
+  opacity: 0;
+  transition: all 0.7s;
+  transform: translateY(30px);
+}
+
+@media screen and (max-width: 1179px) {
+  .bikeType .inner {
+    width: 100%;
+    padding: 0 20px;
+  }
+  .bikeType .inner .wrap article {
+    width: 100%;
+  }
+  .bikeType .inner .wrap article .pic {
+    flex: 1 35%;
+  }
+  .bikeType .inner .wrap article .info {
+    width: 100%;
+    padding: 10px;
+    flex: 1 65%;
+    margin-top: 0px;
+  }
+  .bikeType .inner .wrap article .info h2 {
+    margin-bottom: 10px;
+    font: bold 18px/1 "Pretendard";
+  }
+  .bikeType .inner .wrap article .info h3 {
+    margin-bottom: 10px;
+    font: normal 16px/1 "Pretendard";
+  }
+  .bikeType .inner .wrap article .info p {
+    color: #777;
+    font: normal 12px/1.3 "GmarketSansMedium";
+  }
+
+  .spec .inner {
+    width: 100%;
+    padding: 0 20px;
+  }
+  .spec .inner .pic1 {
+    width: 50%;
+  }
+  .spec .inner .info h2 {
+    font: bold 20px/1 "Orbitron";
+  }
+  .spec .inner .info .wrap .txt > ul {
+    padding-left: 10px;
+  }
+  .spec .inner .info .wrap .txt > ul li {
+    padding: 20px 0 20px 10px;
+  }
+  .spec .inner .info .wrap .txt > ul li span {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 539px) {
+  .bikeType .inner .wrap article {
+    margin-bottom: 20px;
+    flex-direction: column;
+  }
+  .bikeType .inner .wrap article:nth-of-type(even) {
+    flex-direction: column;
+  }
+  .bikeType .inner .wrap article .info {
+    margin-top: 20px;
+  }
+
+  .spec .inner .pic1 {
+    width: 100%;
+  }
+  .spec .inner .specs {
+    flex-direction: column;
+  }
+  .spec .inner .specs > li:nth-of-type(2) {
+    border-right: none;
+    border-left: none;
+  }
+  .spec .inner .info .wrap {
+    flex-direction: column;
+  }
+}
+.bikeType10 {
+  width: 100%;
+  margin-bottom: 50px;
+}
+.bikeType10 .swiper-slide img {
+  width: 100%;
+}
+.bikeType10 .inner {
+  width: 1180px;
+  margin: 0 auto;
+}
+.bikeType10 .inner h1 {
+  font: bold 30px/1 "orbitron";
+  letter-spacing: 1px;
+}
+.bikeType10 .inner .wrap {
+  width: 100%;
+}
+.bikeType10 .inner .wrap article {
+  display: flex;
+}
+.bikeType10 .inner .wrap article:nth-of-type(even) {
+  flex-direction: row-reverse;
+}
+.bikeType10 .inner .wrap article .pic {
+  flex: 1 50%;
+  font-size: 0;
+}
+.bikeType10 .inner .wrap article .pic img {
+  width: 100%;
+}
+.bikeType10 .inner .wrap article .info {
+  padding: 30px;
+  flex: 1 50%;
+  margin-top: 30px;
+}
+.bikeType10 .inner .wrap article .info h2 {
+  width: 100%;
+  margin-bottom: 15px;
+  font: bold 26px/1 "Pretendard";
+}
+.bikeType10 .inner .wrap article .info h3 {
+  width: 100%;
+  margin-bottom: 20px;
+  color: #aaa;
+  font: normal 20px/1 "Pretendard";
+}
+.bikeType10 .inner .wrap article .info p {
+  width: 100%;
+  color: #777;
+  font: normal 15px/1.3 "GmarketSansMedium";
+}
+
+.spec .inner {
+  width: 1180px;
+  margin: 0 auto;
+}
+.spec .inner > h1 {
+  color: #fff;
+  text-align: center;
+  padding: 30px 0;
+  border-bottom: 2px solid #4fb627;
+  font: bold 30px/1 "orbitron";
+  letter-spacing: 1px;
+  margin: 30px 0;
+}
+.spec .inner .pic1 {
+  width: 540px;
+  margin: 0 auto;
+}
+.spec .inner .pic1 img {
+  width: 100%;
+}
+.spec .inner > ul {
+  margin: 50px 0;
+  display: flex;
+  color: #fff;
+  justify-content: space-around;
+  width: 100%;
+}
+.spec .inner > ul > li {
+  display: flex;
+  flex: 1 33%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.spec .inner > ul > li:nth-of-type(2) {
+  border-right: 1px solid #eee;
+  border-left: 1px solid #eee;
+}
+.spec .inner > ul > li strong {
+  margin-bottom: 30px;
+  font: bold 18px/1 "Pretendard";
+}
+.spec .inner > ul > li img {
+  width: 40px;
+  margin-bottom: 20px;
+}
+.spec .inner > ul > li span {
+  font: normal 16px/1 "Pretendard";
+}
+.spec .inner .info {
+  width: 100%;
+}
+.spec .inner .info h2 {
+  margin-top: 100px;
+  color: #fff;
+  padding: 10px 0;
+  font: bold 24px/1 "Orbitron";
+}
+.spec .inner .info .wrap {
+  display: flex;
+  margin-bottom: 50px;
+}
+.spec .inner .info .wrap .pic {
+  width: 100%;
+  height: 100%;
+  flex: 1 50%;
+}
+.spec .inner .info .wrap .pic img {
+  width: 100%;
+}
+.spec .inner .info .wrap .txt {
+  flex: 1 50%;
+  width: 100%;
+}
+.spec .inner .info .wrap .txt > ul {
+  width: 100%;
+  height: 100%;
+  display: block;
+  padding-left: 30px;
+}
+.spec .inner .info .wrap .txt > ul li {
+  padding: 20px 0 20px 20px;
+  border-bottom: 1px solid #777;
+  display: flex;
+  justify-content: space-between;
+}
+.spec .inner .info .wrap .txt > ul li:last-of-type {
+  border-bottom: none;
+}
+.spec .inner .info .wrap .txt > ul li span {
+  color: #aaa;
+  margin-right: 10px;
+}
+.spec .inner .info .wrap .txt > ul li strong {
+  color: #fff;
+  position: relative;
+  left: 0;
+}
+.spec .inner .info .wrap .txt > ul li strong:hover::after {
+  opacity: 1;
+  transform: translateY(10px);
+}
+.spec .inner .info .wrap .txt > ul li strong::before {
+  content: ">";
+  margin-right: 10px;
+  font: 18px/1 "Pretendard";
+}
+.spec .inner .info .wrap .txt > ul li strong::after {
+  content: "";
+  position: absolute;
+  background: #fff;
+  width: 100%;
+  height: 2px;
+  left: 0;
+  bottom: 0;
+  opacity: 0;
+  transition: all 0.7s;
+  transform: translateY(30px);
+}
+
+@media screen and (max-width: 1179px) {
+  .bikeType .inner {
+    width: 100%;
+    padding: 0 20px;
+  }
+  .bikeType .inner .wrap article {
+    width: 100%;
+  }
+  .bikeType .inner .wrap article .pic {
+    flex: 1 35%;
+  }
+  .bikeType .inner .wrap article .info {
+    width: 100%;
+    padding: 10px;
+    flex: 1 65%;
+    margin-top: 0px;
+  }
+  .bikeType .inner .wrap article .info h2 {
+    margin-bottom: 10px;
+    font: bold 18px/1 "Pretendard";
+  }
+  .bikeType .inner .wrap article .info h3 {
+    margin-bottom: 10px;
+    font: normal 16px/1 "Pretendard";
+  }
+  .bikeType .inner .wrap article .info p {
+    color: #777;
+    font: normal 12px/1.3 "GmarketSansMedium";
+  }
+
+  .spec .inner {
+    width: 100%;
+    padding: 0 20px;
+  }
+  .spec .inner .pic1 {
+    width: 50%;
+  }
+  .spec .inner .info h2 {
+    font: bold 20px/1 "Orbitron";
+  }
+  .spec .inner .info .wrap .txt > ul {
+    padding-left: 10px;
+  }
+  .spec .inner .info .wrap .txt > ul li {
+    padding: 20px 0 20px 10px;
+  }
+  .spec .inner .info .wrap .txt > ul li span {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 539px) {
+  .bikeType .inner .wrap article {
+    margin-bottom: 20px;
+    flex-direction: column;
+  }
+  .bikeType .inner .wrap article:nth-of-type(even) {
+    flex-direction: column;
+  }
+  .bikeType .inner .wrap article .info {
+    margin-top: 20px;
+  }
+
+  .spec .inner .pic1 {
+    width: 100%;
+  }
+  .spec .inner .specs {
+    flex-direction: column;
+  }
+  .spec .inner .specs > li:nth-of-type(2) {
+    border-right: none;
+    border-left: none;
+  }
+  .spec .inner .info .wrap {
+    flex-direction: column;
+  }
+}
+.bikeType11 {
+  width: 100%;
+  margin-bottom: 50px;
+}
+.bikeType11 .swiper-slide img {
+  width: 100%;
+}
+.bikeType11 .inner {
+  width: 1180px;
+  margin: 0 auto;
+}
+.bikeType11 .inner h1 {
+  font: bold 30px/1 "orbitron";
+  letter-spacing: 1px;
+}
+.bikeType11 .inner .wrap {
+  width: 100%;
+}
+.bikeType11 .inner .wrap article {
+  display: flex;
+}
+.bikeType11 .inner .wrap article:nth-of-type(even) {
+  flex-direction: row-reverse;
+}
+.bikeType11 .inner .wrap article .pic {
+  flex: 1 50%;
+  font-size: 0;
+}
+.bikeType11 .inner .wrap article .pic img {
+  width: 100%;
+}
+.bikeType11 .inner .wrap article .info {
+  padding: 30px;
+  flex: 1 50%;
+  margin-top: 30px;
+}
+.bikeType11 .inner .wrap article .info h2 {
+  width: 100%;
+  margin-bottom: 15px;
+  font: bold 26px/1 "Pretendard";
+}
+.bikeType11 .inner .wrap article .info h3 {
+  width: 100%;
+  margin-bottom: 20px;
+  color: #aaa;
+  font: normal 20px/1 "Pretendard";
+}
+.bikeType11 .inner .wrap article .info p {
+  width: 100%;
+  color: #777;
+  font: normal 15px/1.3 "GmarketSansMedium";
+}
+
+.spec .inner {
+  width: 1180px;
+  margin: 0 auto;
+}
+.spec .inner > h1 {
+  color: #fff;
+  text-align: center;
+  padding: 30px 0;
+  border-bottom: 2px solid #4fb627;
+  font: bold 30px/1 "orbitron";
+  letter-spacing: 1px;
+  margin: 30px 0;
+}
+.spec .inner .pic1 {
+  width: 540px;
+  margin: 0 auto;
+}
+.spec .inner .pic1 img {
+  width: 100%;
+}
+.spec .inner > ul {
+  margin: 50px 0;
+  display: flex;
+  color: #fff;
+  justify-content: space-around;
+  width: 100%;
+}
+.spec .inner > ul > li {
+  display: flex;
+  flex: 1 33%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.spec .inner > ul > li:nth-of-type(2) {
+  border-right: 1px solid #eee;
+  border-left: 1px solid #eee;
+}
+.spec .inner > ul > li strong {
+  margin-bottom: 30px;
+  font: bold 18px/1 "Pretendard";
+}
+.spec .inner > ul > li img {
+  width: 40px;
+  margin-bottom: 20px;
+}
+.spec .inner > ul > li span {
+  font: normal 16px/1 "Pretendard";
+}
+.spec .inner .info {
+  width: 100%;
+}
+.spec .inner .info h2 {
+  margin-top: 100px;
+  color: #fff;
+  padding: 10px 0;
+  font: bold 24px/1 "Orbitron";
+}
+.spec .inner .info .wrap {
+  display: flex;
+  margin-bottom: 50px;
+}
+.spec .inner .info .wrap .pic {
+  width: 100%;
+  height: 100%;
+  flex: 1 50%;
+}
+.spec .inner .info .wrap .pic img {
+  width: 100%;
+}
+.spec .inner .info .wrap .txt {
+  flex: 1 50%;
+  width: 100%;
+}
+.spec .inner .info .wrap .txt > ul {
+  width: 100%;
+  height: 100%;
+  display: block;
+  padding-left: 30px;
+}
+.spec .inner .info .wrap .txt > ul li {
+  padding: 20px 0 20px 20px;
+  border-bottom: 1px solid #777;
+  display: flex;
+  justify-content: space-between;
+}
+.spec .inner .info .wrap .txt > ul li:last-of-type {
+  border-bottom: none;
+}
+.spec .inner .info .wrap .txt > ul li span {
+  color: #aaa;
+  margin-right: 10px;
+}
+.spec .inner .info .wrap .txt > ul li strong {
+  color: #fff;
+  position: relative;
+  left: 0;
+}
+.spec .inner .info .wrap .txt > ul li strong:hover::after {
+  opacity: 1;
+  transform: translateY(10px);
+}
+.spec .inner .info .wrap .txt > ul li strong::before {
+  content: ">";
+  margin-right: 10px;
+  font: 18px/1 "Pretendard";
+}
+.spec .inner .info .wrap .txt > ul li strong::after {
+  content: "";
+  position: absolute;
+  background: #fff;
+  width: 100%;
+  height: 2px;
+  left: 0;
+  bottom: 0;
+  opacity: 0;
+  transition: all 0.7s;
+  transform: translateY(30px);
+}
+
+@media screen and (max-width: 1179px) {
+  .bikeType .inner {
+    width: 100%;
+    padding: 0 20px;
+  }
+  .bikeType .inner .wrap article {
+    width: 100%;
+  }
+  .bikeType .inner .wrap article .pic {
+    flex: 1 35%;
+  }
+  .bikeType .inner .wrap article .info {
+    width: 100%;
+    padding: 10px;
+    flex: 1 65%;
+    margin-top: 0px;
+  }
+  .bikeType .inner .wrap article .info h2 {
+    margin-bottom: 10px;
+    font: bold 18px/1 "Pretendard";
+  }
+  .bikeType .inner .wrap article .info h3 {
+    margin-bottom: 10px;
+    font: normal 16px/1 "Pretendard";
+  }
+  .bikeType .inner .wrap article .info p {
+    color: #777;
+    font: normal 12px/1.3 "GmarketSansMedium";
+  }
+
+  .spec .inner {
+    width: 100%;
+    padding: 0 20px;
+  }
+  .spec .inner .pic1 {
+    width: 50%;
+  }
+  .spec .inner .info h2 {
+    font: bold 20px/1 "Orbitron";
+  }
+  .spec .inner .info .wrap .txt > ul {
+    padding-left: 10px;
+  }
+  .spec .inner .info .wrap .txt > ul li {
+    padding: 20px 0 20px 10px;
+  }
+  .spec .inner .info .wrap .txt > ul li span {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 539px) {
+  .bikeType .inner .wrap article {
+    margin-bottom: 20px;
+    flex-direction: column;
+  }
+  .bikeType .inner .wrap article:nth-of-type(even) {
+    flex-direction: column;
+  }
+  .bikeType .inner .wrap article .info {
+    margin-top: 20px;
+  }
+
+  .spec .inner .pic1 {
+    width: 100%;
+  }
+  .spec .inner .specs {
+    flex-direction: column;
+  }
+  .spec .inner .specs > li:nth-of-type(2) {
+    border-right: none;
+    border-left: none;
+  }
+  .spec .inner .info .wrap {
+    flex-direction: column;
+  }
+}
+.bikeType12 {
+  width: 100%;
+  margin-bottom: 50px;
+}
+.bikeType12 .swiper-slide img {
+  width: 100%;
+}
+.bikeType12 .inner {
+  width: 1180px;
+  margin: 0 auto;
+}
+.bikeType12 .inner h1 {
+  font: bold 30px/1 "orbitron";
+  letter-spacing: 1px;
+}
+.bikeType12 .inner .wrap {
+  width: 100%;
+}
+.bikeType12 .inner .wrap article {
+  display: flex;
+}
+.bikeType12 .inner .wrap article:nth-of-type(even) {
+  flex-direction: row-reverse;
+}
+.bikeType12 .inner .wrap article .pic {
+  flex: 1 50%;
+  font-size: 0;
+}
+.bikeType12 .inner .wrap article .pic img {
+  width: 100%;
+}
+.bikeType12 .inner .wrap article .info {
+  padding: 30px;
+  flex: 1 50%;
+  margin-top: 30px;
+}
+.bikeType12 .inner .wrap article .info h2 {
+  width: 100%;
+  margin-bottom: 15px;
+  font: bold 26px/1 "Pretendard";
+}
+.bikeType12 .inner .wrap article .info h3 {
+  width: 100%;
+  margin-bottom: 20px;
+  color: #aaa;
+  font: normal 20px/1 "Pretendard";
+}
+.bikeType12 .inner .wrap article .info p {
+  width: 100%;
+  color: #777;
+  font: normal 15px/1.3 "GmarketSansMedium";
+}
+
+.spec .inner {
+  width: 1180px;
+  margin: 0 auto;
+}
+.spec .inner > h1 {
+  color: #fff;
+  text-align: center;
+  padding: 30px 0;
+  border-bottom: 2px solid #4fb627;
+  font: bold 30px/1 "orbitron";
+  letter-spacing: 1px;
+  margin: 30px 0;
+}
+.spec .inner .pic1 {
+  width: 540px;
+  margin: 0 auto;
+}
+.spec .inner .pic1 img {
+  width: 100%;
+}
+.spec .inner > ul {
+  margin: 50px 0;
+  display: flex;
+  color: #fff;
+  justify-content: space-around;
+  width: 100%;
+}
+.spec .inner > ul > li {
+  display: flex;
+  flex: 1 33%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.spec .inner > ul > li:nth-of-type(2) {
+  border-right: 1px solid #eee;
+  border-left: 1px solid #eee;
+}
+.spec .inner > ul > li strong {
+  margin-bottom: 30px;
+  font: bold 18px/1 "Pretendard";
+}
+.spec .inner > ul > li img {
+  width: 40px;
+  margin-bottom: 20px;
+}
+.spec .inner > ul > li span {
+  font: normal 16px/1 "Pretendard";
+}
+.spec .inner .info {
+  width: 100%;
+}
+.spec .inner .info h2 {
+  margin-top: 100px;
+  color: #fff;
+  padding: 10px 0;
+  font: bold 24px/1 "Orbitron";
+}
+.spec .inner .info .wrap {
+  display: flex;
+  margin-bottom: 50px;
+}
+.spec .inner .info .wrap .pic {
+  width: 100%;
+  height: 100%;
+  flex: 1 50%;
+}
+.spec .inner .info .wrap .pic img {
+  width: 100%;
+}
+.spec .inner .info .wrap .txt {
+  flex: 1 50%;
+  width: 100%;
+}
+.spec .inner .info .wrap .txt > ul {
+  width: 100%;
+  height: 100%;
+  display: block;
+  padding-left: 30px;
+}
+.spec .inner .info .wrap .txt > ul li {
+  padding: 20px 0 20px 20px;
+  border-bottom: 1px solid #777;
+  display: flex;
+  justify-content: space-between;
+}
+.spec .inner .info .wrap .txt > ul li:last-of-type {
+  border-bottom: none;
+}
+.spec .inner .info .wrap .txt > ul li span {
+  color: #aaa;
+  margin-right: 10px;
+}
+.spec .inner .info .wrap .txt > ul li strong {
+  color: #fff;
+  position: relative;
+  left: 0;
+}
+.spec .inner .info .wrap .txt > ul li strong:hover::after {
+  opacity: 1;
+  transform: translateY(10px);
+}
+.spec .inner .info .wrap .txt > ul li strong::before {
+  content: ">";
+  margin-right: 10px;
+  font: 18px/1 "Pretendard";
+}
+.spec .inner .info .wrap .txt > ul li strong::after {
+  content: "";
+  position: absolute;
+  background: #fff;
+  width: 100%;
+  height: 2px;
+  left: 0;
+  bottom: 0;
+  opacity: 0;
+  transition: all 0.7s;
+  transform: translateY(30px);
+}
+
+@media screen and (max-width: 1179px) {
+  .bikeType .inner {
+    width: 100%;
+    padding: 0 20px;
+  }
+  .bikeType .inner .wrap article {
+    width: 100%;
+  }
+  .bikeType .inner .wrap article .pic {
+    flex: 1 35%;
+  }
+  .bikeType .inner .wrap article .info {
+    width: 100%;
+    padding: 10px;
+    flex: 1 65%;
+    margin-top: 0px;
+  }
+  .bikeType .inner .wrap article .info h2 {
+    margin-bottom: 10px;
+    font: bold 18px/1 "Pretendard";
+  }
+  .bikeType .inner .wrap article .info h3 {
+    margin-bottom: 10px;
+    font: normal 16px/1 "Pretendard";
+  }
+  .bikeType .inner .wrap article .info p {
+    color: #777;
+    font: normal 12px/1.3 "GmarketSansMedium";
+  }
+
+  .spec .inner {
+    width: 100%;
+    padding: 0 20px;
+  }
+  .spec .inner .pic1 {
+    width: 50%;
+  }
+  .spec .inner .info h2 {
+    font: bold 20px/1 "Orbitron";
+  }
+  .spec .inner .info .wrap .txt > ul {
+    padding-left: 10px;
+  }
+  .spec .inner .info .wrap .txt > ul li {
+    padding: 20px 0 20px 10px;
+  }
+  .spec .inner .info .wrap .txt > ul li span {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 539px) {
+  .bikeType .inner .wrap article {
+    margin-bottom: 20px;
+    flex-direction: column;
+  }
+  .bikeType .inner .wrap article:nth-of-type(even) {
+    flex-direction: column;
+  }
+  .bikeType .inner .wrap article .info {
+    margin-top: 20px;
+  }
+
+  .spec .inner .pic1 {
+    width: 100%;
+  }
+  .spec .inner .specs {
+    flex-direction: column;
+  }
+  .spec .inner .specs > li:nth-of-type(2) {
+    border-right: none;
+    border-left: none;
+  }
+  .spec .inner .info .wrap {
+    flex-direction: column;
+  }
+}
+.bikeType13 {
+  width: 100%;
+  margin-bottom: 50px;
+}
+.bikeType13 .swiper-slide img {
+  width: 100%;
+}
+.bikeType13 .inner {
+  width: 1180px;
+  margin: 0 auto;
+}
+.bikeType13 .inner h1 {
+  font: bold 30px/1 "orbitron";
+  letter-spacing: 1px;
+}
+.bikeType13 .inner .wrap {
+  width: 100%;
+}
+.bikeType13 .inner .wrap article {
+  display: flex;
+}
+.bikeType13 .inner .wrap article:nth-of-type(even) {
+  flex-direction: row-reverse;
+}
+.bikeType13 .inner .wrap article .pic {
+  flex: 1 50%;
+  font-size: 0;
+}
+.bikeType13 .inner .wrap article .pic img {
+  width: 100%;
+}
+.bikeType13 .inner .wrap article .info {
+  padding: 30px;
+  flex: 1 50%;
+  margin-top: 30px;
+}
+.bikeType13 .inner .wrap article .info h2 {
+  width: 100%;
+  margin-bottom: 15px;
+  font: bold 26px/1 "Pretendard";
+}
+.bikeType13 .inner .wrap article .info h3 {
+  width: 100%;
+  margin-bottom: 20px;
+  color: #aaa;
+  font: normal 20px/1 "Pretendard";
+}
+.bikeType13 .inner .wrap article .info p {
+  width: 100%;
+  color: #777;
+  font: normal 15px/1.3 "GmarketSansMedium";
+}
+
+.spec .inner {
+  width: 1180px;
+  margin: 0 auto;
+}
+.spec .inner > h1 {
+  color: #fff;
+  text-align: center;
+  padding: 30px 0;
+  border-bottom: 2px solid #4fb627;
+  font: bold 30px/1 "orbitron";
+  letter-spacing: 1px;
+  margin: 30px 0;
+}
+.spec .inner .pic1 {
+  width: 540px;
+  margin: 0 auto;
+}
+.spec .inner .pic1 img {
+  width: 100%;
+}
+.spec .inner > ul {
+  margin: 50px 0;
+  display: flex;
+  color: #fff;
+  justify-content: space-around;
+  width: 100%;
+}
+.spec .inner > ul > li {
+  display: flex;
+  flex: 1 33%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.spec .inner > ul > li:nth-of-type(2) {
+  border-right: 1px solid #eee;
+  border-left: 1px solid #eee;
+}
+.spec .inner > ul > li strong {
+  margin-bottom: 30px;
+  font: bold 18px/1 "Pretendard";
+}
+.spec .inner > ul > li img {
+  width: 40px;
+  margin-bottom: 20px;
+}
+.spec .inner > ul > li span {
+  font: normal 16px/1 "Pretendard";
+}
+.spec .inner .info {
+  width: 100%;
+}
+.spec .inner .info h2 {
+  margin-top: 100px;
+  color: #fff;
+  padding: 10px 0;
+  font: bold 24px/1 "Orbitron";
+}
+.spec .inner .info .wrap {
+  display: flex;
+  margin-bottom: 50px;
+}
+.spec .inner .info .wrap .pic {
+  width: 100%;
+  height: 100%;
+  flex: 1 50%;
+}
+.spec .inner .info .wrap .pic img {
+  width: 100%;
+}
+.spec .inner .info .wrap .txt {
+  flex: 1 50%;
+  width: 100%;
+}
+.spec .inner .info .wrap .txt > ul {
+  width: 100%;
+  height: 100%;
+  display: block;
+  padding-left: 30px;
+}
+.spec .inner .info .wrap .txt > ul li {
+  padding: 20px 0 20px 20px;
+  border-bottom: 1px solid #777;
+  display: flex;
+  justify-content: space-between;
+}
+.spec .inner .info .wrap .txt > ul li:last-of-type {
+  border-bottom: none;
+}
+.spec .inner .info .wrap .txt > ul li span {
+  color: #aaa;
+  margin-right: 10px;
+}
+.spec .inner .info .wrap .txt > ul li strong {
+  color: #fff;
+  position: relative;
+  left: 0;
+}
+.spec .inner .info .wrap .txt > ul li strong:hover::after {
+  opacity: 1;
+  transform: translateY(10px);
+}
+.spec .inner .info .wrap .txt > ul li strong::before {
+  content: ">";
+  margin-right: 10px;
+  font: 18px/1 "Pretendard";
+}
+.spec .inner .info .wrap .txt > ul li strong::after {
+  content: "";
+  position: absolute;
+  background: #fff;
+  width: 100%;
+  height: 2px;
+  left: 0;
+  bottom: 0;
+  opacity: 0;
+  transition: all 0.7s;
+  transform: translateY(30px);
+}
+
+@media screen and (max-width: 1179px) {
+  .bikeType .inner {
+    width: 100%;
+    padding: 0 20px;
+  }
+  .bikeType .inner .wrap article {
+    width: 100%;
+  }
+  .bikeType .inner .wrap article .pic {
+    flex: 1 35%;
+  }
+  .bikeType .inner .wrap article .info {
+    width: 100%;
+    padding: 10px;
+    flex: 1 65%;
+    margin-top: 0px;
+  }
+  .bikeType .inner .wrap article .info h2 {
+    margin-bottom: 10px;
+    font: bold 18px/1 "Pretendard";
+  }
+  .bikeType .inner .wrap article .info h3 {
+    margin-bottom: 10px;
+    font: normal 16px/1 "Pretendard";
+  }
+  .bikeType .inner .wrap article .info p {
+    color: #777;
+    font: normal 12px/1.3 "GmarketSansMedium";
+  }
+
+  .spec .inner {
+    width: 100%;
+    padding: 0 20px;
+  }
+  .spec .inner .pic1 {
+    width: 50%;
+  }
+  .spec .inner .info h2 {
+    font: bold 20px/1 "Orbitron";
+  }
+  .spec .inner .info .wrap .txt > ul {
+    padding-left: 10px;
+  }
+  .spec .inner .info .wrap .txt > ul li {
+    padding: 20px 0 20px 10px;
+  }
+  .spec .inner .info .wrap .txt > ul li span {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 539px) {
+  .bikeType .inner .wrap article {
+    margin-bottom: 20px;
+    flex-direction: column;
+  }
+  .bikeType .inner .wrap article:nth-of-type(even) {
+    flex-direction: column;
+  }
+  .bikeType .inner .wrap article .info {
+    margin-top: 20px;
+  }
+
+  .spec .inner .pic1 {
+    width: 100%;
+  }
+  .spec .inner .specs {
+    flex-direction: column;
+  }
+  .spec .inner .specs > li:nth-of-type(2) {
+    border-right: none;
+    border-left: none;
+  }
+  .spec .inner .info .wrap {
+    flex-direction: column;
+  }
+}
+.bikeType14 {
+  width: 100%;
+  margin-bottom: 50px;
+}
+.bikeType14 .swiper-slide img {
+  width: 100%;
+}
+.bikeType14 .inner {
+  width: 1180px;
+  margin: 0 auto;
+}
+.bikeType14 .inner h1 {
+  font: bold 30px/1 "orbitron";
+  letter-spacing: 1px;
+}
+.bikeType14 .inner .wrap {
+  width: 100%;
+}
+.bikeType14 .inner .wrap article {
+  display: flex;
+}
+.bikeType14 .inner .wrap article:nth-of-type(even) {
+  flex-direction: row-reverse;
+}
+.bikeType14 .inner .wrap article .pic {
+  flex: 1 50%;
+  font-size: 0;
+}
+.bikeType14 .inner .wrap article .pic img {
+  width: 100%;
+}
+.bikeType14 .inner .wrap article .info {
+  padding: 30px;
+  flex: 1 50%;
+  margin-top: 30px;
+}
+.bikeType14 .inner .wrap article .info h2 {
+  width: 100%;
+  margin-bottom: 15px;
+  font: bold 26px/1 "Pretendard";
+}
+.bikeType14 .inner .wrap article .info h3 {
+  width: 100%;
+  margin-bottom: 20px;
+  color: #aaa;
+  font: normal 20px/1 "Pretendard";
+}
+.bikeType14 .inner .wrap article .info p {
+  width: 100%;
+  color: #777;
+  font: normal 15px/1.3 "GmarketSansMedium";
+}
+
+.spec .inner {
+  width: 1180px;
+  margin: 0 auto;
+}
+.spec .inner > h1 {
+  color: #fff;
+  text-align: center;
+  padding: 30px 0;
+  border-bottom: 2px solid #4fb627;
+  font: bold 30px/1 "orbitron";
+  letter-spacing: 1px;
+  margin: 30px 0;
+}
+.spec .inner .pic1 {
+  width: 540px;
+  margin: 0 auto;
+}
+.spec .inner .pic1 img {
+  width: 100%;
+}
+.spec .inner > ul {
+  margin: 50px 0;
+  display: flex;
+  color: #fff;
+  justify-content: space-around;
+  width: 100%;
+}
+.spec .inner > ul > li {
+  display: flex;
+  flex: 1 33%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.spec .inner > ul > li:nth-of-type(2) {
+  border-right: 1px solid #eee;
+  border-left: 1px solid #eee;
+}
+.spec .inner > ul > li strong {
+  margin-bottom: 30px;
+  font: bold 18px/1 "Pretendard";
+}
+.spec .inner > ul > li img {
+  width: 40px;
+  margin-bottom: 20px;
+}
+.spec .inner > ul > li span {
+  font: normal 16px/1 "Pretendard";
+}
+.spec .inner .info {
+  width: 100%;
+}
+.spec .inner .info h2 {
+  margin-top: 100px;
+  color: #fff;
+  padding: 10px 0;
+  font: bold 24px/1 "Orbitron";
+}
+.spec .inner .info .wrap {
+  display: flex;
+  margin-bottom: 50px;
+}
+.spec .inner .info .wrap .pic {
+  width: 100%;
+  height: 100%;
+  flex: 1 50%;
+}
+.spec .inner .info .wrap .pic img {
+  width: 100%;
+}
+.spec .inner .info .wrap .txt {
+  flex: 1 50%;
+  width: 100%;
+}
+.spec .inner .info .wrap .txt > ul {
+  width: 100%;
+  height: 100%;
+  display: block;
+  padding-left: 30px;
+}
+.spec .inner .info .wrap .txt > ul li {
+  padding: 20px 0 20px 20px;
+  border-bottom: 1px solid #777;
+  display: flex;
+  justify-content: space-between;
+}
+.spec .inner .info .wrap .txt > ul li:last-of-type {
+  border-bottom: none;
+}
+.spec .inner .info .wrap .txt > ul li span {
+  color: #aaa;
+  margin-right: 10px;
+}
+.spec .inner .info .wrap .txt > ul li strong {
+  color: #fff;
+  position: relative;
+  left: 0;
+}
+.spec .inner .info .wrap .txt > ul li strong:hover::after {
+  opacity: 1;
+  transform: translateY(10px);
+}
+.spec .inner .info .wrap .txt > ul li strong::before {
+  content: ">";
+  margin-right: 10px;
+  font: 18px/1 "Pretendard";
+}
+.spec .inner .info .wrap .txt > ul li strong::after {
+  content: "";
+  position: absolute;
+  background: #fff;
+  width: 100%;
+  height: 2px;
+  left: 0;
+  bottom: 0;
+  opacity: 0;
+  transition: all 0.7s;
+  transform: translateY(30px);
+}
+
+@media screen and (max-width: 1179px) {
+  .bikeType .inner {
+    width: 100%;
+    padding: 0 20px;
+  }
+  .bikeType .inner .wrap article {
+    width: 100%;
+  }
+  .bikeType .inner .wrap article .pic {
+    flex: 1 35%;
+  }
+  .bikeType .inner .wrap article .info {
+    width: 100%;
+    padding: 10px;
+    flex: 1 65%;
+    margin-top: 0px;
+  }
+  .bikeType .inner .wrap article .info h2 {
+    margin-bottom: 10px;
+    font: bold 18px/1 "Pretendard";
+  }
+  .bikeType .inner .wrap article .info h3 {
+    margin-bottom: 10px;
+    font: normal 16px/1 "Pretendard";
+  }
+  .bikeType .inner .wrap article .info p {
+    color: #777;
+    font: normal 12px/1.3 "GmarketSansMedium";
+  }
+
+  .spec .inner {
+    width: 100%;
+    padding: 0 20px;
+  }
+  .spec .inner .pic1 {
+    width: 50%;
+  }
+  .spec .inner .info h2 {
+    font: bold 20px/1 "Orbitron";
+  }
+  .spec .inner .info .wrap .txt > ul {
+    padding-left: 10px;
+  }
+  .spec .inner .info .wrap .txt > ul li {
+    padding: 20px 0 20px 10px;
+  }
+  .spec .inner .info .wrap .txt > ul li span {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 539px) {
+  .bikeType .inner .wrap article {
+    margin-bottom: 20px;
+    flex-direction: column;
+  }
+  .bikeType .inner .wrap article:nth-of-type(even) {
+    flex-direction: column;
+  }
+  .bikeType .inner .wrap article .info {
+    margin-top: 20px;
+  }
+
+  .spec .inner .pic1 {
+    width: 100%;
+  }
+  .spec .inner .specs {
+    flex-direction: column;
+  }
+  .spec .inner .specs > li:nth-of-type(2) {
+    border-right: none;
+    border-left: none;
+  }
+  .spec .inner .info .wrap {
+    flex-direction: column;
+  }
+}
+.bikeType15 {
+  width: 100%;
+  margin-bottom: 50px;
+}
+.bikeType15 .swiper-slide img {
+  width: 100%;
+}
+.bikeType15 .inner {
+  width: 1180px;
+  margin: 0 auto;
+}
+.bikeType15 .inner h1 {
+  font: bold 30px/1 "orbitron";
+  letter-spacing: 1px;
+}
+.bikeType15 .inner .wrap {
+  width: 100%;
+}
+.bikeType15 .inner .wrap article {
+  display: flex;
+}
+.bikeType15 .inner .wrap article:nth-of-type(even) {
+  flex-direction: row-reverse;
+}
+.bikeType15 .inner .wrap article .pic {
+  flex: 1 50%;
+  font-size: 0;
+}
+.bikeType15 .inner .wrap article .pic img {
+  width: 100%;
+}
+.bikeType15 .inner .wrap article .info {
+  padding: 30px;
+  flex: 1 50%;
+  margin-top: 30px;
+}
+.bikeType15 .inner .wrap article .info h2 {
+  width: 100%;
+  margin-bottom: 15px;
+  font: bold 26px/1 "Pretendard";
+}
+.bikeType15 .inner .wrap article .info h3 {
+  width: 100%;
+  margin-bottom: 20px;
+  color: #aaa;
+  font: normal 20px/1 "Pretendard";
+}
+.bikeType15 .inner .wrap article .info p {
+  width: 100%;
+  color: #777;
+  font: normal 15px/1.3 "GmarketSansMedium";
+}
+
+.spec .inner {
+  width: 1180px;
+  margin: 0 auto;
+}
+.spec .inner > h1 {
+  color: #fff;
+  text-align: center;
+  padding: 30px 0;
+  border-bottom: 2px solid #4fb627;
+  font: bold 30px/1 "orbitron";
+  letter-spacing: 1px;
+  margin: 30px 0;
+}
+.spec .inner .pic1 {
+  width: 540px;
+  margin: 0 auto;
+}
+.spec .inner .pic1 img {
+  width: 100%;
+}
+.spec .inner > ul {
+  margin: 50px 0;
+  display: flex;
+  color: #fff;
+  justify-content: space-around;
+  width: 100%;
+}
+.spec .inner > ul > li {
+  display: flex;
+  flex: 1 33%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.spec .inner > ul > li:nth-of-type(2) {
+  border-right: 1px solid #eee;
+  border-left: 1px solid #eee;
+}
+.spec .inner > ul > li strong {
+  margin-bottom: 30px;
+  font: bold 18px/1 "Pretendard";
+}
+.spec .inner > ul > li img {
+  width: 40px;
+  margin-bottom: 20px;
+}
+.spec .inner > ul > li span {
+  font: normal 16px/1 "Pretendard";
+}
+.spec .inner .info {
+  width: 100%;
+}
+.spec .inner .info h2 {
+  margin-top: 100px;
+  color: #fff;
+  padding: 10px 0;
+  font: bold 24px/1 "Orbitron";
+}
+.spec .inner .info .wrap {
+  display: flex;
+  margin-bottom: 50px;
+}
+.spec .inner .info .wrap .pic {
+  width: 100%;
+  height: 100%;
+  flex: 1 50%;
+}
+.spec .inner .info .wrap .pic img {
+  width: 100%;
+}
+.spec .inner .info .wrap .txt {
+  flex: 1 50%;
+  width: 100%;
+}
+.spec .inner .info .wrap .txt > ul {
+  width: 100%;
+  height: 100%;
+  display: block;
+  padding-left: 30px;
+}
+.spec .inner .info .wrap .txt > ul li {
+  padding: 20px 0 20px 20px;
+  border-bottom: 1px solid #777;
+  display: flex;
+  justify-content: space-between;
+}
+.spec .inner .info .wrap .txt > ul li:last-of-type {
+  border-bottom: none;
+}
+.spec .inner .info .wrap .txt > ul li span {
+  color: #aaa;
+  margin-right: 10px;
+}
+.spec .inner .info .wrap .txt > ul li strong {
+  color: #fff;
+  position: relative;
+  left: 0;
+}
+.spec .inner .info .wrap .txt > ul li strong:hover::after {
+  opacity: 1;
+  transform: translateY(10px);
+}
+.spec .inner .info .wrap .txt > ul li strong::before {
+  content: ">";
+  margin-right: 10px;
+  font: 18px/1 "Pretendard";
+}
+.spec .inner .info .wrap .txt > ul li strong::after {
+  content: "";
+  position: absolute;
+  background: #fff;
+  width: 100%;
+  height: 2px;
+  left: 0;
+  bottom: 0;
+  opacity: 0;
+  transition: all 0.7s;
+  transform: translateY(30px);
+}
+
+@media screen and (max-width: 1179px) {
+  .bikeType .inner {
+    width: 100%;
+    padding: 0 20px;
+  }
+  .bikeType .inner .wrap article {
+    width: 100%;
+  }
+  .bikeType .inner .wrap article .pic {
+    flex: 1 35%;
+  }
+  .bikeType .inner .wrap article .info {
+    width: 100%;
+    padding: 10px;
+    flex: 1 65%;
+    margin-top: 0px;
+  }
+  .bikeType .inner .wrap article .info h2 {
+    margin-bottom: 10px;
+    font: bold 18px/1 "Pretendard";
+  }
+  .bikeType .inner .wrap article .info h3 {
+    margin-bottom: 10px;
+    font: normal 16px/1 "Pretendard";
+  }
+  .bikeType .inner .wrap article .info p {
+    color: #777;
+    font: normal 12px/1.3 "GmarketSansMedium";
+  }
+
+  .spec .inner {
+    width: 100%;
+    padding: 0 20px;
+  }
+  .spec .inner .pic1 {
+    width: 50%;
+  }
+  .spec .inner .info h2 {
+    font: bold 20px/1 "Orbitron";
+  }
+  .spec .inner .info .wrap .txt > ul {
+    padding-left: 10px;
+  }
+  .spec .inner .info .wrap .txt > ul li {
+    padding: 20px 0 20px 10px;
+  }
+  .spec .inner .info .wrap .txt > ul li span {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 539px) {
+  .bikeType .inner .wrap article {
+    margin-bottom: 20px;
+    flex-direction: column;
+  }
+  .bikeType .inner .wrap article:nth-of-type(even) {
+    flex-direction: column;
+  }
+  .bikeType .inner .wrap article .info {
+    margin-top: 20px;
+  }
+
+  .spec .inner .pic1 {
+    width: 100%;
+  }
+  .spec .inner .specs {
+    flex-direction: column;
+  }
+  .spec .inner .specs > li:nth-of-type(2) {
+    border-right: none;
+    border-left: none;
+  }
+  .spec .inner .info .wrap {
+    flex-direction: column;
+  }
+}
 * {
   font-family: "Pretendard", sans-serif;
 }
@@ -1598,10 +5593,11 @@ body {
 }
 #header .inner nav .gnb li a {
   display: block;
-  font: normal 24px/1 "Pretendard";
+  font: normal 16px/1 "Orbitron";
   color: #fff;
   padding: 15px 10px;
   transition: all 0.7s;
+  letter-spacing: 1px;
 }
 #header .inner nav .gnb li:hover a {
   background: #4fb627;
@@ -1612,7 +5608,7 @@ body {
   margin-top: 5px;
   position: absolute;
   right: 35px;
-  top: 0;
+  top: 8px;
 }
 #header .inner nav .util::after {
   content: "";
@@ -1628,7 +5624,7 @@ body {
 #header .inner nav .util li a {
   display: block;
   margin-left: 20px;
-  font-size: 24px;
+  font-size: 16px;
   line-height: 2;
   color: #fff;
 }
@@ -1739,9 +5735,38 @@ body {
 /* visual ----------------------------------------------------------------*/
 #visual {
   width: 100%;
+  height: 100%;
+  position: relative;
 }
-#visual img {
+#visual .swiper {
   width: 100%;
+  height: 100%;
+}
+#visual .swiper .swiper-wrapper {
+  width: 100%;
+  height: 100%;
+  /* Center slide text vertically */
+}
+#visual .swiper .swiper-wrapper .swiper-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+#visual .swiper .swiper-wrapper .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /* model ------------------------------------------------*/
@@ -1755,13 +5780,16 @@ body {
 #model .inner > h2 {
   color: #fff;
   margin-top: 80px;
-  font: bold 30px/1 "arial";
+  font: bold 30px/1 "orbitron";
   text-align: center;
+  letter-spacing: 1px;
 }
 #model .inner p {
   color: #fff;
   margin: 20px 0;
   text-align: center;
+  font-family: "orbitron";
+  letter-spacing: 1px;
 }
 #model .inner::after {
   content: "";
@@ -1794,7 +5822,9 @@ body {
 #model .inner .wrap article .pic h2 {
   color: #fff;
   padding: 30px 5px;
-  font-family: "GmarketSansMedium";
+  font-family: "orbitron";
+  font-size: 18px;
+  letter-spacing: 1px;
 }
 #model .inner .wrap article .pic a {
   padding: 20px 0;
@@ -1802,7 +5832,7 @@ body {
   border: 2px solid #4fb627;
   text-align: center;
   color: #999;
-  font: bold 18px/1 "arial";
+  font: bold 18px/1 "orbitron";
   margin-top: 30px;
   transition: all 0.7s;
   position: relative;
@@ -1880,7 +5910,7 @@ body {
 }
 #content .inner .wrap article h1 {
   color: #fff;
-  font: bold 24px/1 "GmarketSansMedium";
+  font: bold 24px/1 "orbitron";
   margin-bottom: 20px;
 }
 #content .inner .wrap article h2 {
@@ -1921,7 +5951,7 @@ body {
   color: #fff;
   text-align: center;
   margin-bottom: 50px;
-  font: bold 30px/1 "GmarketSansMedium";
+  font: bold 30px/1 "orbitron";
 }
 #news .inner .wrap::after {
   content: "";

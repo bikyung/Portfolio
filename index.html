@@ -7,7 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>main page layout</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
   <script src="https://kit.fontawesome.com/e5fcbbc04c.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script defer src="js/main.js"></script>
 </head>
 
@@ -17,11 +19,11 @@
       <h1><a href="index.html"><img src="img/logo.png" alt="logo"></a></h1>
       <nav>
         <ul class="gnb">
-          <li><a href="모터싸이클.html">모터사이클</a></li>
-          <li><a href="#">제트스키</a></li>
-          <li><a href="#">딜러찾기</a></li>
-          <li><a href="#">서비스</a></li>
-          <li><a href="뉴스&이벤트.html">뉴스&이벤트</a></li>
+          <li><a href="MotorCycle.html">MoterCycle</a></li>
+          <li><a href="Department.html">Department</a></li>
+          <li><a href="Gellary.html">Gellary</a></li>
+          <li><a href="Service.html">Service</a></li>
+          <li><a href="News&Event.html">News&Event</a></li>
         </ul>
 
         <ul class="util">
@@ -36,11 +38,11 @@
       </a>
       <nav class="menuMo">
         <ul class="gnbMo">
-          <li><a href="모터싸이클.html">모터사이클</a></li>
-          <li><a href="#">제트스키</a></li>
-          <li><a href="#">딜러찾기</a></li>
-          <li><a href="#">서비스</a></li>
-          <li><a href="뉴스&이벤트.html">뉴스&이벤트</a></li>
+          <li><a href="MotorCycle.html">MoterCycle</a></li>
+          <li><a href="Department.html">Department</a></li>
+          <li><a href="Gellary.html">Gellary</a></li>
+          <li><a href="Service.html">Service</a></li>
+          <li><a href="News&Event.html">News&Event</a></li>
         </ul>
 
         <ul class="utilMo">
@@ -54,7 +56,16 @@
 
   <section id="visual">
     <h2 class="hidden">메인이미지</h2>
-    <img src="img/motor_main.jpg" alt="main">
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="img/motor_main.jpg" alt="main"></div>
+            <div class="swiper-slide"><img src="img/motor_main1.jpg" alt="main1"></div>
+            <div class="swiper-slide"><img src="img/motor_main2.jpg" alt="main2"></div>
+            <div class="swiper-slide"><img src="img/main3.jpg" alt="main3"></div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
   </section>
 
   <section id="model">
@@ -90,6 +101,24 @@
             <a href="#">자세히 보기</a>
           </div>
         </article>
+
+            <!-- Swiper -->
+    <div class="swiper mySwiper1">
+      <div class="swiper-wrapper1">
+        <div class="swiper-slide">Slide 1</div>
+        <div class="swiper-slide">Slide 2</div>
+        <div class="swiper-slide">Slide 3</div>
+        <div class="swiper-slide">Slide 4</div>
+        <div class="swiper-slide">Slide 5</div>
+        <div class="swiper-slide">Slide 6</div>
+        <div class="swiper-slide">Slide 7</div>
+        <div class="swiper-slide">Slide 8</div>
+        <div class="swiper-slide">Slide 9</div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
         <ul class="indicator">
           <li>1</li>
           <li>2</li>
@@ -172,7 +201,6 @@
         <li><a href="#">개인정보취급방침</a></li>
         <li><a href="#"> 이용약관</a></li>
         <li><a href="#">쿠키사용정보</a></li>
-        <li><a href="기업소개.html">기업소개</a></li>
       </ul>
 
       <address>
