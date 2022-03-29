@@ -6,7 +6,7 @@
       background: url(../img/subpage01/submain03.jpg) no-repeat center / cover;
       height: 450px;
       margin-bottom: 80px;
-      img {
+      > img {
         width: 100%;
       }
       > h2 {
@@ -19,12 +19,54 @@
   .inner {
     width: 1180px;
     margin: 0 auto;
+    .membership {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      article {
+        flex: 1 33.3%;
+        margin-right: 20px;
+        cursor: pointer;
+        &:last-child {
+          margin-right: 0;
+        }
+        &:hover {
+          .txt h2 {
+            color: #000;
+          }
+          .pic img {
+            transform: scale(1.05);
+            filter: brightness(1.2);
+          }
+        }
+        .pic {
+          width: 100%;
+          overflow: hidden;
+          img {
+            width: 100%;
+            height: 100%;
+            transition: 0.7s;
+            filter: brightness(0.7);
+          }
+        }
+        .txt {
+          margin-top: 20px;
+          > h2 {
+            font-size: 16px;
+            border-bottom: none;
+            color: #aaa;
+          }
+        }
+      }
+    }
     h2 {
       color: #000;
       margin-bottom: 10px;
       text-align: left;
       border-bottom: 1px solid #999;
-      font-size: 24px;
+      font-size: 22px;
+      font-family: "Pretendard";
+      padding-bottom: 5px;
     }
     form {
       padding-bottom: 50px;
@@ -63,14 +105,18 @@
           }
           input[type="reset"],
           input[type="submit"] {
-            color: #fff;
+            color: #000;
             width: 150px;
             height: 40px;
             border: none;
-            background: #777;
+            background: #eee;
             margin: 0 10px;
             cursor: pointer;
             font: bold 16px/1 "Pretendard";
+            &:hover {
+              background: #111;
+              color: #fff;
+            }
           }
           input[type="radio"] {
             padding: 5px 0;
@@ -124,16 +170,16 @@
           }
           label[for="female"] {
             cursor: pointer;
-            color:#000;
+            color: #000;
             input[type="radio"] {
               margin-right: 10px;
             }
           }
-          input[type=checkbox] {
+          input[type="checkbox"] {
             margin-left: 10px;
           }
           label[for="call1"] {
-            color:#000;
+            color: #000;
             cursor: pointer;
           }
           p {
@@ -150,7 +196,6 @@
 /* tablet --------------------------------------------------*/
 
 @media screen and (max-width: $tablet) {
-
   .join {
     .sub_visual {
       .pic {
@@ -164,33 +209,40 @@
     }
     .inner {
       width: 100%;
-      padding: 0 20px; 
-      form {
-        table {
-          th {
-            &:not(:last-child)::after {
-              margin-left: 10px;
-            }
-            label {
-              font: bold 16px/1 "Pretendard";
-            }
+      padding: 0 20px;
+      .membership {
+        .txt {
+          > h2 {
+            font-size: 12px;
           }
-          td {
-            input[type="text"],
-            input[type="password"],
-            input[type="tel"],
-            input[type="search"] {
-              margin-top: 0;
-            }
-            input[type="tel"] {
-              width: 15%;
-            }
-            input[type="search"] {
-              width: 70%;
-            }
-            #address1 {
-              width: 70%;
-            }
+        }
+      }
+    }
+    form {
+      table {
+        th {
+          &:not(:last-child)::after {
+            margin-left: 10px;
+          }
+          label {
+            font: bold 16px/1 "Pretendard";
+          }
+        }
+        td {
+          input[type="text"],
+          input[type="password"],
+          input[type="tel"],
+          input[type="search"] {
+            margin-top: 0;
+          }
+          input[type="tel"] {
+            width: 15%;
+          }
+          input[type="search"] {
+            width: 70%;
+          }
+          #address1 {
+            width: 70%;
           }
         }
       }
@@ -201,7 +253,6 @@
 /* mobile ------------------------------------------------------*/
 
 @media screen and (max-width: $mobile) {
-
   .join {
     .sub_visual {
       .pic {
@@ -214,6 +265,12 @@
       }
     }
     .inner {
+      .membership {
+        flex-direction: column;
+        article {
+          margin-right: 0;
+        }
+      }
       h2 {
         font-size: 20px;
       }
@@ -237,7 +294,7 @@
             text-align: center;
             width: 100%;
           }
-  
+
           td {
             padding: 20px 10px;
             input[type="text"],
@@ -250,10 +307,10 @@
               width: 20%;
             }
             input[type="search"] {
-              width: 75%;
+              width: 74%;
             }
             #address1 {
-              width: 75%;
+              width: 74%;
             }
             span {
               padding: 5px 15px;
