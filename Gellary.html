@@ -5,19 +5,21 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>subpage layout</title>
+  <title>Gallery</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
   <script src="https://kit.fontawesome.com/e5fcbbc04c.js" crossorigin="anonymous"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <script defer src="js/main.js"></script>
+  <!-- <script src="js/main.js" defer></script> -->
+  <script src="js/galley.js" defer></script>
 
 </head>
 
 <body>
   <header id="header_sub">
     <div class="inner">
-      <h1><a href="index.html"><img src="img/logo.png" alt="logo"></a></h1>
+      <h1><a href="index.html"><img src="img/logo1.png" alt="logo"></a></h1>
       <nav>
         <ul class="gnb">
           <li><a href="MotorCycle.html">MoterCycle</a></li>
@@ -56,14 +58,23 @@
     </div>
   </header>
 
-  <section class="contents">
-    <div class="sub_visual">
+  <main class="gallery">
+    <h2>Kawasaki Gallery</h2>
     </div>
-    <div class="inner">
-        <h1>Sub Title <span>서브페이지 제목</span> </h1>
-        <!-- 컨텐츠가 들어갈 부분 -->
-    </div>
-</section>
+    <ul class="menu">
+      <li class="on"><a href="*">ALL</a></li>
+      <li><a href=".ninjah2">NINJAH2</a></li>
+      <li><a href=".ninja1000sx">NINJA1000SX</a></li>
+      <li><a href=".ninjazx10r">NINJA ZX-10R</a></li>
+      <li><a href=".Versys1000SE">Versys1000SE</a></li>
+      <li><a href=".z650rs">Z650RS</a></li>
+      <li><a href=".z900">Z900</a></li>
+    </ul>
+    <img class="loading" src="img/loading.gif" alt="loading">
+    <section>
+      
+    </section>   
+  </main>
 
   <footer id="footer_sub">
     <div class="inner">
@@ -84,7 +95,7 @@
         <li><a href="#"><i class="fa-brands fa-youtube-square"></i></a></li>
       </ul>
       <div class="footerLogo">
-        <h1><a href="#"><img src="img/logo.png" alt="logo"></a></h1>
+        <h1><a href="#"><img src="img/logo1.png" alt="logo"></a></h1>
         <p>© Copyright 2022 Daijeon Machinery Co Ltd.<br>All rights reserved. </p>
       </div>
     </div>

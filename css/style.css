@@ -1617,21 +1617,24 @@ a {
   height: 400px;
 }
 
-.txt1 ul {
-  display: flex;
-  justify-content: space-around;
+.txt1 {
   padding: 30px 10vw 0;
 }
-.txt1 ul li a {
-  display: block;
-  color: #fff;
-  font: normal 16px/1 "pretendard";
+.txt1 h3 {
+  color: #eee;
+  font: bold 24px/1 "arial";
+  margin-bottom: 10px;
 }
-.txt1 ul li a:hover {
-  color: #4fb627;
+.txt1 p {
+  color: #aaa;
+  margin-bottom: 10px;
+  font: 13px/1 "pretendard";
+}
+.txt1 strong {
+  color: #888;
 }
 
-main {
+.youtubeInfo {
   width: 100%;
   height: 100vh;
   padding: 20vh 10vw;
@@ -1640,7 +1643,7 @@ main {
   justify-content: space-between;
   align-content: center;
 }
-main article {
+.youtubeInfo article {
   width: 48%;
   height: 30%;
   border: 1px solid #4fb627;
@@ -1651,37 +1654,40 @@ main article {
   position: relative;
   transition: 0.7s;
 }
-main article:hover {
+.youtubeInfo article:hover {
   transform: scale(1.1);
 }
-main article .pic {
+.youtubeInfo article:hover .con h2, .youtubeInfo article:hover .con p {
+  color: #fff;
+}
+.youtubeInfo article .pic {
   width: 40%;
   height: 100%;
 }
-main article .pic img {
+.youtubeInfo article .pic img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   filter: opacity(0.5);
 }
-main article .pic img:hover {
+.youtubeInfo article .pic img:hover {
   filter: opacity(1);
 }
-main article .con {
+.youtubeInfo article .con {
   width: 54%;
   height: 100%;
   position: relative;
 }
-main article .con h2 {
+.youtubeInfo article .con h2 {
   font: bold 16px/1.2 "pretendard";
   color: #555;
   margin-bottom: 15px;
 }
-main article .con p {
+.youtubeInfo article .con p {
   font: 12px/1.2 "pretendard";
   color: #888;
 }
-main article .con span {
+.youtubeInfo article .con span {
   font: bold 12px/1 "pretendard";
   color: #4fb627;
   position: absolute;
@@ -1706,6 +1712,185 @@ aside .btnClose {
   cursor: pointer;
 }
 
+.gallery {
+  width: 100%;
+  padding-bottom: 100px;
+}
+.gallery > h2 {
+  background: url(../img/subpage01/main02.jpg) no-repeat center/cover;
+  height: 500px;
+  color: #fff;
+  padding: 80px;
+  font: bold 30px/1 "pretendard";
+}
+.gallery .menu {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0;
+}
+.gallery .menu li {
+  margin-left: 20px;
+  border: 1px solid #999;
+}
+.gallery .menu li:hover {
+  border: 1px solid #4fb627;
+}
+.gallery .menu li:hover a {
+  color: #4fb627;
+}
+.gallery .menu li a {
+  color: #999;
+  display: block;
+  padding: 12px 20px;
+  font-family: "orbitron";
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+.gallery .menu li.on a {
+  color: #000;
+  background: #4fb627;
+  border: none;
+}
+.gallery .loading {
+  width: 300px;
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: 0.5s;
+  z-index: -1;
+}
+.gallery .loading.off {
+  opacity: 0;
+}
+.gallery section {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  overflow: hidden;
+  position: relative;
+  opacity: 1;
+  transform: translateY(100px);
+  transition: 1s;
+}
+.gallery section.on {
+  opacity: 1;
+  transform: translateY(0px);
+}
+.gallery section .item {
+  width: 25%;
+}
+.gallery section .item > div {
+  width: 100%;
+  padding: 10px;
+  box-shadow: 5px 5px 20px rgba(255, 255, 255, 0.1);
+  transition: 0.7s;
+  filter: brightness(70%);
+  cursor: pointer;
+}
+.gallery section .item > div:hover {
+  transform: scale(1.1);
+  filter: brightness(130%);
+}
+.gallery section .item > div .pic {
+  display: block;
+  width: 100%;
+}
+.gallery section .item > div .pic img {
+  width: 100%;
+}
+.gallery section .item > div h2 {
+  font: 18px/1 "pretendard";
+  margin-bottom: 10px;
+  color: #777;
+}
+.gallery section .item > div p {
+  font: bold 16px/1 "arial";
+  color: #eee;
+}
+
+aside {
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+aside .con {
+  width: 100%;
+  height: 100%;
+}
+aside .con img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+aside .close {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  color: #eee;
+  cursor: pointer;
+  border: 1px solid #eee;
+  padding: 8px 20px;
+}
+aside .close:hover {
+  color: #4fb627;
+  border: 1px solid #4fb627;
+}
+
+@media screen and (max-width: 1179px) {
+  .gallery > h2 {
+    font: bold 30px/1 "pretendard";
+  }
+  .gallery .menu {
+    flex-wrap: wrap;
+  }
+  .gallery .menu li {
+    margin-top: 10px;
+  }
+  .gallery .loading {
+    width: 200px;
+  }
+  .gallery section .item {
+    width: 33.3333333333%;
+  }
+  .gallery section .item h2 {
+    font: 16px/1 "pretendard";
+  }
+  .gallery section .item p {
+    font: bold 14px/1 "arial";
+  }
+}
+@media screen and (max-width: 539px) {
+  .gallery > h2 {
+    height: 300px;
+    padding: 30px;
+    font: bold 20px/1 "pretendard";
+  }
+  .gallery .menu {
+    display: block;
+    padding: 0 30px;
+  }
+  .gallery section .item {
+    width: 100%;
+  }
+  .gallery section .item > div:hover {
+    transform: scale(1.05);
+  }
+  .gallery section .item h2 {
+    font: 16px/1 "pretendard";
+  }
+  .gallery section .item p {
+    font: bold 14px/1 "arial";
+  }
+}
 .bikeType {
   width: 100%;
   margin-bottom: 50px;
@@ -5702,8 +5887,7 @@ body {
 #header {
   width: 100%;
   border-bottom: 1px solid #4fb627;
-  position: relative;
-  overflow: hidden;
+  z-index: 10;
 }
 #header .inner {
   width: 1180px;
@@ -5800,9 +5984,9 @@ body {
 }
 #header .inner nav .gnb {
   margin-left: 20px;
-  display: flex;
-  opacity: 0;
+  display: none;
   transition: 0.7s;
+  opacity: 0;
 }
 #header .inner nav .gnb li a {
   display: block;
@@ -5817,10 +6001,15 @@ body {
   color: #cbcaa5;
 }
 #header .inner nav .gnb.on {
+  display: flex;
+  justify-content: space-between;
   opacity: 1;
 }
 #header .inner nav .util {
   height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 #header .inner nav .util li:hover a {
   color: #4fb627;
@@ -5837,8 +6026,9 @@ body {
 /* visual ----------------------------------------------------------------*/
 #visual {
   width: 100%;
-  height: 100%;
-  position: relative;
+  height: 100vh;
+  position: absolute;
+  z-index: 5;
 }
 #visual .wrap {
   width: 100%;

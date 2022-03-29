@@ -1,5 +1,5 @@
 const body = document.querySelector('body');
-const main = document.querySelector('main');
+const youtube = document.querySelector('.youtubeInfo');
 const key = "AIzaSyBA0vVAYlhuCiLDSkDUi_LswCkyeB6NAoI";
 const playListId = "PL92HST3Zi7rbsat9oT6ZUtyan4CUs8Tas";
 const num = 8;
@@ -36,12 +36,12 @@ fetch(url)
     `;
   })
 
-  main.innerHTML = result;
+  youtube.innerHTML = result;
 })
 
 
 // 썸네일 클릭 이벤트-----------------------------------------------------
-main.addEventListener('click', e => {
+youtube.addEventListener('click', e => {
   createPop(e)
 })
 
