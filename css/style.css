@@ -1790,7 +1790,7 @@ aside .btnClose {
   cursor: pointer;
 }
 .gallery section .item > div:hover {
-  transform: scale(1.1);
+  transform: scale(1.07);
   filter: brightness(130%);
 }
 .gallery section .item > div .pic {
