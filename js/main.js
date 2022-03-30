@@ -1,6 +1,7 @@
 const btnCall = document.querySelector('.btnCall');
 const menuMo = document.querySelector('.menuMo');
 const gnb = document.querySelector('.gnb');
+const list = gnb.querySelectorAll('li');
 const btnStart = document.querySelector(".btnStart");
 const btnStop = document.querySelector(".btnStop");
 
@@ -14,6 +15,8 @@ btnCall.onclick = function (e) {
   gnb.classList.toggle('on');
   menuMo.classList.toggle('on');
 }
+
+
 
 
 // header slider -----------------------------------------------------------
@@ -113,33 +116,6 @@ let base = -300; //섹션과 버튼 활성화 위치값 수정
 //로딩시 세로위치값 구하기 
 setPos();
 
-sections.forEach((section, idx) => {
-  section.addEventListener("mousewheel", e => {
-    e.preventDefault();
-
-    //현재 활성화되어있는 버튼 li를 변수로 저장해서 
-    let activeSec = document.querySelector("section.on");
-    let arrSec = Array.from(sections);
-    //몇번째 li인지 순번을 찾아서 저장 
-    let activeIndex = arrSec.indexOf(activeSec); //0,1,2,3    
-
-    if (e.deltaY < 0) {
-      if (activeIndex === 0) return;
-      moveScroll(activeIndex - 1);
-      console.log("up!!")
-    } else {
-      if (activeIndex === len - 1) return;
-      moveScroll(activeIndex + 1);
-      console.log("down!!");
-    }
-  }, {
-    passive: false
-  });
-
-})
-
-
-
 //resize되었을 때 setPos함수 호출 
 window.addEventListener("resize", () => {
   setPos();
@@ -156,13 +132,10 @@ lis.forEach((li, index) => {
     if (enableClick) {
       enableClick = false;
       moveScroll(index);
-
     }
-
   });
 })
 
-//스크롤 이벤트  
 window.addEventListener("scroll", activation);
 
 
@@ -215,4 +188,38 @@ function activation() {
       sections[index].classList.add('on');
     }
   });
+}
+
+// popup---------------------------------------------------------
+
+
+const popup = document.querySelector('#popup');
+const btnClose = popup.querySelector('.closeBtn');
+const isCookie = document.cookie.indexOf('today=done');
+let isOn;
+
+
+(isCookie == -1) ? isOn = 'block' : isOn = 'none';
+popup.style.display = isOn;
+
+btnClose.addEventListener('click', e => {
+  e.preventDefault();
+  popup.style.display = 'none';
+  
+  let isChecked = popup.querySelector('input[type=checkbox]').checked;
+  if(isChecked) {
+    setCookie("today","done",1);
+  } else {
+    setCookie("today", "done", 0);
+  }
+})
+
+
+
+function setCookie(name, val, due) {
+  const today = new Date();
+  const day = today.getDate();
+  today.setDate(day + due);
+  const duedate = today.toGMTString();
+  document.cookie = `${name}=${val}; path=/; expires=${duedate}`;
 }

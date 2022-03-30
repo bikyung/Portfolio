@@ -21,9 +21,9 @@ frame.addEventListener('click', e => {
 
   let target = e.target.closest('.item').querySelector('.pic img');
 
-  if(e.target == target) {
+  if (e.target == target) {
     let imgSrc = e.target.parentElement.getAttribute("href");
-  
+
     let pop = document.createElement('aside');
     pop.classList.add('pop');
     let pops = `
@@ -50,43 +50,62 @@ body.addEventListener('click', e => {
   }
 })
 
-btns.forEach(el => {
-  el.addEventListener('click', e => {
-    e.preventDefault();
-    
-    for (const el of btns) {
-      el.classList.remove('on');
-      e.currentTarget.classList.add('on');
+
+window.addEventListener('load', () => {
+
+  const grid = new Isotope("section", {
+    itemSelector: "article",
+    columnWidth: "article",
+    transitionDuation: "0.8s"
+  });
+
+  const btns = document.querySelectorAll(".menu li");
+
+  for (const el of btns) {
+    el.addEventListener('click', (e) => {
+      e.preventDefault();
+
+      const sort = e.currentTarget.querySelector('a').getAttribute('href');
+
+      grid.arrange({
+        filter: sort
+      })
+
+      for (const el of btns) {
+        el.classList.remove('on');
+        e.currentTarget.classList.add('on');
+      }
+      
+    })
+  }
+})
+
+
+    // data 생성
+    function callData(url_people) {
+
+      frame.classList.remove('on');
+      loading.classList.remove('off');
+
+      fetch(url_people)
+        .then(data => {
+          return data.json();
+        })
+        .then(json => {
+          const items = json.photos.photo;
+          createList(items);
+          imgLoaded();
+        })
+
     }
-  })
-})
 
 
-// data 생성
-function callData(url_people) {
+    function createList(items) {
+      let htmls = '';
 
-  frame.classList.remove('on');
-  loading.classList.remove('off');
-
-  fetch(url_people)
-.then(data => {
-  return data.json();
-})
-.then(json => {
-  const items = json.photos.photo;
-  createList(items);
-  imgLoaded();
-})
-
-}
-
-
-function createList(items) {
-  let htmls = '';
-
-  items.forEach(data => {
-    htmls += `
-                <article class="item">
+      items.forEach(data => {
+        htmls += `
+                <article class="item ${data.title}">
                     <div>
                         <a class="pic" href="https://live.staticflickr.com/${data.server}/${data.id}_${data.secret}_b.jpg">
                             <img src="https://live.staticflickr.com/${data.server}/${data.id}_${data.secret}_m.jpg">
@@ -96,29 +115,29 @@ function createList(items) {
                     </div>
                 </article>
         `;
-  })
-  frame.innerHTML = htmls;
-  
-}
+      })
+      frame.innerHTML = htmls;
 
-function imgLoaded() {
-  const thumbs = document.querySelectorAll('.pic img');
-  const len = thumbs.length;
-  let count = 0;
-
-  thumbs.forEach(thumb => {
-    thumb.onload =() =>{
-      count++;
-      if(count === len) {
-        new Isotope(frame,{
-          itemSelector: ".item",
-          columnWidth : ".item",
-          transitionDuration: "0.8s",
-        })
-        frame.classList.add('on');
-        loading.classList.add('off');
-      }
     }
-  })
-  
-}
+
+    function imgLoaded() {
+      const thumbs = document.querySelectorAll('.pic img');
+      const len = thumbs.length;
+      let count = 0;
+
+      thumbs.forEach(thumb => {
+        thumb.onload = () => {
+          count++;
+          if (count === len) {
+            new Isotope(frame, {
+              itemSelector: ".item",
+              columnWidth: ".item",
+              transitionDuration: "0.8s",
+            })
+            frame.classList.add('on');
+            loading.classList.add('off');
+          }
+        }
+      })
+
+    }

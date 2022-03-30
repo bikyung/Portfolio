@@ -1752,7 +1752,7 @@ aside .btnClose {
   border: none;
 }
 .gallery .loading {
-  width: 300px;
+  width: 170px;
   position: absolute;
   bottom: 0%;
   left: 50%;
@@ -5886,6 +5886,7 @@ body {
 /* header -------------------------------------------------------------*/
 #header {
   width: 100%;
+  height: 900px;
   border-bottom: 1px solid #4fb627;
   z-index: 10;
 }
@@ -5984,9 +5985,15 @@ body {
 }
 #header .inner nav .gnb {
   margin-left: 20px;
-  display: none;
   transition: 0.7s;
   opacity: 0;
+  display: flex;
+  transform: translateY(-50px);
+}
+#header .inner nav .gnb.on {
+  display: flex;
+  opacity: 1;
+  transform: translateY(0px);
 }
 #header .inner nav .gnb li a {
   display: block;
@@ -5999,11 +6006,6 @@ body {
 #header .inner nav .gnb li:hover a {
   background: #4fb627;
   color: #cbcaa5;
-}
-#header .inner nav .gnb.on {
-  display: flex;
-  justify-content: space-between;
-  opacity: 1;
 }
 #header .inner nav .util {
   height: 100%;
@@ -6364,6 +6366,83 @@ body {
 #scrollBtn li.on {
   height: 100px;
   background: #4fb627;
+}
+
+/* popup----------------------------------------------------------*/
+#popup {
+  background: url("../img/subpage01/subpageDetail/Z900SE/specz900.jpg") no-repeat center/contain;
+  width: 500px;
+  height: 500px;
+  padding: 10px;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 15px;
+  box-shadow: 10px 10px 30px rgba(234, 244, 245, 0.5);
+  z-index: 10;
+  filter: grayscale(10);
+  display: none;
+}
+#popup:hover {
+  filter: grayscale(0) brightness(120%);
+}
+#popup:hover .popupInfo h3::after {
+  opacity: 1;
+  bottom: -10px;
+}
+#popup .popupInfo {
+  margin-top: 360px;
+}
+#popup .popupInfo h2 {
+  color: #888;
+  font: bold 18px/1 "orbitron";
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+#popup .popupInfo h3 {
+  color: #999;
+  font: bold 16px/1 "orbitron";
+  letter-spacing: 1px;
+  margin-bottom: 25px;
+  cursor: pointer;
+  position: relative;
+  display: inline;
+}
+#popup .popupInfo h3::after {
+  content: "";
+  background: #fff;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: -20px;
+  height: 2px;
+  opacity: 0;
+  transition: 0.7s;
+}
+#popup .info {
+  margin-top: 30px;
+  display: inline-flex;
+  align-items: center;
+}
+#popup .info input {
+  margin-right: 20px;
+  position: relative;
+}
+#popup .info label {
+  color: #eee;
+  cursor: pointer;
+  color: #4fb627;
+  font-family: "pretendard";
+}
+#popup .closeBtn {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  color: #aaa;
+}
+#popup .closeBtn:hover {
+  color: #4fb627;
 }
 
 /* footer ------------------------------------------*/
