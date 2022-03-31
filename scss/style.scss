@@ -53,7 +53,6 @@ body {
 
 #header {
   width: 100%;
-  height: 900px;
   border-bottom: 1px solid #4fb627;
   // position: relative;
   // overflow: hidden;
@@ -61,6 +60,7 @@ body {
 
   .inner {
     width: 1180px;
+    height: 90px;
     margin: 0 auto;
     padding: 0 30px;
     display: flex;
@@ -187,7 +187,7 @@ body {
         height: 100%;
         position: absolute;
         right: 0;
-        top: 0;
+        top: 16px;
         li {
           &:hover {
             a {
@@ -247,6 +247,7 @@ body {
 
 #model {
   width: 100%;
+  margin-top: 100vh;
   position: relative;
   padding: 50px 0;
   .auto {
@@ -727,12 +728,49 @@ body {
     width: 100%;
     nav {
       .gnb {
-        display: none;
+        margin-left: 20px;
+        transition: 0.7s;
+        opacity: 0;
+        display: flex;
+        flex-direction: column;
+        align-content: flex-start;
+        transform: translateY(-50px);
+        &.on {
+          display: flex;
+          opacity: 1;
+          transform: translateY(100px);
+        }
+        li {
+          a {
+            display: block;
+            font: normal 16px/1 "Orbitron";
+            color: #fff;
+            padding: 15px 10px;
+            transition: all 0.7s;
+            letter-spacing: 1px;
+          }
+          &:hover a {
+            background: #4fb627;
+            color: #cbcaa5;
+          }
+        }
       }
       .util {
-        margin-right: 40px;
-        li:last-child {
-          margin-right: 10px;
+        height: 100%;
+        position: absolute;
+        right: 0;
+        top: 16px;
+        li {
+          &:hover {
+            a {
+              color: #4fb627;
+            }
+          }
+          a {
+            display: block;
+            font-size: 16px;
+            color: #fff;
+          }
         }
       }
     }
@@ -752,7 +790,7 @@ body {
       }
     }
     .menuMo {
-      display: block;
+      display: none;
       width: 200px;
       height: 100vh;
       background: rgb(21, 22, 21);

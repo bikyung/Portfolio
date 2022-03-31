@@ -71,13 +71,13 @@ let swiper = new Swiper(".slider", {
 swiper.autoplay.stop();
 
 //롤링시작 버튼 클릭시 자동롤링 
-btnStart.addEventListener("click", () => {
-  swiper.autoplay.start();
-});
+// btnStart.addEventListener("click", () => {
+//   swiper.autoplay.start();
+// });
 //롤링정지 버튼 클릭시 자동롤링 정지 
-btnStop.addEventListener("click", () => {
-  swiper.autoplay.stop();
-})
+// btnStop.addEventListener("click", () => {
+//   swiper.autoplay.stop();
+// })
 
 // motorcylce 서브페이지 slider ----------------------------------------------
 let swiper2 = new Swiper(".mySwiper1", {
@@ -145,7 +145,6 @@ function setPos() {
   posArr = [];
   //각 섹션의 세로 위치값 구해서 배열에 넣기 
   for (let section of sections) posArr.push(section.offsetTop);
-  console.log(posArr); 
 
   //resize시 버튼과 섹션이 매칭되지 않는 문제 해결 
   //현재 활성화버튼의 순번을 구해서 
@@ -210,7 +209,6 @@ btnClose.addEventListener('click', e => {
   if(isChecked) {
     setCookie("today","done",1);
   } else {
-    setCookie("today", "done", 0);
   }
 })
 
