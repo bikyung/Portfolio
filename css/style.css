@@ -6059,6 +6059,90 @@ body {
   opacity: 0.6;
   object-fit: cover;
 }
+#visual .wrap .slide li .description {
+  margin-left: 1vw;
+  position: absolute;
+  left: 0;
+  top: 30%;
+  border: 1px solid #888;
+  padding: 20px;
+}
+#visual .wrap .slide li .description h2:nth-of-type(1) {
+  font: bold 24px/1 "orbitron";
+  margin-bottom: 20px;
+  color: #999;
+  letter-spacing: 1px;
+}
+#visual .wrap .slide li .description h2:nth-of-type(2) {
+  font: bold 30px/1 "orbitron";
+  margin-bottom: 20px;
+  color: #eee;
+  letter-spacing: 1px;
+}
+#visual .wrap .slide li .description h3 {
+  color: #999;
+  margin-bottom: 10px;
+}
+#visual .wrap .slide li .description p {
+  font: normal 16px/1.3 "pretendard";
+  color: #777;
+  margin-bottom: 30px;
+}
+#visual .wrap .slide li .description .viewBtn {
+  display: block;
+  padding: 20px 0;
+  color: #eee;
+  border: 1px solid #999;
+  text-align: center;
+  margin-bottom: 20px;
+}
+#visual .wrap .slide li .description .viewBtn:hover {
+  background: #4fb627;
+  color: #000;
+}
+#visual .navigation {
+  position: absolute;
+  left: 0;
+  top: 70%;
+  margin-left: 20px;
+}
+#visual .navigation ul {
+  display: flex;
+}
+#visual .navigation ul li {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 1px solid #999;
+  margin-right: 15px;
+  cursor: pointer;
+}
+#visual .navigation ul li:hover {
+  background: #4fb627;
+  border: 1px solid #4fb627;
+}
+#visual .visual_btns {
+  position: absolute;
+  left: 0;
+  top: 69.7%;
+  display: flex;
+  margin-left: 8vw;
+}
+#visual .visual_btns .prev {
+  margin-right: 10px;
+}
+#visual .visual_btns .prev a {
+  color: #eee;
+}
+#visual .visual_btns .prev a:hover {
+  color: #4fb627;
+}
+#visual .visual_btns .next a {
+  color: #eee;
+}
+#visual .visual_btns .next a:hover {
+  color: #4fb627;
+}
 
 /* model ------------------------------------------------*/
 #model {
