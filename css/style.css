@@ -1891,6 +1891,133 @@ aside .close:hover {
     font: bold 14px/1 "arial";
   }
 }
+.contact .inner {
+  width: 1180px;
+  margin: 0 auto;
+}
+.contact .inner h2 {
+  text-align: left;
+  margin-bottom: 10px;
+  font: bold 50px/1 "pretendard";
+}
+.contact .inner > p {
+  font: normal 20px/1 "pretendard";
+  color: #888;
+  padding-bottom: 10px;
+  margin-bottom: 50px;
+  border-bottom: 1px solid #999;
+}
+.contact .inner .wrap {
+  display: flex;
+}
+.contact .inner .wrap article {
+  display: flex;
+  align-items: center;
+  margin-right: 150px;
+}
+.contact .inner .wrap article .text {
+  margin-left: 20px;
+}
+.contact .inner .wrap article .text h2 {
+  font: bold 24px/1 "arial";
+}
+.contact .inner .wrap article .text p {
+  font: 16px/1 "arial";
+  color: #777;
+}
+.contact .location {
+  background: #e5e5e5;
+  width: 100%;
+  margin: 50px 0 0;
+}
+.contact .location .wrap {
+  padding: 30px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact .location .wrap i {
+  color: #333;
+}
+.contact .location .wrap h2 {
+  color: #333;
+  margin-left: 20px;
+}
+.contact .location #map {
+  width: 100%;
+  height: 500px;
+  border: 1px solid #000;
+}
+.contact .location .branch {
+  padding: 20px 0;
+  display: flex;
+}
+.contact .location .branch li {
+  margin-right: 20px;
+}
+.contact .location .branch li.on a {
+  background: #fff;
+  color: #333;
+}
+.contact .location .branch li a {
+  display: block;
+  width: 200px;
+  height: 40px;
+  font: bold 12px/40px "arial";
+  color: #fff;
+  background: #555;
+  text-align: center;
+  border: 1px solid #555;
+}
+.contact .inner1 {
+  width: 1180px;
+  margin: 120px auto;
+}
+.contact .inner1 .drop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact .inner1 .drop i {
+  color: #aaa;
+}
+.contact .inner1 .drop h2 {
+  color: #aaa;
+  margin-left: 20px;
+}
+.contact .inner1 form {
+  display: flex;
+  margin-top: 50px;
+}
+.contact .inner1 form article:first-child {
+  display: flex;
+  flex: 1 50%;
+  flex-direction: column;
+}
+.contact .inner1 form article:first-child label {
+  color: #fff;
+}
+.contact .inner1 form article:first-child label input[type=text], .contact .inner1 form article:first-child label input[type=email] {
+  width: 50%;
+  border: none;
+  padding: 10px;
+  background: transparent;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 30px;
+}
+.contact .inner1 form article:first-child label input[type=checkbox] {
+  margin-right: 20px;
+  vertical-align: top;
+}
+.contact .inner1 form article:last-child h2 {
+  color: #fff;
+  font: 16px/1 "arial";
+  margin-bottom: 5px;
+}
+.contact .inner1 form article:last-child textarea {
+  width: 50%;
+}
+
 .bikeType {
   width: 100%;
   margin-bottom: 50px;
@@ -5887,11 +6014,11 @@ body {
 #header {
   width: 100%;
   border-bottom: 1px solid #4fb627;
+  position: absolute;
   z-index: 10;
 }
 #header .inner {
   width: 1180px;
-  height: 90px;
   margin: 0 auto;
   padding: 0 30px;
   display: flex;
@@ -6029,17 +6156,19 @@ body {
 #visual {
   width: 100%;
   height: 100vh;
-  position: absolute;
+  position: relative;
   z-index: 5;
 }
 #visual .wrap {
   width: 100%;
   height: 100%;
+  position: relative;
+  overflow: hidden;
 }
 #visual .wrap .slide {
+  display: flex;
   width: 400%;
   height: 100%;
-  display: flex;
 }
 #visual .wrap .slide::after {
   content: "";
@@ -6047,9 +6176,8 @@ body {
   clear: both;
 }
 #visual .wrap .slide li {
-  display: flex;
   justify-content: center;
-  width: 100;
+  width: 100%;
   height: 100%;
   float: left;
 }
@@ -6066,6 +6194,7 @@ body {
   top: 30%;
   border: 1px solid #888;
   padding: 20px;
+  opacity: 0;
 }
 #visual .wrap .slide li .description h2:nth-of-type(1) {
   font: bold 24px/1 "orbitron";
@@ -6100,6 +6229,9 @@ body {
   background: #4fb627;
   color: #000;
 }
+#visual .wrap .slide li .description.on {
+  opacity: 1;
+}
 #visual .navigation {
   position: absolute;
   left: 0;
@@ -6114,40 +6246,37 @@ body {
   height: 10px;
   border-radius: 50%;
   border: 1px solid #999;
-  margin-right: 15px;
+  margin-right: 10px;
   cursor: pointer;
 }
 #visual .navigation ul li:hover {
   background: #4fb627;
   border: 1px solid #4fb627;
 }
-#visual .visual_btns {
+#visual .navigation ul li.on {
+  background: #4fb627;
+  border: 1px solid #4fb627;
+}
+#visual .navigation .visualBtns {
+  margin-left: 90px;
+}
+#visual .navigation .visualBtns a {
+  display: block;
   position: absolute;
-  left: 0;
-  top: 69.6%;
-  display: flex;
-  margin-left: 7.5vw;
+  left: auto;
+  top: -4px;
+  color: #999;
 }
-#visual .visual_btns .prev {
-  margin-right: 10px;
-}
-#visual .visual_btns .prev a {
-  color: #eee;
-}
-#visual .visual_btns .prev a:hover {
+#visual .navigation .visualBtns a:hover {
   color: #4fb627;
 }
-#visual .visual_btns .next a {
-  color: #eee;
-}
-#visual .visual_btns .next a:hover {
-  color: #4fb627;
+#visual .navigation .visualBtns a:nth-of-type(2) {
+  margin-left: 30px;
 }
 
 /* model ------------------------------------------------*/
 #model {
   width: 100%;
-  margin-top: 100vh;
   position: relative;
   padding: 50px 0;
 }
@@ -6438,6 +6567,7 @@ body {
   right: 50px;
   top: 50%;
   transform: translateY(-50%);
+  z-index: 10;
 }
 #scrollBtn li {
   width: 10px;
@@ -6455,35 +6585,37 @@ body {
 
 /* popup----------------------------------------------------------*/
 #popup {
-  background: url("../img/subpage01/subpageDetail/Z900SE/specz900.jpg") no-repeat center/contain;
-  width: 500px;
-  height: 500px;
+  padding: 11vw;
+  position: fixed;
+  z-index: 10;
+  display: none;
+}
+#popup .popupInfo {
   padding: 10px;
+  border-radius: 15px;
+  box-shadow: 10px 10px 30px rgba(234, 244, 245, 0.5);
   position: absolute;
   top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
-  border-radius: 15px;
-  box-shadow: 10px 10px 30px rgba(234, 244, 245, 0.5);
-  z-index: 10;
+  width: 500px;
+  height: 460px;
+  background: url("../img/subpage01/subpageDetail/Z900SE/specz900.jpg") no-repeat center/contain;
   filter: grayscale(10);
-  display: none;
 }
-#popup:hover {
+#popup .popupInfo:hover {
   filter: grayscale(0) brightness(120%);
 }
-#popup:hover .popupInfo h3::after {
+#popup .popupInfo:hover .popupInfo h3::after {
   opacity: 1;
   bottom: -10px;
-}
-#popup .popupInfo {
-  margin-top: 360px;
 }
 #popup .popupInfo h2 {
   color: #888;
   font: bold 18px/1 "orbitron";
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   letter-spacing: 1px;
+  margin-top: 5px;
 }
 #popup .popupInfo h3 {
   color: #999;
@@ -6498,35 +6630,44 @@ body {
   content: "";
   background: #fff;
   position: absolute;
-  width: 100%;
   left: 0;
-  bottom: -20px;
+  bottom: 0;
+  width: 100%;
   height: 2px;
   opacity: 0;
   transition: 0.7s;
+  transform: translateY(20px);
 }
-#popup .info {
+#popup .popupInfo h3:hover::after {
+  transform: translateY(5px);
+  opacity: 1;
+}
+#popup .popupInfo .info {
   margin-top: 30px;
+  padding-left: 20px;
   display: inline-flex;
   align-items: center;
+  position: absolute;
+  left: 0;
+  bottom: 5%;
 }
-#popup .info input {
+#popup .popupInfo .info input {
   margin-right: 20px;
   position: relative;
 }
-#popup .info label {
+#popup .popupInfo .info label {
   color: #eee;
   cursor: pointer;
   color: #4fb627;
   font-family: "pretendard";
 }
-#popup .closeBtn {
+#popup .popupInfo .closeBtn {
   position: absolute;
   right: 20px;
   bottom: 20px;
   color: #aaa;
 }
-#popup .closeBtn:hover {
+#popup .popupInfo .closeBtn:hover {
   color: #4fb627;
 }
 

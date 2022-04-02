@@ -4,6 +4,70 @@ const gnb = document.querySelector('.gnb');
 const list = gnb.querySelectorAll('li');
 const btnStart = document.querySelector(".btnStart");
 const btnStop = document.querySelector(".btnStop");
+const slide = document.querySelector('.wrap');
+const panel = slide.querySelector('.slide');
+const visualPrev = document.querySelector('.visualPrev');
+const visualNext = document.querySelector('.visualNext');
+const des = document.querySelectorAll('.description')
+const speed = 700;
+
+
+//visual Slider ---------------------------------------------------------
+
+const lastEl = panel.lastElementChild;
+let enableClicks = true;
+
+panel.prepend(lastEl);
+
+visualPrev.addEventListener('click', e => {
+  e.preventDefault();
+  prevSlide()
+
+  des.forEach((el,index) => {
+    el.classList.remove('on');
+    des[index].classList.add('on');
+  })
+})
+
+visualNext.addEventListener('click', e => {
+  e.preventDefault();
+  nextSlide();
+})
+function nextSlide() {
+  const firstEl = panel.firstElementChild;
+    if(enableClicks) {
+      enableClicks = false;
+      new Anim(panel, {
+        prop: 'margin-left',
+        value: '-200%',
+        duration: speed,
+        callback : () => {
+          panel.append(firstEl);
+          panel.style.marginLeft = '-100%';
+          enableClicks = true
+        }
+      })
+    }
+}
+
+
+function prevSlide() {
+  const lastEl = panel.lastElementChild;
+
+  if(enableClicks) {
+    enableClicks = false;
+    new Anim(panel, {
+      prop: 'margin-left',
+      value: '0%',
+      duration: speed,
+      callback: () => {
+        panel.prepend(lastEl);
+        panel.style.marginLeft = '-100%';
+        enableClicks = true
+      }
+    })
+  }
+}
 
 
 // 햄버거 버튼 --------------------------------------------------------------
@@ -15,8 +79,6 @@ btnCall.onclick = function (e) {
   gnb.classList.toggle('on');
   menuMo.classList.toggle('on');
 }
-
-
 
 
 // header slider -----------------------------------------------------------
@@ -157,10 +219,10 @@ function setPos() {
 //브라우저를 각 섹션의 세로 위치값으로 이동 함수 정의 
 function moveScroll(index) {
 
-  new Anime(window, {
+  new Anim(window, {
     prop: "scroll",
     value: posArr[index],
-    duration: 500,
+    duration: speed,
     callback: () => {
       enableClick = true;
     }

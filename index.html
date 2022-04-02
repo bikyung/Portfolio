@@ -11,7 +11,7 @@
   <script src="https://kit.fontawesome.com/e5fcbbc04c.js" crossorigin="anonymous"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script defer src="js/main.js"></script>
-  <script src="js/anime.js"></script>
+  <script src="js/anime.js" defer></script>
 </head>
 
 <body>
@@ -28,6 +28,7 @@
           <li><a href="Gallery.html">Gallery</a></li>
           <li><a href="Youtube.html">Youtube</a></li>
           <li><a href="News&Event.html">News&Event</a></li>
+          <li><a href="Contact.html">Contact</a></li>
         </ul>
 
         <ul class="util">
@@ -42,6 +43,7 @@
           <li><a href="Gallery.html">Gallery</a></li>
           <li><a href="Youtube.html">Youtube</a></li>
           <li><a href="News&Event.html">News&Event</a></li>
+          <li><a href="Contact.html">Contact</a></li>
         </ul>
 
         <ul class="utilMo">
@@ -54,9 +56,9 @@
   <section id="visual">
     <div class="wrap">
       <ul class="slide">
-        <li>
+        <li data-index="1">
             <video src="video/NinjaZX10R.mp4" loop autoplay></video>
-            <div class="description">
+            <div class="description on">
               <h2>Kawasaki</h2>
               <h2>Ninja ZX-10R</h2>
               <h3>let the good times rolld™</h3>
@@ -64,38 +66,56 @@
               <a href="#" class="viewBtn">View Detail</a>
             </div>
         </li>
-        <li>
+        <li data-index="2">
             <video src="video/ninjah2video.mp4" loop autoplay></video>
+            <div class="description">
+              <h2>Kawasaki</h2>
+              <h2>Ninja H2</h2>
+              <h3>let the good times rolld™</h3>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.<br> Reiciendis temporibus nemo labore. Animi, odit quod?</p>
+              <a href="#" class="viewBtn">View Detail</a>
+            </div>
         </li>
-        <li>
+        <li data-index="3">
             <video src="video/VERSYS_1000_S.mp4" loop autoplay></video>
+            <div class="description">
+              <h2>Kawasaki</h2>
+              <h2>VERSYS 1000 SX</h2>
+              <h3>let the good times rolld™</h3>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.<br> Reiciendis temporibus nemo labore. Animi, odit quod?</p>
+              <a href="#" class="viewBtn">View Detail</a>
+            </div>
         </li>
-        <li>
+        <li data-index="4">
             <video src="video/Z900SE.mp4" loop autoplay></video>
+            <div class="description">
+              <h2>Kawasaki</h2>
+              <h2>Z 900-SE</h2>
+              <h3>let the good times rolld™</h3>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.<br> Reiciendis temporibus nemo labore. Animi, odit quod?</p>
+              <a href="#" class="viewBtn">View Detail</a>
+            </div>
         </li>
       </ul>
     </div>
 
     <div class="navigation">
       <ul>
-        <li><a href="#"></a></li>
+        <li class="on"><a href="#"></a></li>
         <li><a href="#"></a></li>
         <li><a href="#"></a></li>
         <li><a href="#"></a></li>
       </ul>
+      <div class="visualBtns">
+        <a href="#" class="visualPrev"><i class="fa-solid fa-angles-left"></i></a>
+        <a href="#" class="visualNext"><i class="fa-solid fa-angles-right"></i></a>
+      </div>
     </div>
 
-    <div class="visual_btns">
-      <div class="prev"><a href="#"><i class="fas fa-arrow-left"></i></a></div>
-      <div class="next"><a href="#"><i class="fas fa-arrow-right"></i></a></div>
-    </div>
   </section>
 
   <section id="model">
-    <!-- <ul class="auto">
-      <li class="btnStart"><i class="fas fa-play"></i></li>
-      <li class="btnStop"><i class="fas fas fa-pause"></i></li>
-    </ul> -->
+
     <div class="inner">
       <h2>OUR MODELS</h2>
       <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat, tenetur.</p>
@@ -450,12 +470,12 @@
     <div class="popupInfo">
       <h2>Kawasaki Motor Cycle</h2>
       <h3>View Quote</h3>
+      <div class="info">
+        <input type="checkbox" id="ck">
+        <label for="ck">do not see today</label>
+      </div>
+      <a href="#" class="closeBtn">Close</a>
     </div>
-    <div class="info">
-      <input type="checkbox" id="ck">
-      <label for="ck">do not see today</label>
-    </div>
-    <a href="#" class="closeBtn">Close</a>
   </aside>
 
   <footer id="footer">
