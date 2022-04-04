@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <script src="https://kit.fontawesome.com/e5fcbbc04c.js" crossorigin="anonymous"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=60c4a8d529753ab806e8d3e13bd98088"></script>
+  <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=332c0f4fa827f47e9deef2f6f651e734"></script>
   <script defer src="js/contact.js"></script>
 
 </head>
@@ -102,9 +102,9 @@
 
       </div>
       <ul class="branch">
-        <li class="on" data-index="0"><a href="#">본점</a></li>
-        <li data-index="1"><a href="#">서울지점</a></li>
-        <li data-index="2"><a href="#">인천지점</a></li>
+        <li class="on" data-index="0"><a href="#">서울지점</a></li>
+        <li data-index="1"><a href="#">대전지점</a></li>
+        <li data-index="2"><a href="#">광주지점</a></li>
       </ul>
     </div>
     <div class="inner1">
@@ -115,24 +115,57 @@
       <form>
         <fieldset>
           <legend class="hidden">게시판</legend>
-        </fieldset>
-        <article>
-          <label for="name">Name.
-            <input type="text" id="name">
-          </label>
-          <label for="email">E-mail.
-            <input type="text" id="email">
-          </label>
-          <label for="check"> 
-            <input type="checkbox" name="" id="">Accept the Privary Policy
-          </label>
-        </article>
-        <article>
-          <h2>Message</h2>
-          <textarea name="Message" id="message" cols="30" rows="10">
-          </textarea>
-          <input type="submit" value="SUBMIT">
-        </article>
+          <div class="wrap">
+            <article>
+              <table>
+                <caption class="hidden">테이블</caption>
+                <tr>
+                  <th>
+                    <label for="name">Name.</label>
+                  </th>
+                    <td>
+                      <input type="text" id="name">
+                    </td>
+                </tr>
+                <tr>
+                  <th>
+                    <label for="email">Email.</label>
+                  </th>
+                  <td>
+                    <input type="text" id="email">
+                  </td>
+                </tr>
+                <tr>
+                  <th>
+                    <label for="check"></label>
+                  </th>
+                  <td>
+                    <input type="checkbox" id="check">Accept the Privary Policy
+                  </td>
+                </tr>
+              </table>
+            </article>
+            <article>
+              <h2>Message.</h2>
+              <table>
+                <caption class="hidden">텍스트</caption>
+                <tr>
+                  <td>
+                    <textarea name="Message" id="message" cols="30" rows="10">
+                    </textarea>
+                  </td>
+                </tr>
+                <tr>
+                  <th>
+                    <input type="submit" value="SUBMIT">
+                    <input type="reset" value="CANCEL">
+                  </th>
+                </tr>
+              </table>
+            </article>
+          </div>
+
+      </fieldset>
       </form>
     </div>
   </section>

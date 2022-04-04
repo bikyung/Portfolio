@@ -54,7 +54,6 @@
     #map {
       width: 100%;
       height: 500px;
-      border: 1px solid #000;
     }
     .branch {
       padding: 20px 0;
@@ -82,11 +81,12 @@
   }
   .inner1 {
     width: 1180px;
-    margin: 120px auto;
+    margin: 50px auto;
     .drop {
       display: flex;
       justify-content: center;
       align-items: center;
+      margin-bottom: 30px;
       i {
         color: #aaa;
       }
@@ -95,40 +95,144 @@
         margin-left: 20px;
       }
     }
-    form {
-      display: flex;
-      margin-top: 50px;
-      article:first-child {
+    fieldset {
+      border: none;
+      .wrap {
         display: flex;
-        flex: 1 50%;
-        flex-direction: column;
-
-        label {
-          color: #fff;
-          input[type=text],input[type=email] {
-            width: 50%;
-            border: none;
-            padding: 10px;
-            background: transparent;
-            border-bottom: 1px solid #eee;
-            margin-bottom: 30px;
-          }
-          input[type=checkbox] {
-            margin-right: 20px;
-            vertical-align: top;
+        article {
+          flex: 1 50%;
+          table {
+            width: 100%;
+            padding: 20px;
+            tr {
+              height: 80px;
+              th {
+                width: 10%;
+                font: bold 14px/1 "pretendard";
+                color: #fff;
+                margin-top: 50px;
+                input[type=checkbox] {
+                  width: 100%;
+                }
+              }
+              td {
+                color:#fff;
+                font: normal 13px/1 'pretendard';
+                input[type="text"] {
+                  background: transparent;
+                  border: none;
+                  border-bottom: 1px solid #fff;
+                  outline: none;
+                  width: 100%;
+                  padding: 10px;
+                  color:#fff;
+                }
+                input[type=checkbox] {
+                  vertical-align: middle;
+                  margin-right: 10px;
+                }
+                
+              }
+            }
           }
         }
-      }
-      article:last-child {
-        h2 {
-          color: #fff;
-          font: 16px/1 'arial';
-          margin-bottom: 5px;
-        }
-        textarea {
-          width: 50%;
+        article:last-of-type {
+          h2 {
+            color: #fff;
+            padding: 20px 0 20px 20px;
+            margin-top: 35px;
+            font: bold 14px/1 'pretendard';
+          }
+          table {
+            tr {
+              td {
+                textarea {
+                  background: none;
+                  width: 100%;
+                  resize: none;
+                  height: 25px;
+                  border: none;
+                  border-bottom: 1px solid #fff;
+                }
+              }
+              th {
+                text-align: left;
+                input[type=submit],input[type=reset] {
+                  padding: 10px 20px;
+                  margin-right: 20px;
+                  background: #eee;
+                  cursor: pointer;
+                  &:hover {
+                    background: #000;
+                    color: #fff;
+                  }
+                }
+              }
+            }
+          }
         }
       }
     }
   }
+}
+
+@media screen and (max-width: $tablet) {
+  .contact {
+    .inner {
+      width: 100%;
+      padding: 0 10px;
+      h2 {
+        font: bold 40px/1 "pretendard";
+      }
+      > p {
+        font: normal 18px/1 "pretendard";
+      }
+  
+      .wrap {
+        flex-direction: column;
+        article {
+          margin-bottom: 30px;
+          .text {
+            h2 {
+              font: bold 20px/1 "arial";
+            }
+            p {
+              font: 14px/1 "arial";
+            }
+          }
+        }
+      }
+    }
+    .location {
+      .branch {
+        li {
+          a {
+            width: 150px;
+          }
+        }
+      }
+    }
+    .inner1 {
+      width: 100%;
+      fieldset {
+        .wrap {
+          article:last-of-type {
+            table {
+              tr {
+                th {
+                  input[type=reset] {
+                    margin-right: 0;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width:$mobile) {
+  
 }

@@ -12,6 +12,7 @@ const des = document.querySelectorAll('.description')
 const speed = 700;
 
 
+
 //visual Slider ---------------------------------------------------------
 
 const lastEl = panel.lastElementChild;
@@ -22,11 +23,6 @@ panel.prepend(lastEl);
 visualPrev.addEventListener('click', e => {
   e.preventDefault();
   prevSlide()
-
-  des.forEach((el,index) => {
-    el.classList.remove('on');
-    des[index].classList.add('on');
-  })
 })
 
 visualNext.addEventListener('click', e => {
@@ -110,36 +106,23 @@ let swiper = new Swiper(".slider", {
   grabCursor: true,
   loop: true,
   speed: 800,
-  //좌우버튼 옵션 
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
-  //페이징버튼 옵션
   pagination: {
     el: ".swiper-pagination1",
     clickable: true,
   },
-  //자동롤링 
   autoplay: {
     delay: 2000,
     disableOnInteraction: true
   },
 });
 
-
-
 //페이지 로딩시 자동롤링  정지된 상태  
 swiper.autoplay.stop();
 
-//롤링시작 버튼 클릭시 자동롤링 
-// btnStart.addEventListener("click", () => {
-//   swiper.autoplay.start();
-// });
-//롤링정지 버튼 클릭시 자동롤링 정지 
-// btnStop.addEventListener("click", () => {
-//   swiper.autoplay.stop();
-// })
 
 // motorcylce 서브페이지 slider ----------------------------------------------
 let swiper2 = new Swiper(".mySwiper1", {
@@ -173,19 +156,16 @@ const lis = scrollBtn.querySelectorAll("li");
 const lis_arr = Array.from(lis);
 let posArr = null; 
 let enableClick = true;
-let base = -300; //섹션과 버튼 활성화 위치값 수정
+let base = -300;
 
-//로딩시 세로위치값 구하기 
 setPos();
 
-//resize되었을 때 setPos함수 호출 
 window.addEventListener("resize", () => {
   setPos();
 });
 
 //버튼 클릭이벤트 
 lis.forEach((li, index) => {
-  //li를 클릭했을 때 
   li.addEventListener("click", e => {
 
     let isOn = e.currentTarget.classList.contains("on");
@@ -202,21 +182,15 @@ window.addEventListener("scroll", activation);
 
 
 
-//각 섹션의 세로위치값을 구해서 배열에 넣는 함수 정의 
 function setPos() {
   posArr = [];
-  //각 섹션의 세로 위치값 구해서 배열에 넣기 
   for (let section of sections) posArr.push(section.offsetTop);
 
-  //resize시 버튼과 섹션이 매칭되지 않는 문제 해결 
-  //현재 활성화버튼의 순번을 구해서 
-  //브라우저를 활성화섹션위치 고정이동 
   const active = scrollBtn.querySelector("li.on");
   const activeIndex = lis_arr.indexOf(active);
   window.scroll(0, posArr[activeIndex]);
 }
 
-//브라우저를 각 섹션의 세로 위치값으로 이동 함수 정의 
 function moveScroll(index) {
 
   new Anim(window, {
@@ -233,19 +207,13 @@ function moveScroll(index) {
 
 function activation() {
   let scroll = window.scrollY || window.pageYOffset;
-  //섹션의 갯수만큼 반복을 돌면서 
   sections.forEach((section, index) => {
-    //스크롤값이 각 섹션의 세로위치값보다 크거나 같다면 
     if (scroll >= posArr[index] + base) {
-      //모든 버튼을 비활성화하고 
       for (const li of lis) li.classList.remove("on");
-      //해당순번의 li만 활성화 
       lis[index].classList.add("on");
-      //반복을 돌면서 모든 섹션의 on을 제거하고
       for (const section of sections) {
         section.classList.remove('on');
       }
-      //해당 순번의 섹션만 on추가하여 활성화
       sections[index].classList.add('on');
     }
   });
