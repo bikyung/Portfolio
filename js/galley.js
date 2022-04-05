@@ -2,7 +2,6 @@ const body = document.querySelector('body');
 const main = document.querySelector('main');
 const frame = document.querySelector('section');
 const btns = document.querySelectorAll('.menu li');
-console.log(btns);
 const loading = document.querySelector('.loading');
 
 const base = "https://www.flickr.com/services/rest/?";
@@ -65,8 +64,8 @@ window.addEventListener('load', () => {
     el.addEventListener('click', (e) => {
       e.preventDefault();
 
-      const sort = e.currentTarget.querySelector('a').getAttribute('href');
-
+      const sort = e.currentTarget.querySelector('a').setAttribute('href', 'data-vid');
+      console.log(sort)
       grid.arrange({
         filter: sort
       })
@@ -105,7 +104,7 @@ window.addEventListener('load', () => {
 
       items.forEach(data => {
         htmls += `
-                <article class="item ${data.title}">
+                <article class="item" data-vid="${data.title}">
                     <div>
                         <a class="pic" href="https://live.staticflickr.com/${data.server}/${data.id}_${data.secret}_b.jpg">
                             <img src="https://live.staticflickr.com/${data.server}/${data.id}_${data.secret}_m.jpg">

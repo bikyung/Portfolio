@@ -70,7 +70,8 @@ body {
       clear: both;
     }
     h1 {
-      max-width: 100px;
+      max-width: 50px;
+      margin: 10px 10px 0 0;
       a {
         display: block;
         img {
@@ -191,12 +192,14 @@ body {
           &:hover {
             a {
               color: #4fb627;
+              transform: scale(1.5);
             }
           }
           a {
             display: block;
             font-size: 16px;
             color: #fff;
+            transition: .7s;
           }
         }
       }
@@ -230,7 +233,6 @@ body {
         clear: both;
       }
       li {
-        justify-content: center;
         width: calc(400% / 4);
         height: 100%;
         float: left;
@@ -241,13 +243,13 @@ body {
           object-fit: cover;
         }
         .description {
+          display: none;
           margin-left: 1vw;
           position: absolute;
           left: 0;
           top: 30%;
           border: 1px solid #888;
           padding: 20px;
-          opacity: 0;
           h2:nth-of-type(1) {
             font: bold 24px/1 "orbitron";
             margin-bottom: 20px;
@@ -281,9 +283,10 @@ body {
               color: #000;
             }
           }
-          &.on {
-            opacity: 1;
-          }
+
+        }
+        &.on .description {
+          display: block;
         }
       }
     }
@@ -320,8 +323,10 @@ body {
         left: auto;
         top: -4px;
         color: #999;
+        transition: .7s;
         &:hover {
           color: #4fb627;
+          transform: scale(1.5);
         }
         &:nth-of-type(2) {
           margin-left: 30px;

@@ -1,4 +1,20 @@
 .contact {
+  .sub_visual {
+    width: 100%;
+    height: 250px;
+    .swiper {
+      .swiper-wrapper {
+        width: 100%;
+        height: 100%;
+        .swiper-slide {
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+    }
+  }
   .inner {
     width: 1180px;
     margin: 0 auto;
@@ -75,6 +91,10 @@
           background: #555;
           text-align: center;
           border: 1px solid #555;
+          &:hover {
+            background: #fff;
+            color: #333;
+          }
         }
       }
     }
@@ -178,6 +198,22 @@
 
 @media screen and (max-width: $tablet) {
   .contact {
+    .sub_visual {
+      width: 100%;
+      height: 150px;
+      .swiper {
+        .swiper-wrapper {
+          width: 100%;
+          height: 100%;
+          .swiper-slide {
+            img {
+              width: 100%;
+              height: 100%;
+            }
+          }
+        }
+      }
+    }
     .inner {
       width: 100%;
       padding: 0 10px;
@@ -234,5 +270,66 @@
 }
 
 @media screen and (max-width:$mobile) {
+  .contact {
+    .sub_visual {
+      height: 70px;
+    }
+    .inner {
+      padding: 0 10px;
+      h2 {
+        font: bold 30px/1 "pretendard";
+      }
+      > p {
+        font: normal 16px/1 "pretendard";
+      }
   
+      .wrap {
+        article {
+          margin-right: 0;
+          .text {
+            h2 {
+              font: bold 18px/1 "arial";
+            }
+            p {
+              font: 13px/1 "arial";
+            }
+          }
+        }
+      }
+    }
+    .location {
+      .branch {
+        display: flex;
+        flex-direction: column;
+        li {
+          width: 100%;
+          margin-bottom: 20px;
+          padding: 0 10px;
+          a {
+            width: 100%;
+          }
+        }
+      }
+    }
+    .inner1 {
+      fieldset {
+        .wrap {
+          display: block;
+          article {
+            table {
+              padding: 0 10px;
+              tr {
+                height: 60px;
+                th {
+                  input[type=reset] {
+                    margin-right: 0;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }

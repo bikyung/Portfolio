@@ -65,10 +65,8 @@ class Anim {
 		} else if (this.option.prop === 'opacity') {
 			this.selector.style[this.option.prop] = result;
 		} else if (this.option.prop === 'scroll') {
-			console.log(result);
 			window.scroll(0, result);
 		} else {
-			console.log(result);
 			this.selector.style[this.option.prop] = `${result}px`;
 		}
 	}

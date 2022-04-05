@@ -1891,6 +1891,18 @@ aside .close:hover {
     font: bold 14px/1 "arial";
   }
 }
+.contact .sub_visual {
+  width: 100%;
+  height: 250px;
+}
+.contact .sub_visual .swiper .swiper-wrapper {
+  width: 100%;
+  height: 100%;
+}
+.contact .sub_visual .swiper .swiper-wrapper .swiper-slide img {
+  width: 100%;
+  height: 100%;
+}
 .contact .inner {
   width: 1180px;
   margin: 0 auto;
@@ -1967,6 +1979,10 @@ aside .close:hover {
   background: #555;
   text-align: center;
   border: 1px solid #555;
+}
+.contact .location .branch li a:hover {
+  background: #fff;
+  color: #333;
 }
 .contact .inner1 {
   width: 1180px;
@@ -2056,6 +2072,18 @@ aside .close:hover {
 }
 
 @media screen and (max-width: 1179px) {
+  .contact .sub_visual {
+    width: 100%;
+    height: 150px;
+  }
+  .contact .sub_visual .swiper .swiper-wrapper {
+    width: 100%;
+    height: 100%;
+  }
+  .contact .sub_visual .swiper .swiper-wrapper .swiper-slide img {
+    width: 100%;
+    height: 100%;
+  }
   .contact .inner {
     width: 100%;
     padding: 0 10px;
@@ -2085,6 +2113,53 @@ aside .close:hover {
     width: 100%;
   }
   .contact .inner1 fieldset .wrap article:last-of-type table tr th input[type=reset] {
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 539px) {
+  .contact .sub_visual {
+    height: 70px;
+  }
+  .contact .inner {
+    padding: 0 10px;
+  }
+  .contact .inner h2 {
+    font: bold 30px/1 "pretendard";
+  }
+  .contact .inner > p {
+    font: normal 16px/1 "pretendard";
+  }
+  .contact .inner .wrap article {
+    margin-right: 0;
+  }
+  .contact .inner .wrap article .text h2 {
+    font: bold 18px/1 "arial";
+  }
+  .contact .inner .wrap article .text p {
+    font: 13px/1 "arial";
+  }
+  .contact .location .branch {
+    display: flex;
+    flex-direction: column;
+  }
+  .contact .location .branch li {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 0 10px;
+  }
+  .contact .location .branch li a {
+    width: 100%;
+  }
+  .contact .inner1 fieldset .wrap {
+    display: block;
+  }
+  .contact .inner1 fieldset .wrap article table {
+    padding: 0 10px;
+  }
+  .contact .inner1 fieldset .wrap article table tr {
+    height: 60px;
+  }
+  .contact .inner1 fieldset .wrap article table tr th input[type=reset] {
     margin-right: 0;
   }
 }
@@ -6100,7 +6175,8 @@ body {
   clear: both;
 }
 #header .inner h1 {
-  max-width: 100px;
+  max-width: 50px;
+  margin: 10px 10px 0 0;
 }
 #header .inner h1 a {
   display: block;
@@ -6212,11 +6288,13 @@ body {
 }
 #header .inner nav .util li:hover a {
   color: #4fb627;
+  transform: scale(1.5);
 }
 #header .inner nav .util li a {
   display: block;
   font-size: 16px;
   color: #fff;
+  transition: 0.7s;
 }
 #header .inner .menuMo {
   display: none;
@@ -6246,7 +6324,6 @@ body {
   clear: both;
 }
 #visual .wrap .slide li {
-  justify-content: center;
   width: 100%;
   height: 100%;
   float: left;
@@ -6258,13 +6335,13 @@ body {
   object-fit: cover;
 }
 #visual .wrap .slide li .description {
+  display: none;
   margin-left: 1vw;
   position: absolute;
   left: 0;
   top: 30%;
   border: 1px solid #888;
   padding: 20px;
-  opacity: 0;
 }
 #visual .wrap .slide li .description h2:nth-of-type(1) {
   font: bold 24px/1 "orbitron";
@@ -6299,8 +6376,8 @@ body {
   background: #4fb627;
   color: #000;
 }
-#visual .wrap .slide li .description.on {
-  opacity: 1;
+#visual .wrap .slide li.on .description {
+  display: block;
 }
 #visual .navigation {
   position: absolute;
@@ -6336,9 +6413,11 @@ body {
   left: auto;
   top: -4px;
   color: #999;
+  transition: 0.7s;
 }
 #visual .navigation .visualBtns a:hover {
   color: #4fb627;
+  transform: scale(1.5);
 }
 #visual .navigation .visualBtns a:nth-of-type(2) {
   margin-left: 30px;
