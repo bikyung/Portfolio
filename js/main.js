@@ -25,8 +25,8 @@ visualNext.addEventListener('click', e => {
       e.preventDefault();
       for (const el of navigation)  el.classList.remove('on');
       navigation[index].classList.add('on');
+      nextSlide(index)
     })
-    nextSlide();
   })
 })
 
@@ -35,13 +35,13 @@ function slideInit() {
   panel.prepend(lastEl);
 }
 
-function nextSlide() {
+function nextSlide(index) {
   const firstEl = panel.firstElementChild;
   if (enableClicks) {
     enableClicks = false;
     new Anim(panel, {
       prop: 'margin-left',
-      value: '-200%',
+      value: -100 * index + '%',
       duration: speed,
       callback: () => {
         panel.append(firstEl);
