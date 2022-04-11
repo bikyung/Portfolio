@@ -1,0 +1,84 @@
+{
+   "imgSrc": [
+      {
+         "pic": "img/models/bikemain1.png",
+         "title": "NINJA®H2",
+         "detail": "model_ninjah2.html"
+      },
+      {
+         "pic": "img/models/bikemain2.png",
+         "title": "NINJA ZX-10RR",
+         "detail": "model_ninjazx10r.html"
+      },
+      {
+         "pic": "img/models/bikemain3.jpg",
+         "title": "NINJA ZX-10R",
+         "detail": "model_ninjazx10r.html"
+      },
+      {
+         "pic": "img/models/bikemain4.png",
+         "title": "NINJA 650",
+         "detail": "model_ninja650.html"
+      },
+      {
+         "pic": "img/models/bikemain5.png",
+         "title": "NZ H2 SE",
+         "detail": "model_ninjah2sxse.html"
+      },
+      {
+         "pic": "img/models/bikemain6.png",
+         "title": "Z H2",
+         "detail": "model_ninjah2.html"
+      },
+      {
+         "pic": "img/models/bikemain7.png",
+         "title": "Z900 SE",
+         "detail": "model_z900.html"
+      },
+      {
+         "pic": "img/models/bikemain8.png",
+         "title": "Z900",
+         "detail": "model_z900.html"
+      },
+      {
+         "pic": "img/models/bikemain9.png",
+         "title": "NINJA®H2 SX SE+",
+         "detail": "model_ninjah2sxse.html"
+      },
+      {
+         "pic": "img/models/bikemain10.png",
+         "title": "NINJA 1000SX",
+         "detail": "model_ninja1000sx.html"
+      },
+      {
+         "pic": "img/models/bikemain11.png",
+         "title": "VERSYS 1000 SE",
+         "detail": "model_versys1000se.html"
+      },
+      {
+         "pic": "img/models/bikemain12.png",
+         "title": "VERSYS 650",
+         "detail": "model_versys650.html"
+      },
+      {
+         "pic": "img/models/bikemain13.png",
+         "title": "Z900RS SE",
+         "detail": "model_z900rsse.html"
+      },
+      {
+         "pic": "img/models/bikemain14.png",
+         "title": "Z900RS",
+         "detail": "model_z900rsse.html"
+      },
+      {
+         "pic": "img/models/bikemain15.png",
+         "title": "Z650RS",
+         "detail": "model_z650rs.html"
+      },
+      {
+         "pic": "img/models/bikemain16.png",
+         "title": "W800",
+         "detail": "model_w800.html"
+      }
+   ]
+}

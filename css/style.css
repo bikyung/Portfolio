@@ -6429,31 +6429,6 @@ body {
   position: relative;
   padding: 50px 0;
 }
-#model .auto {
-  position: absolute;
-  bottom: -50px;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  z-index: 10;
-  padding: 10px;
-}
-#model .auto li {
-  margin-right: 20px;
-  cursor: pointer;
-  font-size: 20px;
-  color: #fff;
-  opacity: 0.9;
-  transition: 0.5s;
-}
-#model .auto li:last-child {
-  margin-right: 0;
-}
-#model .auto li:hover {
-  opacity: 1;
-  transform: scale(1.4);
-  color: #4fb627;
-}
 #model .inner {
   width: 1180px;
   margin: 0 auto;
@@ -6472,118 +6447,122 @@ body {
   font-family: "orbitron";
   letter-spacing: 1px;
 }
-#model .inner .slider {
-  margin-top: 50px;
+#model .inner .wrap {
   width: 100%;
-  height: 380px;
+  height: 500px;
   position: relative;
+  overflow: hidden;
 }
-#model .inner .slider .wrap {
-  width: 100%;
+#model .inner .wrap .model_list {
+  width: 6080px;
   height: 100%;
+  margin-top: 50px;
   position: absolute;
   left: 0;
   top: 0;
 }
-#model .inner .slider .wrap::after {
+#model .inner .wrap .model_list::after {
   content: "";
   display: block;
   clear: both;
 }
-#model .inner .slider .wrap article {
+#model .inner .wrap .model_list li {
+  width: 380px;
+  height: 100%;
   float: left;
-  width: 280px;
-  height: 100%;
-  margin-right: 20px;
-  color: #fff;
-  background: #141414;
-  transition: all 0.7s;
+  opacity: 0.5;
+  transition: 0.5s;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 30px;
+  align-items: center;
 }
-#model .inner .slider .wrap article:last-of-type {
-  margin-right: 0;
+#model .inner .wrap .model_list li:hover {
+  opacity: 1;
 }
-#model .inner .slider .wrap article .pic {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
-#model .inner .slider .wrap article .pic img {
-  width: 100%;
-  transition: all 0.7s;
-  background: #000;
-  opacity: 0.7;
-}
-#model .inner .slider .wrap article .pic h2 {
-  color: #fff;
-  padding: 20px 5px;
-  font-family: "orbitron";
-  font-size: 16px;
-  letter-spacing: 2px;
-}
-#model .inner .slider .wrap article .pic a {
-  padding: 20px 0;
+#model .inner .wrap .model_list li:hover a {
   display: block;
-  border: 2px solid #4fb627;
-  text-align: center;
-  color: #999;
-  font: bold 16px/1 "pretendard";
-  margin-top: 30px;
-  transition: all 0.7s;
-  position: relative;
 }
-#model .inner .slider .wrap article .pic a::after {
+#model .inner .wrap .model_list li:hover a img {
+  transform: scale(1.1);
+}
+#model .inner .wrap .model_list li h2 {
+  color: #fff;
+  width: 100%;
+  font: bold 18px/1 "Orbitron";
+  text-align: center;
+}
+#model .inner .wrap .model_list li > a {
+  width: 300px;
+}
+#model .inner .wrap .model_list li > a img {
+  width: 100%;
+  height: 100%;
+  transition: 0.7s;
+}
+#model .inner .wrap .model_list li > div {
+  width: 100%;
+  text-align: center;
+}
+#model .inner .wrap .model_list li > div a {
+  display: block;
+  padding: 20px 0;
+  width: 100%;
+  color: #fff;
+  border: 1px solid #4fb627;
+  position: relative;
+  transition: 0.7s;
+}
+#model .inner .wrap .model_list li > div a::after {
   content: "";
   width: 100%;
-  height: 0;
   position: absolute;
   left: 0;
   bottom: 0;
+  height: 0px;
   background: #4fb627;
-  transition: all 0.7s;
+  transition: 0.7s;
 }
-#model .inner .slider .wrap article .pic a:hover {
+#model .inner .wrap .model_list li > div a:hover {
   color: #000;
 }
-#model .inner .slider .wrap article .pic a:hover::after {
+#model .inner .wrap .model_list li > div a:hover::after {
   position: absolute;
   left: 0;
   bottom: 0;
   height: 100%;
   z-index: -1;
 }
-#model .inner .slider .wrap article .pic a img {
-  width: 100%;
+#model .inner .wrap .prevBtn {
+  color: #fff;
+  position: absolute;
+  top: 60%;
+  left: -80px;
+  opacity: 0;
+  transition: 0.5s;
+  width: 30px;
+  height: 50px;
+  line-height: 50px;
 }
-#model .inner .slider .wrap article:hover {
-  transform: scale(1.05);
+#model .inner .wrap .nextBtn {
+  color: #fff;
+  position: absolute;
+  top: 60%;
+  right: -80px;
+  opacity: 0;
+  transition: 0.5s;
+  width: 30px;
+  height: 50px;
+  line-height: 50px;
 }
-#model .inner .slider .wrap article:hover .pic img {
-  transform: scale(1.1);
+#model .inner .wrap:hover .prevBtn {
+  left: 20px;
   opacity: 1;
 }
-#model .inner .slider .wrap article:hover .pic h2 {
-  color: #f8c0c9;
-}
-#model .inner .slider .wrap article:hover .pic a {
-  transform: translateY(-20px);
-}
-#model .inner .prevBtn {
-  left: 10vw;
-  color: #fff;
-}
-#model .inner .nextBtn {
-  color: #fff;
-  right: 10vw;
-}
-#model .inner .swiper-pagination1 {
-  color: #fff;
-  display: inline-block;
-  text-align: center;
-  z-index: 1;
-}
-#model .inner .swiper-pagination1 .swiper-pagination-bullet {
-  color: #fff;
-  background: #fff;
+#model .inner .wrap:hover .nextBtn {
+  right: 20px;
+  opacity: 1;
 }
 
 /* content ---------------------------------------------------*/
@@ -6637,6 +6616,71 @@ body {
   height: 700px;
   text-indent: -9999px;
   margin: 100px 0;
+}
+
+/* icons --------------------------------------------------*/
+#service {
+  width: 100%;
+}
+#service .inner {
+  width: 1180px;
+  margin: 0 auto;
+  background-color: #fff;
+}
+#service .inner h2 {
+  text-align: center;
+  color: #fff;
+  font: bold 30px/1 "Orbitron";
+  margin-bottom: 30px;
+}
+#service .inner p {
+  color: #aaa;
+  text-align: center;
+  font: normal 16px/1 "pretendard";
+  margin: 20px 0;
+}
+#service .inner .wrap {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#service .inner .wrap article {
+  width: 280px;
+  height: 280px;
+  border: 1px solid #999;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#service .inner .wrap article .icons {
+  margin: auto;
+  width: 240px;
+  height: 240px;
+  border: 1px solid #000;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+#service .inner .wrap article .icons a {
+  display: block;
+  width: 100%;
+}
+#service .inner .wrap article .icons a svg path {
+  fill: transparent;
+  stroke: #999;
+  stroke-width: 5;
+  stroke-dasharray: 0;
+  stroke-dashoffset: 0;
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 /* news ------------------------------------------------------*/
@@ -6713,7 +6757,7 @@ body {
 /* scrollBtn -------------------------------------------------*/
 #scrollBtn {
   position: fixed;
-  right: 50px;
+  right: 20px;
   top: 50%;
   transform: translateY(-50%);
   z-index: 10;
@@ -7088,14 +7132,6 @@ body {
   }
   #model .inner .slider .wrap article:hover .pic a {
     transform: translateY(-20px);
-  }
-  #model .inner .prevBtn {
-    color: #fff;
-    top: 100px;
-  }
-  #model .inner .nextBtn {
-    color: #fff;
-    top: 100px;
   }
   #model .inner .swiper-pagination1 {
     color: #fff;
