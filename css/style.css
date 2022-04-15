@@ -391,6 +391,8 @@ a {
 .contents .sub_visual .swiper-slide img {
   display: block;
   width: 100%;
+  height: 245px;
+  object-fit: cover;
 }
 .contents .inner {
   width: 1180px;
@@ -622,6 +624,8 @@ a {
 .event .sub_visual .swiper-slide img {
   display: block;
   width: 100%;
+  height: 245px;
+  object-fit: cover;
 }
 .event .inner {
   width: 1180px;
@@ -1134,7 +1138,7 @@ a {
 .department .sub_visual {
   width: 100%;
   background: url(../img/subpage01/department/main.jpg) no-repeat center/cover;
-  height: 500px;
+  height: 245px;
 }
 .department .inner {
   width: 1180px;
@@ -1614,7 +1618,7 @@ a {
   padding: 80px;
   color: #fff;
   font: bold 30px/1 "pretendard";
-  height: 450px;
+  height: 245px;
 }
 
 .txt1 {
@@ -1657,7 +1661,8 @@ a {
 .youtubeInfo article:hover {
   transform: scale(1.1);
 }
-.youtubeInfo article:hover .con h2, .youtubeInfo article:hover .con p {
+.youtubeInfo article:hover .con h2,
+.youtubeInfo article:hover .con p {
   color: #fff;
 }
 .youtubeInfo article .pic {
@@ -1716,12 +1721,21 @@ aside .btnClose {
   width: 100%;
   padding-bottom: 100px;
 }
-.gallery > h2 {
-  background: url(../img/subpage01/main02.jpg) no-repeat center/cover;
-  height: 450px;
+.gallery > .txt {
+  background: url(../img/subpage01/main02.jpg) no-repeat left bottom/cover;
+  height: 245px;
   color: #fff;
   padding: 80px;
+  font: bold 13px/1 "pretendard";
+}
+.gallery > .txt h3 {
   font: bold 30px/1 "pretendard";
+  color: #fff;
+  margin-bottom: 10px;
+}
+.gallery > .txt > p {
+  color: #fff;
+  font: bold 18px/1 "pretendard";
 }
 .gallery .menu {
   display: flex;
@@ -1901,7 +1915,8 @@ aside .close:hover {
 }
 .contact .sub_visual .swiper .swiper-wrapper .swiper-slide img {
   width: 100%;
-  height: 100%;
+  height: 245px;
+  object-fit: cover;
 }
 .contact .inner {
   width: 1180px;
@@ -2060,13 +2075,15 @@ aside .close:hover {
 .contact .inner1 fieldset .wrap article:last-of-type table tr th {
   text-align: left;
 }
-.contact .inner1 fieldset .wrap article:last-of-type table tr th input[type=submit], .contact .inner1 fieldset .wrap article:last-of-type table tr th input[type=reset] {
+.contact .inner1 fieldset .wrap article:last-of-type table tr th input[type=submit],
+.contact .inner1 fieldset .wrap article:last-of-type table tr th input[type=reset] {
   padding: 10px 20px;
   margin-right: 20px;
   background: #eee;
   cursor: pointer;
 }
-.contact .inner1 fieldset .wrap article:last-of-type table tr th input[type=submit]:hover, .contact .inner1 fieldset .wrap article:last-of-type table tr th input[type=reset]:hover {
+.contact .inner1 fieldset .wrap article:last-of-type table tr th input[type=submit]:hover,
+.contact .inner1 fieldset .wrap article:last-of-type table tr th input[type=reset]:hover {
   background: #000;
   color: #fff;
 }
@@ -6625,9 +6642,8 @@ body {
 #service .inner {
   width: 1180px;
   margin: 0 auto;
-  background-color: #fff;
 }
-#service .inner h2 {
+#service .inner > h2 {
   text-align: center;
   color: #fff;
   font: bold 30px/1 "Orbitron";
@@ -6640,49 +6656,75 @@ body {
   margin: 20px 0;
 }
 #service .inner .wrap {
+  margin-top: 50px;
   width: 100%;
   height: 400px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+}
+#service .inner .wrap::after {
+  content: "";
+  display: block;
+  clear: both;
 }
 #service .inner .wrap article {
   width: 280px;
   height: 280px;
-  border: 1px solid #999;
   border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-#service .inner .wrap article .icons {
-  margin: auto;
-  width: 240px;
-  height: 240px;
-  border: 1px solid #000;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  float: left;
   position: relative;
+  margin-right: 20px;
+  cursor: pointer;
 }
-#service .inner .wrap article .icons a {
-  display: block;
-  width: 100%;
+#service .inner .wrap article:last-child {
+  margin-right: 0;
 }
-#service .inner .wrap article .icons a svg path {
-  fill: transparent;
-  stroke: #999;
-  stroke-width: 5;
-  stroke-dasharray: 0;
-  stroke-dashoffset: 0;
-  display: block;
+#service .inner .wrap article .icon .s1 {
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+#service .inner .wrap article .icon .s1 circle {
+  fill: transparent;
+  stroke: #4fb627;
+  stroke-width: 3;
+  stroke-dasharray: 880;
+  stroke-dashoffset: 880;
+  animation: ani 2s linear 1;
+  animation-fill-mode: forwards;
+}
+#service .inner .wrap article .icon a {
+  display: block;
+}
+#service .inner .wrap article .icon a .icons {
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  transform: translate(-50%, -50%);
+}
+#service .inner .wrap article .icon a .icons path {
+  fill: #788174;
+}
+#service .inner .wrap article .icon_text {
+  margin-top: 150px;
+}
+#service .inner .wrap article .icon_text h2 {
+  font: bold 14px/1 "orbitron";
+  letter-spacing: 1px;
+  text-align: center;
+  color: #fff;
+}
+#service .inner .wrap article .icon_text p {
+  font: 12px/1 "pretendard";
 }
 
+@keyframes ani {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
 /* news ------------------------------------------------------*/
 #news {
   width: 100%;

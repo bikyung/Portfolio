@@ -1,604 +1,602 @@
 .department {
-  background: #fff;
-  .sub_visual {
-    width: 100%;
-    background: url(../img/subpage01/department/main.jpg) no-repeat center /
-      cover;
-    height: 500px;
-  }
-  .inner {
-    width: 1180px;
-    margin: 0 auto;
-    h2 {
-      color: #000;
-    }
+	background: #fff;
+	.sub_visual {
+		width: 100%;
+		background: url(../img/subpage01/department/main.jpg) no-repeat center /
+			cover;
+		height: 245px;
+	}
+	.inner {
+		width: 1180px;
+		margin: 0 auto;
+		h2 {
+			color: #000;
+		}
 
-    > h2 {
-      margin: 50px 0;
-      text-align: left;
-    }
+		> h2 {
+			margin: 50px 0;
+			text-align: left;
+		}
 
-    .wrap {
-      &::after {
-        content: "";
-        display: block;
-        clear: both;
-      }
+		.wrap {
+			&::after {
+				content: '';
+				display: block;
+				clear: both;
+			}
 
-      article {
-        &::after {
-          content: "";
-          display: block;
-          clear: both;
-        }
-        &:nth-of-type(2),
-        &:nth-of-type(4) {
-          .pic {
-            float: right;
-          }
-        }
-        .pic {
-          float: left;
-          width: 590px;
-          height: 400px;
+			article {
+				&::after {
+					content: '';
+					display: block;
+					clear: both;
+				}
+				&:nth-of-type(2),
+				&:nth-of-type(4) {
+					.pic {
+						float: right;
+					}
+				}
+				.pic {
+					float: left;
+					width: 590px;
+					height: 400px;
 
-          img {
-            width: 100%;
-            height: 100%;
-          }
-        }
+					img {
+						width: 100%;
+						height: 100%;
+					}
+				}
 
-        .textInfo {
-          float: left;
-          width: 590px;
-          height: 400px;
-          padding: 60px;
+				.textInfo {
+					float: left;
+					width: 590px;
+					height: 400px;
+					padding: 60px;
 
-          > h2 {
-            margin-bottom: 30px;
-          }
+					> h2 {
+						margin-bottom: 30px;
+					}
 
-          p {
-            font: normal 18px/1.3 "arial";
-            color: #999;
-          }
-        }
-      }
-    }
-  }
+					p {
+						font: normal 18px/1.3 'arial';
+						color: #999;
+					}
+				}
+			}
+		}
+	}
 }
 .organization {
-  .inner {
-    width: 1180px;
-    margin: 0 auto;
+	.inner {
+		width: 1180px;
+		margin: 0 auto;
 
-    > h2 {
-      text-align: left;
-      padding-top: 30px;
-      border-top: 3px solid #000;
-    }
+		> h2 {
+			text-align: left;
+			padding-top: 30px;
+			border-top: 3px solid #000;
+		}
 
-    .container1 {
-      > h2 {
-        text-align: center;
-        font: bold 24px/1 "GmarketSansMedium";
-        color: violet;
-        margin-bottom: 20px;
-      }
+		.container1 {
+			> h2 {
+				text-align: center;
+				font: bold 24px/1 'GmarketSansMedium';
+				color: violet;
+				margin-bottom: 20px;
+			}
 
-      span {
-        display: block;
-        border: 3px solid violet;
-        margin: 20px auto;
-        width: 250px;
-        height: 30px;
-        border-bottom: none;
-      }
+			span {
+				display: block;
+				border: 3px solid violet;
+				margin: 20px auto;
+				width: 250px;
+				height: 30px;
+				border-bottom: none;
+			}
 
-      .wrap1 {
-        width: 100%;
-        text-align: center;
+			.wrap1 {
+				width: 100%;
+				text-align: center;
 
-        article {
-          display: inline-block;
-          cursor: pointer;
+				article {
+					display: inline-block;
+					cursor: pointer;
 
-          .pic1 {
-            width: 150px;
-            height: 150px;
-            margin: 0 50px;
+					.pic1 {
+						width: 150px;
+						height: 150px;
+						margin: 0 50px;
 
-            img {
-              width: 100%;
-              height: 100%;
-              transition: all 0.7s;
-              border: 5px solid violet;
-              border-radius: 50%;
-              &:hover {
-                transform: scale(1.1);
-              }
-            }
+						img {
+							width: 100%;
+							height: 100%;
+							transition: all 0.7s;
+							border: 5px solid violet;
+							border-radius: 50%;
+							&:hover {
+								transform: scale(1.1);
+							}
+						}
 
-            h2 {
-              font: bold 16px/1.3 "GmarketSansMedium";
-              color: #999;
-              margin-top: 20px;
-            }
+						h2 {
+							font: bold 16px/1.3 'GmarketSansMedium';
+							color: #999;
+							margin-top: 20px;
+						}
 
-            .sns {
-              display:none;
-            }
-          }
-        }
-      }
-    }
+						.sns {
+							display: none;
+						}
+					}
+				}
+			}
+		}
 
-    .container2 {
-      > h2 {
-        width: 100%;
-        margin: 30px 0;
-        text-align: center;
-        font: bold 24px/1 "GmarketSansMedium";
-        color: rgb(91, 211, 107);
-      }
-      span {
-        display: block;
-        border: 3px solid rgb(91, 211, 107);
-        margin: 20px auto;
-        width: 250px;
-        height: 30px;
-        border-bottom: none;
-      }
-      .wrap1 {
-        width: 100%;
-        text-align: center;
-        article {
-          display: inline-block;
-          cursor: pointer;
+		.container2 {
+			> h2 {
+				width: 100%;
+				margin: 30px 0;
+				text-align: center;
+				font: bold 24px/1 'GmarketSansMedium';
+				color: rgb(91, 211, 107);
+			}
+			span {
+				display: block;
+				border: 3px solid rgb(91, 211, 107);
+				margin: 20px auto;
+				width: 250px;
+				height: 30px;
+				border-bottom: none;
+			}
+			.wrap1 {
+				width: 100%;
+				text-align: center;
+				article {
+					display: inline-block;
+					cursor: pointer;
 
-          .pic1 {
-            width: 150px;
-            height: 150px;
-            margin: 0 50px;
-            img {
-              width: 100%;
-              height: 100%;
-              transition: all 0.7s;
-              border: 5px solid rgb(91, 211, 107);
-              border-radius: 50%;
-              &:hover {
-                transform: scale(1.1);
-              }
-            }
-            h2 {
-              font: bold 16px/1.3 "GmarketSansMedium";
-              color: #999;
-              margin-top: 20px;
-              padding: 0 10px;
-            }
-            .sns {
-              display:none;
-            }
-          }
-        }
-      }
-    }
+					.pic1 {
+						width: 150px;
+						height: 150px;
+						margin: 0 50px;
+						img {
+							width: 100%;
+							height: 100%;
+							transition: all 0.7s;
+							border: 5px solid rgb(91, 211, 107);
+							border-radius: 50%;
+							&:hover {
+								transform: scale(1.1);
+							}
+						}
+						h2 {
+							font: bold 16px/1.3 'GmarketSansMedium';
+							color: #999;
+							margin-top: 20px;
+							padding: 0 10px;
+						}
+						.sns {
+							display: none;
+						}
+					}
+				}
+			}
+		}
 
-    .container3 {
-      > h2 {
-        margin: 30px 0;
-        text-align: center;
-        font: bold 24px/1 "GmarketSansMedium";
-        color: rgb(235, 155, 8);
-      }
-      span {
-        display: block;
-        border: 2px solid rgb(235, 155, 8);
-        margin: 20px auto;
-        width: 1px;
-        height: 30px;
-        border-bottom: none;
-      }
-      .wrap1 {
-        width: 100%;
-        text-align: center;
-        article {
-          display: inline-block;
-          cursor: pointer;
+		.container3 {
+			> h2 {
+				margin: 30px 0;
+				text-align: center;
+				font: bold 24px/1 'GmarketSansMedium';
+				color: rgb(235, 155, 8);
+			}
+			span {
+				display: block;
+				border: 2px solid rgb(235, 155, 8);
+				margin: 20px auto;
+				width: 1px;
+				height: 30px;
+				border-bottom: none;
+			}
+			.wrap1 {
+				width: 100%;
+				text-align: center;
+				article {
+					display: inline-block;
+					cursor: pointer;
 
-          .pic1 {
-            width: 150px;
-            height: 150px;
-            margin: 0 50px;
-            img {
-              width: 100%;
-              height: 100%;
-              transition: all 0.7s;
-              border: 5px solid rgb(235, 155, 8);
-              border-radius: 50%;
-              &:hover {
-                transform: scale(1.1);
-              }
-            }
-            h2 {
-              font: bold 16px/1.3 "GmarketSansMedium";
-              color: #999;
-              margin-top: 20px;
-              padding: 0 10px;
-            }
-            .sns {
-              display:none;
-            }
-          }
-        }
-      }
-    }
+					.pic1 {
+						width: 150px;
+						height: 150px;
+						margin: 0 50px;
+						img {
+							width: 100%;
+							height: 100%;
+							transition: all 0.7s;
+							border: 5px solid rgb(235, 155, 8);
+							border-radius: 50%;
+							&:hover {
+								transform: scale(1.1);
+							}
+						}
+						h2 {
+							font: bold 16px/1.3 'GmarketSansMedium';
+							color: #999;
+							margin-top: 20px;
+							padding: 0 10px;
+						}
+						.sns {
+							display: none;
+						}
+					}
+				}
+			}
+		}
 
-    .container4 {
-      > h2 {
-        margin: 30px 0;
-        text-align: center;
-        font: bold 24px/1 "GmarketSansMedium";
-        color: rgb(44, 14, 180);
-      }
-      span {
-        display: block;
-        border: 3px solid rgb(44, 14, 180);
-        margin: 20px auto;
-        width: 510px;
-        height: 30px;
-        border-bottom: none;
-      }
-      .wrap1 {
-        width: 100%;
-        text-align: center;
-        article {
-          display: inline-block;
-          cursor: pointer;
+		.container4 {
+			> h2 {
+				margin: 30px 0;
+				text-align: center;
+				font: bold 24px/1 'GmarketSansMedium';
+				color: rgb(44, 14, 180);
+			}
+			span {
+				display: block;
+				border: 3px solid rgb(44, 14, 180);
+				margin: 20px auto;
+				width: 510px;
+				height: 30px;
+				border-bottom: none;
+			}
+			.wrap1 {
+				width: 100%;
+				text-align: center;
+				article {
+					display: inline-block;
+					cursor: pointer;
 
-          .pic1 {
-            width: 150px;
-            height: 150px;
-            margin: 0 50px;
-            img {
-              width: 100%;
-              height: 100%;
-              transition: all 0.7s;
-              border: 5px solid rgb(44, 14, 180);
-              border-radius: 50%;
-              &:hover {
-                transform: scale(1.1);
-              }
-            }
-            h2 {
-              font: bold 16px/1.3 "GmarketSansMedium";
-              color: #999;
-              margin-top: 20px;
-              padding: 0 10px;
-            }
-            .sns {
-              display:none;
-            }
-          }
-        }
-      }
-    }
+					.pic1 {
+						width: 150px;
+						height: 150px;
+						margin: 0 50px;
+						img {
+							width: 100%;
+							height: 100%;
+							transition: all 0.7s;
+							border: 5px solid rgb(44, 14, 180);
+							border-radius: 50%;
+							&:hover {
+								transform: scale(1.1);
+							}
+						}
+						h2 {
+							font: bold 16px/1.3 'GmarketSansMedium';
+							color: #999;
+							margin-top: 20px;
+							padding: 0 10px;
+						}
+						.sns {
+							display: none;
+						}
+					}
+				}
+			}
+		}
 
-    .container5 {
-      padding-bottom: 50px;
-      > h2 {
-        margin: 30px 0;
-        text-align: center;
-        font: bold 24px/1 "GmarketSansMedium";
-        color: rgb(183, 250, 0);
-      }
-      span {
-        display: block;
-        border: 3px solid rgb(183, 250, 0);
-        margin: 20px auto;
-        width: 650px;
-        height: 30px;
-        border-bottom: none;
-      }
-      .wrap1 {
-        width: 100%;
-        text-align: center;
-        article {
-          display: inline-block;
-          cursor: pointer;
+		.container5 {
+			padding-bottom: 50px;
+			> h2 {
+				margin: 30px 0;
+				text-align: center;
+				font: bold 24px/1 'GmarketSansMedium';
+				color: rgb(183, 250, 0);
+			}
+			span {
+				display: block;
+				border: 3px solid rgb(183, 250, 0);
+				margin: 20px auto;
+				width: 650px;
+				height: 30px;
+				border-bottom: none;
+			}
+			.wrap1 {
+				width: 100%;
+				text-align: center;
+				article {
+					display: inline-block;
+					cursor: pointer;
 
-          .pic1 {
-            width: 150px;
-            height: 150px;
-            margin: 0 30px;
-            img {
-              width: 100%;
-              height: 100%;
-              transition: all 0.7s;
-              border: 5px solid rgb(183, 250, 0);
-              border-radius: 50%;
-              &:hover {
-                transform: scale(1.1);
-              }
-            }
-            h2 {
-              font: bold 16px/1.3 "GmarketSansMedium";
-              color: #999;
-              margin-top: 20px;
-              padding: 0 25px;
-            }
-            .sns {
-              display:none;
-            }
-          }
-        }
-      }
-    }
-  }
+					.pic1 {
+						width: 150px;
+						height: 150px;
+						margin: 0 30px;
+						img {
+							width: 100%;
+							height: 100%;
+							transition: all 0.7s;
+							border: 5px solid rgb(183, 250, 0);
+							border-radius: 50%;
+							&:hover {
+								transform: scale(1.1);
+							}
+						}
+						h2 {
+							font: bold 16px/1.3 'GmarketSansMedium';
+							color: #999;
+							margin-top: 20px;
+							padding: 0 25px;
+						}
+						.sns {
+							display: none;
+						}
+					}
+				}
+			}
+		}
+	}
 }
 
 .division {
-  .div_tree {
-    position: absolute;
-    left:0;
-    top: -9999px;
-  }
+	.div_tree {
+		position: absolute;
+		left: 0;
+		top: -9999px;
+	}
 }
 
 @media screen and (max-width: $tablet) {
-  .department {
-    .sub_visual {
-      width: 100%;
-      background: url(../img/subpage01/department/main.jpg) no-repeat center /
-        cover;
-      height: 500px;
-    }
+	.department {
+		.sub_visual {
+			width: 100%;
+			background: url(../img/subpage01/department/main.jpg) no-repeat center /
+				cover;
+			height: 500px;
+		}
 
-    .inner {
-      width: 100%;
-      margin: 0 auto;
-      padding: 10px;
+		.inner {
+			width: 100%;
+			margin: 0 auto;
+			padding: 10px;
 
-      > h2 {
-        margin: 50px 0;
-        text-align: left;
-      }
+			> h2 {
+				margin: 50px 0;
+				text-align: left;
+			}
 
-      .wrap {
-        &::after {
-          content: "";
-          display: block;
-          clear: both;
-        }
+			.wrap {
+				&::after {
+					content: '';
+					display: block;
+					clear: both;
+				}
 
-        article {
-          display: flex;
-          flex-direction: column;
-          margin-bottom: 30px;
-          width: 100%;
-          &::after {
-            content: "";
-            display: block;
-            clear: both;
-          }
+				article {
+					display: flex;
+					flex-direction: column;
+					margin-bottom: 30px;
+					width: 100%;
+					&::after {
+						content: '';
+						display: block;
+						clear: both;
+					}
 
-          .pic {
-            width: 100%;
-            img {
-              width: 100%;
-              height: 600px;
-            }
-          }
+					.pic {
+						width: 100%;
+						img {
+							width: 100%;
+							height: 600px;
+						}
+					}
 
-          .textInfo {
-            margin-top: 200px;
-            height: 100%;
-            width: 100%;
-            padding: 20px 20px 0;
+					.textInfo {
+						margin-top: 200px;
+						height: 100%;
+						width: 100%;
+						padding: 20px 20px 0;
 
-            h2 {
-              margin-bottom: 20px;
-            }
+						h2 {
+							margin-bottom: 20px;
+						}
 
-            p {
-              font: normal 16px/1.3 "arial";
-              color: #999;
-            }
-          }
-        }
-      }
-    }
-  }
+						p {
+							font: normal 16px/1.3 'arial';
+							color: #999;
+						}
+					}
+				}
+			}
+		}
+	}
 
-  .organization {
-    .inner {
-      .container4 {
-        span {
-          width: 47%;
-        }
-      }
-  
-      .container5 {
-        span {
-          width: 58%;
-        }
-      }
-    }
-  }
+	.organization {
+		.inner {
+			.container4 {
+				span {
+					width: 47%;
+				}
+			}
+
+			.container5 {
+				span {
+					width: 58%;
+				}
+			}
+		}
+	}
 }
 
-
-
 @media screen and (max-width: $mobile) {
-  .department {
-    .sub_visual {
-      height: 300px;
-    }
+	.department {
+		.sub_visual {
+			height: 300px;
+		}
 
-    >.inner {
-      display:none;
-    }
-    .organization {
-      .inner {
-        .container1,
-        .container2,
-        .container3,
-        .container4,
-        .container5 {
-          span {
-            display: none;
-          }
-        }
-        .container1 {
-          >h2 {
-            font: bold 20px/1.3 "GmarketSansMedium";
-          }
-          .wrap1 {
-            article {
-              height: 320px;
-              border: 2px solid violet;
-              border-radius: 10px;
-              margin-bottom: 30px;
-              background: #eee;
-              padding: 30px 0;
-    
-              .pic1 {
-                .sns {
-                  display:flex;
-                  justify-content: space-between;
-                  padding: 20px;
-                  a {
-                    i {
-                      font-size: 20px;
-                      color:violet;
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
+		> .inner {
+			display: none;
+		}
+		.organization {
+			.inner {
+				.container1,
+				.container2,
+				.container3,
+				.container4,
+				.container5 {
+					span {
+						display: none;
+					}
+				}
+				.container1 {
+					> h2 {
+						font: bold 20px/1.3 'GmarketSansMedium';
+					}
+					.wrap1 {
+						article {
+							height: 320px;
+							border: 2px solid violet;
+							border-radius: 10px;
+							margin-bottom: 30px;
+							background: #eee;
+							padding: 30px 0;
 
-        .container2 {
-          >h2 {
-            font: bold 20px/1.3 "GmarketSansMedium";
-          }
-          .wrap1 {
-            article {
-              height: 320px;
-              border: 2px solid rgb(91, 211, 107);
-              border-radius: 10px;
-              margin-bottom: 30px;
-              background: #eee;
-              padding: 30px 0;
-    
-              .pic1 {
-                .sns {
-                  display:flex;
-                  justify-content: space-between;
-                  padding: 20px;
-                  a {
-                    i {
-                      font-size: 20px;
-                      color:rgb(91, 211, 107);
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
+							.pic1 {
+								.sns {
+									display: flex;
+									justify-content: space-between;
+									padding: 20px;
+									a {
+										i {
+											font-size: 20px;
+											color: violet;
+										}
+									}
+								}
+							}
+						}
+					}
+				}
 
-        .container3 {
-          >h2 {
-            font: bold 20px/1.3 "GmarketSansMedium";
-          }
-          .wrap1 {
-            article {
-              height: 320px;
-              border: 2px solid rgb(235, 155, 8);
-              border-radius: 10px;
-              margin-bottom: 30px;
-              background: #eee;
-              padding: 30px 0;
-    
-              .pic1 {
-                .sns {
-                  display:flex;
-                  justify-content: space-between;
-                  padding: 20px;
-                  a {
-                    i {
-                      font-size: 20px;
-                      color:rgb(235, 155, 8);
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
+				.container2 {
+					> h2 {
+						font: bold 20px/1.3 'GmarketSansMedium';
+					}
+					.wrap1 {
+						article {
+							height: 320px;
+							border: 2px solid rgb(91, 211, 107);
+							border-radius: 10px;
+							margin-bottom: 30px;
+							background: #eee;
+							padding: 30px 0;
 
-        .container4 {
-          >h2 {
-            font: bold 20px/1.3 "GmarketSansMedium";
-          }
-          .wrap1 {
-            article {
-              height: 320px;
-              border: 2px solid rgb(44, 14, 180);
-              border-radius: 10px;
-              margin-bottom: 30px;
-              background: #eee;
-              padding: 30px 0;
-    
-              .pic1 {
-                .sns {
-                  display:flex;
-                  justify-content: space-between;
-                  padding: 20px;
-                  a {
-                    i {
-                      font-size: 20px;
-                      color:rgb(44, 14, 180);
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
+							.pic1 {
+								.sns {
+									display: flex;
+									justify-content: space-between;
+									padding: 20px;
+									a {
+										i {
+											font-size: 20px;
+											color: rgb(91, 211, 107);
+										}
+									}
+								}
+							}
+						}
+					}
+				}
 
-        .container5 {
-          >h2 {
-            font: bold 20px/1.3 "GmarketSansMedium";
-          }
-          .wrap1 {
-            article {
-              height: 320px;
-              border: 2px solid rgb(183, 250, 0);
-              border-radius: 10px;
-              margin-bottom: 30px;
-              background: #eee;
-              padding: 30px 0;
-    
-              .pic1 {
-                .sns {
-                  display:flex;
-                  justify-content: space-between;
-                  padding: 20px;
-                  a {
-                    i {
-                      font-size: 20px;
-                      color:rgb(183, 250, 0);
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  }
+				.container3 {
+					> h2 {
+						font: bold 20px/1.3 'GmarketSansMedium';
+					}
+					.wrap1 {
+						article {
+							height: 320px;
+							border: 2px solid rgb(235, 155, 8);
+							border-radius: 10px;
+							margin-bottom: 30px;
+							background: #eee;
+							padding: 30px 0;
+
+							.pic1 {
+								.sns {
+									display: flex;
+									justify-content: space-between;
+									padding: 20px;
+									a {
+										i {
+											font-size: 20px;
+											color: rgb(235, 155, 8);
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+
+				.container4 {
+					> h2 {
+						font: bold 20px/1.3 'GmarketSansMedium';
+					}
+					.wrap1 {
+						article {
+							height: 320px;
+							border: 2px solid rgb(44, 14, 180);
+							border-radius: 10px;
+							margin-bottom: 30px;
+							background: #eee;
+							padding: 30px 0;
+
+							.pic1 {
+								.sns {
+									display: flex;
+									justify-content: space-between;
+									padding: 20px;
+									a {
+										i {
+											font-size: 20px;
+											color: rgb(44, 14, 180);
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+
+				.container5 {
+					> h2 {
+						font: bold 20px/1.3 'GmarketSansMedium';
+					}
+					.wrap1 {
+						article {
+							height: 320px;
+							border: 2px solid rgb(183, 250, 0);
+							border-radius: 10px;
+							margin-bottom: 30px;
+							background: #eee;
+							padding: 30px 0;
+
+							.pic1 {
+								.sns {
+									display: flex;
+									justify-content: space-between;
+									padding: 20px;
+									a {
+										i {
+											font-size: 20px;
+											color: rgb(183, 250, 0);
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
 }
