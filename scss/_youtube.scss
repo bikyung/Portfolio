@@ -1,0 +1,133 @@
+.youtube {
+	width: 100%;
+	.sub_visual {
+		width: 100%;
+		height: 245px;
+		background: url(../img/subpage01/youtube.jpg) no-repeat center / cover;
+		margin-bottom: 50px;
+		.info {
+			width: 1180px;
+			margin: 0 auto;
+			padding-top: 55px;
+			h2 {
+				color: #fff;
+				font: 500 20px/1 'Oswald';
+				margin-bottom: 10px;
+			}
+			h3 {
+				color: #fff;
+				font: bold 45px/1 'Oswald';
+				margin-bottom: 15px;
+				letter-spacing: 1px;
+			}
+			p {
+				color: #fff;
+				font: 500 18px/1 'Noto Sans KR';
+			}
+		}
+	}
+}
+.txt1 {
+	padding: 30px 10vw 0;
+	h3 {
+		color: #eee;
+		font: bold 24px/1 'arial';
+		margin-bottom: 10px;
+	}
+	p {
+		color: #aaa;
+		margin-bottom: 10px;
+		font: 13px/1 'pretendard';
+	}
+	strong {
+		color: #888;
+	}
+}
+.youtubeInfo {
+	width: 100%;
+	height: 100vh;
+	padding: 20vh 10vw;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-content: center;
+
+	article {
+		width: 48%;
+		height: 30%;
+		border: 1px solid #4fb627;
+		display: flex;
+		justify-content: space-between;
+		padding: 10px;
+		margin-bottom: 50px;
+		position: relative;
+		transition: 0.7s;
+		&:hover {
+			transform: scale(1.1);
+			.con {
+				h2,
+				p {
+					color: #fff;
+				}
+			}
+		}
+
+		.pic {
+			width: 40%;
+			height: 100%;
+
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				filter: opacity(0.5);
+				&:hover {
+					filter: opacity(1);
+				}
+			}
+		}
+
+		.con {
+			width: 54%;
+			height: 100%;
+			position: relative;
+
+			h2 {
+				font: bold 16px/1.2 'pretendard';
+				color: #555;
+				margin-bottom: 15px;
+			}
+
+			p {
+				font: 12px/1.2 'pretendard';
+				color: #888;
+			}
+
+			span {
+				font: bold 12px/1 'pretendard';
+				color: #4fb627;
+				position: absolute;
+				bottom: 10px;
+				right: 10px;
+			}
+		}
+	}
+}
+
+aside {
+	width: 100%;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.9);
+	padding: 5vw;
+
+	.btnClose {
+		position: absolute;
+		top: 40px;
+		right: 40px;
+		color: #4fb627;
+		cursor: pointer;
+	}
+}

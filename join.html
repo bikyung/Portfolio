@@ -8,27 +8,25 @@
   <title>subpage layout</title>
   <link rel="stylesheet" href="css/style.css">
   <script src="https://kit.fontawesome.com/e5fcbbc04c.js" crossorigin="anonymous"></script>
-  <script defer src="js/main.js"></script>
+  <script defer src="js/join.js"></script>
+  <script defer src="js/common.js"></script>
 </head>
 
 <body>
   <header id="header_sub">
     <div class="inner">
-      <h1><a href="index.html"><img src="img/logo.png" alt="logo"></a></h1>
+      <h1><a href="index.html"><img src="img/logo1.png" alt="logo"></a></h1>
       <nav>
         <ul class="gnb">
           <li><a href="MotorCycle.html">MoterCycle</a></li>
           <li><a href="Department.html">Department</a></li>
-          <li><a href="Gellary.html">Gellary</a></li>
-          <li><a href="Service.html">Service</a></li>
+          <li><a href="Gallery.html">Gallery</a></li>
+          <li><a href="Youtube.html">Youtube</a></li>
           <li><a href="News&Event.html">News&Event</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+          <li><a href="Join.html">Join</a></li>
         </ul>
 
-        <ul class="util">
-          <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
-          <li><a href="#"><i class="fa-solid fa-user"></i></a></li>
-          <li><a href="join.html"><i class="fa-solid fa-headset"></i></a></li>
-        </ul>
       </nav>
 
       <a href="#" class="btnCall">
@@ -38,29 +36,54 @@
         <ul class="gnbMo">
           <li><a href="MotorCycle.html">MoterCycle</a></li>
           <li><a href="Department.html">Department</a></li>
-          <li><a href="Gellary.html">Gellary</a></li>
-          <li><a href="Service.html">Service</a></li>
+          <li><a href="Gallery.html">Gallery</a></li>
+          <li><a href="Youtube.html">Youtube</a></li>
           <li><a href="News&Event.html">News&Event</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+          <li><a href="Join.html">Join</a></li>
         </ul>
 
-        <ul class="utilMo">
-          <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
-          <li><a href="#"><i class="fa-solid fa-user"></i></a></li>
-          <li><a href="join.html"><i class="fa-solid fa-headset"></i></a></li>
-        </ul>
       </nav>
     </div>
   </header>
 
   <section class="contents join">
     <div class="sub_visual">
-      <div class="pic">
-        <h2>카와사키 회원가입</h2>
+      <div class="info">
+        <h2>KAWASAKI</h2>
+        <h3>SIGN UP</h3>
+        <p>가와사키 모터에서 다양한 혜택을 만나보세요.</p>
       </div>
     </div>
     <div class="inner">
+      <div class="membership">
+        <article>
+          <div class="pic">
+            <img src="img/subpage01/join/membership.jpg" alt="membership">
+          </div>
+          <div class="txt">
+            <h2>MemberShip 가입</h2>
+          </div>
+        </article>
+        <article>
+          <div class="pic">
+            <img src="img/subpage01/join/membership1.jpg" alt="membership">
+          </div>
+          <div class="txt">
+            <h2>MemberShip 혜택</h2>
+          </div>
+        </article>
+        <article>
+          <div class="pic">
+            <img src="img/subpage01/join/promotion.jpg" alt="membership">
+          </div>
+          <div class="txt">
+            <h2>이달의 프로모션</h2>
+          </div>
+        </article>
+      </div>
       <h2>회원 가입</h2>
-      <form action="#" method="get">
+      <form action="result.html" method="get" id="member">
         <fieldset>
           <legend class="hidden">회원가입 페이지</legend>
           <h3>기본 정보</h3>
@@ -68,33 +91,35 @@
             <caption class="hidden">상세페이지</caption>
             <tr>
               <th scope="row"> <label for="id">아이디</label></th>
-              <td><input type="text" name="id" id="id" required>
+              <td><input type="text" name="id" id="id">
                 <p class="idText">사용자는 ID 3~20자 사이의 영문+숫자로 이루어져야 하며 영문으로 시작되어야 합니다.</p>
               </td>
             </tr>
             <tr>
               <th scope="row"><label for="pwd">비밀번호</label></th>
-              <td><input type="password" name="pwd" id="pwd" required>
+              <td><input type="password" name="pwd1" id="pwd">
                 <p class="pwdText">비밀번호는 6~20자로 되어야 합니다.</p>
               </td>
             </tr>
             <tr>
               <th scope="row"><label for="repwd">비밀번호 확인</label></th>
-              <td><input type="password" name="repwd" id="repwd" required></td>
+              <td><input type="password" name="pwd2" id="repwd">
+                <p class="pwdText">비밀번호는 6~20자로 되어야 합니다.</p>
+              </td>
             </tr>
             <tr>
               <th scope="row"><label for="name">이름</label></th>
-              <td><input type="text" name="name" id="name" required>
+              <td><input type="text" name="name" id="name">
                 <p class="nameText">이름은 2~20자 이내여야 합니다.</p>
               </td>
             </tr>
             <tr>
               <th scope="row"><label for="nickName">닉네임</label></th>
-              <td><input type="text" name="nickName" id="nickName" required></td>
+              <td><input type="text" name="nickName" id="nickName"></td>
             </tr>
             <tr>
               <th scope="row"><label for="email">이메일 주소</label></th>
-              <td><input type="text" name="email" id="email" required>
+              <td><input type="text" name="email" id="email">
                 <p class="emailText">메일주소는 메일인증 후 비밀번호 변경이나 찾기 등에 사용됩니다.</p>
               </td>
             </tr>
@@ -102,10 +127,10 @@
               <th scope="row">성별</th>
               <td>
                 <label for="male">
-                  <input type="radio" name="gender" id="male" value="남자" required>남자
+                  <input type="radio" name="gender" id="male" value="남자">남자
                 </label>
                 <label for="female">
-                  <input type="radio" name="gender" id="female" value="여자" required>여자
+                  <input type="radio" name="gender" id="female" value="여자">여자
                 </label>
               </td>
             </tr>
@@ -115,24 +140,24 @@
             <tr>
               <th scope="row"><label for="address">주소</label></th>
               <td>
-                <input type="search" name="address" id="address" required><span>검색</span>
-                <input type="search" name="address" id="address1" required>
+                <input type="search" name="address" id="address"><span>검색</span>
+                <input type="search" name="address" id="address1">
               </td>
             </tr>
             <tr>
               <th scope="row"><label for="call">휴대폰번호</label></th>
               <td>
-                <input type="tel" name="call" id="call" required>
-                <input type="tel" name="call" id="call2" required>
-                <input type="tel" name="call" id="call3" required>
-                <input type="checkbox" name="call" id="call1" required>
+                <input type="tel" name="call" id="call">
+                <input type="tel" name="call" id="call2">
+                <input type="tel" name="call" id="call3">
+                <input type="checkbox" name="call" id="call1">
                 <label for="call1">공개</label>
               </td>
             </tr>
             <tr>
               <th colspan="2">
-                <input type="submit" value="등록" required>
-                <input type="reset" value="취소" required>
+                <input type="submit" value="등록">
+                <input type="reset" value="취소">
               </th>
             </tr>
           </table>
@@ -160,7 +185,7 @@
         <li><a href="#"><i class="fa-brands fa-youtube-square"></i></a></li>
       </ul>
       <div class="footerLogo">
-        <h1><a href="#"><img src="img/logo.png" alt="logo"></a></h1>
+        <h1><a href="#"><img src="img/logo1.png" alt="logo"></a></h1>
         <p>© Copyright 2022 Daijeon Machinery Co Ltd.<br>All rights reserved. </p>
       </div>
     </div>

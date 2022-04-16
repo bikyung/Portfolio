@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>subpage layout</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <script src="https://kit.fontawesome.com/e5fcbbc04c.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=332c0f4fa827f47e9deef2f6f651e734"></script>
+  <script defer src="js/contact.js"></script>
+  <script defer src="js/common.js"></script>
+</head>
+
+<body>
+  <header id="header_sub">
+    <div class="inner">
+      <h1><a href="index.html"><img src="img/logo1.png" alt="logo"></a></h1>
+      <nav>
+        <ul class="gnb">
+          <li><a href="MotorCycle.html">MoterCycle</a></li>
+          <li><a href="Department.html">Department</a></li>
+          <li><a href="Gallery.html">Gallery</a></li>
+          <li><a href="Youtube.html">Youtube</a></li>
+          <li><a href="News&Event.html">News&Event</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+          <li><a href="Join.html">Join</a></li>
+        </ul>
+
+      </nav>
+
+      <!-- 햄버거 버튼 -->
+      <a href="#" class="btnCall">
+        <span>메뉴호출</span>
+      </a>
+      <nav class="menuMo">
+        <ul class="gnbMo">
+          <li><a href="MotorCycle.html">MoterCycle</a></li>
+          <li><a href="Department.html">Department</a></li>
+          <li><a href="Gallery.html">Gallery</a></li>
+          <li><a href="Youtube.html">Youtube</a></li>
+          <li><a href="News&Event.html">News&Event</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+          <li><a href="Join.html">Join</a></li>
+        </ul>
+
+      </nav>
+    </div>
+  </header>
+
+  <section class="contents contact">
+    <div class="sub_visual">
+      <!-- Swiper -->
+      <div class="swiper mySwiper2">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="img/location.jpg" alt="contact">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/location1.jpg" alt="contact">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="inner">
+      <h2>Contact</h2>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint, fugiat!</p>
+      <div class="wrap">
+        <article>
+          <i class="fa-solid fa-circle-nodes fa-2x"></i>
+          <div class="text">
+            <h2>Lorem, ipsum dolor.</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur<br> adipisicing elit. At, inventore?</p>
+          </div>
+        </article>
+        <article>
+          <i class="fa-solid fa-phone fa-2x"></i>
+          <div class="text">
+            <h2>Lorem ipsum dolor sit.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Nesciunt nihil minima molestiae.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+    <div class="location">
+      <div class="wrap">
+        <i class="fa-solid fa-location-dot fa-2x"></i>
+        <h2>Come and visit us</h2>
+      </div>
+      <div id="map">
+
+      </div>
+      <ul class="branch">
+        <li class="on" data-index="0"><a href="#">SEOUL</a></li>
+        <li data-index="1"><a href="#">DAEJEON</a></li>
+        <li data-index="2"><a href="#">KWANGJU</a></li>
+        <li data-index="3"><a href="#">PUSAN</a></li>
+        <li data-index="4"><a href="#">INCHEON</a></li>
+      </ul>
+    </div>
+    <div class="inner1">
+      <div class="drop">
+        <i><i class="fa-solid fa-paper-plane fa-2x"></i></i>
+        <h2>Drop us a line</h2>
+      </div>
+      <form>
+        <fieldset>
+          <legend class="hidden">게시판</legend>
+          <div class="wrap">
+            <article>
+              <table>
+                <caption class="hidden">테이블</caption>
+                <tr>
+                  <th>
+                    <label for="name">Name.</label>
+                  </th>
+                  <td>
+                    <input type="text" id="name" placeholder="White Your Name">
+                  </td>
+                </tr>
+                <tr>
+                  <th>
+                    <label for="email">Email.</label>
+                  </th>
+                  <td>
+                    <input type="text" id="email" placeholder="White Your E-mail">
+                  </td>
+                </tr>
+                <tr>
+                  <th>Pri.</th>
+                  <td>
+                    <input type="checkbox" id="check">
+                    <label for="check">Accept the Privary Policy</label>
+                  </td>
+                </tr>
+              </table>
+            </article>
+            <article>
+              <h2>Message.</h2>
+              <table>
+                <caption class="hidden">텍스트</caption>
+                <tr>
+                  <td>
+                    <textarea name="Message" id="message" cols="30" rows="10" placeholder="White Your Message">
+                    </textarea>
+                  </td>
+                </tr>
+                <tr>
+                  <th>
+                    <input type="submit" value="SUBMIT">
+                    <input type="reset" value="CANCEL">
+                  </th>
+                </tr>
+              </table>
+            </article>
+          </div>
+
+        </fieldset>
+      </form>
+    </div>
+  </section>
+
+  <footer id="footer_sub">
+    <div class="inner">
+      <ul class="gnb">
+        <li><a href="#">개인정보취급방침</a></li>
+        <li><a href="#"> 이용약관</a></li>
+        <li><a href="#">쿠키사용정보</a></li>
+      </ul>
+
+      <address>
+        공식수입원 대전기계공업 주식회사 대표자 : 김재일 사업자등록번호 : 204-81-12238
+        <p>주소:경기도 평택시 서탄면 수월암4길 239</p>
+      </address>
+
+      <ul class="sns">
+        <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-youtube-square"></i></a></li>
+      </ul>
+      <div class="footerLogo">
+        <h1><a href="#"><img src="img/logo1.png" alt="logo"></a></h1>
+        <p>© Copyright 2022 Daijeon Machinery Co Ltd.<br>All rights reserved. </p>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
