@@ -197,7 +197,7 @@ const lis = scrollBtn.querySelectorAll('li');
 const lis_arr = Array.from(lis);
 let posArr = null;
 let enableClick = true;
-let base = -300;
+let base = -400;
 
 setPos();
 

@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap");
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
 @import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap");
 @font-face {
@@ -60,7 +62,6 @@ a {
 }
 #header_sub .inner nav {
   float: left;
-  width: 70%;
 }
 #header_sub .inner nav::after {
   content: "";
@@ -95,8 +96,8 @@ a {
   height: 100%;
   margin-top: 5px;
   position: absolute;
-  right: 35px;
-  top: 8px;
+  right: 0;
+  top: 6px;
 }
 #header_sub .inner nav .util::after {
   content: "";
@@ -108,22 +109,25 @@ a {
 }
 #header_sub .inner nav .util li:hover a {
   color: #4fb627;
+  transform: scale(1.3);
 }
 #header_sub .inner nav .util li a {
   display: block;
-  margin-left: 20px;
+  margin: 0 20px;
   font-size: 16px;
   line-height: 2;
   color: #fff;
+  transition: 0.7s;
 }
 #header_sub .inner .btnCall {
   position: absolute;
-  right: 30px;
-  top: 50%;
+  right: 0;
+  top: 44%;
   transform: translateY(-50%);
   width: 20px;
   height: 20px;
   display: none;
+  margin-right: 60px;
 }
 #header_sub .inner .btnCall::after {
   content: "";
@@ -174,13 +178,13 @@ a {
   transform: rotate(45deg);
 }
 #header_sub .inner .menuMo {
-  width: 300px;
+  width: 250px;
   height: 100vh;
   background: #151615;
   position: fixed;
   top: 10%;
-  right: -300px;
-  padding: 80px 30px;
+  right: -250px;
+  padding: 20px 30px;
   z-index: 10;
   transition: 0.7s;
 }
@@ -200,25 +204,6 @@ a {
   background: #4fb627;
   color: #fff;
 }
-#header_sub .inner .menuMo .utilMo {
-  position: absolute;
-  left: 0;
-  top: 0;
-  padding: 30px;
-  margin-left: 50px;
-}
-#header_sub .inner .menuMo .utilMo li {
-  float: left;
-}
-#header_sub .inner .menuMo .utilMo li a {
-  margin-right: 30px;
-  font-size: 26px;
-  color: #999;
-  display: block;
-}
-#header_sub .inner .menuMo .utilMo li:hover a {
-  color: #4fb627;
-}
 
 /* contents ---------------------------------------------*/
 .contents {
@@ -235,7 +220,7 @@ a {
   font: bold 30px/1 "Pretendard";
   padding: 30px 0;
   margin: 30px 0;
-  border-bottom: 2px solid #4FB627;
+  border-bottom: 2px solid #4fb627;
 }
 
 /* footer ------------------------------------------*/
@@ -311,9 +296,6 @@ a {
     display: none;
   }
   #header_sub .inner nav .util {
-    margin-right: 40px;
-  }
-  #header_sub .inner nav .util li:last-child {
     margin-right: 10px;
   }
   #header_sub .inner .btnCall {
@@ -344,13 +326,6 @@ a {
 /* mobile ------------------------------------------------------*/
 @media screen and (max-width: 539px) {
   /* header -------------------------------------------------------------*/
-  #header_sub .inner nav .util {
-    display: none;
-  }
-  #header_sub .inner .menuMo .utilMo {
-    display: block;
-  }
-
   /* footer ---------------------------------------------------------*/
   #footer_sub .inner {
     width: 100%;
@@ -843,18 +818,31 @@ a {
   background: #fff;
   width: 100%;
 }
-.join .sub_visual .pic {
-  background: url(../img/subpage01/submain03.jpg) no-repeat center/cover;
-  height: 450px;
-  margin-bottom: 80px;
-}
-.join .sub_visual .pic > img {
+.join .sub_visual {
   width: 100%;
+  height: 245px;
+  background: url(../img/subpage01/submain03.jpg) no-repeat center/cover;
+  margin-bottom: 50px;
 }
-.join .sub_visual .pic > h2 {
+.join .sub_visual .info {
+  width: 1180px;
+  padding-top: 55px;
+  margin: 0 auto;
+}
+.join .sub_visual .info h2 {
   color: #fff;
-  font: bold 40px/1 "Pretendard";
-  padding: 80px;
+  font: 500 20px/1 "Oswald";
+  margin-bottom: 10px;
+}
+.join .sub_visual .info h3 {
+  color: #fff;
+  font: bold 45px/1 "Oswald";
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+}
+.join .sub_visual .info p {
+  color: #fff;
+  font: 500 18px/1 "Noto Sans KR";
 }
 .join .inner {
   width: 1180px;
@@ -1033,13 +1021,9 @@ a {
 
 /* tablet --------------------------------------------------*/
 @media screen and (max-width: 1179px) {
-  .join .sub_visual .pic {
-    height: 300px;
-    margin-bottom: 80px;
-  }
-  .join .sub_visual .pic > h2 {
-    font: bold 30px/1 "Pretendard";
-    padding: 60px;
+  .join .sub_visual .info {
+    width: 100%;
+    padding: 50px 10px 0;
   }
   .join .inner {
     width: 100%;
@@ -1072,13 +1056,23 @@ a {
 }
 /* mobile ------------------------------------------------------*/
 @media screen and (max-width: 539px) {
-  .join .sub_visual .pic {
-    height: 150px;
-    margin-bottom: 50px;
+  .join .sub_visual .info {
+    width: 1180px;
+    padding-top: 50px;
   }
-  .join .sub_visual .pic > h2 {
-    font: bold 20px/1 "Pretendard";
-    padding: 20px;
+  .join .sub_visual .info h2 {
+    color: #fff;
+    font: 500 16px/1 "Oswald";
+    margin-bottom: 10px;
+  }
+  .join .sub_visual .info h3 {
+    color: #fff;
+    font: bold 35px/1 "Oswald";
+    margin-bottom: 15px;
+  }
+  .join .sub_visual .info p {
+    color: #fff;
+    font: 500 14px/1 "Noto Sans KR";
   }
   .join .inner .membership {
     flex-direction: column;
@@ -1387,11 +1381,11 @@ a {
   margin: 30px 0;
   text-align: center;
   font: bold 24px/1 "GmarketSansMedium";
-  color: #b7fa00;
+  color: #393a38;
 }
 .organization .inner .container5 span {
   display: block;
-  border: 3px solid #b7fa00;
+  border: 3px solid #393a38;
   margin: 20px auto;
   width: 650px;
   height: 30px;
@@ -1414,7 +1408,7 @@ a {
   width: 100%;
   height: 100%;
   transition: all 0.7s;
-  border: 5px solid #b7fa00;
+  border: 5px solid #393a38;
   border-radius: 50%;
 }
 .organization .inner .container5 .wrap1 article .pic1 img:hover {
@@ -1613,12 +1607,31 @@ a {
 .youtube {
   width: 100%;
 }
-.youtube > h2 {
-  background: url(../img/subpage01/youtube.jpg) no-repeat center/cover;
-  padding: 80px;
-  color: #fff;
-  font: bold 30px/1 "pretendard";
+.youtube .sub_visual {
+  width: 100%;
   height: 245px;
+  background: url(../img/subpage01/youtube.jpg) no-repeat center/cover;
+  margin-bottom: 50px;
+}
+.youtube .sub_visual .info {
+  width: 1180px;
+  margin: 0 auto;
+  padding-top: 55px;
+}
+.youtube .sub_visual .info h2 {
+  color: #fff;
+  font: 500 20px/1 "Oswald";
+  margin-bottom: 10px;
+}
+.youtube .sub_visual .info h3 {
+  color: #fff;
+  font: bold 45px/1 "Oswald";
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+}
+.youtube .sub_visual .info p {
+  color: #fff;
+  font: 500 18px/1 "Noto Sans KR";
 }
 
 .txt1 {
@@ -1719,23 +1732,32 @@ aside .btnClose {
 
 .gallery {
   width: 100%;
-  padding-bottom: 100px;
 }
-.gallery > .txt {
-  background: url(../img/subpage01/main02.jpg) no-repeat left bottom/cover;
+.gallery .sub_visual {
+  width: 100%;
   height: 245px;
-  color: #fff;
-  padding: 80px;
-  font: bold 13px/1 "pretendard";
+  background: url(../img/subpage01/gallery.jpg) no-repeat center/cover;
+  margin-bottom: 50px;
 }
-.gallery > .txt h3 {
-  font: bold 30px/1 "pretendard";
+.gallery .sub_visual .info {
+  width: 1180px;
+  padding-top: 55px;
+  margin: 0 auto;
+}
+.gallery .sub_visual .info h2 {
   color: #fff;
+  font: 500 20px/1 "Oswald";
   margin-bottom: 10px;
 }
-.gallery > .txt > p {
+.gallery .sub_visual .info h3 {
   color: #fff;
-  font: bold 18px/1 "pretendard";
+  font: bold 45px/1 "Oswald";
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+}
+.gallery .sub_visual .info p {
+  color: #fff;
+  font: 500 18px/1 "Noto Sans KR";
 }
 .gallery .menu {
   display: flex;
@@ -1925,10 +1947,11 @@ aside .close:hover {
 .contact .inner h2 {
   text-align: left;
   margin-bottom: 10px;
-  font: bold 50px/1 "pretendard";
+  font: bold 50px/1 "orbitron";
+  letter-spacing: 1px;
 }
 .contact .inner > p {
-  font: normal 20px/1 "pretendard";
+  font: normal 18px/1 "pretendard";
   color: #888;
   padding-bottom: 10px;
   margin-bottom: 50px;
@@ -1946,10 +1969,11 @@ aside .close:hover {
   margin-left: 20px;
 }
 .contact .inner .wrap article .text h2 {
-  font: bold 24px/1 "arial";
+  font: bold 24px/1 "orbitron";
+  letter-spacing: 1px;
 }
 .contact .inner .wrap article .text p {
-  font: 16px/1 "arial";
+  font: 14px/1.2 "pretendard";
   color: #777;
 }
 .contact .location {
@@ -1974,30 +1998,68 @@ aside .close:hover {
   width: 100%;
   height: 500px;
 }
+.contact .location #map .overlay {
+  background: #eee;
+  border: 1px solid #000;
+  margin-bottom: 110px;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  position: relative;
+  filter: grayscale(0);
+}
+.contact .location #map .overlay::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background: #eee;
+  position: absolute;
+  border: 1px solid #000;
+  border-style: none solid solid none;
+  left: 50%;
+  bottom: -11px;
+  transform: translate(-50%) rotate(45deg);
+}
+.contact .location #map .overlay h2 {
+  font: bold 16px/1 "pretendard";
+  color: #777;
+  margin-bottom: 5px;
+}
+.contact .location #map .overlay p {
+  font: normal 12px/1 "pretendard";
+  color: #999;
+  margin-bottom: 5px;
+}
+.contact .location #map .overlay span {
+  color: #999;
+  font: 12px/1 "pretendard";
+}
 .contact .location .branch {
   padding: 20px 0;
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 .contact .location .branch li {
   margin-right: 20px;
 }
 .contact .location .branch li.on a {
-  background: #fff;
-  color: #333;
+  background: #000;
+  color: #fff;
 }
 .contact .location .branch li a {
   display: block;
   width: 200px;
   height: 40px;
   font: bold 12px/40px "arial";
-  color: #fff;
-  background: #555;
+  color: #000;
+  background: #eee;
   text-align: center;
   border: 1px solid #555;
 }
 .contact .location .branch li a:hover {
-  background: #fff;
-  color: #333;
+  background: #000;
+  color: #fff;
 }
 .contact .inner1 {
   width: 1180px;
@@ -2066,18 +2128,20 @@ aside .close:hover {
 }
 .contact .inner1 fieldset .wrap article:last-of-type table tr td textarea {
   background: none;
+  outline: none;
   width: 100%;
   resize: none;
   height: 25px;
   border: none;
   border-bottom: 1px solid #fff;
+  color: #fff;
 }
 .contact .inner1 fieldset .wrap article:last-of-type table tr th {
   text-align: left;
 }
 .contact .inner1 fieldset .wrap article:last-of-type table tr th input[type=submit],
 .contact .inner1 fieldset .wrap article:last-of-type table tr th input[type=reset] {
-  padding: 10px 20px;
+  padding: 10px 80px;
   margin-right: 20px;
   background: #eee;
   cursor: pointer;
@@ -2088,10 +2152,10 @@ aside .close:hover {
   color: #fff;
 }
 
+/* tablet -----------------------------------------------------------*/
 @media screen and (max-width: 1179px) {
   .contact .sub_visual {
     width: 100%;
-    height: 150px;
   }
   .contact .sub_visual .swiper .swiper-wrapper {
     width: 100%;
@@ -2106,10 +2170,10 @@ aside .close:hover {
     padding: 0 10px;
   }
   .contact .inner h2 {
-    font: bold 40px/1 "pretendard";
+    font: bold 40px/1 "orbitron";
   }
   .contact .inner > p {
-    font: normal 18px/1 "pretendard";
+    font: normal 16px/1 "pretendard";
   }
   .contact .inner .wrap {
     flex-direction: column;
@@ -2118,10 +2182,13 @@ aside .close:hover {
     margin-bottom: 30px;
   }
   .contact .inner .wrap article .text h2 {
-    font: bold 20px/1 "arial";
+    font: bold 20px/1 "orbitron";
   }
   .contact .inner .wrap article .text p {
-    font: 14px/1 "arial";
+    font-size: 14px;
+  }
+  .contact .location .branch li {
+    margin-bottom: 10px;
   }
   .contact .location .branch li a {
     width: 150px;
@@ -2129,19 +2196,22 @@ aside .close:hover {
   .contact .inner1 {
     width: 100%;
   }
-  .contact .inner1 fieldset .wrap article:last-of-type table tr th input[type=reset] {
-    margin-right: 0;
+  .contact .inner1 fieldset .wrap article:last-of-type table tr th input[type=reset],
+.contact .inner1 fieldset .wrap article:last-of-type table tr th input[type=submit] {
+    margin-bottom: 10px;
+    padding: 10px 60px;
   }
 }
+/* mobile -----------------------------------------------------------*/
 @media screen and (max-width: 539px) {
   .contact .sub_visual {
-    height: 70px;
+    height: auto;
   }
   .contact .inner {
     padding: 0 10px;
   }
   .contact .inner h2 {
-    font: bold 30px/1 "pretendard";
+    font: bold 30px/1 "orbitron";
   }
   .contact .inner > p {
     font: normal 16px/1 "pretendard";
@@ -2150,34 +2220,18 @@ aside .close:hover {
     margin-right: 0;
   }
   .contact .inner .wrap article .text h2 {
-    font: bold 18px/1 "arial";
+    font: bold 18px/1 "orbitron";
   }
   .contact .inner .wrap article .text p {
-    font: 13px/1 "arial";
-  }
-  .contact .location .branch {
-    display: flex;
-    flex-direction: column;
-  }
-  .contact .location .branch li {
-    width: 100%;
-    margin-bottom: 20px;
-    padding: 0 10px;
-  }
-  .contact .location .branch li a {
-    width: 100%;
+    font: 13px/1.3 "pretendard";
   }
   .contact .inner1 fieldset .wrap {
     display: block;
   }
-  .contact .inner1 fieldset .wrap article table {
-    padding: 0 10px;
-  }
-  .contact .inner1 fieldset .wrap article table tr {
-    height: 60px;
-  }
-  .contact .inner1 fieldset .wrap article table tr th input[type=reset] {
-    margin-right: 0;
+  .contact .inner1 fieldset .wrap article:last-of-type table tr th input[type=reset],
+.contact .inner1 fieldset .wrap article:last-of-type table tr th input[type=submit] {
+    padding: 10px 30px;
+    display: inline-block;
   }
 }
 .bikeType {
@@ -6182,14 +6236,8 @@ body {
 #header .inner {
   width: 1180px;
   margin: 0 auto;
-  padding: 0 30px;
   display: flex;
   align-items: center;
-}
-#header .inner::after {
-  content: "";
-  display: block;
-  clear: both;
 }
 #header .inner h1 {
   max-width: 50px;
@@ -6204,15 +6252,14 @@ body {
 }
 #header .inner nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   width: 100%;
   position: relative;
-  padding-left: 10px;
 }
 #header .inner nav .btnCall {
   position: absolute;
-  left: 0;
+  right: 10px;
   top: 50%;
   transform: translateY(-50%);
   width: 25px;
@@ -6274,7 +6321,7 @@ body {
   background: #4fb627;
 }
 #header .inner nav .gnb {
-  margin-left: 20px;
+  justify-content: center;
   transition: 0.7s;
   opacity: 0;
   display: flex;
@@ -6296,22 +6343,6 @@ body {
 #header .inner nav .gnb li:hover a {
   background: #4fb627;
   color: #cbcaa5;
-}
-#header .inner nav .util {
-  height: 100%;
-  position: absolute;
-  right: 0;
-  top: 16px;
-}
-#header .inner nav .util li:hover a {
-  color: #4fb627;
-  transform: scale(1.5);
-}
-#header .inner nav .util li a {
-  display: block;
-  font-size: 16px;
-  color: #fff;
-  transition: 0.7s;
 }
 #header .inner .menuMo {
   display: none;
@@ -6347,6 +6378,7 @@ body {
 }
 #visual .wrap .slide li video {
   width: 100%;
+  height: 100%;
   z-index: -1;
   opacity: 0.6;
   object-fit: cover;
@@ -6635,9 +6667,10 @@ body {
   margin: 100px 0;
 }
 
-/* icons --------------------------------------------------*/
+/* service --------------------------------------------------*/
 #service {
   width: 100%;
+  padding: 50px 0;
 }
 #service .inner {
   width: 1180px;
@@ -6692,23 +6725,27 @@ body {
   stroke-width: 3;
   stroke-dasharray: 880;
   stroke-dashoffset: 880;
-  animation: ani 2s linear 1;
-  animation-fill-mode: forwards;
 }
 #service .inner .wrap article .icon a {
   display: block;
 }
 #service .inner .wrap article .icon a .icons {
+  transition: 0.7s;
+  opacity: 0;
   position: absolute;
   left: 50%;
-  top: 30%;
+  top: 50%;
   transform: translate(-50%, -50%);
+  stroke-width: 1px;
 }
 #service .inner .wrap article .icon a .icons path {
-  fill: #788174;
+  fill: #4fb627;
+  stroke-width: 1px;
 }
 #service .inner .wrap article .icon_text {
-  margin-top: 150px;
+  opacity: 0;
+  margin-top: 200px;
+  transition: 0.7s;
 }
 #service .inner .wrap article .icon_text h2 {
   font: bold 14px/1 "orbitron";
@@ -6718,6 +6755,18 @@ body {
 }
 #service .inner .wrap article .icon_text p {
   font: 12px/1 "pretendard";
+}
+#service.on .inner .wrap .icon circle {
+  animation: ani 1s linear 1;
+  animation-fill-mode: forwards;
+}
+#service.on .inner .wrap .icon a .icons {
+  opacity: 1;
+  top: 38%;
+}
+#service.on .inner .wrap .icon_text {
+  margin-top: 150px;
+  opacity: 1;
 }
 
 @keyframes ani {
@@ -6731,13 +6780,19 @@ body {
 }
 #news .inner {
   width: 1180px;
-  margin: 50px auto;
+  margin: 0 auto;
 }
-#news .inner h1 {
+#news .inner > h2 {
   color: #fff;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
   font: bold 30px/1 "orbitron";
+}
+#news .inner p {
+  color: #aaa;
+  text-align: center;
+  font: normal 16px/1 "pretendard";
+  margin: 30px 0;
 }
 #news .inner .wrap::after {
   content: "";
@@ -6972,22 +7027,108 @@ body {
 /* tablet ------------------------------------------------------*/
 @media screen and (max-width: 1179px) {
   /* header -------------------------------------------------------------*/
+  #header {
+    width: 100%;
+    border-bottom: 1px solid #4fb627;
+    position: absolute;
+    z-index: 10;
+  }
   #header .inner {
     width: 100%;
+    padding: 0 20px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+  }
+  #header .inner h1 {
+    max-width: 50px;
+    margin: 10px 10px 0 0;
+  }
+  #header .inner h1 a {
+    display: block;
+  }
+  #header .inner h1 a img {
+    width: 100%;
+    height: 100%;
+  }
+  #header .inner nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+  }
+  #header .inner nav .btnCall {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 25px;
+    height: 20px;
+    display: block;
+  }
+  #header .inner nav .btnCall::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: bottom 0.5s, transform 0.5s 0.5s;
+  }
+  #header .inner nav .btnCall::after:hover {
+    background: #4fb627;
+  }
+  #header .inner nav .btnCall::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: top 0.5s, transform 0.5s 0.5s;
+  }
+  #header .inner nav .btnCall span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -1px;
+    text-indent: -9999px;
+    transition: all 0.5s;
+  }
+  #header .inner nav .btnCall.on span {
+    transform: translateX(100%);
+    opacity: 0;
+    background: #4fb627;
+  }
+  #header .inner nav .btnCall.on::after {
+    bottom: 50%;
+    margin-bottom: -1px;
+    transform: rotate(-45deg);
+    background: #4fb627;
+  }
+  #header .inner nav .btnCall.on::before {
+    top: 50%;
+    margin-top: -1px;
+    transform: rotate(45deg);
+    background: #4fb627;
   }
   #header .inner nav .gnb {
-    margin-left: 20px;
+    display: none;
     transition: 0.7s;
     opacity: 0;
-    display: flex;
-    flex-direction: column;
-    align-content: flex-start;
     transform: translateY(-50px);
   }
   #header .inner nav .gnb.on {
-    display: flex;
-    opacity: 1;
-    transform: translateY(100px);
+    display: none;
   }
   #header .inner nav .gnb li a {
     display: block;
@@ -7001,47 +7142,20 @@ body {
     background: #4fb627;
     color: #cbcaa5;
   }
-  #header .inner nav .util {
-    height: 100%;
-    position: absolute;
-    right: 0;
-    top: 16px;
-  }
-  #header .inner nav .util li:hover a {
-    color: #4fb627;
-  }
-  #header .inner nav .util li a {
-    display: block;
-    font-size: 16px;
-    color: #fff;
-  }
-  #header .inner .btnCall {
-    display: block;
-  }
-  #header .inner .btnCall:hover::before {
-    background: #4fb627;
-  }
-  #header .inner .btnCall:hover::after {
-    background: #4fb627;
-  }
-  #header .inner .btnCall:hover span {
-    background: #4fb627;
-    transition-duration: 0s;
-  }
   #header .inner .menuMo {
-    display: none;
-    width: 200px;
+    width: 250px;
     height: 100vh;
     background: #151615;
     position: fixed;
-    top: 10%;
-    left: -400px;
-    padding: 80px 30px;
+    top: 8%;
+    right: -250px;
+    padding: 20px 30px;
     z-index: 10;
     transition: 0.7s;
   }
   #header .inner .menuMo.on {
-    left: 0;
+    right: 0;
+    display: block;
   }
   #header .inner .menuMo .gnbMo li a {
     display: block;
@@ -7055,25 +7169,6 @@ body {
   #header .inner .menuMo .gnbMo li:hover a {
     background: #4fb627;
     color: #fff;
-  }
-  #header .inner .menuMo .utilMo {
-    position: absolute;
-    left: 0;
-    top: 0;
-    padding: 30px;
-    margin-left: 50px;
-  }
-  #header .inner .menuMo .utilMo li {
-    float: left;
-  }
-  #header .inner .menuMo .utilMo li a {
-    margin-right: 30px;
-    font-size: 26px;
-    color: #999;
-    display: block;
-  }
-  #header .inner .menuMo .utilMo li:hover a {
-    color: #4fb627;
   }
 
   /* model ------------------------------------------------*/
@@ -7203,10 +7298,50 @@ body {
     width: 100%;
   }
 
+  /* service --------------------------------------------------*/
+  #service .inner {
+    width: 100%;
+  }
+  #service .inner > p {
+    padding-bottom: 50px;
+  }
+  #service .inner .wrap {
+    width: 100%;
+    height: 100%;
+  }
+  #service .inner .wrap article {
+    width: 48%;
+    height: 100%;
+    margin-right: 0;
+    margin-bottom: 100px;
+  }
+  #service .inner .wrap article .icon_text {
+    margin-top: 160px;
+  }
+  #service.on .inner .wrap .icon a .icons {
+    opacity: 1;
+    top: 45%;
+  }
+  #service.on .inner .wrap .icon_text {
+    margin-top: 140px;
+    opacity: 1;
+  }
+
+  /* scrollBtn ---------------------------------------------------*/
+  #scrollBtn {
+    display: none;
+  }
+
   /* news ------------------------------------------------------*/
   #news .inner {
     width: 100%;
     padding: 0 40px;
+  }
+  #news .inner > h2 {
+    font: bold 30px/1 "orbitron";
+    color: #fff;
+    text-align: center;
+    margin-bottom: 30px;
   }
   #news .inner .wrap article {
     float: left;
@@ -7285,11 +7420,42 @@ body {
     margin-bottom: 30px;
   }
 
+  /* service --------------------------------------------------*/
+  #service .inner .wrap {
+    height: auto;
+  }
+  #service .inner .wrap article {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 100px;
+  }
+  #service .inner .wrap article .icon_text {
+    margin-top: 150px;
+  }
+  #service.on .inner .wrap .icon a .icons {
+    opacity: 1;
+    top: 40%;
+  }
+  #service.on .inner .wrap .icon_text {
+    margin-top: 150px;
+    opacity: 1;
+  }
+
   /* news ------------------------------------------------------*/
+  #news .inner > h2 {
+    font: bold 24px/1 "orbitron";
+    color: #fff;
+    margin-bottom: 10px;
+  }
   #news .inner .wrap article {
     width: 100%;
     margin-bottom: 30px;
     height: 100%;
+  }
+
+  /* scrollBtn -------------------------------------------------*/
+  #scrollBtn {
+    display: none;
   }
 
   /* footer ------------------------------------------*/

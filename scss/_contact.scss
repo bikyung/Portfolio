@@ -22,10 +22,11 @@
 		h2 {
 			text-align: left;
 			margin-bottom: 10px;
-			font: bold 50px/1 'pretendard';
+			font: bold 50px/1 'orbitron';
+			letter-spacing: 1px;
 		}
 		> p {
-			font: normal 20px/1 'pretendard';
+			font: normal 18px/1 'pretendard';
 			color: #888;
 			padding-bottom: 10px;
 			margin-bottom: 50px;
@@ -41,10 +42,11 @@
 				.text {
 					margin-left: 20px;
 					h2 {
-						font: bold 24px/1 'arial';
+						font: bold 24px/1 'orbitron';
+						letter-spacing: 1px;
 					}
 					p {
-						font: 16px/1 'arial';
+						font: 14px/1.2 'pretendard';
 						color: #777;
 					}
 				}
@@ -71,16 +73,54 @@
 		#map {
 			width: 100%;
 			height: 500px;
+			.overlay {
+				background: #eee;
+				border: 1px solid #000;
+				margin-bottom: 110px;
+				text-align: center;
+				padding: 10px;
+				border-radius: 10px;
+				position: relative;
+				filter: grayscale(0);
+				&::after {
+					content: '';
+					width: 20px;
+					height: 20px;
+					background: #eee;
+					position: absolute;
+					border: 1px solid #000;
+					border-style: none solid solid none;
+					left: 50%;
+					bottom: -11px;
+					transform: translate(-50%) rotate(45deg);
+				}
+				h2 {
+					font: bold 16px/1 'pretendard';
+					color: #777;
+					margin-bottom: 5px;
+				}
+				p {
+					font: normal 12px/1 'pretendard';
+					color: #999;
+					margin-bottom: 5px;
+				}
+				span {
+					color: #999;
+					font: 12px/1 'pretendard';
+				}
+			}
 		}
 		.branch {
 			padding: 20px 0;
 			display: flex;
+			justify-content: center;
+			flex-wrap: wrap;
 			li {
 				margin-right: 20px;
 
 				&.on a {
-					background: #fff;
-					color: #333;
+					background: #000;
+					color: #fff;
 				}
 
 				a {
@@ -88,13 +128,13 @@
 					width: 200px;
 					height: 40px;
 					font: bold 12px/40px 'arial';
-					color: #fff;
-					background: #555;
+					color: #000;
+					background: #eee;
 					text-align: center;
 					border: 1px solid #555;
 					&:hover {
-						background: #fff;
-						color: #333;
+						background: #000;
+						color: #fff;
 					}
 				}
 			}
@@ -168,18 +208,20 @@
 							td {
 								textarea {
 									background: none;
+									outline: none;
 									width: 100%;
 									resize: none;
 									height: 25px;
 									border: none;
 									border-bottom: 1px solid #fff;
+									color: #fff;
 								}
 							}
 							th {
 								text-align: left;
 								input[type='submit'],
 								input[type='reset'] {
-									padding: 10px 20px;
+									padding: 10px 80px;
 									margin-right: 20px;
 									background: #eee;
 									cursor: pointer;
@@ -197,11 +239,11 @@
 	}
 }
 
+/* tablet -----------------------------------------------------------*/
 @media screen and (max-width: $tablet) {
 	.contact {
 		.sub_visual {
 			width: 100%;
-			height: 150px;
 			.swiper {
 				.swiper-wrapper {
 					width: 100%;
@@ -219,10 +261,10 @@
 			width: 100%;
 			padding: 0 10px;
 			h2 {
-				font: bold 40px/1 'pretendard';
+				font: bold 40px/1 'orbitron';
 			}
 			> p {
-				font: normal 18px/1 'pretendard';
+				font: normal 16px/1 'pretendard';
 			}
 
 			.wrap {
@@ -231,10 +273,10 @@
 					margin-bottom: 30px;
 					.text {
 						h2 {
-							font: bold 20px/1 'arial';
+							font: bold 20px/1 'orbitron';
 						}
 						p {
-							font: 14px/1 'arial';
+							font-size: 14px;
 						}
 					}
 				}
@@ -243,6 +285,7 @@
 		.location {
 			.branch {
 				li {
+					margin-bottom: 10px;
 					a {
 						width: 150px;
 					}
@@ -257,8 +300,10 @@
 						table {
 							tr {
 								th {
-									input[type='reset'] {
-										margin-right: 0;
+									input[type='reset'],
+									input[type='submit'] {
+										margin-bottom: 10px;
+										padding: 10px 60px;
 									}
 								}
 							}
@@ -270,15 +315,17 @@
 	}
 }
 
+/* mobile -----------------------------------------------------------*/
+
 @media screen and (max-width: $mobile) {
 	.contact {
 		.sub_visual {
-			height: 70px;
+			height: auto;
 		}
 		.inner {
 			padding: 0 10px;
 			h2 {
-				font: bold 30px/1 'pretendard';
+				font: bold 30px/1 'orbitron';
 			}
 			> p {
 				font: normal 16px/1 'pretendard';
@@ -289,41 +336,29 @@
 					margin-right: 0;
 					.text {
 						h2 {
-							font: bold 18px/1 'arial';
+							font: bold 18px/1 'orbitron';
 						}
 						p {
-							font: 13px/1 'arial';
+							font: 13px/1.3 'pretendard';
 						}
 					}
 				}
 			}
 		}
 		.location {
-			.branch {
-				display: flex;
-				flex-direction: column;
-				li {
-					width: 100%;
-					margin-bottom: 20px;
-					padding: 0 10px;
-					a {
-						width: 100%;
-					}
-				}
-			}
 		}
 		.inner1 {
 			fieldset {
 				.wrap {
 					display: block;
-					article {
+					article:last-of-type {
 						table {
-							padding: 0 10px;
 							tr {
-								height: 60px;
 								th {
-									input[type='reset'] {
-										margin-right: 0;
+									input[type='reset'],
+									input[type='submit'] {
+										padding: 10px 30px;
+										display: inline-block;
 									}
 								}
 							}

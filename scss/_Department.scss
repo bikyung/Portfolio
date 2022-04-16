@@ -290,11 +290,11 @@
 				margin: 30px 0;
 				text-align: center;
 				font: bold 24px/1 'GmarketSansMedium';
-				color: rgb(183, 250, 0);
+				color: #393a38;
 			}
 			span {
 				display: block;
-				border: 3px solid rgb(183, 250, 0);
+				border: 3px solid #393a38;
 				margin: 20px auto;
 				width: 650px;
 				height: 30px;
@@ -315,7 +315,7 @@
 							width: 100%;
 							height: 100%;
 							transition: all 0.7s;
-							border: 5px solid rgb(183, 250, 0);
+							border: 5px solid #393a38;
 							border-radius: 50%;
 							&:hover {
 								transform: scale(1.1);

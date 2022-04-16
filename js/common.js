@@ -4,13 +4,9 @@ const menuMo = document.querySelector('.menuMo');
 const gnb = document.querySelector('.gnb');
 
 btnCall.onclick = function (e) {
-  e.preventDefault();
+	e.preventDefault();
 
-
-  btnCall.classList.toggle('on');
-  gnb.classList.toggle('on');
-  menuMo.classList.toggle('on');
-}
-
-
-
+	btnCall.classList.toggle('on');
+	gnb.classList.toggle('on');
+	menuMo.classList.toggle('on');
+};
