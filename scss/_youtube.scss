@@ -28,10 +28,11 @@
 	}
 }
 .txt1 {
-	padding: 30px 10vw 0;
+	width: 1180px;
+	margin: 0 auto;
 	h3 {
 		color: #eee;
-		font: bold 24px/1 'arial';
+		font: bold 24px/1 'pretendard';
 		margin-bottom: 10px;
 	}
 	p {
@@ -44,17 +45,16 @@
 	}
 }
 .youtubeInfo {
-	width: 100%;
+	width: 1180px;
 	height: 100vh;
-	padding: 20vh 10vw;
+	margin: 50px auto 0;
+	padding: 20vh 0;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
 	align-content: center;
-
 	article {
 		width: 48%;
-		height: 30%;
 		border: 1px solid #4fb627;
 		display: flex;
 		justify-content: space-between;
@@ -62,8 +62,10 @@
 		margin-bottom: 50px;
 		position: relative;
 		transition: 0.7s;
+		filter: grayscale(1);
 		&:hover {
 			transform: scale(1.1);
+			filter: grayscale(0) brightness(130%);
 			.con {
 				h2,
 				p {
@@ -80,10 +82,6 @@
 				width: 100%;
 				height: 100%;
 				object-fit: cover;
-				filter: opacity(0.5);
-				&:hover {
-					filter: opacity(1);
-				}
 			}
 		}
 
@@ -107,8 +105,8 @@
 				font: bold 12px/1 'pretendard';
 				color: #4fb627;
 				position: absolute;
-				bottom: 10px;
-				right: 10px;
+				bottom: 5px;
+				right: 5px;
 			}
 		}
 	}
@@ -129,5 +127,64 @@ aside {
 		right: 40px;
 		color: #4fb627;
 		cursor: pointer;
+	}
+}
+
+@media screen and (max-width: $tablet) {
+	.youtube {
+		.sub_visual {
+			.info {
+				width: 100%;
+				padding: 55px 10px 0;
+			}
+		}
+	}
+	.txt1 {
+		width: 100%;
+		padding: 0 2vw;
+	}
+	.youtubeInfo {
+		width: 100%;
+		height: auto;
+		margin: 30px auto 0;
+		padding: 2vh 2vw;
+		article {
+			padding: 30px 5px;
+			&:hover {
+				transform: scale(1.07);
+			}
+
+			.con {
+				h2 {
+					font: bold 14px/1.2 'pretendard';
+				}
+
+				p {
+					font: 11px/1.2 'pretendard';
+				}
+
+				span {
+					font: bold 11px/1 'pretendard';
+					bottom: -20px;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: $mobile) {
+	.txt1 {
+		padding: 0 4vw;
+	}
+	.youtubeInfo {
+		padding: 2vh 4vw;
+		display: block;
+		article {
+			width: 100%;
+			padding: 30px 5px;
+			&:hover {
+				transform: scale(1.07);
+			}
+		}
 	}
 }

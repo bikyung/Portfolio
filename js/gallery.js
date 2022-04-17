@@ -1,142 +1,139 @@
 const body = document.querySelector('body');
 const main = document.querySelector('main');
-const frame = document.querySelector('section');
+const frame = document.querySelector('section .inner .description');
 const btns = document.querySelectorAll('.menu li');
 const loading = document.querySelector('.loading');
+const input = document.querySelector('#search');
+const btnSearch = document.querySelector('.btnSearch');
+const base = 'https://www.flickr.com/services/rest/?';
+const key = '86007043f7007d67ce5b5f460ff91ac7';
+const gallery = '72157720540419458';
+const username = '195311166@N04';
+const per_page = '30';
+const method = 'flickr.interestingness.getList';
+const method_people = 'flickr.people.getPhotos';
+const method_search = 'flickr.photos.search';
+const url = `${base}method=${method}&api_key=${key}&per_page=${per_page}&format=json&nojsoncallback=1`;
 
-const base = "https://www.flickr.com/services/rest/?";
-const key = "86007043f7007d67ce5b5f460ff91ac7";
-const gallery = "72157720540419458";
-const username = "195311166@N04";
-const per_page = "100";
-const method_people = "flickr.people.getPhotos";
-const url_people = `${base}method=${method_people}&api_key=${key}&per_page=${per_page}&format=json&nojsoncallback=1&user_id=${username}`;
+callData(url);
 
+btnSearch.addEventListener('click', (e) => {
+	e.preventDefault();
+	let tag = input.value;
 
-callData(url_people);
+	const url = `${base}method=${method_search}&api_key=${key}&per_page=${per_page}&format=json&nojsoncallback=1&privacy_filter=1&tags=${tag}`;
 
-frame.addEventListener('click', e => {
-  e.preventDefault();
+	callData(url);
+});
 
-  let target = e.target.closest('.item').querySelector('.pic img');
+input.addEventListener('keyup', (e) => {
+	if (e.key === 'Enter') {
+		e.preventDefault();
+		let tag = input.value;
 
-  if (e.target == target) {
-    let imgSrc = e.target.parentElement.getAttribute("href");
+		const url = `${base}method=${method_search}&api_key=${key}&per_page=${per_page}&format=json&nojsoncallback=1&privacy_filter=1&tags=${tag}`;
 
-    let pop = document.createElement('aside');
-    pop.classList.add('pop');
-    let pops = `
-                  <div class="con">
-                    <img src="${imgSrc}">
-                  </div>
-                  <span class="close">Close</span>
+		callData(url);
+	}
+});
+
+frame.addEventListener('click', (e) => {
+	e.preventDefault();
+
+	let target = e.target.closest('.item').querySelector('.pic img');
+
+	if (e.target == target) {
+		let imgSrc = target.parentElement.getAttribute('href');
+
+		let pop = document.createElement('aside');
+		pop.classList.add('pop');
+
+		let pops = `
+                <div class="con">
+                  <img src="${imgSrc}">
+                  <span class="close">Close<span>
+                </div>
     `;
-    pop.innerHTML = pops;
-    body.append(pop);
-  }
-})
+		pop.innerHTML = pops;
+		body.append(pop);
+		body.style.overflow = 'hidden';
+	}
+});
 
-body.addEventListener('click', e => {
-  let pop = body.querySelector('.pop');
+body.addEventListener('click', (e) => {
+	let pop = body.querySelector('.pop');
 
-  if (pop) {
-    let close = pop.querySelector('.close');
+	if (pop) {
+		let close = pop.querySelector('.close');
+		if (e.target == close) {
+			pop.remove();
+			body.style.overflow = 'auto';
+		}
+	}
+});
 
-    if (e.target == close) {
-      pop.remove();
-      body.style.overflow = 'auto';
-    }
-  }
-})
+function callData(url) {
+	frame.classList.remove('on');
+	loading.classList.remove('off');
+	fetch(url)
+		.then((data) => {
+			return data.json();
+		})
+		.then((json) => {
+			const items = json.photos.photo;
+			createList(items);
+			imgLoaded();
+		});
+}
+function imgLoaded() {
+	const thumbs = document.querySelectorAll('.pic img');
+	const len = thumbs.length;
+	let count = 0;
+	thumbs.forEach((thumb) => {
+		console.log(thumbs.onerror);
+		thumb.onerror = () => {
+			thumb.setAttribute('src', 'img/k1.jpg');
+		};
+		thumb.onload = () => {
+			count++;
+			if (count === len) {
+				new Isotope(frame, {
+					itemSelector: '.item',
+					columnWidth: '.item',
+					transitionDuration: '0.7s',
+				});
+			}
+			frame.classList.add('on');
+			loading.classList.add('off');
+		};
+	});
 
+	const buddies = document.querySelectorAll('.profile img');
+	buddies.forEach((buddy) => {
+		buddies.onerror = () => {
+			buddy.setAttribute('src', 'img/k1.jpg');
+		};
+	});
+}
+function createList(items) {
+	let htmls = '';
 
-window.addEventListener('load', () => {
-
-  const grid = new Isotope("section", {
-    itemSelector: "article",
-    columnWidth: "article",
-    transitionDuation: "0.8s"
-  });
-
-  const btns = document.querySelectorAll(".menu li");
-
-  for (const el of btns) {
-    el.addEventListener('click', (e) => {
-      e.preventDefault();
-
-      const sort = e.currentTarget.querySelector('a').setAttribute('href', 'data-vid');
-      console.log(sort)
-      grid.arrange({
-        filter: sort
-      })
-
-      for (const el of btns) {
-        el.classList.remove('on');
-        e.currentTarget.classList.add('on');
-      }
-      
-    })
-  }
-})
-
-
-    // data 생성
-    function callData(url_people) {
-
-      frame.classList.remove('on');
-      loading.classList.remove('off');
-
-      fetch(url_people)
-        .then(data => {
-          return data.json();
-        })
-        .then(json => {
-          const items = json.photos.photo;
-          createList(items);
-          imgLoaded();
-        })
-
-    }
-
-
-    function createList(items) {
-      let htmls = '';
-
-      items.forEach(data => {
-        htmls += `
-                <article class="item" data-vid="${data.title}">
+	items.forEach((data) => {
+		htmls += `
+                  <article class="item">
                     <div>
-                        <a class="pic" href="https://live.staticflickr.com/${data.server}/${data.id}_${data.secret}_b.jpg">
-                            <img src="https://live.staticflickr.com/${data.server}/${data.id}_${data.secret}_m.jpg">
-                        </a>
-                        <h2>Kawasaki motorCycle</h2>
-                        <p>Model : ${data.title}</p>
+                      <h2>${data.title}</h2>
+                      <a class="pic" href="https://live.staticflickr.com/${data.server}/${data.id}_${data.secret}_b.jpg">
+                      <img src="https://live.staticflickr.com/${data.server}/${data.id}_${data.secret}_m.jpg">
+                      </a>
+  
+                      <div class="profile">
+                      <img src="http://farm${data.farm}.staticflickr.com/${data.server}/buddyicons/${data.owner}.jpg">
+                        <span>${data.owner}</span>
+                      </div>
                     </div>
-                </article>
-        `;
-      })
-      frame.innerHTML = htmls;
-
-    }
-
-    function imgLoaded() {
-      const thumbs = document.querySelectorAll('.pic img');
-      const len = thumbs.length;
-      let count = 0;
-
-      thumbs.forEach(thumb => {
-        thumb.onload = () => {
-          count++;
-          if (count === len) {
-            new Isotope(frame, {
-              itemSelector: ".item",
-              columnWidth: ".item",
-              transitionDuration: "0.8s",
-            })
-            frame.classList.add('on');
-            loading.classList.add('off');
-          }
-        }
-      })
-
-    }
+                  </article>
+      `;
+	});
+	frame.innerHTML = htmls;
+}
