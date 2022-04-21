@@ -25,10 +25,10 @@ const markerOptions = [
 	{
 		title: 'SEOUL',
 		latlng: new kakao.maps.LatLng(37.580730918499754, 127.02210456849461),
-		imgSrc: 'img/marker.png',
-		imgSize: new kakao.maps.Size(40, 40),
+		imgSrc: 'img/marker.gif',
+		imgSize: new kakao.maps.Size(100, 80),
 		imgPos: {
-			offset: new kakao.maps.Point(20, 0),
+			offset: new kakao.maps.Point(50, 0),
 		},
 		content: `
               <h2>SEOUL</h2>
@@ -40,10 +40,10 @@ const markerOptions = [
 	{
 		title: 'DAEJEON',
 		latlng: new kakao.maps.LatLng(36.304590089162524, 127.45000346864543),
-		imgSrc: 'img/marker.png',
-		imgSize: new kakao.maps.Size(40, 40),
+		imgSrc: 'img/marker.gif',
+		imgSize: new kakao.maps.Size(100, 80),
 		imgPos: {
-			offset: new kakao.maps.Point(20, 0),
+			offset: new kakao.maps.Point(50, 0),
 		},
 		content: `
               <h2>DAEJEON</h2>
@@ -55,10 +55,10 @@ const markerOptions = [
 	{
 		title: 'KWANGJU',
 		latlng: new kakao.maps.LatLng(35.1748019321974, 126.91626746156524),
-		imgSrc: 'img/marker.png',
-		imgSize: new kakao.maps.Size(40, 40),
+		imgSrc: 'img/marker.gif',
+		imgSize: new kakao.maps.Size(100, 80),
 		imgPos: {
-			offset: new kakao.maps.Point(20, 0),
+			offset: new kakao.maps.Point(50, 0),
 		},
 		content: `
     <h2>KWANGJU</h2>
@@ -70,10 +70,10 @@ const markerOptions = [
 	{
 		title: 'PUSAN',
 		latlng: new kakao.maps.LatLng(35.155942120480255, 129.0415475764219),
-		imgSrc: 'img/marker.png',
-		imgSize: new kakao.maps.Size(40, 40),
+		imgSrc: 'img/marker.gif',
+		imgSize: new kakao.maps.Size(100, 80),
 		imgPos: {
-			offset: new kakao.maps.Point(20, 0),
+			offset: new kakao.maps.Point(50, 0),
 		},
 		content: `
     <h2>PUSAN</h2>
@@ -86,10 +86,10 @@ const markerOptions = [
 	{
 		title: 'INCHEON',
 		latlng: new kakao.maps.LatLng(37.46391496742191, 126.67260517371592),
-		imgSrc: 'img/marker.png',
-		imgSize: new kakao.maps.Size(40, 40),
+		imgSrc: 'img/marker.gif',
+		imgSize: new kakao.maps.Size(100, 80),
 		imgPos: {
-			offset: new kakao.maps.Point(20, 0),
+			offset: new kakao.maps.Point(50, 0),
 		},
 		content: `
     <h2>INCHEON</h2>

@@ -9,12 +9,19 @@ const base = 'https://www.flickr.com/services/rest/?';
 const key = '86007043f7007d67ce5b5f460ff91ac7';
 const gallery = '72157720540419458';
 const username = '195311166@N04';
-const per_page = '30';
+const per_page = '20';
 const method = 'flickr.interestingness.getList';
 const method_people = 'flickr.people.getPhotos';
 const method_search = 'flickr.photos.search';
+const method_favorite = 'flickr.favorites.getList';
+const method_album = 'flickr.galleries.getPhotos';
 const url = `${base}method=${method}&api_key=${key}&per_page=${per_page}&format=json&nojsoncallback=1`;
 
+const url_kawasaki = `${base}method=${method_people}&api_key=${key}&per_page=${per_page}&format=json&nojsoncallback=1&user_id=${username}`;
+
+const url_favorite = `${base}method=${method_favorite}&api_key=${key}&per_page=${per_page}&format=json&nojsoncallback=1&user_id=${username}`;
+
+const url_album = `${base}method=${method_album}&api_key=${key}&per_page=${per_page}&format=json&nojsoncallback=1&user_id=${username}`;
 callData(url);
 
 btnSearch.addEventListener('click', (e) => {
@@ -72,6 +79,19 @@ body.addEventListener('click', (e) => {
 	}
 });
 
+const galleryBtn = document.querySelectorAll('.side .menu li');
+galleryBtn.forEach((btn) => {
+	btn.addEventListener('click', (e) => {
+		e.preventDefault();
+		const menuName = e.target.innerText;
+
+		if (menuName === 'KAWASAKI') callData(url_kawasaki);
+		if (menuName === 'INTEREST') callData(url);
+		if (menuName === 'FAVORITE') callData(url_favorite);
+		if (menuName === 'FAVORITE') callData(url_album);
+	});
+});
+
 function callData(url) {
 	frame.classList.remove('on');
 	loading.classList.remove('off');
@@ -80,6 +100,7 @@ function callData(url) {
 			return data.json();
 		})
 		.then((json) => {
+			console.log(json);
 			const items = json.photos.photo;
 			createList(items);
 			imgLoaded();
@@ -90,7 +111,6 @@ function imgLoaded() {
 	const len = thumbs.length;
 	let count = 0;
 	thumbs.forEach((thumb) => {
-		console.log(thumbs.onerror);
 		thumb.onerror = () => {
 			thumb.setAttribute('src', 'img/k1.jpg');
 		};
