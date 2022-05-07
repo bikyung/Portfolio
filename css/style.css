@@ -180,7 +180,7 @@ a {
 #header_sub .inner .menuMo {
   width: 250px;
   height: 100vh;
-  background: #151615;
+  background: rgba(0, 0, 0, 0.5);
   position: fixed;
   top: 10%;
   right: -250px;
@@ -190,6 +190,9 @@ a {
 }
 #header_sub .inner .menuMo.on {
   right: 0;
+}
+#header_sub .inner .menuMo .gnbMo {
+  padding-top: 50px;
 }
 #header_sub .inner .menuMo .gnbMo li a {
   display: block;
@@ -310,6 +313,20 @@ a {
   #header_sub .inner .btnCall:hover span {
     background: #4fb627;
     transition-duration: 0s;
+  }
+  #header_sub .inner .menuMo .menuClose button {
+    outline: none;
+    border: none;
+    background: transparent;
+    color: #fff;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+  }
+  #header_sub .inner .menuMo .menuClose button:hover {
+    color: #4fb627;
+    font-weight: bold;
   }
   #header_sub .inner .menuMo .utilMo {
     display: none;
@@ -1240,11 +1257,11 @@ a {
   margin: 30px 0;
   text-align: center;
   font: bold 24px/1 "GmarketSansMedium";
-  color: #5bd36b;
+  color: rgb(91, 211, 107);
 }
 .organization .inner .container2 span {
   display: block;
-  border: 3px solid #5bd36b;
+  border: 3px solid rgb(91, 211, 107);
   margin: 20px auto;
   width: 250px;
   height: 30px;
@@ -1267,7 +1284,7 @@ a {
   width: 100%;
   height: 100%;
   transition: all 0.7s;
-  border: 5px solid #5bd36b;
+  border: 5px solid rgb(91, 211, 107);
   border-radius: 50%;
 }
 .organization .inner .container2 .wrap1 article .pic1 img:hover {
@@ -1286,11 +1303,11 @@ a {
   margin: 30px 0;
   text-align: center;
   font: bold 24px/1 "GmarketSansMedium";
-  color: #eb9b08;
+  color: rgb(235, 155, 8);
 }
 .organization .inner .container3 span {
   display: block;
-  border: 2px solid #eb9b08;
+  border: 2px solid rgb(235, 155, 8);
   margin: 20px auto;
   width: 1px;
   height: 30px;
@@ -1313,7 +1330,7 @@ a {
   width: 100%;
   height: 100%;
   transition: all 0.7s;
-  border: 5px solid #eb9b08;
+  border: 5px solid rgb(235, 155, 8);
   border-radius: 50%;
 }
 .organization .inner .container3 .wrap1 article .pic1 img:hover {
@@ -1332,11 +1349,11 @@ a {
   margin: 30px 0;
   text-align: center;
   font: bold 24px/1 "GmarketSansMedium";
-  color: #2c0eb4;
+  color: rgb(44, 14, 180);
 }
 .organization .inner .container4 span {
   display: block;
-  border: 3px solid #2c0eb4;
+  border: 3px solid rgb(44, 14, 180);
   margin: 20px auto;
   width: 510px;
   height: 30px;
@@ -1359,7 +1376,7 @@ a {
   width: 100%;
   height: 100%;
   transition: all 0.7s;
-  border: 5px solid #2c0eb4;
+  border: 5px solid rgb(44, 14, 180);
   border-radius: 50%;
 }
 .organization .inner .container4 .wrap1 article .pic1 img:hover {
@@ -1528,7 +1545,7 @@ a {
   }
   .department .organization .inner .container2 .wrap1 article {
     height: 320px;
-    border: 2px solid #5bd36b;
+    border: 2px solid rgb(91, 211, 107);
     border-radius: 10px;
     margin-bottom: 30px;
     background: #eee;
@@ -1541,14 +1558,14 @@ a {
   }
   .department .organization .inner .container2 .wrap1 article .pic1 .sns a i {
     font-size: 20px;
-    color: #5bd36b;
+    color: rgb(91, 211, 107);
   }
   .department .organization .inner .container3 > h2 {
     font: bold 20px/1.3 "GmarketSansMedium";
   }
   .department .organization .inner .container3 .wrap1 article {
     height: 320px;
-    border: 2px solid #eb9b08;
+    border: 2px solid rgb(235, 155, 8);
     border-radius: 10px;
     margin-bottom: 30px;
     background: #eee;
@@ -1561,14 +1578,14 @@ a {
   }
   .department .organization .inner .container3 .wrap1 article .pic1 .sns a i {
     font-size: 20px;
-    color: #eb9b08;
+    color: rgb(235, 155, 8);
   }
   .department .organization .inner .container4 > h2 {
     font: bold 20px/1.3 "GmarketSansMedium";
   }
   .department .organization .inner .container4 .wrap1 article {
     height: 320px;
-    border: 2px solid #2c0eb4;
+    border: 2px solid rgb(44, 14, 180);
     border-radius: 10px;
     margin-bottom: 30px;
     background: #eee;
@@ -1581,14 +1598,14 @@ a {
   }
   .department .organization .inner .container4 .wrap1 article .pic1 .sns a i {
     font-size: 20px;
-    color: #2c0eb4;
+    color: rgb(44, 14, 180);
   }
   .department .organization .inner .container5 > h2 {
     font: bold 20px/1.3 "GmarketSansMedium";
   }
   .department .organization .inner .container5 .wrap1 article {
     height: 320px;
-    border: 2px solid #b7fa00;
+    border: 2px solid rgb(183, 250, 0);
     border-radius: 10px;
     margin-bottom: 30px;
     background: #eee;
@@ -1601,7 +1618,7 @@ a {
   }
   .department .organization .inner .container5 .wrap1 article .pic1 .sns a i {
     font-size: 20px;
-    color: #b7fa00;
+    color: rgb(183, 250, 0);
   }
 }
 .youtube {
@@ -2350,6 +2367,255 @@ aside .con .close:hover {
     display: inline-block;
   }
 }
+.bikeType9 {
+  width: 100%;
+  margin-bottom: 50px;
+}
+.bikeType9 .swiper-slide img {
+  width: 100%;
+}
+.bikeType9 .inner {
+  width: 1180px;
+  margin: 0 auto;
+}
+.bikeType9 .inner h1 {
+  font: bold 30px/1 "orbitron";
+  letter-spacing: 1px;
+}
+.bikeType9 .inner .wrap {
+  width: 100%;
+}
+.bikeType9 .inner .wrap article {
+  display: flex;
+}
+.bikeType9 .inner .wrap article:nth-of-type(even) {
+  flex-direction: row-reverse;
+}
+.bikeType9 .inner .wrap article .pic {
+  flex: 1 50%;
+  font-size: 0;
+}
+.bikeType9 .inner .wrap article .pic img {
+  width: 100%;
+}
+.bikeType9 .inner .wrap article .info {
+  padding: 30px;
+  flex: 1 50%;
+  margin-top: 30px;
+}
+.bikeType9 .inner .wrap article .info h2 {
+  width: 100%;
+  margin-bottom: 15px;
+  font: bold 26px/1 "Pretendard";
+}
+.bikeType9 .inner .wrap article .info h3 {
+  width: 100%;
+  margin-bottom: 20px;
+  color: #aaa;
+  font: normal 20px/1 "Pretendard";
+}
+.bikeType9 .inner .wrap article .info p {
+  width: 100%;
+  color: #777;
+  font: normal 15px/1.3 "GmarketSansMedium";
+}
+
+.spec .inner {
+  width: 1180px;
+  margin: 0 auto;
+}
+.spec .inner > h1 {
+  color: #fff;
+  text-align: center;
+  padding: 30px 0;
+  border-bottom: 2px solid #4fb627;
+  font: bold 30px/1 "orbitron";
+  letter-spacing: 1px;
+  margin: 30px 0;
+}
+.spec .inner .pic1 {
+  width: 540px;
+  margin: 0 auto;
+}
+.spec .inner .pic1 img {
+  width: 100%;
+}
+.spec .inner > ul {
+  margin: 50px 0;
+  display: flex;
+  color: #fff;
+  justify-content: space-around;
+  width: 100%;
+}
+.spec .inner > ul > li {
+  display: flex;
+  flex: 1 33%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.spec .inner > ul > li:nth-of-type(2) {
+  border-right: 1px solid #eee;
+  border-left: 1px solid #eee;
+}
+.spec .inner > ul > li strong {
+  margin-bottom: 30px;
+  font: bold 18px/1 "Pretendard";
+}
+.spec .inner > ul > li img {
+  width: 40px;
+  margin-bottom: 20px;
+}
+.spec .inner > ul > li span {
+  font: normal 16px/1 "Pretendard";
+}
+.spec .inner .info {
+  width: 100%;
+}
+.spec .inner .info h2 {
+  margin-top: 100px;
+  color: #fff;
+  padding: 10px 0;
+  font: bold 24px/1 "Orbitron";
+}
+.spec .inner .info .wrap {
+  display: flex;
+  margin-bottom: 50px;
+}
+.spec .inner .info .wrap .pic {
+  width: 100%;
+  height: 100%;
+  flex: 1 50%;
+}
+.spec .inner .info .wrap .pic img {
+  width: 100%;
+}
+.spec .inner .info .wrap .txt {
+  flex: 1 50%;
+  width: 100%;
+}
+.spec .inner .info .wrap .txt > ul {
+  width: 100%;
+  height: 100%;
+  display: block;
+  padding-left: 30px;
+}
+.spec .inner .info .wrap .txt > ul li {
+  padding: 20px 0 20px 20px;
+  border-bottom: 1px solid #777;
+  display: flex;
+  justify-content: space-between;
+}
+.spec .inner .info .wrap .txt > ul li:last-of-type {
+  border-bottom: none;
+}
+.spec .inner .info .wrap .txt > ul li span {
+  color: #aaa;
+  margin-right: 10px;
+}
+.spec .inner .info .wrap .txt > ul li strong {
+  color: #fff;
+  position: relative;
+  left: 0;
+}
+.spec .inner .info .wrap .txt > ul li strong:hover::after {
+  opacity: 1;
+  transform: translateY(10px);
+}
+.spec .inner .info .wrap .txt > ul li strong::before {
+  content: ">";
+  margin-right: 10px;
+  font: 18px/1 "Pretendard";
+}
+.spec .inner .info .wrap .txt > ul li strong::after {
+  content: "";
+  position: absolute;
+  background: #fff;
+  width: 100%;
+  height: 2px;
+  left: 0;
+  bottom: 0;
+  opacity: 0;
+  transition: all 0.7s;
+  transform: translateY(30px);
+}
+
+@media screen and (max-width: 1179px) {
+  .bikeType9 .inner {
+    width: 100%;
+    padding: 0 20px;
+  }
+  .bikeType9 .inner .wrap article {
+    width: 100%;
+  }
+  .bikeType9 .inner .wrap article .pic {
+    flex: 1 35%;
+  }
+  .bikeType9 .inner .wrap article .info {
+    width: 100%;
+    padding: 10px;
+    flex: 1 65%;
+    margin-top: 0px;
+  }
+  .bikeType9 .inner .wrap article .info h2 {
+    margin-bottom: 10px;
+    font: bold 18px/1 "Pretendard";
+  }
+  .bikeType9 .inner .wrap article .info h3 {
+    margin-bottom: 10px;
+    font: normal 16px/1 "Pretendard";
+  }
+  .bikeType9 .inner .wrap article .info p {
+    color: #777;
+    font: normal 12px/1.3 "GmarketSansMedium";
+  }
+
+  .spec .inner {
+    width: 100%;
+    padding: 0 20px;
+  }
+  .spec .inner .pic1 {
+    width: 50%;
+  }
+  .spec .inner .info h2 {
+    font: bold 20px/1 "Orbitron";
+  }
+  .spec .inner .info .wrap .txt > ul {
+    padding-left: 10px;
+  }
+  .spec .inner .info .wrap .txt > ul li {
+    padding: 20px 0 20px 10px;
+  }
+  .spec .inner .info .wrap .txt > ul li span {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 539px) {
+  .bikeType9 .inner .wrap article {
+    margin-bottom: 20px;
+    flex-direction: column;
+  }
+  .bikeType9 .inner .wrap article:nth-of-type(even) {
+    flex-direction: column;
+  }
+  .bikeType9 .inner .wrap article .info {
+    margin-top: 20px;
+  }
+
+  .spec .inner .pic1 {
+    width: 100%;
+  }
+  .spec .inner .specs {
+    flex-direction: column;
+  }
+  .spec .inner .specs > li:nth-of-type(2) {
+    border-right: none;
+    border-left: none;
+  }
+  .spec .inner .info .wrap {
+    flex-direction: column;
+  }
+}
 .bikeType {
   width: 100%;
   margin-bottom: 50px;
@@ -2582,1749 +2848,6 @@ aside .con .close:hover {
     flex-direction: column;
   }
   .bikeType .inner .wrap article .info {
-    margin-top: 20px;
-  }
-
-  .spec .inner .pic1 {
-    width: 100%;
-  }
-  .spec .inner .specs {
-    flex-direction: column;
-  }
-  .spec .inner .specs > li:nth-of-type(2) {
-    border-right: none;
-    border-left: none;
-  }
-  .spec .inner .info .wrap {
-    flex-direction: column;
-  }
-}
-.bikeType1 {
-  width: 100%;
-  margin-bottom: 50px;
-}
-.bikeType1 .swiper-slide img {
-  width: 100%;
-}
-.bikeType1 .inner {
-  width: 1180px;
-  margin: 0 auto;
-}
-.bikeType1 .inner h1 {
-  font: bold 30px/1 "orbitron";
-  letter-spacing: 1px;
-}
-.bikeType1 .inner .wrap {
-  width: 100%;
-}
-.bikeType1 .inner .wrap article {
-  display: flex;
-}
-.bikeType1 .inner .wrap article:nth-of-type(even) {
-  flex-direction: row-reverse;
-}
-.bikeType1 .inner .wrap article .pic {
-  flex: 1 50%;
-  font-size: 0;
-}
-.bikeType1 .inner .wrap article .pic img {
-  width: 100%;
-}
-.bikeType1 .inner .wrap article .info {
-  padding: 30px;
-  flex: 1 50%;
-  margin-top: 30px;
-}
-.bikeType1 .inner .wrap article .info h2 {
-  width: 100%;
-  margin-bottom: 15px;
-  font: bold 26px/1 "Pretendard";
-}
-.bikeType1 .inner .wrap article .info h3 {
-  width: 100%;
-  margin-bottom: 20px;
-  color: #aaa;
-  font: normal 20px/1 "Pretendard";
-}
-.bikeType1 .inner .wrap article .info p {
-  width: 100%;
-  color: #777;
-  font: normal 15px/1.3 "GmarketSansMedium";
-}
-
-.spec .inner {
-  width: 1180px;
-  margin: 0 auto;
-}
-.spec .inner > h1 {
-  color: #fff;
-  text-align: center;
-  padding: 30px 0;
-  border-bottom: 2px solid #4fb627;
-  font: bold 30px/1 "orbitron";
-  letter-spacing: 1px;
-  margin: 30px 0;
-}
-.spec .inner .pic1 {
-  width: 540px;
-  margin: 0 auto;
-}
-.spec .inner .pic1 img {
-  width: 100%;
-}
-.spec .inner > ul {
-  margin: 50px 0;
-  display: flex;
-  color: #fff;
-  justify-content: space-around;
-  width: 100%;
-}
-.spec .inner > ul > li {
-  display: flex;
-  flex: 1 33%;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.spec .inner > ul > li:nth-of-type(2) {
-  border-right: 1px solid #eee;
-  border-left: 1px solid #eee;
-}
-.spec .inner > ul > li strong {
-  margin-bottom: 30px;
-  font: bold 18px/1 "Pretendard";
-}
-.spec .inner > ul > li img {
-  width: 40px;
-  margin-bottom: 20px;
-}
-.spec .inner > ul > li span {
-  font: normal 16px/1 "Pretendard";
-}
-.spec .inner .info {
-  width: 100%;
-}
-.spec .inner .info h2 {
-  margin-top: 100px;
-  color: #fff;
-  padding: 10px 0;
-  font: bold 24px/1 "Orbitron";
-}
-.spec .inner .info .wrap {
-  display: flex;
-  margin-bottom: 50px;
-}
-.spec .inner .info .wrap .pic {
-  width: 100%;
-  height: 100%;
-  flex: 1 50%;
-}
-.spec .inner .info .wrap .pic img {
-  width: 100%;
-}
-.spec .inner .info .wrap .txt {
-  flex: 1 50%;
-  width: 100%;
-}
-.spec .inner .info .wrap .txt > ul {
-  width: 100%;
-  height: 100%;
-  display: block;
-  padding-left: 30px;
-}
-.spec .inner .info .wrap .txt > ul li {
-  padding: 20px 0 20px 20px;
-  border-bottom: 1px solid #777;
-  display: flex;
-  justify-content: space-between;
-}
-.spec .inner .info .wrap .txt > ul li:last-of-type {
-  border-bottom: none;
-}
-.spec .inner .info .wrap .txt > ul li span {
-  color: #aaa;
-  margin-right: 10px;
-}
-.spec .inner .info .wrap .txt > ul li strong {
-  color: #fff;
-  position: relative;
-  left: 0;
-}
-.spec .inner .info .wrap .txt > ul li strong:hover::after {
-  opacity: 1;
-  transform: translateY(10px);
-}
-.spec .inner .info .wrap .txt > ul li strong::before {
-  content: ">";
-  margin-right: 10px;
-  font: 18px/1 "Pretendard";
-}
-.spec .inner .info .wrap .txt > ul li strong::after {
-  content: "";
-  position: absolute;
-  background: #fff;
-  width: 100%;
-  height: 2px;
-  left: 0;
-  bottom: 0;
-  opacity: 0;
-  transition: all 0.7s;
-  transform: translateY(30px);
-}
-
-@media screen and (max-width: 1179px) {
-  .bikeType1 .inner {
-    width: 100%;
-    padding: 0 20px;
-  }
-  .bikeType1 .inner .wrap article {
-    width: 100%;
-  }
-  .bikeType1 .inner .wrap article .pic {
-    flex: 1 35%;
-  }
-  .bikeType1 .inner .wrap article .info {
-    width: 100%;
-    padding: 10px;
-    flex: 1 65%;
-    margin-top: 0px;
-  }
-  .bikeType1 .inner .wrap article .info h2 {
-    margin-bottom: 10px;
-    font: bold 18px/1 "Pretendard";
-  }
-  .bikeType1 .inner .wrap article .info h3 {
-    margin-bottom: 10px;
-    font: normal 16px/1 "Pretendard";
-  }
-  .bikeType1 .inner .wrap article .info p {
-    color: #777;
-    font: normal 12px/1.3 "GmarketSansMedium";
-  }
-
-  .spec .inner {
-    width: 100%;
-    padding: 0 20px;
-  }
-  .spec .inner .pic1 {
-    width: 50%;
-  }
-  .spec .inner .info h2 {
-    font: bold 20px/1 "Orbitron";
-  }
-  .spec .inner .info .wrap .txt > ul {
-    padding-left: 10px;
-  }
-  .spec .inner .info .wrap .txt > ul li {
-    padding: 20px 0 20px 10px;
-  }
-  .spec .inner .info .wrap .txt > ul li span {
-    font-size: 13px;
-  }
-}
-@media screen and (max-width: 539px) {
-  .bikeType1 .inner .wrap article {
-    margin-bottom: 20px;
-    flex-direction: column;
-  }
-  .bikeType1 .inner .wrap article:nth-of-type(even) {
-    flex-direction: column;
-  }
-  .bikeType1 .inner .wrap article .info {
-    margin-top: 20px;
-  }
-
-  .spec .inner .pic1 {
-    width: 100%;
-  }
-  .spec .inner .specs {
-    flex-direction: column;
-  }
-  .spec .inner .specs > li:nth-of-type(2) {
-    border-right: none;
-    border-left: none;
-  }
-  .spec .inner .info .wrap {
-    flex-direction: column;
-  }
-}
-.bikeType2 {
-  width: 100%;
-  margin-bottom: 50px;
-}
-.bikeType2 .swiper-slide img {
-  width: 100%;
-}
-.bikeType2 .inner {
-  width: 1180px;
-  margin: 0 auto;
-}
-.bikeType2 .inner h1 {
-  font: bold 30px/1 "orbitron";
-  letter-spacing: 1px;
-}
-.bikeType2 .inner .wrap {
-  width: 100%;
-}
-.bikeType2 .inner .wrap article {
-  display: flex;
-}
-.bikeType2 .inner .wrap article:nth-of-type(even) {
-  flex-direction: row-reverse;
-}
-.bikeType2 .inner .wrap article .pic {
-  flex: 1 50%;
-  font-size: 0;
-}
-.bikeType2 .inner .wrap article .pic img {
-  width: 100%;
-}
-.bikeType2 .inner .wrap article .info {
-  padding: 30px;
-  flex: 1 50%;
-  margin-top: 30px;
-}
-.bikeType2 .inner .wrap article .info h2 {
-  width: 100%;
-  margin-bottom: 15px;
-  font: bold 26px/1 "Pretendard";
-}
-.bikeType2 .inner .wrap article .info h3 {
-  width: 100%;
-  margin-bottom: 20px;
-  color: #aaa;
-  font: normal 20px/1 "Pretendard";
-}
-.bikeType2 .inner .wrap article .info p {
-  width: 100%;
-  color: #777;
-  font: normal 15px/1.3 "GmarketSansMedium";
-}
-
-.spec .inner {
-  width: 1180px;
-  margin: 0 auto;
-}
-.spec .inner > h1 {
-  color: #fff;
-  text-align: center;
-  padding: 30px 0;
-  border-bottom: 2px solid #4fb627;
-  font: bold 30px/1 "orbitron";
-  letter-spacing: 1px;
-  margin: 30px 0;
-}
-.spec .inner .pic1 {
-  width: 540px;
-  margin: 0 auto;
-}
-.spec .inner .pic1 img {
-  width: 100%;
-}
-.spec .inner > ul {
-  margin: 50px 0;
-  display: flex;
-  color: #fff;
-  justify-content: space-around;
-  width: 100%;
-}
-.spec .inner > ul > li {
-  display: flex;
-  flex: 1 33%;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.spec .inner > ul > li:nth-of-type(2) {
-  border-right: 1px solid #eee;
-  border-left: 1px solid #eee;
-}
-.spec .inner > ul > li strong {
-  margin-bottom: 30px;
-  font: bold 18px/1 "Pretendard";
-}
-.spec .inner > ul > li img {
-  width: 40px;
-  margin-bottom: 20px;
-}
-.spec .inner > ul > li span {
-  font: normal 16px/1 "Pretendard";
-}
-.spec .inner .info {
-  width: 100%;
-}
-.spec .inner .info h2 {
-  margin-top: 100px;
-  color: #fff;
-  padding: 10px 0;
-  font: bold 24px/1 "Orbitron";
-}
-.spec .inner .info .wrap {
-  display: flex;
-  margin-bottom: 50px;
-}
-.spec .inner .info .wrap .pic {
-  width: 100%;
-  height: 100%;
-  flex: 1 50%;
-}
-.spec .inner .info .wrap .pic img {
-  width: 100%;
-}
-.spec .inner .info .wrap .txt {
-  flex: 1 50%;
-  width: 100%;
-}
-.spec .inner .info .wrap .txt > ul {
-  width: 100%;
-  height: 100%;
-  display: block;
-  padding-left: 30px;
-}
-.spec .inner .info .wrap .txt > ul li {
-  padding: 20px 0 20px 20px;
-  border-bottom: 1px solid #777;
-  display: flex;
-  justify-content: space-between;
-}
-.spec .inner .info .wrap .txt > ul li:last-of-type {
-  border-bottom: none;
-}
-.spec .inner .info .wrap .txt > ul li span {
-  color: #aaa;
-  margin-right: 10px;
-}
-.spec .inner .info .wrap .txt > ul li strong {
-  color: #fff;
-  position: relative;
-  left: 0;
-}
-.spec .inner .info .wrap .txt > ul li strong:hover::after {
-  opacity: 1;
-  transform: translateY(10px);
-}
-.spec .inner .info .wrap .txt > ul li strong::before {
-  content: ">";
-  margin-right: 10px;
-  font: 18px/1 "Pretendard";
-}
-.spec .inner .info .wrap .txt > ul li strong::after {
-  content: "";
-  position: absolute;
-  background: #fff;
-  width: 100%;
-  height: 2px;
-  left: 0;
-  bottom: 0;
-  opacity: 0;
-  transition: all 0.7s;
-  transform: translateY(30px);
-}
-
-@media screen and (max-width: 1179px) {
-  .bikeType2 .inner {
-    width: 100%;
-    padding: 0 20px;
-  }
-  .bikeType2 .inner .wrap article {
-    width: 100%;
-  }
-  .bikeType2 .inner .wrap article .pic {
-    flex: 1 35%;
-  }
-  .bikeType2 .inner .wrap article .info {
-    width: 100%;
-    padding: 10px;
-    flex: 1 65%;
-    margin-top: 0px;
-  }
-  .bikeType2 .inner .wrap article .info h2 {
-    margin-bottom: 10px;
-    font: bold 18px/1 "Pretendard";
-  }
-  .bikeType2 .inner .wrap article .info h3 {
-    margin-bottom: 10px;
-    font: normal 16px/1 "Pretendard";
-  }
-  .bikeType2 .inner .wrap article .info p {
-    color: #777;
-    font: normal 12px/1.3 "GmarketSansMedium";
-  }
-
-  .spec .inner {
-    width: 100%;
-    padding: 0 20px;
-  }
-  .spec .inner .pic1 {
-    width: 50%;
-  }
-  .spec .inner .info h2 {
-    font: bold 20px/1 "Orbitron";
-  }
-  .spec .inner .info .wrap .txt > ul {
-    padding-left: 10px;
-  }
-  .spec .inner .info .wrap .txt > ul li {
-    padding: 20px 0 20px 10px;
-  }
-  .spec .inner .info .wrap .txt > ul li span {
-    font-size: 13px;
-  }
-}
-@media screen and (max-width: 539px) {
-  .bikeType2 .inner .wrap article {
-    margin-bottom: 20px;
-    flex-direction: column;
-  }
-  .bikeType2 .inner .wrap article:nth-of-type(even) {
-    flex-direction: column;
-  }
-  .bikeType2 .inner .wrap article .info {
-    margin-top: 20px;
-  }
-
-  .spec .inner .pic1 {
-    width: 100%;
-  }
-  .spec .inner .specs {
-    flex-direction: column;
-  }
-  .spec .inner .specs > li:nth-of-type(2) {
-    border-right: none;
-    border-left: none;
-  }
-  .spec .inner .info .wrap {
-    flex-direction: column;
-  }
-}
-.bikeType3 {
-  width: 100%;
-  margin-bottom: 50px;
-}
-.bikeType3 .swiper-slide img {
-  width: 100%;
-}
-.bikeType3 .inner {
-  width: 1180px;
-  margin: 0 auto;
-}
-.bikeType3 .inner h1 {
-  font: bold 30px/1 "orbitron";
-  letter-spacing: 1px;
-}
-.bikeType3 .inner .wrap {
-  width: 100%;
-}
-.bikeType3 .inner .wrap article {
-  display: flex;
-}
-.bikeType3 .inner .wrap article:nth-of-type(even) {
-  flex-direction: row-reverse;
-}
-.bikeType3 .inner .wrap article .pic {
-  flex: 1 50%;
-  font-size: 0;
-}
-.bikeType3 .inner .wrap article .pic img {
-  width: 100%;
-}
-.bikeType3 .inner .wrap article .info {
-  padding: 30px;
-  flex: 1 50%;
-  margin-top: 30px;
-}
-.bikeType3 .inner .wrap article .info h2 {
-  width: 100%;
-  margin-bottom: 15px;
-  font: bold 26px/1 "Pretendard";
-}
-.bikeType3 .inner .wrap article .info h3 {
-  width: 100%;
-  margin-bottom: 20px;
-  color: #aaa;
-  font: normal 20px/1 "Pretendard";
-}
-.bikeType3 .inner .wrap article .info p {
-  width: 100%;
-  color: #777;
-  font: normal 15px/1.3 "GmarketSansMedium";
-}
-
-.spec .inner {
-  width: 1180px;
-  margin: 0 auto;
-}
-.spec .inner > h1 {
-  color: #fff;
-  text-align: center;
-  padding: 30px 0;
-  border-bottom: 2px solid #4fb627;
-  font: bold 30px/1 "orbitron";
-  letter-spacing: 1px;
-  margin: 30px 0;
-}
-.spec .inner .pic1 {
-  width: 540px;
-  margin: 0 auto;
-}
-.spec .inner .pic1 img {
-  width: 100%;
-}
-.spec .inner > ul {
-  margin: 50px 0;
-  display: flex;
-  color: #fff;
-  justify-content: space-around;
-  width: 100%;
-}
-.spec .inner > ul > li {
-  display: flex;
-  flex: 1 33%;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.spec .inner > ul > li:nth-of-type(2) {
-  border-right: 1px solid #eee;
-  border-left: 1px solid #eee;
-}
-.spec .inner > ul > li strong {
-  margin-bottom: 30px;
-  font: bold 18px/1 "Pretendard";
-}
-.spec .inner > ul > li img {
-  width: 40px;
-  margin-bottom: 20px;
-}
-.spec .inner > ul > li span {
-  font: normal 16px/1 "Pretendard";
-}
-.spec .inner .info {
-  width: 100%;
-}
-.spec .inner .info h2 {
-  margin-top: 100px;
-  color: #fff;
-  padding: 10px 0;
-  font: bold 24px/1 "Orbitron";
-}
-.spec .inner .info .wrap {
-  display: flex;
-  margin-bottom: 50px;
-}
-.spec .inner .info .wrap .pic {
-  width: 100%;
-  height: 100%;
-  flex: 1 50%;
-}
-.spec .inner .info .wrap .pic img {
-  width: 100%;
-}
-.spec .inner .info .wrap .txt {
-  flex: 1 50%;
-  width: 100%;
-}
-.spec .inner .info .wrap .txt > ul {
-  width: 100%;
-  height: 100%;
-  display: block;
-  padding-left: 30px;
-}
-.spec .inner .info .wrap .txt > ul li {
-  padding: 20px 0 20px 20px;
-  border-bottom: 1px solid #777;
-  display: flex;
-  justify-content: space-between;
-}
-.spec .inner .info .wrap .txt > ul li:last-of-type {
-  border-bottom: none;
-}
-.spec .inner .info .wrap .txt > ul li span {
-  color: #aaa;
-  margin-right: 10px;
-}
-.spec .inner .info .wrap .txt > ul li strong {
-  color: #fff;
-  position: relative;
-  left: 0;
-}
-.spec .inner .info .wrap .txt > ul li strong:hover::after {
-  opacity: 1;
-  transform: translateY(10px);
-}
-.spec .inner .info .wrap .txt > ul li strong::before {
-  content: ">";
-  margin-right: 10px;
-  font: 18px/1 "Pretendard";
-}
-.spec .inner .info .wrap .txt > ul li strong::after {
-  content: "";
-  position: absolute;
-  background: #fff;
-  width: 100%;
-  height: 2px;
-  left: 0;
-  bottom: 0;
-  opacity: 0;
-  transition: all 0.7s;
-  transform: translateY(30px);
-}
-
-@media screen and (max-width: 1179px) {
-  .bikeType3 .inner {
-    width: 100%;
-    padding: 0 20px;
-  }
-  .bikeType3 .inner .wrap article {
-    width: 100%;
-  }
-  .bikeType3 .inner .wrap article .pic {
-    flex: 1 35%;
-  }
-  .bikeType3 .inner .wrap article .info {
-    width: 100%;
-    padding: 10px;
-    flex: 1 65%;
-    margin-top: 0px;
-  }
-  .bikeType3 .inner .wrap article .info h2 {
-    margin-bottom: 10px;
-    font: bold 18px/1 "Pretendard";
-  }
-  .bikeType3 .inner .wrap article .info h3 {
-    margin-bottom: 10px;
-    font: normal 16px/1 "Pretendard";
-  }
-  .bikeType3 .inner .wrap article .info p {
-    color: #777;
-    font: normal 12px/1.3 "GmarketSansMedium";
-  }
-
-  .spec .inner {
-    width: 100%;
-    padding: 0 20px;
-  }
-  .spec .inner .pic1 {
-    width: 50%;
-  }
-  .spec .inner .info h2 {
-    font: bold 20px/1 "Orbitron";
-  }
-  .spec .inner .info .wrap .txt > ul {
-    padding-left: 10px;
-  }
-  .spec .inner .info .wrap .txt > ul li {
-    padding: 20px 0 20px 10px;
-  }
-  .spec .inner .info .wrap .txt > ul li span {
-    font-size: 13px;
-  }
-}
-@media screen and (max-width: 539px) {
-  .bikeType3 .inner .wrap article {
-    margin-bottom: 20px;
-    flex-direction: column;
-  }
-  .bikeType3 .inner .wrap article:nth-of-type(even) {
-    flex-direction: column;
-  }
-  .bikeType3 .inner .wrap article .info {
-    margin-top: 20px;
-  }
-
-  .spec .inner .pic1 {
-    width: 100%;
-  }
-  .spec .inner .specs {
-    flex-direction: column;
-  }
-  .spec .inner .specs > li:nth-of-type(2) {
-    border-right: none;
-    border-left: none;
-  }
-  .spec .inner .info .wrap {
-    flex-direction: column;
-  }
-}
-.bikeType4 {
-  width: 100%;
-  margin-bottom: 50px;
-}
-.bikeType4 .swiper-slide img {
-  width: 100%;
-}
-.bikeType4 .inner {
-  width: 1180px;
-  margin: 0 auto;
-}
-.bikeType4 .inner h1 {
-  font: bold 30px/1 "orbitron";
-  letter-spacing: 1px;
-}
-.bikeType4 .inner .wrap {
-  width: 100%;
-}
-.bikeType4 .inner .wrap article {
-  display: flex;
-}
-.bikeType4 .inner .wrap article:nth-of-type(even) {
-  flex-direction: row-reverse;
-}
-.bikeType4 .inner .wrap article .pic {
-  flex: 1 50%;
-  font-size: 0;
-}
-.bikeType4 .inner .wrap article .pic img {
-  width: 100%;
-}
-.bikeType4 .inner .wrap article .info {
-  padding: 30px;
-  flex: 1 50%;
-  margin-top: 30px;
-}
-.bikeType4 .inner .wrap article .info h2 {
-  width: 100%;
-  margin-bottom: 15px;
-  font: bold 26px/1 "Pretendard";
-}
-.bikeType4 .inner .wrap article .info h3 {
-  width: 100%;
-  margin-bottom: 20px;
-  color: #aaa;
-  font: normal 20px/1 "Pretendard";
-}
-.bikeType4 .inner .wrap article .info p {
-  width: 100%;
-  color: #777;
-  font: normal 15px/1.3 "GmarketSansMedium";
-}
-
-.spec .inner {
-  width: 1180px;
-  margin: 0 auto;
-}
-.spec .inner > h1 {
-  color: #fff;
-  text-align: center;
-  padding: 30px 0;
-  border-bottom: 2px solid #4fb627;
-  font: bold 30px/1 "orbitron";
-  letter-spacing: 1px;
-  margin: 30px 0;
-}
-.spec .inner .pic1 {
-  width: 540px;
-  margin: 0 auto;
-}
-.spec .inner .pic1 img {
-  width: 100%;
-}
-.spec .inner > ul {
-  margin: 50px 0;
-  display: flex;
-  color: #fff;
-  justify-content: space-around;
-  width: 100%;
-}
-.spec .inner > ul > li {
-  display: flex;
-  flex: 1 33%;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.spec .inner > ul > li:nth-of-type(2) {
-  border-right: 1px solid #eee;
-  border-left: 1px solid #eee;
-}
-.spec .inner > ul > li strong {
-  margin-bottom: 30px;
-  font: bold 18px/1 "Pretendard";
-}
-.spec .inner > ul > li img {
-  width: 40px;
-  margin-bottom: 20px;
-}
-.spec .inner > ul > li span {
-  font: normal 16px/1 "Pretendard";
-}
-.spec .inner .info {
-  width: 100%;
-}
-.spec .inner .info h2 {
-  margin-top: 100px;
-  color: #fff;
-  padding: 10px 0;
-  font: bold 24px/1 "Orbitron";
-}
-.spec .inner .info .wrap {
-  display: flex;
-  margin-bottom: 50px;
-}
-.spec .inner .info .wrap .pic {
-  width: 100%;
-  height: 100%;
-  flex: 1 50%;
-}
-.spec .inner .info .wrap .pic img {
-  width: 100%;
-}
-.spec .inner .info .wrap .txt {
-  flex: 1 50%;
-  width: 100%;
-}
-.spec .inner .info .wrap .txt > ul {
-  width: 100%;
-  height: 100%;
-  display: block;
-  padding-left: 30px;
-}
-.spec .inner .info .wrap .txt > ul li {
-  padding: 20px 0 20px 20px;
-  border-bottom: 1px solid #777;
-  display: flex;
-  justify-content: space-between;
-}
-.spec .inner .info .wrap .txt > ul li:last-of-type {
-  border-bottom: none;
-}
-.spec .inner .info .wrap .txt > ul li span {
-  color: #aaa;
-  margin-right: 10px;
-}
-.spec .inner .info .wrap .txt > ul li strong {
-  color: #fff;
-  position: relative;
-  left: 0;
-}
-.spec .inner .info .wrap .txt > ul li strong:hover::after {
-  opacity: 1;
-  transform: translateY(10px);
-}
-.spec .inner .info .wrap .txt > ul li strong::before {
-  content: ">";
-  margin-right: 10px;
-  font: 18px/1 "Pretendard";
-}
-.spec .inner .info .wrap .txt > ul li strong::after {
-  content: "";
-  position: absolute;
-  background: #fff;
-  width: 100%;
-  height: 2px;
-  left: 0;
-  bottom: 0;
-  opacity: 0;
-  transition: all 0.7s;
-  transform: translateY(30px);
-}
-
-@media screen and (max-width: 1179px) {
-  .bikeType4 .inner {
-    width: 100%;
-    padding: 0 20px;
-  }
-  .bikeType4 .inner .wrap article {
-    width: 100%;
-  }
-  .bikeType4 .inner .wrap article .pic {
-    flex: 1 35%;
-  }
-  .bikeType4 .inner .wrap article .info {
-    width: 100%;
-    padding: 10px;
-    flex: 1 65%;
-    margin-top: 0px;
-  }
-  .bikeType4 .inner .wrap article .info h2 {
-    margin-bottom: 10px;
-    font: bold 18px/1 "Pretendard";
-  }
-  .bikeType4 .inner .wrap article .info h3 {
-    margin-bottom: 10px;
-    font: normal 16px/1 "Pretendard";
-  }
-  .bikeType4 .inner .wrap article .info p {
-    color: #777;
-    font: normal 12px/1.3 "GmarketSansMedium";
-  }
-
-  .spec .inner {
-    width: 100%;
-    padding: 0 20px;
-  }
-  .spec .inner .pic1 {
-    width: 50%;
-  }
-  .spec .inner .info h2 {
-    font: bold 20px/1 "Orbitron";
-  }
-  .spec .inner .info .wrap .txt > ul {
-    padding-left: 10px;
-  }
-  .spec .inner .info .wrap .txt > ul li {
-    padding: 20px 0 20px 10px;
-  }
-  .spec .inner .info .wrap .txt > ul li span {
-    font-size: 13px;
-  }
-}
-@media screen and (max-width: 539px) {
-  .bikeType4 .inner .wrap article {
-    margin-bottom: 20px;
-    flex-direction: column;
-  }
-  .bikeType4 .inner .wrap article:nth-of-type(even) {
-    flex-direction: column;
-  }
-  .bikeType4 .inner .wrap article .info {
-    margin-top: 20px;
-  }
-
-  .spec .inner .pic1 {
-    width: 100%;
-  }
-  .spec .inner .specs {
-    flex-direction: column;
-  }
-  .spec .inner .specs > li:nth-of-type(2) {
-    border-right: none;
-    border-left: none;
-  }
-  .spec .inner .info .wrap {
-    flex-direction: column;
-  }
-}
-.bikeType5 {
-  width: 100%;
-  margin-bottom: 50px;
-}
-.bikeType5 .swiper-slide img {
-  width: 100%;
-}
-.bikeType5 .inner {
-  width: 1180px;
-  margin: 0 auto;
-}
-.bikeType5 .inner h1 {
-  font: bold 30px/1 "orbitron";
-  letter-spacing: 1px;
-}
-.bikeType5 .inner .wrap {
-  width: 100%;
-}
-.bikeType5 .inner .wrap article {
-  display: flex;
-}
-.bikeType5 .inner .wrap article:nth-of-type(even) {
-  flex-direction: row-reverse;
-}
-.bikeType5 .inner .wrap article .pic {
-  flex: 1 50%;
-  font-size: 0;
-}
-.bikeType5 .inner .wrap article .pic img {
-  width: 100%;
-}
-.bikeType5 .inner .wrap article .info {
-  padding: 30px;
-  flex: 1 50%;
-  margin-top: 30px;
-}
-.bikeType5 .inner .wrap article .info h2 {
-  width: 100%;
-  margin-bottom: 15px;
-  font: bold 26px/1 "Pretendard";
-}
-.bikeType5 .inner .wrap article .info h3 {
-  width: 100%;
-  margin-bottom: 20px;
-  color: #aaa;
-  font: normal 20px/1 "Pretendard";
-}
-.bikeType5 .inner .wrap article .info p {
-  width: 100%;
-  color: #777;
-  font: normal 15px/1.3 "GmarketSansMedium";
-}
-
-.spec .inner {
-  width: 1180px;
-  margin: 0 auto;
-}
-.spec .inner > h1 {
-  color: #fff;
-  text-align: center;
-  padding: 30px 0;
-  border-bottom: 2px solid #4fb627;
-  font: bold 30px/1 "orbitron";
-  letter-spacing: 1px;
-  margin: 30px 0;
-}
-.spec .inner .pic1 {
-  width: 540px;
-  margin: 0 auto;
-}
-.spec .inner .pic1 img {
-  width: 100%;
-}
-.spec .inner > ul {
-  margin: 50px 0;
-  display: flex;
-  color: #fff;
-  justify-content: space-around;
-  width: 100%;
-}
-.spec .inner > ul > li {
-  display: flex;
-  flex: 1 33%;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.spec .inner > ul > li:nth-of-type(2) {
-  border-right: 1px solid #eee;
-  border-left: 1px solid #eee;
-}
-.spec .inner > ul > li strong {
-  margin-bottom: 30px;
-  font: bold 18px/1 "Pretendard";
-}
-.spec .inner > ul > li img {
-  width: 40px;
-  margin-bottom: 20px;
-}
-.spec .inner > ul > li span {
-  font: normal 16px/1 "Pretendard";
-}
-.spec .inner .info {
-  width: 100%;
-}
-.spec .inner .info h2 {
-  margin-top: 100px;
-  color: #fff;
-  padding: 10px 0;
-  font: bold 24px/1 "Orbitron";
-}
-.spec .inner .info .wrap {
-  display: flex;
-  margin-bottom: 50px;
-}
-.spec .inner .info .wrap .pic {
-  width: 100%;
-  height: 100%;
-  flex: 1 50%;
-}
-.spec .inner .info .wrap .pic img {
-  width: 100%;
-}
-.spec .inner .info .wrap .txt {
-  flex: 1 50%;
-  width: 100%;
-}
-.spec .inner .info .wrap .txt > ul {
-  width: 100%;
-  height: 100%;
-  display: block;
-  padding-left: 30px;
-}
-.spec .inner .info .wrap .txt > ul li {
-  padding: 20px 0 20px 20px;
-  border-bottom: 1px solid #777;
-  display: flex;
-  justify-content: space-between;
-}
-.spec .inner .info .wrap .txt > ul li:last-of-type {
-  border-bottom: none;
-}
-.spec .inner .info .wrap .txt > ul li span {
-  color: #aaa;
-  margin-right: 10px;
-}
-.spec .inner .info .wrap .txt > ul li strong {
-  color: #fff;
-  position: relative;
-  left: 0;
-}
-.spec .inner .info .wrap .txt > ul li strong:hover::after {
-  opacity: 1;
-  transform: translateY(10px);
-}
-.spec .inner .info .wrap .txt > ul li strong::before {
-  content: ">";
-  margin-right: 10px;
-  font: 18px/1 "Pretendard";
-}
-.spec .inner .info .wrap .txt > ul li strong::after {
-  content: "";
-  position: absolute;
-  background: #fff;
-  width: 100%;
-  height: 2px;
-  left: 0;
-  bottom: 0;
-  opacity: 0;
-  transition: all 0.7s;
-  transform: translateY(30px);
-}
-
-@media screen and (max-width: 1179px) {
-  .bikeType5 .inner {
-    width: 100%;
-    padding: 0 20px;
-  }
-  .bikeType5 .inner .wrap article {
-    width: 100%;
-  }
-  .bikeType5 .inner .wrap article .pic {
-    flex: 1 35%;
-  }
-  .bikeType5 .inner .wrap article .info {
-    width: 100%;
-    padding: 10px;
-    flex: 1 65%;
-    margin-top: 0px;
-  }
-  .bikeType5 .inner .wrap article .info h2 {
-    margin-bottom: 10px;
-    font: bold 18px/1 "Pretendard";
-  }
-  .bikeType5 .inner .wrap article .info h3 {
-    margin-bottom: 10px;
-    font: normal 16px/1 "Pretendard";
-  }
-  .bikeType5 .inner .wrap article .info p {
-    color: #777;
-    font: normal 12px/1.3 "GmarketSansMedium";
-  }
-
-  .spec .inner {
-    width: 100%;
-    padding: 0 20px;
-  }
-  .spec .inner .pic1 {
-    width: 50%;
-  }
-  .spec .inner .info h2 {
-    font: bold 20px/1 "Orbitron";
-  }
-  .spec .inner .info .wrap .txt > ul {
-    padding-left: 10px;
-  }
-  .spec .inner .info .wrap .txt > ul li {
-    padding: 20px 0 20px 10px;
-  }
-  .spec .inner .info .wrap .txt > ul li span {
-    font-size: 13px;
-  }
-}
-@media screen and (max-width: 539px) {
-  .bikeType5 .inner .wrap article {
-    margin-bottom: 20px;
-    flex-direction: column;
-  }
-  .bikeType5 .inner .wrap article:nth-of-type(even) {
-    flex-direction: column;
-  }
-  .bikeType5 .inner .wrap article .info {
-    margin-top: 20px;
-  }
-
-  .spec .inner .pic1 {
-    width: 100%;
-  }
-  .spec .inner .specs {
-    flex-direction: column;
-  }
-  .spec .inner .specs > li:nth-of-type(2) {
-    border-right: none;
-    border-left: none;
-  }
-  .spec .inner .info .wrap {
-    flex-direction: column;
-  }
-}
-.bikeType6 {
-  width: 100%;
-  margin-bottom: 50px;
-}
-.bikeType6 .swiper-slide img {
-  width: 100%;
-}
-.bikeType6 .inner {
-  width: 1180px;
-  margin: 0 auto;
-}
-.bikeType6 .inner h1 {
-  font: bold 30px/1 "orbitron";
-  letter-spacing: 1px;
-}
-.bikeType6 .inner .wrap {
-  width: 100%;
-}
-.bikeType6 .inner .wrap article {
-  display: flex;
-}
-.bikeType6 .inner .wrap article:nth-of-type(even) {
-  flex-direction: row-reverse;
-}
-.bikeType6 .inner .wrap article .pic {
-  flex: 1 50%;
-  font-size: 0;
-}
-.bikeType6 .inner .wrap article .pic img {
-  width: 100%;
-}
-.bikeType6 .inner .wrap article .info {
-  padding: 30px;
-  flex: 1 50%;
-  margin-top: 30px;
-}
-.bikeType6 .inner .wrap article .info h2 {
-  width: 100%;
-  margin-bottom: 15px;
-  font: bold 26px/1 "Pretendard";
-}
-.bikeType6 .inner .wrap article .info h3 {
-  width: 100%;
-  margin-bottom: 20px;
-  color: #aaa;
-  font: normal 20px/1 "Pretendard";
-}
-.bikeType6 .inner .wrap article .info p {
-  width: 100%;
-  color: #777;
-  font: normal 15px/1.3 "GmarketSansMedium";
-}
-
-.spec .inner {
-  width: 1180px;
-  margin: 0 auto;
-}
-.spec .inner > h1 {
-  color: #fff;
-  text-align: center;
-  padding: 30px 0;
-  border-bottom: 2px solid #4fb627;
-  font: bold 30px/1 "orbitron";
-  letter-spacing: 1px;
-  margin: 30px 0;
-}
-.spec .inner .pic1 {
-  width: 540px;
-  margin: 0 auto;
-}
-.spec .inner .pic1 img {
-  width: 100%;
-}
-.spec .inner > ul {
-  margin: 50px 0;
-  display: flex;
-  color: #fff;
-  justify-content: space-around;
-  width: 100%;
-}
-.spec .inner > ul > li {
-  display: flex;
-  flex: 1 33%;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.spec .inner > ul > li:nth-of-type(2) {
-  border-right: 1px solid #eee;
-  border-left: 1px solid #eee;
-}
-.spec .inner > ul > li strong {
-  margin-bottom: 30px;
-  font: bold 18px/1 "Pretendard";
-}
-.spec .inner > ul > li img {
-  width: 40px;
-  margin-bottom: 20px;
-}
-.spec .inner > ul > li span {
-  font: normal 16px/1 "Pretendard";
-}
-.spec .inner .info {
-  width: 100%;
-}
-.spec .inner .info h2 {
-  margin-top: 100px;
-  color: #fff;
-  padding: 10px 0;
-  font: bold 24px/1 "Orbitron";
-}
-.spec .inner .info .wrap {
-  display: flex;
-  margin-bottom: 50px;
-}
-.spec .inner .info .wrap .pic {
-  width: 100%;
-  height: 100%;
-  flex: 1 50%;
-}
-.spec .inner .info .wrap .pic img {
-  width: 100%;
-}
-.spec .inner .info .wrap .txt {
-  flex: 1 50%;
-  width: 100%;
-}
-.spec .inner .info .wrap .txt > ul {
-  width: 100%;
-  height: 100%;
-  display: block;
-  padding-left: 30px;
-}
-.spec .inner .info .wrap .txt > ul li {
-  padding: 20px 0 20px 20px;
-  border-bottom: 1px solid #777;
-  display: flex;
-  justify-content: space-between;
-}
-.spec .inner .info .wrap .txt > ul li:last-of-type {
-  border-bottom: none;
-}
-.spec .inner .info .wrap .txt > ul li span {
-  color: #aaa;
-  margin-right: 10px;
-}
-.spec .inner .info .wrap .txt > ul li strong {
-  color: #fff;
-  position: relative;
-  left: 0;
-}
-.spec .inner .info .wrap .txt > ul li strong:hover::after {
-  opacity: 1;
-  transform: translateY(10px);
-}
-.spec .inner .info .wrap .txt > ul li strong::before {
-  content: ">";
-  margin-right: 10px;
-  font: 18px/1 "Pretendard";
-}
-.spec .inner .info .wrap .txt > ul li strong::after {
-  content: "";
-  position: absolute;
-  background: #fff;
-  width: 100%;
-  height: 2px;
-  left: 0;
-  bottom: 0;
-  opacity: 0;
-  transition: all 0.7s;
-  transform: translateY(30px);
-}
-
-@media screen and (max-width: 1179px) {
-  .bikeType6 .inner {
-    width: 100%;
-    padding: 0 20px;
-  }
-  .bikeType6 .inner .wrap article {
-    width: 100%;
-  }
-  .bikeType6 .inner .wrap article .pic {
-    flex: 1 35%;
-  }
-  .bikeType6 .inner .wrap article .info {
-    width: 100%;
-    padding: 10px;
-    flex: 1 65%;
-    margin-top: 0px;
-  }
-  .bikeType6 .inner .wrap article .info h2 {
-    margin-bottom: 10px;
-    font: bold 18px/1 "Pretendard";
-  }
-  .bikeType6 .inner .wrap article .info h3 {
-    margin-bottom: 10px;
-    font: normal 16px/1 "Pretendard";
-  }
-  .bikeType6 .inner .wrap article .info p {
-    color: #777;
-    font: normal 12px/1.3 "GmarketSansMedium";
-  }
-
-  .spec .inner {
-    width: 100%;
-    padding: 0 20px;
-  }
-  .spec .inner .pic1 {
-    width: 50%;
-  }
-  .spec .inner .info h2 {
-    font: bold 20px/1 "Orbitron";
-  }
-  .spec .inner .info .wrap .txt > ul {
-    padding-left: 10px;
-  }
-  .spec .inner .info .wrap .txt > ul li {
-    padding: 20px 0 20px 10px;
-  }
-  .spec .inner .info .wrap .txt > ul li span {
-    font-size: 13px;
-  }
-}
-@media screen and (max-width: 539px) {
-  .bikeType6 .inner .wrap article {
-    margin-bottom: 20px;
-    flex-direction: column;
-  }
-  .bikeType6 .inner .wrap article:nth-of-type(even) {
-    flex-direction: column;
-  }
-  .bikeType6 .inner .wrap article .info {
-    margin-top: 20px;
-  }
-
-  .spec .inner .pic1 {
-    width: 100%;
-  }
-  .spec .inner .specs {
-    flex-direction: column;
-  }
-  .spec .inner .specs > li:nth-of-type(2) {
-    border-right: none;
-    border-left: none;
-  }
-  .spec .inner .info .wrap {
-    flex-direction: column;
-  }
-}
-.bikeType7 {
-  width: 100%;
-  margin-bottom: 50px;
-}
-.bikeType7 .swiper-slide img {
-  width: 100%;
-}
-.bikeType7 .inner {
-  width: 1180px;
-  margin: 0 auto;
-}
-.bikeType7 .inner h1 {
-  font: bold 30px/1 "orbitron";
-  letter-spacing: 1px;
-}
-.bikeType7 .inner .wrap {
-  width: 100%;
-}
-.bikeType7 .inner .wrap article {
-  display: flex;
-}
-.bikeType7 .inner .wrap article:nth-of-type(even) {
-  flex-direction: row-reverse;
-}
-.bikeType7 .inner .wrap article .pic {
-  flex: 1 50%;
-  font-size: 0;
-}
-.bikeType7 .inner .wrap article .pic img {
-  width: 100%;
-}
-.bikeType7 .inner .wrap article .info {
-  padding: 30px;
-  flex: 1 50%;
-  margin-top: 30px;
-}
-.bikeType7 .inner .wrap article .info h2 {
-  width: 100%;
-  margin-bottom: 15px;
-  font: bold 26px/1 "Pretendard";
-}
-.bikeType7 .inner .wrap article .info h3 {
-  width: 100%;
-  margin-bottom: 20px;
-  color: #aaa;
-  font: normal 20px/1 "Pretendard";
-}
-.bikeType7 .inner .wrap article .info p {
-  width: 100%;
-  color: #777;
-  font: normal 15px/1.3 "GmarketSansMedium";
-}
-
-.spec .inner {
-  width: 1180px;
-  margin: 0 auto;
-}
-.spec .inner > h1 {
-  color: #fff;
-  text-align: center;
-  padding: 30px 0;
-  border-bottom: 2px solid #4fb627;
-  font: bold 30px/1 "orbitron";
-  letter-spacing: 1px;
-  margin: 30px 0;
-}
-.spec .inner .pic1 {
-  width: 540px;
-  margin: 0 auto;
-}
-.spec .inner .pic1 img {
-  width: 100%;
-}
-.spec .inner > ul {
-  margin: 50px 0;
-  display: flex;
-  color: #fff;
-  justify-content: space-around;
-  width: 100%;
-}
-.spec .inner > ul > li {
-  display: flex;
-  flex: 1 33%;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.spec .inner > ul > li:nth-of-type(2) {
-  border-right: 1px solid #eee;
-  border-left: 1px solid #eee;
-}
-.spec .inner > ul > li strong {
-  margin-bottom: 30px;
-  font: bold 18px/1 "Pretendard";
-}
-.spec .inner > ul > li img {
-  width: 40px;
-  margin-bottom: 20px;
-}
-.spec .inner > ul > li span {
-  font: normal 16px/1 "Pretendard";
-}
-.spec .inner .info {
-  width: 100%;
-}
-.spec .inner .info h2 {
-  margin-top: 100px;
-  color: #fff;
-  padding: 10px 0;
-  font: bold 24px/1 "Orbitron";
-}
-.spec .inner .info .wrap {
-  display: flex;
-  margin-bottom: 50px;
-}
-.spec .inner .info .wrap .pic {
-  width: 100%;
-  height: 100%;
-  flex: 1 50%;
-}
-.spec .inner .info .wrap .pic img {
-  width: 100%;
-}
-.spec .inner .info .wrap .txt {
-  flex: 1 50%;
-  width: 100%;
-}
-.spec .inner .info .wrap .txt > ul {
-  width: 100%;
-  height: 100%;
-  display: block;
-  padding-left: 30px;
-}
-.spec .inner .info .wrap .txt > ul li {
-  padding: 20px 0 20px 20px;
-  border-bottom: 1px solid #777;
-  display: flex;
-  justify-content: space-between;
-}
-.spec .inner .info .wrap .txt > ul li:last-of-type {
-  border-bottom: none;
-}
-.spec .inner .info .wrap .txt > ul li span {
-  color: #aaa;
-  margin-right: 10px;
-}
-.spec .inner .info .wrap .txt > ul li strong {
-  color: #fff;
-  position: relative;
-  left: 0;
-}
-.spec .inner .info .wrap .txt > ul li strong:hover::after {
-  opacity: 1;
-  transform: translateY(10px);
-}
-.spec .inner .info .wrap .txt > ul li strong::before {
-  content: ">";
-  margin-right: 10px;
-  font: 18px/1 "Pretendard";
-}
-.spec .inner .info .wrap .txt > ul li strong::after {
-  content: "";
-  position: absolute;
-  background: #fff;
-  width: 100%;
-  height: 2px;
-  left: 0;
-  bottom: 0;
-  opacity: 0;
-  transition: all 0.7s;
-  transform: translateY(30px);
-}
-
-@media screen and (max-width: 1179px) {
-  .bikeType7 .inner {
-    width: 100%;
-    padding: 0 20px;
-  }
-  .bikeType7 .inner .wrap article {
-    width: 100%;
-  }
-  .bikeType7 .inner .wrap article .pic {
-    flex: 1 35%;
-  }
-  .bikeType7 .inner .wrap article .info {
-    width: 100%;
-    padding: 10px;
-    flex: 1 65%;
-    margin-top: 0px;
-  }
-  .bikeType7 .inner .wrap article .info h2 {
-    margin-bottom: 10px;
-    font: bold 18px/1 "Pretendard";
-  }
-  .bikeType7 .inner .wrap article .info h3 {
-    margin-bottom: 10px;
-    font: normal 16px/1 "Pretendard";
-  }
-  .bikeType7 .inner .wrap article .info p {
-    color: #777;
-    font: normal 12px/1.3 "GmarketSansMedium";
-  }
-
-  .spec .inner {
-    width: 100%;
-    padding: 0 20px;
-  }
-  .spec .inner .pic1 {
-    width: 50%;
-  }
-  .spec .inner .info h2 {
-    font: bold 20px/1 "Orbitron";
-  }
-  .spec .inner .info .wrap .txt > ul {
-    padding-left: 10px;
-  }
-  .spec .inner .info .wrap .txt > ul li {
-    padding: 20px 0 20px 10px;
-  }
-  .spec .inner .info .wrap .txt > ul li span {
-    font-size: 13px;
-  }
-}
-@media screen and (max-width: 539px) {
-  .bikeType7 .inner .wrap article {
-    margin-bottom: 20px;
-    flex-direction: column;
-  }
-  .bikeType7 .inner .wrap article:nth-of-type(even) {
-    flex-direction: column;
-  }
-  .bikeType7 .inner .wrap article .info {
     margin-top: 20px;
   }
 
@@ -4591,54 +3114,54 @@ aside .con .close:hover {
     flex-direction: column;
   }
 }
-.bikeType9 {
+.bikeType2 {
   width: 100%;
   margin-bottom: 50px;
 }
-.bikeType9 .swiper-slide img {
+.bikeType2 .swiper-slide img {
   width: 100%;
 }
-.bikeType9 .inner {
+.bikeType2 .inner {
   width: 1180px;
   margin: 0 auto;
 }
-.bikeType9 .inner h1 {
+.bikeType2 .inner h1 {
   font: bold 30px/1 "orbitron";
   letter-spacing: 1px;
 }
-.bikeType9 .inner .wrap {
+.bikeType2 .inner .wrap {
   width: 100%;
 }
-.bikeType9 .inner .wrap article {
+.bikeType2 .inner .wrap article {
   display: flex;
 }
-.bikeType9 .inner .wrap article:nth-of-type(even) {
+.bikeType2 .inner .wrap article:nth-of-type(even) {
   flex-direction: row-reverse;
 }
-.bikeType9 .inner .wrap article .pic {
+.bikeType2 .inner .wrap article .pic {
   flex: 1 50%;
   font-size: 0;
 }
-.bikeType9 .inner .wrap article .pic img {
+.bikeType2 .inner .wrap article .pic img {
   width: 100%;
 }
-.bikeType9 .inner .wrap article .info {
+.bikeType2 .inner .wrap article .info {
   padding: 30px;
   flex: 1 50%;
   margin-top: 30px;
 }
-.bikeType9 .inner .wrap article .info h2 {
+.bikeType2 .inner .wrap article .info h2 {
   width: 100%;
   margin-bottom: 15px;
   font: bold 26px/1 "Pretendard";
 }
-.bikeType9 .inner .wrap article .info h3 {
+.bikeType2 .inner .wrap article .info h3 {
   width: 100%;
   margin-bottom: 20px;
   color: #aaa;
   font: normal 20px/1 "Pretendard";
 }
-.bikeType9 .inner .wrap article .info p {
+.bikeType2 .inner .wrap article .info p {
   width: 100%;
   color: #777;
   font: normal 15px/1.3 "GmarketSansMedium";
@@ -4765,31 +3288,31 @@ aside .con .close:hover {
 }
 
 @media screen and (max-width: 1179px) {
-  .bikeType9 .inner {
+  .bikeType2 .inner {
     width: 100%;
     padding: 0 20px;
   }
-  .bikeType9 .inner .wrap article {
+  .bikeType2 .inner .wrap article {
     width: 100%;
   }
-  .bikeType9 .inner .wrap article .pic {
+  .bikeType2 .inner .wrap article .pic {
     flex: 1 35%;
   }
-  .bikeType9 .inner .wrap article .info {
+  .bikeType2 .inner .wrap article .info {
     width: 100%;
     padding: 10px;
     flex: 1 65%;
     margin-top: 0px;
   }
-  .bikeType9 .inner .wrap article .info h2 {
+  .bikeType2 .inner .wrap article .info h2 {
     margin-bottom: 10px;
     font: bold 18px/1 "Pretendard";
   }
-  .bikeType9 .inner .wrap article .info h3 {
+  .bikeType2 .inner .wrap article .info h3 {
     margin-bottom: 10px;
     font: normal 16px/1 "Pretendard";
   }
-  .bikeType9 .inner .wrap article .info p {
+  .bikeType2 .inner .wrap article .info p {
     color: #777;
     font: normal 12px/1.3 "GmarketSansMedium";
   }
@@ -4815,14 +3338,263 @@ aside .con .close:hover {
   }
 }
 @media screen and (max-width: 539px) {
-  .bikeType9 .inner .wrap article {
+  .bikeType2 .inner .wrap article {
     margin-bottom: 20px;
     flex-direction: column;
   }
-  .bikeType9 .inner .wrap article:nth-of-type(even) {
+  .bikeType2 .inner .wrap article:nth-of-type(even) {
     flex-direction: column;
   }
-  .bikeType9 .inner .wrap article .info {
+  .bikeType2 .inner .wrap article .info {
+    margin-top: 20px;
+  }
+
+  .spec .inner .pic1 {
+    width: 100%;
+  }
+  .spec .inner .specs {
+    flex-direction: column;
+  }
+  .spec .inner .specs > li:nth-of-type(2) {
+    border-right: none;
+    border-left: none;
+  }
+  .spec .inner .info .wrap {
+    flex-direction: column;
+  }
+}
+.bikeType1 {
+  width: 100%;
+  margin-bottom: 50px;
+}
+.bikeType1 .swiper-slide img {
+  width: 100%;
+}
+.bikeType1 .inner {
+  width: 1180px;
+  margin: 0 auto;
+}
+.bikeType1 .inner h1 {
+  font: bold 30px/1 "orbitron";
+  letter-spacing: 1px;
+}
+.bikeType1 .inner .wrap {
+  width: 100%;
+}
+.bikeType1 .inner .wrap article {
+  display: flex;
+}
+.bikeType1 .inner .wrap article:nth-of-type(even) {
+  flex-direction: row-reverse;
+}
+.bikeType1 .inner .wrap article .pic {
+  flex: 1 50%;
+  font-size: 0;
+}
+.bikeType1 .inner .wrap article .pic img {
+  width: 100%;
+}
+.bikeType1 .inner .wrap article .info {
+  padding: 30px;
+  flex: 1 50%;
+  margin-top: 30px;
+}
+.bikeType1 .inner .wrap article .info h2 {
+  width: 100%;
+  margin-bottom: 15px;
+  font: bold 26px/1 "Pretendard";
+}
+.bikeType1 .inner .wrap article .info h3 {
+  width: 100%;
+  margin-bottom: 20px;
+  color: #aaa;
+  font: normal 20px/1 "Pretendard";
+}
+.bikeType1 .inner .wrap article .info p {
+  width: 100%;
+  color: #777;
+  font: normal 15px/1.3 "GmarketSansMedium";
+}
+
+.spec .inner {
+  width: 1180px;
+  margin: 0 auto;
+}
+.spec .inner > h1 {
+  color: #fff;
+  text-align: center;
+  padding: 30px 0;
+  border-bottom: 2px solid #4fb627;
+  font: bold 30px/1 "orbitron";
+  letter-spacing: 1px;
+  margin: 30px 0;
+}
+.spec .inner .pic1 {
+  width: 540px;
+  margin: 0 auto;
+}
+.spec .inner .pic1 img {
+  width: 100%;
+}
+.spec .inner > ul {
+  margin: 50px 0;
+  display: flex;
+  color: #fff;
+  justify-content: space-around;
+  width: 100%;
+}
+.spec .inner > ul > li {
+  display: flex;
+  flex: 1 33%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.spec .inner > ul > li:nth-of-type(2) {
+  border-right: 1px solid #eee;
+  border-left: 1px solid #eee;
+}
+.spec .inner > ul > li strong {
+  margin-bottom: 30px;
+  font: bold 18px/1 "Pretendard";
+}
+.spec .inner > ul > li img {
+  width: 40px;
+  margin-bottom: 20px;
+}
+.spec .inner > ul > li span {
+  font: normal 16px/1 "Pretendard";
+}
+.spec .inner .info {
+  width: 100%;
+}
+.spec .inner .info h2 {
+  margin-top: 100px;
+  color: #fff;
+  padding: 10px 0;
+  font: bold 24px/1 "Orbitron";
+}
+.spec .inner .info .wrap {
+  display: flex;
+  margin-bottom: 50px;
+}
+.spec .inner .info .wrap .pic {
+  width: 100%;
+  height: 100%;
+  flex: 1 50%;
+}
+.spec .inner .info .wrap .pic img {
+  width: 100%;
+}
+.spec .inner .info .wrap .txt {
+  flex: 1 50%;
+  width: 100%;
+}
+.spec .inner .info .wrap .txt > ul {
+  width: 100%;
+  height: 100%;
+  display: block;
+  padding-left: 30px;
+}
+.spec .inner .info .wrap .txt > ul li {
+  padding: 20px 0 20px 20px;
+  border-bottom: 1px solid #777;
+  display: flex;
+  justify-content: space-between;
+}
+.spec .inner .info .wrap .txt > ul li:last-of-type {
+  border-bottom: none;
+}
+.spec .inner .info .wrap .txt > ul li span {
+  color: #aaa;
+  margin-right: 10px;
+}
+.spec .inner .info .wrap .txt > ul li strong {
+  color: #fff;
+  position: relative;
+  left: 0;
+}
+.spec .inner .info .wrap .txt > ul li strong:hover::after {
+  opacity: 1;
+  transform: translateY(10px);
+}
+.spec .inner .info .wrap .txt > ul li strong::before {
+  content: ">";
+  margin-right: 10px;
+  font: 18px/1 "Pretendard";
+}
+.spec .inner .info .wrap .txt > ul li strong::after {
+  content: "";
+  position: absolute;
+  background: #fff;
+  width: 100%;
+  height: 2px;
+  left: 0;
+  bottom: 0;
+  opacity: 0;
+  transition: all 0.7s;
+  transform: translateY(30px);
+}
+
+@media screen and (max-width: 1179px) {
+  .bikeType1 .inner {
+    width: 100%;
+    padding: 0 20px;
+  }
+  .bikeType1 .inner .wrap article {
+    width: 100%;
+  }
+  .bikeType1 .inner .wrap article .pic {
+    flex: 1 35%;
+  }
+  .bikeType1 .inner .wrap article .info {
+    width: 100%;
+    padding: 10px;
+    flex: 1 65%;
+    margin-top: 0px;
+  }
+  .bikeType1 .inner .wrap article .info h2 {
+    margin-bottom: 10px;
+    font: bold 18px/1 "Pretendard";
+  }
+  .bikeType1 .inner .wrap article .info h3 {
+    margin-bottom: 10px;
+    font: normal 16px/1 "Pretendard";
+  }
+  .bikeType1 .inner .wrap article .info p {
+    color: #777;
+    font: normal 12px/1.3 "GmarketSansMedium";
+  }
+
+  .spec .inner {
+    width: 100%;
+    padding: 0 20px;
+  }
+  .spec .inner .pic1 {
+    width: 50%;
+  }
+  .spec .inner .info h2 {
+    font: bold 20px/1 "Orbitron";
+  }
+  .spec .inner .info .wrap .txt > ul {
+    padding-left: 10px;
+  }
+  .spec .inner .info .wrap .txt > ul li {
+    padding: 20px 0 20px 10px;
+  }
+  .spec .inner .info .wrap .txt > ul li span {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 539px) {
+  .bikeType1 .inner .wrap article {
+    margin-bottom: 20px;
+    flex-direction: column;
+  }
+  .bikeType1 .inner .wrap article:nth-of-type(even) {
+    flex-direction: column;
+  }
+  .bikeType1 .inner .wrap article .info {
     margin-top: 20px;
   }
 
@@ -5338,54 +4110,54 @@ aside .con .close:hover {
     flex-direction: column;
   }
 }
-.bikeType12 {
+.bikeType15 {
   width: 100%;
   margin-bottom: 50px;
 }
-.bikeType12 .swiper-slide img {
+.bikeType15 .swiper-slide img {
   width: 100%;
 }
-.bikeType12 .inner {
+.bikeType15 .inner {
   width: 1180px;
   margin: 0 auto;
 }
-.bikeType12 .inner h1 {
+.bikeType15 .inner h1 {
   font: bold 30px/1 "orbitron";
   letter-spacing: 1px;
 }
-.bikeType12 .inner .wrap {
+.bikeType15 .inner .wrap {
   width: 100%;
 }
-.bikeType12 .inner .wrap article {
+.bikeType15 .inner .wrap article {
   display: flex;
 }
-.bikeType12 .inner .wrap article:nth-of-type(even) {
+.bikeType15 .inner .wrap article:nth-of-type(even) {
   flex-direction: row-reverse;
 }
-.bikeType12 .inner .wrap article .pic {
+.bikeType15 .inner .wrap article .pic {
   flex: 1 50%;
   font-size: 0;
 }
-.bikeType12 .inner .wrap article .pic img {
+.bikeType15 .inner .wrap article .pic img {
   width: 100%;
 }
-.bikeType12 .inner .wrap article .info {
+.bikeType15 .inner .wrap article .info {
   padding: 30px;
   flex: 1 50%;
   margin-top: 30px;
 }
-.bikeType12 .inner .wrap article .info h2 {
+.bikeType15 .inner .wrap article .info h2 {
   width: 100%;
   margin-bottom: 15px;
   font: bold 26px/1 "Pretendard";
 }
-.bikeType12 .inner .wrap article .info h3 {
+.bikeType15 .inner .wrap article .info h3 {
   width: 100%;
   margin-bottom: 20px;
   color: #aaa;
   font: normal 20px/1 "Pretendard";
 }
-.bikeType12 .inner .wrap article .info p {
+.bikeType15 .inner .wrap article .info p {
   width: 100%;
   color: #777;
   font: normal 15px/1.3 "GmarketSansMedium";
@@ -5512,31 +4284,31 @@ aside .con .close:hover {
 }
 
 @media screen and (max-width: 1179px) {
-  .bikeType12 .inner {
+  .bikeType15 .inner {
     width: 100%;
     padding: 0 20px;
   }
-  .bikeType12 .inner .wrap article {
+  .bikeType15 .inner .wrap article {
     width: 100%;
   }
-  .bikeType12 .inner .wrap article .pic {
+  .bikeType15 .inner .wrap article .pic {
     flex: 1 35%;
   }
-  .bikeType12 .inner .wrap article .info {
+  .bikeType15 .inner .wrap article .info {
     width: 100%;
     padding: 10px;
     flex: 1 65%;
     margin-top: 0px;
   }
-  .bikeType12 .inner .wrap article .info h2 {
+  .bikeType15 .inner .wrap article .info h2 {
     margin-bottom: 10px;
     font: bold 18px/1 "Pretendard";
   }
-  .bikeType12 .inner .wrap article .info h3 {
+  .bikeType15 .inner .wrap article .info h3 {
     margin-bottom: 10px;
     font: normal 16px/1 "Pretendard";
   }
-  .bikeType12 .inner .wrap article .info p {
+  .bikeType15 .inner .wrap article .info p {
     color: #777;
     font: normal 12px/1.3 "GmarketSansMedium";
   }
@@ -5562,263 +4334,14 @@ aside .con .close:hover {
   }
 }
 @media screen and (max-width: 539px) {
-  .bikeType12 .inner .wrap article {
+  .bikeType15 .inner .wrap article {
     margin-bottom: 20px;
     flex-direction: column;
   }
-  .bikeType12 .inner .wrap article:nth-of-type(even) {
+  .bikeType15 .inner .wrap article:nth-of-type(even) {
     flex-direction: column;
   }
-  .bikeType12 .inner .wrap article .info {
-    margin-top: 20px;
-  }
-
-  .spec .inner .pic1 {
-    width: 100%;
-  }
-  .spec .inner .specs {
-    flex-direction: column;
-  }
-  .spec .inner .specs > li:nth-of-type(2) {
-    border-right: none;
-    border-left: none;
-  }
-  .spec .inner .info .wrap {
-    flex-direction: column;
-  }
-}
-.bikeType13 {
-  width: 100%;
-  margin-bottom: 50px;
-}
-.bikeType13 .swiper-slide img {
-  width: 100%;
-}
-.bikeType13 .inner {
-  width: 1180px;
-  margin: 0 auto;
-}
-.bikeType13 .inner h1 {
-  font: bold 30px/1 "orbitron";
-  letter-spacing: 1px;
-}
-.bikeType13 .inner .wrap {
-  width: 100%;
-}
-.bikeType13 .inner .wrap article {
-  display: flex;
-}
-.bikeType13 .inner .wrap article:nth-of-type(even) {
-  flex-direction: row-reverse;
-}
-.bikeType13 .inner .wrap article .pic {
-  flex: 1 50%;
-  font-size: 0;
-}
-.bikeType13 .inner .wrap article .pic img {
-  width: 100%;
-}
-.bikeType13 .inner .wrap article .info {
-  padding: 30px;
-  flex: 1 50%;
-  margin-top: 30px;
-}
-.bikeType13 .inner .wrap article .info h2 {
-  width: 100%;
-  margin-bottom: 15px;
-  font: bold 26px/1 "Pretendard";
-}
-.bikeType13 .inner .wrap article .info h3 {
-  width: 100%;
-  margin-bottom: 20px;
-  color: #aaa;
-  font: normal 20px/1 "Pretendard";
-}
-.bikeType13 .inner .wrap article .info p {
-  width: 100%;
-  color: #777;
-  font: normal 15px/1.3 "GmarketSansMedium";
-}
-
-.spec .inner {
-  width: 1180px;
-  margin: 0 auto;
-}
-.spec .inner > h1 {
-  color: #fff;
-  text-align: center;
-  padding: 30px 0;
-  border-bottom: 2px solid #4fb627;
-  font: bold 30px/1 "orbitron";
-  letter-spacing: 1px;
-  margin: 30px 0;
-}
-.spec .inner .pic1 {
-  width: 540px;
-  margin: 0 auto;
-}
-.spec .inner .pic1 img {
-  width: 100%;
-}
-.spec .inner > ul {
-  margin: 50px 0;
-  display: flex;
-  color: #fff;
-  justify-content: space-around;
-  width: 100%;
-}
-.spec .inner > ul > li {
-  display: flex;
-  flex: 1 33%;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.spec .inner > ul > li:nth-of-type(2) {
-  border-right: 1px solid #eee;
-  border-left: 1px solid #eee;
-}
-.spec .inner > ul > li strong {
-  margin-bottom: 30px;
-  font: bold 18px/1 "Pretendard";
-}
-.spec .inner > ul > li img {
-  width: 40px;
-  margin-bottom: 20px;
-}
-.spec .inner > ul > li span {
-  font: normal 16px/1 "Pretendard";
-}
-.spec .inner .info {
-  width: 100%;
-}
-.spec .inner .info h2 {
-  margin-top: 100px;
-  color: #fff;
-  padding: 10px 0;
-  font: bold 24px/1 "Orbitron";
-}
-.spec .inner .info .wrap {
-  display: flex;
-  margin-bottom: 50px;
-}
-.spec .inner .info .wrap .pic {
-  width: 100%;
-  height: 100%;
-  flex: 1 50%;
-}
-.spec .inner .info .wrap .pic img {
-  width: 100%;
-}
-.spec .inner .info .wrap .txt {
-  flex: 1 50%;
-  width: 100%;
-}
-.spec .inner .info .wrap .txt > ul {
-  width: 100%;
-  height: 100%;
-  display: block;
-  padding-left: 30px;
-}
-.spec .inner .info .wrap .txt > ul li {
-  padding: 20px 0 20px 20px;
-  border-bottom: 1px solid #777;
-  display: flex;
-  justify-content: space-between;
-}
-.spec .inner .info .wrap .txt > ul li:last-of-type {
-  border-bottom: none;
-}
-.spec .inner .info .wrap .txt > ul li span {
-  color: #aaa;
-  margin-right: 10px;
-}
-.spec .inner .info .wrap .txt > ul li strong {
-  color: #fff;
-  position: relative;
-  left: 0;
-}
-.spec .inner .info .wrap .txt > ul li strong:hover::after {
-  opacity: 1;
-  transform: translateY(10px);
-}
-.spec .inner .info .wrap .txt > ul li strong::before {
-  content: ">";
-  margin-right: 10px;
-  font: 18px/1 "Pretendard";
-}
-.spec .inner .info .wrap .txt > ul li strong::after {
-  content: "";
-  position: absolute;
-  background: #fff;
-  width: 100%;
-  height: 2px;
-  left: 0;
-  bottom: 0;
-  opacity: 0;
-  transition: all 0.7s;
-  transform: translateY(30px);
-}
-
-@media screen and (max-width: 1179px) {
-  .bikeType13 .inner {
-    width: 100%;
-    padding: 0 20px;
-  }
-  .bikeType13 .inner .wrap article {
-    width: 100%;
-  }
-  .bikeType13 .inner .wrap article .pic {
-    flex: 1 35%;
-  }
-  .bikeType13 .inner .wrap article .info {
-    width: 100%;
-    padding: 10px;
-    flex: 1 65%;
-    margin-top: 0px;
-  }
-  .bikeType13 .inner .wrap article .info h2 {
-    margin-bottom: 10px;
-    font: bold 18px/1 "Pretendard";
-  }
-  .bikeType13 .inner .wrap article .info h3 {
-    margin-bottom: 10px;
-    font: normal 16px/1 "Pretendard";
-  }
-  .bikeType13 .inner .wrap article .info p {
-    color: #777;
-    font: normal 12px/1.3 "GmarketSansMedium";
-  }
-
-  .spec .inner {
-    width: 100%;
-    padding: 0 20px;
-  }
-  .spec .inner .pic1 {
-    width: 50%;
-  }
-  .spec .inner .info h2 {
-    font: bold 20px/1 "Orbitron";
-  }
-  .spec .inner .info .wrap .txt > ul {
-    padding-left: 10px;
-  }
-  .spec .inner .info .wrap .txt > ul li {
-    padding: 20px 0 20px 10px;
-  }
-  .spec .inner .info .wrap .txt > ul li span {
-    font-size: 13px;
-  }
-}
-@media screen and (max-width: 539px) {
-  .bikeType13 .inner .wrap article {
-    margin-bottom: 20px;
-    flex-direction: column;
-  }
-  .bikeType13 .inner .wrap article:nth-of-type(even) {
-    flex-direction: column;
-  }
-  .bikeType13 .inner .wrap article .info {
+  .bikeType15 .inner .wrap article .info {
     margin-top: 20px;
   }
 
@@ -6085,54 +4608,54 @@ aside .con .close:hover {
     flex-direction: column;
   }
 }
-.bikeType15 {
+.bikeType7 {
   width: 100%;
   margin-bottom: 50px;
 }
-.bikeType15 .swiper-slide img {
+.bikeType7 .swiper-slide img {
   width: 100%;
 }
-.bikeType15 .inner {
+.bikeType7 .inner {
   width: 1180px;
   margin: 0 auto;
 }
-.bikeType15 .inner h1 {
+.bikeType7 .inner h1 {
   font: bold 30px/1 "orbitron";
   letter-spacing: 1px;
 }
-.bikeType15 .inner .wrap {
+.bikeType7 .inner .wrap {
   width: 100%;
 }
-.bikeType15 .inner .wrap article {
+.bikeType7 .inner .wrap article {
   display: flex;
 }
-.bikeType15 .inner .wrap article:nth-of-type(even) {
+.bikeType7 .inner .wrap article:nth-of-type(even) {
   flex-direction: row-reverse;
 }
-.bikeType15 .inner .wrap article .pic {
+.bikeType7 .inner .wrap article .pic {
   flex: 1 50%;
   font-size: 0;
 }
-.bikeType15 .inner .wrap article .pic img {
+.bikeType7 .inner .wrap article .pic img {
   width: 100%;
 }
-.bikeType15 .inner .wrap article .info {
+.bikeType7 .inner .wrap article .info {
   padding: 30px;
   flex: 1 50%;
   margin-top: 30px;
 }
-.bikeType15 .inner .wrap article .info h2 {
+.bikeType7 .inner .wrap article .info h2 {
   width: 100%;
   margin-bottom: 15px;
   font: bold 26px/1 "Pretendard";
 }
-.bikeType15 .inner .wrap article .info h3 {
+.bikeType7 .inner .wrap article .info h3 {
   width: 100%;
   margin-bottom: 20px;
   color: #aaa;
   font: normal 20px/1 "Pretendard";
 }
-.bikeType15 .inner .wrap article .info p {
+.bikeType7 .inner .wrap article .info p {
   width: 100%;
   color: #777;
   font: normal 15px/1.3 "GmarketSansMedium";
@@ -6259,31 +4782,31 @@ aside .con .close:hover {
 }
 
 @media screen and (max-width: 1179px) {
-  .bikeType15 .inner {
+  .bikeType7 .inner {
     width: 100%;
     padding: 0 20px;
   }
-  .bikeType15 .inner .wrap article {
+  .bikeType7 .inner .wrap article {
     width: 100%;
   }
-  .bikeType15 .inner .wrap article .pic {
+  .bikeType7 .inner .wrap article .pic {
     flex: 1 35%;
   }
-  .bikeType15 .inner .wrap article .info {
+  .bikeType7 .inner .wrap article .info {
     width: 100%;
     padding: 10px;
     flex: 1 65%;
     margin-top: 0px;
   }
-  .bikeType15 .inner .wrap article .info h2 {
+  .bikeType7 .inner .wrap article .info h2 {
     margin-bottom: 10px;
     font: bold 18px/1 "Pretendard";
   }
-  .bikeType15 .inner .wrap article .info h3 {
+  .bikeType7 .inner .wrap article .info h3 {
     margin-bottom: 10px;
     font: normal 16px/1 "Pretendard";
   }
-  .bikeType15 .inner .wrap article .info p {
+  .bikeType7 .inner .wrap article .info p {
     color: #777;
     font: normal 12px/1.3 "GmarketSansMedium";
   }
@@ -6309,14 +4832,1508 @@ aside .con .close:hover {
   }
 }
 @media screen and (max-width: 539px) {
-  .bikeType15 .inner .wrap article {
+  .bikeType7 .inner .wrap article {
     margin-bottom: 20px;
     flex-direction: column;
   }
-  .bikeType15 .inner .wrap article:nth-of-type(even) {
+  .bikeType7 .inner .wrap article:nth-of-type(even) {
     flex-direction: column;
   }
-  .bikeType15 .inner .wrap article .info {
+  .bikeType7 .inner .wrap article .info {
+    margin-top: 20px;
+  }
+
+  .spec .inner .pic1 {
+    width: 100%;
+  }
+  .spec .inner .specs {
+    flex-direction: column;
+  }
+  .spec .inner .specs > li:nth-of-type(2) {
+    border-right: none;
+    border-left: none;
+  }
+  .spec .inner .info .wrap {
+    flex-direction: column;
+  }
+}
+.bikeType13 {
+  width: 100%;
+  margin-bottom: 50px;
+}
+.bikeType13 .swiper-slide img {
+  width: 100%;
+}
+.bikeType13 .inner {
+  width: 1180px;
+  margin: 0 auto;
+}
+.bikeType13 .inner h1 {
+  font: bold 30px/1 "orbitron";
+  letter-spacing: 1px;
+}
+.bikeType13 .inner .wrap {
+  width: 100%;
+}
+.bikeType13 .inner .wrap article {
+  display: flex;
+}
+.bikeType13 .inner .wrap article:nth-of-type(even) {
+  flex-direction: row-reverse;
+}
+.bikeType13 .inner .wrap article .pic {
+  flex: 1 50%;
+  font-size: 0;
+}
+.bikeType13 .inner .wrap article .pic img {
+  width: 100%;
+}
+.bikeType13 .inner .wrap article .info {
+  padding: 30px;
+  flex: 1 50%;
+  margin-top: 30px;
+}
+.bikeType13 .inner .wrap article .info h2 {
+  width: 100%;
+  margin-bottom: 15px;
+  font: bold 26px/1 "Pretendard";
+}
+.bikeType13 .inner .wrap article .info h3 {
+  width: 100%;
+  margin-bottom: 20px;
+  color: #aaa;
+  font: normal 20px/1 "Pretendard";
+}
+.bikeType13 .inner .wrap article .info p {
+  width: 100%;
+  color: #777;
+  font: normal 15px/1.3 "GmarketSansMedium";
+}
+
+.spec .inner {
+  width: 1180px;
+  margin: 0 auto;
+}
+.spec .inner > h1 {
+  color: #fff;
+  text-align: center;
+  padding: 30px 0;
+  border-bottom: 2px solid #4fb627;
+  font: bold 30px/1 "orbitron";
+  letter-spacing: 1px;
+  margin: 30px 0;
+}
+.spec .inner .pic1 {
+  width: 540px;
+  margin: 0 auto;
+}
+.spec .inner .pic1 img {
+  width: 100%;
+}
+.spec .inner > ul {
+  margin: 50px 0;
+  display: flex;
+  color: #fff;
+  justify-content: space-around;
+  width: 100%;
+}
+.spec .inner > ul > li {
+  display: flex;
+  flex: 1 33%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.spec .inner > ul > li:nth-of-type(2) {
+  border-right: 1px solid #eee;
+  border-left: 1px solid #eee;
+}
+.spec .inner > ul > li strong {
+  margin-bottom: 30px;
+  font: bold 18px/1 "Pretendard";
+}
+.spec .inner > ul > li img {
+  width: 40px;
+  margin-bottom: 20px;
+}
+.spec .inner > ul > li span {
+  font: normal 16px/1 "Pretendard";
+}
+.spec .inner .info {
+  width: 100%;
+}
+.spec .inner .info h2 {
+  margin-top: 100px;
+  color: #fff;
+  padding: 10px 0;
+  font: bold 24px/1 "Orbitron";
+}
+.spec .inner .info .wrap {
+  display: flex;
+  margin-bottom: 50px;
+}
+.spec .inner .info .wrap .pic {
+  width: 100%;
+  height: 100%;
+  flex: 1 50%;
+}
+.spec .inner .info .wrap .pic img {
+  width: 100%;
+}
+.spec .inner .info .wrap .txt {
+  flex: 1 50%;
+  width: 100%;
+}
+.spec .inner .info .wrap .txt > ul {
+  width: 100%;
+  height: 100%;
+  display: block;
+  padding-left: 30px;
+}
+.spec .inner .info .wrap .txt > ul li {
+  padding: 20px 0 20px 20px;
+  border-bottom: 1px solid #777;
+  display: flex;
+  justify-content: space-between;
+}
+.spec .inner .info .wrap .txt > ul li:last-of-type {
+  border-bottom: none;
+}
+.spec .inner .info .wrap .txt > ul li span {
+  color: #aaa;
+  margin-right: 10px;
+}
+.spec .inner .info .wrap .txt > ul li strong {
+  color: #fff;
+  position: relative;
+  left: 0;
+}
+.spec .inner .info .wrap .txt > ul li strong:hover::after {
+  opacity: 1;
+  transform: translateY(10px);
+}
+.spec .inner .info .wrap .txt > ul li strong::before {
+  content: ">";
+  margin-right: 10px;
+  font: 18px/1 "Pretendard";
+}
+.spec .inner .info .wrap .txt > ul li strong::after {
+  content: "";
+  position: absolute;
+  background: #fff;
+  width: 100%;
+  height: 2px;
+  left: 0;
+  bottom: 0;
+  opacity: 0;
+  transition: all 0.7s;
+  transform: translateY(30px);
+}
+
+@media screen and (max-width: 1179px) {
+  .bikeType13 .inner {
+    width: 100%;
+    padding: 0 20px;
+  }
+  .bikeType13 .inner .wrap article {
+    width: 100%;
+  }
+  .bikeType13 .inner .wrap article .pic {
+    flex: 1 35%;
+  }
+  .bikeType13 .inner .wrap article .info {
+    width: 100%;
+    padding: 10px;
+    flex: 1 65%;
+    margin-top: 0px;
+  }
+  .bikeType13 .inner .wrap article .info h2 {
+    margin-bottom: 10px;
+    font: bold 18px/1 "Pretendard";
+  }
+  .bikeType13 .inner .wrap article .info h3 {
+    margin-bottom: 10px;
+    font: normal 16px/1 "Pretendard";
+  }
+  .bikeType13 .inner .wrap article .info p {
+    color: #777;
+    font: normal 12px/1.3 "GmarketSansMedium";
+  }
+
+  .spec .inner {
+    width: 100%;
+    padding: 0 20px;
+  }
+  .spec .inner .pic1 {
+    width: 50%;
+  }
+  .spec .inner .info h2 {
+    font: bold 20px/1 "Orbitron";
+  }
+  .spec .inner .info .wrap .txt > ul {
+    padding-left: 10px;
+  }
+  .spec .inner .info .wrap .txt > ul li {
+    padding: 20px 0 20px 10px;
+  }
+  .spec .inner .info .wrap .txt > ul li span {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 539px) {
+  .bikeType13 .inner .wrap article {
+    margin-bottom: 20px;
+    flex-direction: column;
+  }
+  .bikeType13 .inner .wrap article:nth-of-type(even) {
+    flex-direction: column;
+  }
+  .bikeType13 .inner .wrap article .info {
+    margin-top: 20px;
+  }
+
+  .spec .inner .pic1 {
+    width: 100%;
+  }
+  .spec .inner .specs {
+    flex-direction: column;
+  }
+  .spec .inner .specs > li:nth-of-type(2) {
+    border-right: none;
+    border-left: none;
+  }
+  .spec .inner .info .wrap {
+    flex-direction: column;
+  }
+}
+.bikeType12 {
+  width: 100%;
+  margin-bottom: 50px;
+}
+.bikeType12 .swiper-slide img {
+  width: 100%;
+}
+.bikeType12 .inner {
+  width: 1180px;
+  margin: 0 auto;
+}
+.bikeType12 .inner h1 {
+  font: bold 30px/1 "orbitron";
+  letter-spacing: 1px;
+}
+.bikeType12 .inner .wrap {
+  width: 100%;
+}
+.bikeType12 .inner .wrap article {
+  display: flex;
+}
+.bikeType12 .inner .wrap article:nth-of-type(even) {
+  flex-direction: row-reverse;
+}
+.bikeType12 .inner .wrap article .pic {
+  flex: 1 50%;
+  font-size: 0;
+}
+.bikeType12 .inner .wrap article .pic img {
+  width: 100%;
+}
+.bikeType12 .inner .wrap article .info {
+  padding: 30px;
+  flex: 1 50%;
+  margin-top: 30px;
+}
+.bikeType12 .inner .wrap article .info h2 {
+  width: 100%;
+  margin-bottom: 15px;
+  font: bold 26px/1 "Pretendard";
+}
+.bikeType12 .inner .wrap article .info h3 {
+  width: 100%;
+  margin-bottom: 20px;
+  color: #aaa;
+  font: normal 20px/1 "Pretendard";
+}
+.bikeType12 .inner .wrap article .info p {
+  width: 100%;
+  color: #777;
+  font: normal 15px/1.3 "GmarketSansMedium";
+}
+
+.spec .inner {
+  width: 1180px;
+  margin: 0 auto;
+}
+.spec .inner > h1 {
+  color: #fff;
+  text-align: center;
+  padding: 30px 0;
+  border-bottom: 2px solid #4fb627;
+  font: bold 30px/1 "orbitron";
+  letter-spacing: 1px;
+  margin: 30px 0;
+}
+.spec .inner .pic1 {
+  width: 540px;
+  margin: 0 auto;
+}
+.spec .inner .pic1 img {
+  width: 100%;
+}
+.spec .inner > ul {
+  margin: 50px 0;
+  display: flex;
+  color: #fff;
+  justify-content: space-around;
+  width: 100%;
+}
+.spec .inner > ul > li {
+  display: flex;
+  flex: 1 33%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.spec .inner > ul > li:nth-of-type(2) {
+  border-right: 1px solid #eee;
+  border-left: 1px solid #eee;
+}
+.spec .inner > ul > li strong {
+  margin-bottom: 30px;
+  font: bold 18px/1 "Pretendard";
+}
+.spec .inner > ul > li img {
+  width: 40px;
+  margin-bottom: 20px;
+}
+.spec .inner > ul > li span {
+  font: normal 16px/1 "Pretendard";
+}
+.spec .inner .info {
+  width: 100%;
+}
+.spec .inner .info h2 {
+  margin-top: 100px;
+  color: #fff;
+  padding: 10px 0;
+  font: bold 24px/1 "Orbitron";
+}
+.spec .inner .info .wrap {
+  display: flex;
+  margin-bottom: 50px;
+}
+.spec .inner .info .wrap .pic {
+  width: 100%;
+  height: 100%;
+  flex: 1 50%;
+}
+.spec .inner .info .wrap .pic img {
+  width: 100%;
+}
+.spec .inner .info .wrap .txt {
+  flex: 1 50%;
+  width: 100%;
+}
+.spec .inner .info .wrap .txt > ul {
+  width: 100%;
+  height: 100%;
+  display: block;
+  padding-left: 30px;
+}
+.spec .inner .info .wrap .txt > ul li {
+  padding: 20px 0 20px 20px;
+  border-bottom: 1px solid #777;
+  display: flex;
+  justify-content: space-between;
+}
+.spec .inner .info .wrap .txt > ul li:last-of-type {
+  border-bottom: none;
+}
+.spec .inner .info .wrap .txt > ul li span {
+  color: #aaa;
+  margin-right: 10px;
+}
+.spec .inner .info .wrap .txt > ul li strong {
+  color: #fff;
+  position: relative;
+  left: 0;
+}
+.spec .inner .info .wrap .txt > ul li strong:hover::after {
+  opacity: 1;
+  transform: translateY(10px);
+}
+.spec .inner .info .wrap .txt > ul li strong::before {
+  content: ">";
+  margin-right: 10px;
+  font: 18px/1 "Pretendard";
+}
+.spec .inner .info .wrap .txt > ul li strong::after {
+  content: "";
+  position: absolute;
+  background: #fff;
+  width: 100%;
+  height: 2px;
+  left: 0;
+  bottom: 0;
+  opacity: 0;
+  transition: all 0.7s;
+  transform: translateY(30px);
+}
+
+@media screen and (max-width: 1179px) {
+  .bikeType12 .inner {
+    width: 100%;
+    padding: 0 20px;
+  }
+  .bikeType12 .inner .wrap article {
+    width: 100%;
+  }
+  .bikeType12 .inner .wrap article .pic {
+    flex: 1 35%;
+  }
+  .bikeType12 .inner .wrap article .info {
+    width: 100%;
+    padding: 10px;
+    flex: 1 65%;
+    margin-top: 0px;
+  }
+  .bikeType12 .inner .wrap article .info h2 {
+    margin-bottom: 10px;
+    font: bold 18px/1 "Pretendard";
+  }
+  .bikeType12 .inner .wrap article .info h3 {
+    margin-bottom: 10px;
+    font: normal 16px/1 "Pretendard";
+  }
+  .bikeType12 .inner .wrap article .info p {
+    color: #777;
+    font: normal 12px/1.3 "GmarketSansMedium";
+  }
+
+  .spec .inner {
+    width: 100%;
+    padding: 0 20px;
+  }
+  .spec .inner .pic1 {
+    width: 50%;
+  }
+  .spec .inner .info h2 {
+    font: bold 20px/1 "Orbitron";
+  }
+  .spec .inner .info .wrap .txt > ul {
+    padding-left: 10px;
+  }
+  .spec .inner .info .wrap .txt > ul li {
+    padding: 20px 0 20px 10px;
+  }
+  .spec .inner .info .wrap .txt > ul li span {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 539px) {
+  .bikeType12 .inner .wrap article {
+    margin-bottom: 20px;
+    flex-direction: column;
+  }
+  .bikeType12 .inner .wrap article:nth-of-type(even) {
+    flex-direction: column;
+  }
+  .bikeType12 .inner .wrap article .info {
+    margin-top: 20px;
+  }
+
+  .spec .inner .pic1 {
+    width: 100%;
+  }
+  .spec .inner .specs {
+    flex-direction: column;
+  }
+  .spec .inner .specs > li:nth-of-type(2) {
+    border-right: none;
+    border-left: none;
+  }
+  .spec .inner .info .wrap {
+    flex-direction: column;
+  }
+}
+.bikeType6 {
+  width: 100%;
+  margin-bottom: 50px;
+}
+.bikeType6 .swiper-slide img {
+  width: 100%;
+}
+.bikeType6 .inner {
+  width: 1180px;
+  margin: 0 auto;
+}
+.bikeType6 .inner h1 {
+  font: bold 30px/1 "orbitron";
+  letter-spacing: 1px;
+}
+.bikeType6 .inner .wrap {
+  width: 100%;
+}
+.bikeType6 .inner .wrap article {
+  display: flex;
+}
+.bikeType6 .inner .wrap article:nth-of-type(even) {
+  flex-direction: row-reverse;
+}
+.bikeType6 .inner .wrap article .pic {
+  flex: 1 50%;
+  font-size: 0;
+}
+.bikeType6 .inner .wrap article .pic img {
+  width: 100%;
+}
+.bikeType6 .inner .wrap article .info {
+  padding: 30px;
+  flex: 1 50%;
+  margin-top: 30px;
+}
+.bikeType6 .inner .wrap article .info h2 {
+  width: 100%;
+  margin-bottom: 15px;
+  font: bold 26px/1 "Pretendard";
+}
+.bikeType6 .inner .wrap article .info h3 {
+  width: 100%;
+  margin-bottom: 20px;
+  color: #aaa;
+  font: normal 20px/1 "Pretendard";
+}
+.bikeType6 .inner .wrap article .info p {
+  width: 100%;
+  color: #777;
+  font: normal 15px/1.3 "GmarketSansMedium";
+}
+
+.spec .inner {
+  width: 1180px;
+  margin: 0 auto;
+}
+.spec .inner > h1 {
+  color: #fff;
+  text-align: center;
+  padding: 30px 0;
+  border-bottom: 2px solid #4fb627;
+  font: bold 30px/1 "orbitron";
+  letter-spacing: 1px;
+  margin: 30px 0;
+}
+.spec .inner .pic1 {
+  width: 540px;
+  margin: 0 auto;
+}
+.spec .inner .pic1 img {
+  width: 100%;
+}
+.spec .inner > ul {
+  margin: 50px 0;
+  display: flex;
+  color: #fff;
+  justify-content: space-around;
+  width: 100%;
+}
+.spec .inner > ul > li {
+  display: flex;
+  flex: 1 33%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.spec .inner > ul > li:nth-of-type(2) {
+  border-right: 1px solid #eee;
+  border-left: 1px solid #eee;
+}
+.spec .inner > ul > li strong {
+  margin-bottom: 30px;
+  font: bold 18px/1 "Pretendard";
+}
+.spec .inner > ul > li img {
+  width: 40px;
+  margin-bottom: 20px;
+}
+.spec .inner > ul > li span {
+  font: normal 16px/1 "Pretendard";
+}
+.spec .inner .info {
+  width: 100%;
+}
+.spec .inner .info h2 {
+  margin-top: 100px;
+  color: #fff;
+  padding: 10px 0;
+  font: bold 24px/1 "Orbitron";
+}
+.spec .inner .info .wrap {
+  display: flex;
+  margin-bottom: 50px;
+}
+.spec .inner .info .wrap .pic {
+  width: 100%;
+  height: 100%;
+  flex: 1 50%;
+}
+.spec .inner .info .wrap .pic img {
+  width: 100%;
+}
+.spec .inner .info .wrap .txt {
+  flex: 1 50%;
+  width: 100%;
+}
+.spec .inner .info .wrap .txt > ul {
+  width: 100%;
+  height: 100%;
+  display: block;
+  padding-left: 30px;
+}
+.spec .inner .info .wrap .txt > ul li {
+  padding: 20px 0 20px 20px;
+  border-bottom: 1px solid #777;
+  display: flex;
+  justify-content: space-between;
+}
+.spec .inner .info .wrap .txt > ul li:last-of-type {
+  border-bottom: none;
+}
+.spec .inner .info .wrap .txt > ul li span {
+  color: #aaa;
+  margin-right: 10px;
+}
+.spec .inner .info .wrap .txt > ul li strong {
+  color: #fff;
+  position: relative;
+  left: 0;
+}
+.spec .inner .info .wrap .txt > ul li strong:hover::after {
+  opacity: 1;
+  transform: translateY(10px);
+}
+.spec .inner .info .wrap .txt > ul li strong::before {
+  content: ">";
+  margin-right: 10px;
+  font: 18px/1 "Pretendard";
+}
+.spec .inner .info .wrap .txt > ul li strong::after {
+  content: "";
+  position: absolute;
+  background: #fff;
+  width: 100%;
+  height: 2px;
+  left: 0;
+  bottom: 0;
+  opacity: 0;
+  transition: all 0.7s;
+  transform: translateY(30px);
+}
+
+@media screen and (max-width: 1179px) {
+  .bikeType6 .inner {
+    width: 100%;
+    padding: 0 20px;
+  }
+  .bikeType6 .inner .wrap article {
+    width: 100%;
+  }
+  .bikeType6 .inner .wrap article .pic {
+    flex: 1 35%;
+  }
+  .bikeType6 .inner .wrap article .info {
+    width: 100%;
+    padding: 10px;
+    flex: 1 65%;
+    margin-top: 0px;
+  }
+  .bikeType6 .inner .wrap article .info h2 {
+    margin-bottom: 10px;
+    font: bold 18px/1 "Pretendard";
+  }
+  .bikeType6 .inner .wrap article .info h3 {
+    margin-bottom: 10px;
+    font: normal 16px/1 "Pretendard";
+  }
+  .bikeType6 .inner .wrap article .info p {
+    color: #777;
+    font: normal 12px/1.3 "GmarketSansMedium";
+  }
+
+  .spec .inner {
+    width: 100%;
+    padding: 0 20px;
+  }
+  .spec .inner .pic1 {
+    width: 50%;
+  }
+  .spec .inner .info h2 {
+    font: bold 20px/1 "Orbitron";
+  }
+  .spec .inner .info .wrap .txt > ul {
+    padding-left: 10px;
+  }
+  .spec .inner .info .wrap .txt > ul li {
+    padding: 20px 0 20px 10px;
+  }
+  .spec .inner .info .wrap .txt > ul li span {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 539px) {
+  .bikeType6 .inner .wrap article {
+    margin-bottom: 20px;
+    flex-direction: column;
+  }
+  .bikeType6 .inner .wrap article:nth-of-type(even) {
+    flex-direction: column;
+  }
+  .bikeType6 .inner .wrap article .info {
+    margin-top: 20px;
+  }
+
+  .spec .inner .pic1 {
+    width: 100%;
+  }
+  .spec .inner .specs {
+    flex-direction: column;
+  }
+  .spec .inner .specs > li:nth-of-type(2) {
+    border-right: none;
+    border-left: none;
+  }
+  .spec .inner .info .wrap {
+    flex-direction: column;
+  }
+}
+.bikeType3 {
+  width: 100%;
+  margin-bottom: 50px;
+}
+.bikeType3 .swiper-slide img {
+  width: 100%;
+}
+.bikeType3 .inner {
+  width: 1180px;
+  margin: 0 auto;
+}
+.bikeType3 .inner h1 {
+  font: bold 30px/1 "orbitron";
+  letter-spacing: 1px;
+}
+.bikeType3 .inner .wrap {
+  width: 100%;
+}
+.bikeType3 .inner .wrap article {
+  display: flex;
+}
+.bikeType3 .inner .wrap article:nth-of-type(even) {
+  flex-direction: row-reverse;
+}
+.bikeType3 .inner .wrap article .pic {
+  flex: 1 50%;
+  font-size: 0;
+}
+.bikeType3 .inner .wrap article .pic img {
+  width: 100%;
+}
+.bikeType3 .inner .wrap article .info {
+  padding: 30px;
+  flex: 1 50%;
+  margin-top: 30px;
+}
+.bikeType3 .inner .wrap article .info h2 {
+  width: 100%;
+  margin-bottom: 15px;
+  font: bold 26px/1 "Pretendard";
+}
+.bikeType3 .inner .wrap article .info h3 {
+  width: 100%;
+  margin-bottom: 20px;
+  color: #aaa;
+  font: normal 20px/1 "Pretendard";
+}
+.bikeType3 .inner .wrap article .info p {
+  width: 100%;
+  color: #777;
+  font: normal 15px/1.3 "GmarketSansMedium";
+}
+
+.spec .inner {
+  width: 1180px;
+  margin: 0 auto;
+}
+.spec .inner > h1 {
+  color: #fff;
+  text-align: center;
+  padding: 30px 0;
+  border-bottom: 2px solid #4fb627;
+  font: bold 30px/1 "orbitron";
+  letter-spacing: 1px;
+  margin: 30px 0;
+}
+.spec .inner .pic1 {
+  width: 540px;
+  margin: 0 auto;
+}
+.spec .inner .pic1 img {
+  width: 100%;
+}
+.spec .inner > ul {
+  margin: 50px 0;
+  display: flex;
+  color: #fff;
+  justify-content: space-around;
+  width: 100%;
+}
+.spec .inner > ul > li {
+  display: flex;
+  flex: 1 33%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.spec .inner > ul > li:nth-of-type(2) {
+  border-right: 1px solid #eee;
+  border-left: 1px solid #eee;
+}
+.spec .inner > ul > li strong {
+  margin-bottom: 30px;
+  font: bold 18px/1 "Pretendard";
+}
+.spec .inner > ul > li img {
+  width: 40px;
+  margin-bottom: 20px;
+}
+.spec .inner > ul > li span {
+  font: normal 16px/1 "Pretendard";
+}
+.spec .inner .info {
+  width: 100%;
+}
+.spec .inner .info h2 {
+  margin-top: 100px;
+  color: #fff;
+  padding: 10px 0;
+  font: bold 24px/1 "Orbitron";
+}
+.spec .inner .info .wrap {
+  display: flex;
+  margin-bottom: 50px;
+}
+.spec .inner .info .wrap .pic {
+  width: 100%;
+  height: 100%;
+  flex: 1 50%;
+}
+.spec .inner .info .wrap .pic img {
+  width: 100%;
+}
+.spec .inner .info .wrap .txt {
+  flex: 1 50%;
+  width: 100%;
+}
+.spec .inner .info .wrap .txt > ul {
+  width: 100%;
+  height: 100%;
+  display: block;
+  padding-left: 30px;
+}
+.spec .inner .info .wrap .txt > ul li {
+  padding: 20px 0 20px 20px;
+  border-bottom: 1px solid #777;
+  display: flex;
+  justify-content: space-between;
+}
+.spec .inner .info .wrap .txt > ul li:last-of-type {
+  border-bottom: none;
+}
+.spec .inner .info .wrap .txt > ul li span {
+  color: #aaa;
+  margin-right: 10px;
+}
+.spec .inner .info .wrap .txt > ul li strong {
+  color: #fff;
+  position: relative;
+  left: 0;
+}
+.spec .inner .info .wrap .txt > ul li strong:hover::after {
+  opacity: 1;
+  transform: translateY(10px);
+}
+.spec .inner .info .wrap .txt > ul li strong::before {
+  content: ">";
+  margin-right: 10px;
+  font: 18px/1 "Pretendard";
+}
+.spec .inner .info .wrap .txt > ul li strong::after {
+  content: "";
+  position: absolute;
+  background: #fff;
+  width: 100%;
+  height: 2px;
+  left: 0;
+  bottom: 0;
+  opacity: 0;
+  transition: all 0.7s;
+  transform: translateY(30px);
+}
+
+@media screen and (max-width: 1179px) {
+  .bikeType3 .inner {
+    width: 100%;
+    padding: 0 20px;
+  }
+  .bikeType3 .inner .wrap article {
+    width: 100%;
+  }
+  .bikeType3 .inner .wrap article .pic {
+    flex: 1 35%;
+  }
+  .bikeType3 .inner .wrap article .info {
+    width: 100%;
+    padding: 10px;
+    flex: 1 65%;
+    margin-top: 0px;
+  }
+  .bikeType3 .inner .wrap article .info h2 {
+    margin-bottom: 10px;
+    font: bold 18px/1 "Pretendard";
+  }
+  .bikeType3 .inner .wrap article .info h3 {
+    margin-bottom: 10px;
+    font: normal 16px/1 "Pretendard";
+  }
+  .bikeType3 .inner .wrap article .info p {
+    color: #777;
+    font: normal 12px/1.3 "GmarketSansMedium";
+  }
+
+  .spec .inner {
+    width: 100%;
+    padding: 0 20px;
+  }
+  .spec .inner .pic1 {
+    width: 50%;
+  }
+  .spec .inner .info h2 {
+    font: bold 20px/1 "Orbitron";
+  }
+  .spec .inner .info .wrap .txt > ul {
+    padding-left: 10px;
+  }
+  .spec .inner .info .wrap .txt > ul li {
+    padding: 20px 0 20px 10px;
+  }
+  .spec .inner .info .wrap .txt > ul li span {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 539px) {
+  .bikeType3 .inner .wrap article {
+    margin-bottom: 20px;
+    flex-direction: column;
+  }
+  .bikeType3 .inner .wrap article:nth-of-type(even) {
+    flex-direction: column;
+  }
+  .bikeType3 .inner .wrap article .info {
+    margin-top: 20px;
+  }
+
+  .spec .inner .pic1 {
+    width: 100%;
+  }
+  .spec .inner .specs {
+    flex-direction: column;
+  }
+  .spec .inner .specs > li:nth-of-type(2) {
+    border-right: none;
+    border-left: none;
+  }
+  .spec .inner .info .wrap {
+    flex-direction: column;
+  }
+}
+.bikeType5 {
+  width: 100%;
+  margin-bottom: 50px;
+}
+.bikeType5 .swiper-slide img {
+  width: 100%;
+}
+.bikeType5 .inner {
+  width: 1180px;
+  margin: 0 auto;
+}
+.bikeType5 .inner h1 {
+  font: bold 30px/1 "orbitron";
+  letter-spacing: 1px;
+}
+.bikeType5 .inner .wrap {
+  width: 100%;
+}
+.bikeType5 .inner .wrap article {
+  display: flex;
+}
+.bikeType5 .inner .wrap article:nth-of-type(even) {
+  flex-direction: row-reverse;
+}
+.bikeType5 .inner .wrap article .pic {
+  flex: 1 50%;
+  font-size: 0;
+}
+.bikeType5 .inner .wrap article .pic img {
+  width: 100%;
+}
+.bikeType5 .inner .wrap article .info {
+  padding: 30px;
+  flex: 1 50%;
+  margin-top: 30px;
+}
+.bikeType5 .inner .wrap article .info h2 {
+  width: 100%;
+  margin-bottom: 15px;
+  font: bold 26px/1 "Pretendard";
+}
+.bikeType5 .inner .wrap article .info h3 {
+  width: 100%;
+  margin-bottom: 20px;
+  color: #aaa;
+  font: normal 20px/1 "Pretendard";
+}
+.bikeType5 .inner .wrap article .info p {
+  width: 100%;
+  color: #777;
+  font: normal 15px/1.3 "GmarketSansMedium";
+}
+
+.spec .inner {
+  width: 1180px;
+  margin: 0 auto;
+}
+.spec .inner > h1 {
+  color: #fff;
+  text-align: center;
+  padding: 30px 0;
+  border-bottom: 2px solid #4fb627;
+  font: bold 30px/1 "orbitron";
+  letter-spacing: 1px;
+  margin: 30px 0;
+}
+.spec .inner .pic1 {
+  width: 540px;
+  margin: 0 auto;
+}
+.spec .inner .pic1 img {
+  width: 100%;
+}
+.spec .inner > ul {
+  margin: 50px 0;
+  display: flex;
+  color: #fff;
+  justify-content: space-around;
+  width: 100%;
+}
+.spec .inner > ul > li {
+  display: flex;
+  flex: 1 33%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.spec .inner > ul > li:nth-of-type(2) {
+  border-right: 1px solid #eee;
+  border-left: 1px solid #eee;
+}
+.spec .inner > ul > li strong {
+  margin-bottom: 30px;
+  font: bold 18px/1 "Pretendard";
+}
+.spec .inner > ul > li img {
+  width: 40px;
+  margin-bottom: 20px;
+}
+.spec .inner > ul > li span {
+  font: normal 16px/1 "Pretendard";
+}
+.spec .inner .info {
+  width: 100%;
+}
+.spec .inner .info h2 {
+  margin-top: 100px;
+  color: #fff;
+  padding: 10px 0;
+  font: bold 24px/1 "Orbitron";
+}
+.spec .inner .info .wrap {
+  display: flex;
+  margin-bottom: 50px;
+}
+.spec .inner .info .wrap .pic {
+  width: 100%;
+  height: 100%;
+  flex: 1 50%;
+}
+.spec .inner .info .wrap .pic img {
+  width: 100%;
+}
+.spec .inner .info .wrap .txt {
+  flex: 1 50%;
+  width: 100%;
+}
+.spec .inner .info .wrap .txt > ul {
+  width: 100%;
+  height: 100%;
+  display: block;
+  padding-left: 30px;
+}
+.spec .inner .info .wrap .txt > ul li {
+  padding: 20px 0 20px 20px;
+  border-bottom: 1px solid #777;
+  display: flex;
+  justify-content: space-between;
+}
+.spec .inner .info .wrap .txt > ul li:last-of-type {
+  border-bottom: none;
+}
+.spec .inner .info .wrap .txt > ul li span {
+  color: #aaa;
+  margin-right: 10px;
+}
+.spec .inner .info .wrap .txt > ul li strong {
+  color: #fff;
+  position: relative;
+  left: 0;
+}
+.spec .inner .info .wrap .txt > ul li strong:hover::after {
+  opacity: 1;
+  transform: translateY(10px);
+}
+.spec .inner .info .wrap .txt > ul li strong::before {
+  content: ">";
+  margin-right: 10px;
+  font: 18px/1 "Pretendard";
+}
+.spec .inner .info .wrap .txt > ul li strong::after {
+  content: "";
+  position: absolute;
+  background: #fff;
+  width: 100%;
+  height: 2px;
+  left: 0;
+  bottom: 0;
+  opacity: 0;
+  transition: all 0.7s;
+  transform: translateY(30px);
+}
+
+@media screen and (max-width: 1179px) {
+  .bikeType5 .inner {
+    width: 100%;
+    padding: 0 20px;
+  }
+  .bikeType5 .inner .wrap article {
+    width: 100%;
+  }
+  .bikeType5 .inner .wrap article .pic {
+    flex: 1 35%;
+  }
+  .bikeType5 .inner .wrap article .info {
+    width: 100%;
+    padding: 10px;
+    flex: 1 65%;
+    margin-top: 0px;
+  }
+  .bikeType5 .inner .wrap article .info h2 {
+    margin-bottom: 10px;
+    font: bold 18px/1 "Pretendard";
+  }
+  .bikeType5 .inner .wrap article .info h3 {
+    margin-bottom: 10px;
+    font: normal 16px/1 "Pretendard";
+  }
+  .bikeType5 .inner .wrap article .info p {
+    color: #777;
+    font: normal 12px/1.3 "GmarketSansMedium";
+  }
+
+  .spec .inner {
+    width: 100%;
+    padding: 0 20px;
+  }
+  .spec .inner .pic1 {
+    width: 50%;
+  }
+  .spec .inner .info h2 {
+    font: bold 20px/1 "Orbitron";
+  }
+  .spec .inner .info .wrap .txt > ul {
+    padding-left: 10px;
+  }
+  .spec .inner .info .wrap .txt > ul li {
+    padding: 20px 0 20px 10px;
+  }
+  .spec .inner .info .wrap .txt > ul li span {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 539px) {
+  .bikeType5 .inner .wrap article {
+    margin-bottom: 20px;
+    flex-direction: column;
+  }
+  .bikeType5 .inner .wrap article:nth-of-type(even) {
+    flex-direction: column;
+  }
+  .bikeType5 .inner .wrap article .info {
+    margin-top: 20px;
+  }
+
+  .spec .inner .pic1 {
+    width: 100%;
+  }
+  .spec .inner .specs {
+    flex-direction: column;
+  }
+  .spec .inner .specs > li:nth-of-type(2) {
+    border-right: none;
+    border-left: none;
+  }
+  .spec .inner .info .wrap {
+    flex-direction: column;
+  }
+}
+.bikeType4 {
+  width: 100%;
+  margin-bottom: 50px;
+}
+.bikeType4 .swiper-slide img {
+  width: 100%;
+}
+.bikeType4 .inner {
+  width: 1180px;
+  margin: 0 auto;
+}
+.bikeType4 .inner h1 {
+  font: bold 30px/1 "orbitron";
+  letter-spacing: 1px;
+}
+.bikeType4 .inner .wrap {
+  width: 100%;
+}
+.bikeType4 .inner .wrap article {
+  display: flex;
+}
+.bikeType4 .inner .wrap article:nth-of-type(even) {
+  flex-direction: row-reverse;
+}
+.bikeType4 .inner .wrap article .pic {
+  flex: 1 50%;
+  font-size: 0;
+}
+.bikeType4 .inner .wrap article .pic img {
+  width: 100%;
+}
+.bikeType4 .inner .wrap article .info {
+  padding: 30px;
+  flex: 1 50%;
+  margin-top: 30px;
+}
+.bikeType4 .inner .wrap article .info h2 {
+  width: 100%;
+  margin-bottom: 15px;
+  font: bold 26px/1 "Pretendard";
+}
+.bikeType4 .inner .wrap article .info h3 {
+  width: 100%;
+  margin-bottom: 20px;
+  color: #aaa;
+  font: normal 20px/1 "Pretendard";
+}
+.bikeType4 .inner .wrap article .info p {
+  width: 100%;
+  color: #777;
+  font: normal 15px/1.3 "GmarketSansMedium";
+}
+
+.spec .inner {
+  width: 1180px;
+  margin: 0 auto;
+}
+.spec .inner > h1 {
+  color: #fff;
+  text-align: center;
+  padding: 30px 0;
+  border-bottom: 2px solid #4fb627;
+  font: bold 30px/1 "orbitron";
+  letter-spacing: 1px;
+  margin: 30px 0;
+}
+.spec .inner .pic1 {
+  width: 540px;
+  margin: 0 auto;
+}
+.spec .inner .pic1 img {
+  width: 100%;
+}
+.spec .inner > ul {
+  margin: 50px 0;
+  display: flex;
+  color: #fff;
+  justify-content: space-around;
+  width: 100%;
+}
+.spec .inner > ul > li {
+  display: flex;
+  flex: 1 33%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.spec .inner > ul > li:nth-of-type(2) {
+  border-right: 1px solid #eee;
+  border-left: 1px solid #eee;
+}
+.spec .inner > ul > li strong {
+  margin-bottom: 30px;
+  font: bold 18px/1 "Pretendard";
+}
+.spec .inner > ul > li img {
+  width: 40px;
+  margin-bottom: 20px;
+}
+.spec .inner > ul > li span {
+  font: normal 16px/1 "Pretendard";
+}
+.spec .inner .info {
+  width: 100%;
+}
+.spec .inner .info h2 {
+  margin-top: 100px;
+  color: #fff;
+  padding: 10px 0;
+  font: bold 24px/1 "Orbitron";
+}
+.spec .inner .info .wrap {
+  display: flex;
+  margin-bottom: 50px;
+}
+.spec .inner .info .wrap .pic {
+  width: 100%;
+  height: 100%;
+  flex: 1 50%;
+}
+.spec .inner .info .wrap .pic img {
+  width: 100%;
+}
+.spec .inner .info .wrap .txt {
+  flex: 1 50%;
+  width: 100%;
+}
+.spec .inner .info .wrap .txt > ul {
+  width: 100%;
+  height: 100%;
+  display: block;
+  padding-left: 30px;
+}
+.spec .inner .info .wrap .txt > ul li {
+  padding: 20px 0 20px 20px;
+  border-bottom: 1px solid #777;
+  display: flex;
+  justify-content: space-between;
+}
+.spec .inner .info .wrap .txt > ul li:last-of-type {
+  border-bottom: none;
+}
+.spec .inner .info .wrap .txt > ul li span {
+  color: #aaa;
+  margin-right: 10px;
+}
+.spec .inner .info .wrap .txt > ul li strong {
+  color: #fff;
+  position: relative;
+  left: 0;
+}
+.spec .inner .info .wrap .txt > ul li strong:hover::after {
+  opacity: 1;
+  transform: translateY(10px);
+}
+.spec .inner .info .wrap .txt > ul li strong::before {
+  content: ">";
+  margin-right: 10px;
+  font: 18px/1 "Pretendard";
+}
+.spec .inner .info .wrap .txt > ul li strong::after {
+  content: "";
+  position: absolute;
+  background: #fff;
+  width: 100%;
+  height: 2px;
+  left: 0;
+  bottom: 0;
+  opacity: 0;
+  transition: all 0.7s;
+  transform: translateY(30px);
+}
+
+@media screen and (max-width: 1179px) {
+  .bikeType4 .inner {
+    width: 100%;
+    padding: 0 20px;
+  }
+  .bikeType4 .inner .wrap article {
+    width: 100%;
+  }
+  .bikeType4 .inner .wrap article .pic {
+    flex: 1 35%;
+  }
+  .bikeType4 .inner .wrap article .info {
+    width: 100%;
+    padding: 10px;
+    flex: 1 65%;
+    margin-top: 0px;
+  }
+  .bikeType4 .inner .wrap article .info h2 {
+    margin-bottom: 10px;
+    font: bold 18px/1 "Pretendard";
+  }
+  .bikeType4 .inner .wrap article .info h3 {
+    margin-bottom: 10px;
+    font: normal 16px/1 "Pretendard";
+  }
+  .bikeType4 .inner .wrap article .info p {
+    color: #777;
+    font: normal 12px/1.3 "GmarketSansMedium";
+  }
+
+  .spec .inner {
+    width: 100%;
+    padding: 0 20px;
+  }
+  .spec .inner .pic1 {
+    width: 50%;
+  }
+  .spec .inner .info h2 {
+    font: bold 20px/1 "Orbitron";
+  }
+  .spec .inner .info .wrap .txt > ul {
+    padding-left: 10px;
+  }
+  .spec .inner .info .wrap .txt > ul li {
+    padding: 20px 0 20px 10px;
+  }
+  .spec .inner .info .wrap .txt > ul li span {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 539px) {
+  .bikeType4 .inner .wrap article {
+    margin-bottom: 20px;
+    flex-direction: column;
+  }
+  .bikeType4 .inner .wrap article:nth-of-type(even) {
+    flex-direction: column;
+  }
+  .bikeType4 .inner .wrap article .info {
     margin-top: 20px;
   }
 
@@ -6471,36 +6488,44 @@ body {
   position: relative;
   z-index: 5;
 }
-#visual .wrap {
+#visual .slider {
   width: 100%;
   height: 100%;
   position: relative;
   overflow: hidden;
 }
-#visual .wrap .slide {
-  display: flex;
-  width: 400%;
+#visual .slider .mobileImg {
+  display: none;
+}
+#visual .slider .panel {
+  position: relative;
+  width: 100%;
   height: 100%;
 }
-#visual .wrap .slide::after {
+#visual .slider .panel::after {
   content: "";
   display: block;
   clear: both;
 }
-#visual .wrap .slide li {
+#visual .slider .panel li {
   width: 100%;
   height: 100%;
-  float: left;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: none;
 }
-#visual .wrap .slide li video {
+#visual .slider .panel li.on {
+  display: block;
+}
+#visual .slider .panel li video {
   width: 100%;
   height: 100%;
   z-index: -1;
   opacity: 0.6;
   object-fit: cover;
 }
-#visual .wrap .slide li .description {
-  display: none;
+#visual .slider .panel li .description {
   margin-left: 1vw;
   position: absolute;
   left: 0;
@@ -6508,28 +6533,28 @@ body {
   border: 1px solid #888;
   padding: 20px;
 }
-#visual .wrap .slide li .description h2:nth-of-type(1) {
+#visual .slider .panel li .description h2:nth-of-type(1) {
   font: bold 24px/1 "orbitron";
   margin-bottom: 20px;
   color: #999;
   letter-spacing: 1px;
 }
-#visual .wrap .slide li .description h2:nth-of-type(2) {
+#visual .slider .panel li .description h2:nth-of-type(2) {
   font: bold 30px/1 "orbitron";
   margin-bottom: 20px;
   color: #eee;
   letter-spacing: 1px;
 }
-#visual .wrap .slide li .description h3 {
+#visual .slider .panel li .description h3 {
   color: #999;
   margin-bottom: 10px;
 }
-#visual .wrap .slide li .description p {
+#visual .slider .panel li .description p {
   font: normal 16px/1.3 "pretendard";
   color: #777;
   margin-bottom: 30px;
 }
-#visual .wrap .slide li .description .viewBtn {
+#visual .slider .panel li .description .viewBtn {
   display: block;
   padding: 20px 0;
   color: #eee;
@@ -6537,23 +6562,23 @@ body {
   text-align: center;
   margin-bottom: 20px;
 }
-#visual .wrap .slide li .description .viewBtn:hover {
+#visual .slider .panel li .description .viewBtn:hover {
   background: #4fb627;
   color: #000;
 }
-#visual .wrap .slide li.on .description {
+#visual .slider .panel li.on .description {
   display: block;
 }
-#visual .navigation {
+#visual .slider .navigation {
   position: absolute;
   left: 0;
   top: 70%;
   margin-left: 20px;
 }
-#visual .navigation ul {
+#visual .slider .navigation ul {
   display: flex;
 }
-#visual .navigation ul li {
+#visual .slider .navigation ul li {
   width: 10px;
   height: 10px;
   border-radius: 50%;
@@ -6561,18 +6586,18 @@ body {
   margin-right: 10px;
   cursor: pointer;
 }
-#visual .navigation ul li:hover {
+#visual .slider .navigation ul li:hover {
   background: #4fb627;
   border: 1px solid #4fb627;
 }
-#visual .navigation ul li.on {
+#visual .slider .navigation ul li.on {
   background: #4fb627;
   border: 1px solid #4fb627;
 }
-#visual .navigation .visualBtns {
+#visual .slider .navigation .visualBtns {
   margin-left: 90px;
 }
-#visual .navigation .visualBtns a {
+#visual .slider .navigation .visualBtns a {
   display: block;
   position: absolute;
   left: auto;
@@ -6580,11 +6605,11 @@ body {
   color: #999;
   transition: 0.7s;
 }
-#visual .navigation .visualBtns a:hover {
+#visual .slider .navigation .visualBtns a:hover {
   color: #4fb627;
   transform: scale(1.5);
 }
-#visual .navigation .visualBtns a:nth-of-type(2) {
+#visual .slider .navigation .visualBtns a:nth-of-type(2) {
   margin-left: 30px;
 }
 
@@ -7080,7 +7105,7 @@ body {
 /* footer ------------------------------------------*/
 #footer {
   width: 100%;
-  background: #131212;
+  background: rgb(19, 18, 18);
   padding-top: 50px;
 }
 #footer .inner {
@@ -7144,124 +7169,22 @@ body {
 @media screen and (max-width: 1179px) {
   /* header -------------------------------------------------------------*/
   #header {
-    width: 100%;
-    border-bottom: 1px solid #4fb627;
-    position: absolute;
-    z-index: 10;
+    border-bottom: none;
   }
   #header .inner {
     width: 100%;
     padding: 0 20px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-  }
-  #header .inner h1 {
-    max-width: 50px;
-    margin: 10px 10px 0 0;
-  }
-  #header .inner h1 a {
-    display: block;
-  }
-  #header .inner h1 a img {
-    width: 100%;
-    height: 100%;
-  }
-  #header .inner nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    position: relative;
-  }
-  #header .inner nav .btnCall {
-    position: absolute;
-    right: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 25px;
-    height: 20px;
-    display: block;
-  }
-  #header .inner nav .btnCall::after {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 2px;
-    background: #fff;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    transition: bottom 0.5s, transform 0.5s 0.5s;
-  }
-  #header .inner nav .btnCall::after:hover {
-    background: #4fb627;
-  }
-  #header .inner nav .btnCall::before {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 2px;
-    background: #fff;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transition: top 0.5s, transform 0.5s 0.5s;
-  }
-  #header .inner nav .btnCall span {
-    display: block;
-    width: 100%;
-    height: 2px;
-    background: #fff;
-    position: absolute;
-    left: 0;
-    top: 50%;
-    margin-top: -1px;
-    text-indent: -9999px;
-    transition: all 0.5s;
-  }
-  #header .inner nav .btnCall.on span {
-    transform: translateX(100%);
-    opacity: 0;
-    background: #4fb627;
-  }
-  #header .inner nav .btnCall.on::after {
-    bottom: 50%;
-    margin-bottom: -1px;
-    transform: rotate(-45deg);
-    background: #4fb627;
-  }
-  #header .inner nav .btnCall.on::before {
-    top: 50%;
-    margin-top: -1px;
-    transform: rotate(45deg);
-    background: #4fb627;
   }
   #header .inner nav .gnb {
     display: none;
-    transition: 0.7s;
-    opacity: 0;
-    transform: translateY(-50px);
   }
   #header .inner nav .gnb.on {
     display: none;
   }
-  #header .inner nav .gnb li a {
-    display: block;
-    font: normal 16px/1 "Orbitron";
-    color: #fff;
-    padding: 15px 10px;
-    transition: all 0.7s;
-    letter-spacing: 1px;
-  }
-  #header .inner nav .gnb li:hover a {
-    background: #4fb627;
-    color: #cbcaa5;
-  }
   #header .inner .menuMo {
     width: 250px;
     height: 100vh;
-    background: #151615;
+    background: rgba(0, 0, 0, 0.5);
     position: fixed;
     top: 8%;
     right: -250px;
@@ -7272,6 +7195,23 @@ body {
   #header .inner .menuMo.on {
     right: 0;
     display: block;
+  }
+  #header .inner .menuMo .menuClose button {
+    outline: none;
+    border: none;
+    background: transparent;
+    color: #fff;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+  }
+  #header .inner .menuMo .menuClose button:hover {
+    color: #4fb627;
+    font-weight: bold;
+  }
+  #header .inner .menuMo .gnbMo {
+    padding-top: 50px;
   }
   #header .inner .menuMo .gnbMo li a {
     display: block;
@@ -7288,6 +7228,23 @@ body {
   }
 
   /* model ------------------------------------------------*/
+  #visual {
+    height: 100%;
+  }
+  #visual .slider .mobileImg {
+    display: block;
+  }
+  #visual .slider .mobileImg img {
+    width: 100%;
+    height: 100%;
+  }
+  #visual .slider .panel {
+    display: none;
+  }
+  #visual .slider .navigation {
+    display: none;
+  }
+
   #model .inner {
     width: 100%;
   }
@@ -7315,7 +7272,7 @@ body {
     height: 100%;
     margin-right: 20px;
     color: #fff;
-    background: #141414;
+    background: rgb(20, 20, 20);
     transition: all 0.7s;
   }
   #model .inner .slider .wrap article:last-of-type {

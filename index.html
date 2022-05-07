@@ -11,7 +11,7 @@
   <script src="https://kit.fontawesome.com/e5fcbbc04c.js" crossorigin="anonymous"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script defer src="js/main.js"></script>
-  <script defer src="js/anime.js"></script>
+  <script defer src="js/anim.js"></script>
   <script defer src="js/common.js"></script>
 </head>
 
@@ -36,6 +36,9 @@
       </nav>
 
       <nav class="menuMo">
+        <div class="menuClose">
+          <button>Close</button>
+        </div>
         <ul class="gnbMo">
           <li><a href="MotorCycle.html">MotorCycle</a></li>
           <li><a href="Department.html">Department</a></li>
@@ -51,8 +54,11 @@
   </header>
 
   <section id="visual">
-    <div class="wrap">
-      <ul class="slide">
+    <div class="slider">
+      <div class="mobileImg">
+        <img src="img/motor_main.jpg" alt="visual">
+      </div>
+      <ul class="panel">
         <li data-index="1" class="on">
           <video src="video/NinjaZX10R.mp4" autoplay loop muted></video>
           <div class="description">
@@ -61,7 +67,7 @@
             <h3>let the good times rolld™</h3>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.<br> Reiciendis temporibus nemo labore. Animi,
               odit quod?</p>
-            <a href="model_ninjazx10r.html" class="viewBtn">View Detail</a>
+            <a href="/subDetails/model_ninjazx10r.html" class="viewBtn">View Detail</a>
           </div>
         </li>
         <li data-index="2">
@@ -72,7 +78,7 @@
             <h3>let the good times rolld™</h3>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.<br> Reiciendis temporibus nemo labore. Animi,
               odit quod?</p>
-            <a href="model_ninjah2.html" class="viewBtn">View Detail</a>
+            <a href="subDetails/model_ninjah2.html" class="viewBtn">View Detail</a>
           </div>
         </li>
         <li data-index="3">
@@ -83,7 +89,7 @@
             <h3>let the good times rolld™</h3>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.<br> Reiciendis temporibus nemo labore. Animi,
               odit quod?</p>
-            <a href="model_versys1000se.html" class="viewBtn">View Detail</a>
+            <a href="subDetails/model_versys1000se.html" class="viewBtn">View Detail</a>
           </div>
         </li>
         <li data-index="4">
@@ -94,24 +100,25 @@
             <h3>let the good times rolld™</h3>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.<br> Reiciendis temporibus nemo labore. Animi,
               odit quod?</p>
-            <a href="model_z900se.html" class="viewBtn">View Detail</a>
+            <a href="subDetails/model_z900se.html" class="viewBtn">View Detail</a>
           </div>
         </li>
       </ul>
-    </div>
-
-    <div class="navigation">
-      <ul>
-        <li class="on"><a href="#"></a></li>
-        <li><a href="#"></a></li>
-        <li><a href="#"></a></li>
-        <li><a href="#"></a></li>
-      </ul>
-      <div class="visualBtns">
-        <a href="#" class="visualPrev"><i class="fa-solid fa-angles-left"></i></a>
-        <a href="#" class="visualNext"><i class="fa-solid fa-angles-right"></i></a>
+      <div class="navigation">
+        <ul>
+          <li class="on"><a href="#"></a></li>
+          <li><a href="#"></a></li>
+          <li><a href="#"></a></li>
+          <li><a href="#"></a></li>
+        </ul>
+        <div class="visualBtns">
+          <a href="#" class="visualPrev"><i class="fa-solid fa-angles-left"></i></a>
+          <a href="#" class="visualNext"><i class="fa-solid fa-angles-right"></i></a>
+        </div>
       </div>
     </div>
+
+
 
   </section>
 

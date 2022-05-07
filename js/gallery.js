@@ -21,7 +21,6 @@ const url_kawasaki = `${base}method=${method_people}&api_key=${key}&per_page=${p
 
 const url_favorite = `${base}method=${method_favorite}&api_key=${key}&per_page=${per_page}&format=json&nojsoncallback=1&user_id=${username}`;
 
-const url_album = `${base}method=${method_album}&api_key=${key}&per_page=${per_page}&format=json&nojsoncallback=1&user_id=${username}`;
 callData(url);
 
 btnSearch.addEventListener('click', (e) => {
@@ -88,7 +87,6 @@ galleryBtn.forEach((btn) => {
 		if (menuName === 'KAWASAKI') callData(url_kawasaki);
 		if (menuName === 'INTEREST') callData(url);
 		if (menuName === 'FAVORITE') callData(url_favorite);
-		if (menuName === 'FAVORITE') callData(url_album);
 	});
 });
 
