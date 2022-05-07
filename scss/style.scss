@@ -20,26 +20,26 @@
 @import 'Youtube.scss';
 @import 'gallery.scss';
 @import 'contact.scss';
-@import 'model_ninjah2.scss';
-@import 'model_ninjazx10rr.scss';
-@import 'model_ninjazx10r.scss';
-@import 'model_ninja650.scss';
-@import 'model_zh2se.scss';
-@import 'model_zh2.scss';
-@import 'model_z900se.scss';
-@import 'model_z900.scss';
-@import 'model_ninjah2sxse.scss';
-@import 'model_ninja1000sx.scss';
-@import 'model_versys1000se.scss';
-@import 'model_versys650.scss';
-@import 'model_z900rsse.scss';
-@import 'model_z900rs.scss';
-@import 'model_z650rs.scss';
-@import 'model_w800.scss';
+@import 'sub/model_ninja1000sx.scss';
+@import 'sub/model_ninjah2.scss';
+@import 'sub/model_ninjah2sxse.scss';
+@import 'sub/model_ninjazx10r.scss';
+@import 'sub/model_ninjazx10rr.scss';
+@import 'sub/model_versys1000se.scss';
+@import 'sub/model_versys650.scss';
+@import 'sub/model_w800.scss';
+@import 'sub/model_z650rs.scss';
+@import 'sub/model_z900.scss';
+@import 'sub/model_z900rs.scss';
+@import 'sub/model_z900rsse.scss';
+@import 'sub/model_z900se.scss';
+@import 'sub/model_ninja650.scss';
+@import 'sub/model_zh2.scss';
+@import 'sub/model_zh2se.scss';
 
 $tablet: 1179px;
 $mobile: 539px;
-$greenColor: #4fb627;
+$main-Color: #4fb627;
 $bodyColor: #000;
 $modelfontColor: #cbcaa5;
 $nomalFontColor: #fff;
@@ -193,14 +193,17 @@ body {
 	position: relative;
 	z-index: 5;
 
-	.wrap {
+	.slider {
 		width: 100%;
 		height: 100%;
 		position: relative;
 		overflow: hidden;
-		.slide {
-			display: flex;
-			width: 400%;
+		.mobileImg {
+			display: none;
+		}
+		.panel {
+			position: relative;
+			width: 100%;
 			height: 100%;
 			&::after {
 				content: '';
@@ -208,9 +211,15 @@ body {
 				clear: both;
 			}
 			li {
-				width: calc(400% / 4);
+				width: 100%;
 				height: 100%;
-				float: left;
+				position: absolute;
+				left: 0;
+				top: 0;
+				display: none;
+				&.on {
+					display: block;
+				}
 				video {
 					width: 100%;
 					height: 100%;
@@ -219,7 +228,6 @@ body {
 					object-fit: cover;
 				}
 				.description {
-					display: none;
 					margin-left: 1vw;
 					position: absolute;
 					left: 0;
@@ -265,46 +273,46 @@ body {
 				}
 			}
 		}
-	}
-	.navigation {
-		position: absolute;
-		left: 0;
-		top: 70%;
-		margin-left: 20px;
-		ul {
-			display: flex;
-			li {
-				width: 10px;
-				height: 10px;
-				border-radius: 50%;
-				border: 1px solid #999;
-				margin-right: 10px;
-				cursor: pointer;
-				&:hover {
-					background: #4fb627;
-					border: 1px solid #4fb627;
-				}
-				&.on {
-					background: #4fb627;
-					border: 1px solid #4fb627;
+		.navigation {
+			position: absolute;
+			left: 0;
+			top: 70%;
+			margin-left: 20px;
+			ul {
+				display: flex;
+				li {
+					width: 10px;
+					height: 10px;
+					border-radius: 50%;
+					border: 1px solid #999;
+					margin-right: 10px;
+					cursor: pointer;
+					&:hover {
+						background: #4fb627;
+						border: 1px solid #4fb627;
+					}
+					&.on {
+						background: #4fb627;
+						border: 1px solid #4fb627;
+					}
 				}
 			}
-		}
-		.visualBtns {
-			margin-left: 90px;
-			a {
-				display: block;
-				position: absolute;
-				left: auto;
-				top: -4px;
-				color: #999;
-				transition: 0.7s;
-				&:hover {
-					color: #4fb627;
-					transform: scale(1.5);
-				}
-				&:nth-of-type(2) {
-					margin-left: 30px;
+			.visualBtns {
+				margin-left: 90px;
+				a {
+					display: block;
+					position: absolute;
+					left: auto;
+					top: -4px;
+					color: #999;
+					transition: 0.7s;
+					&:hover {
+						color: #4fb627;
+						transform: scale(1.5);
+					}
+					&:nth-of-type(2) {
+						margin-left: 30px;
+					}
 				}
 			}
 		}
@@ -905,132 +913,24 @@ body {
 @media screen and (max-width: $tablet) {
 	/* header -------------------------------------------------------------*/
 	#header {
-		width: 100%;
-		border-bottom: 1px solid #4fb627;
-		position: absolute;
-		z-index: 10;
+		border-bottom: none;
 
 		.inner {
 			width: 100%;
 			padding: 0 20px;
-			margin: 0 auto;
-			display: flex;
-			align-items: center;
-			h1 {
-				max-width: 50px;
-				margin: 10px 10px 0 0;
-				a {
-					display: block;
-					img {
-						width: 100%;
-						height: 100%;
-					}
-				}
-			}
 
 			nav {
-				display: flex;
-				justify-content: center;
-				align-items: center;
-				width: 100%;
-				position: relative;
-
-				.btnCall {
-					position: absolute;
-					right: 10px;
-					top: 50%;
-					transform: translateY(-50%);
-					width: 25px;
-					height: 20px;
-					display: block;
-
-					&::after {
-						content: '';
-						display: block;
-						width: 100%;
-						height: 2px;
-						background: #fff;
-						position: absolute;
-						bottom: 0;
-						left: 0;
-						transition: bottom 0.5s, transform 0.5s 0.5s;
-						&:hover {
-							background: #4fb627;
-						}
-					}
-
-					&::before {
-						content: '';
-						display: block;
-						width: 100%;
-						height: 2px;
-						background: #fff;
-						position: absolute;
-						top: 0;
-						left: 0;
-						transition: top 0.5s, transform 0.5s 0.5s;
-					}
-					span {
-						display: block;
-						width: 100%;
-						height: 2px;
-						background: #fff;
-						position: absolute;
-						left: 0;
-						top: 50%;
-						margin-top: -1px;
-						text-indent: -9999px;
-						transition: all 0.5s;
-					}
-					&.on {
-						span {
-							transform: translateX(100%);
-							opacity: 0;
-							background: #4fb627;
-						}
-
-						&::after {
-							bottom: 50%;
-							margin-bottom: -1px;
-							transform: rotate(-45deg);
-							background: #4fb627;
-						}
-						&::before {
-							top: 50%;
-							margin-top: -1px;
-							transform: rotate(45deg);
-							background: #4fb627;
-						}
-					}
-				}
 				.gnb {
 					display: none;
-					transition: 0.7s;
-					opacity: 0;
-					transform: translateY(-50px);
 					&.on {
 						display: none;
-					}
-					li {
-						a {
-							display: block;
-							font: normal 16px/1 'Orbitron';
-							color: #fff;
-							padding: 15px 10px;
-							transition: all 0.7s;
-							letter-spacing: 1px;
-						}
-						&:hover a {
-							background: #4fb627;
-							color: #cbcaa5;
-						}
 					}
 				}
 			}
 			.menuMo {
 				width: 250px;
 				height: 100vh;
-				background: #151615;
+				background: rgba(0, 0, 0, 0.5);
 				position: fixed;
 				top: 8%;
 				right: -250px;
@@ -1041,7 +941,24 @@ body {
 					right: 0;
 					display: block;
 				}
+				.menuClose {
+					button {
+						outline: none;
+						border: none;
+						background: transparent;
+						color: #fff;
+						position: absolute;
+						right: 20px;
+						top: 20px;
+						cursor: pointer;
+						&:hover {
+							color: #4fb627;
+							font-weight: bold;
+						}
+					}
+				}
 				.gnbMo {
+					padding-top: 50px;
 					li {
 						a {
 							display: block;
@@ -1065,6 +982,24 @@ body {
 	}
 	/* model ------------------------------------------------*/
 
+	#visual {
+		height: 100%;
+		.slider {
+			.mobileImg {
+				display: block;
+				img {
+					width: 100%;
+					height: 100%;
+				}
+			}
+			.panel {
+				display: none;
+			}
+			.navigation {
+				display: none;
+			}
+		}
+	}
 	#model {
 		.inner {
 			width: 100%;

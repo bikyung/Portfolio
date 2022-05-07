@@ -5,13 +5,12 @@ class Anim {
 		this.startTime = performance.now();
 		this.currentValue = null;
 
-		if (this.option.prop === 'scroll') {
+		if (this.option.prop === 'scroll')
 			this.currentValue = this.selector.scrollY;
-		} else {
+		else
 			this.currentValue = parseFloat(
 				getComputedStyle(this.selector)[this.option.prop]
 			);
-		}
 
 		this.isString = typeof this.option.value;
 
@@ -46,7 +45,6 @@ class Anim {
 
 		if (progress < 0) progress = 0;
 		if (progress > 1) progress = 1;
-
 		if (progress < 1) {
 			requestAnimationFrame((time) => this.run(time));
 		} else {
@@ -56,18 +54,14 @@ class Anim {
 				}, 0);
 			}
 		}
-
 		let result =
 			this.currentValue + (this.option.value - this.currentValue) * progress;
 
-		if (this.isString === 'string') {
-			this.selector.style[this.option.prop] = `${result}%`;
-		} else if (this.option.prop === 'opacity') {
+		if (this.isString === 'string')
+			this.selector.style[this.option.prop] = result + '%';
+		else if (this.option.prop === 'opacity')
 			this.selector.style[this.option.prop] = result;
-		} else if (this.option.prop === 'scroll') {
-			window.scroll(0, result);
-		} else {
-			this.selector.style[this.option.prop] = `${result}px`;
-		}
+		else if (this.option.prop === 'scroll') window.scroll(0, result);
+		else this.selector.style[this.option.prop] = result + 'px';
 	}
 }

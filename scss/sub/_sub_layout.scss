@@ -149,7 +149,7 @@
 		.menuMo {
 			width: 250px;
 			height: 100vh;
-			background: rgba(0, 0, 0, 0.5);
+			background: #151615;
 			position: fixed;
 			top: 10%;
 			right: -250px;
@@ -160,7 +160,6 @@
 				right: 0;
 			}
 			.gnbMo {
-				padding-top: 50px;
 				li {
 					a {
 						display: block;
@@ -302,22 +301,6 @@
 				}
 			}
 			.menuMo {
-				.menuClose {
-					button {
-						outline: none;
-						border: none;
-						background: transparent;
-						color: #fff;
-						position: absolute;
-						right: 20px;
-						top: 20px;
-						cursor: pointer;
-						&:hover {
-							color: #4fb627;
-							font-weight: bold;
-						}
-					}
-				}
 				.utilMo {
 					display: none;
 				}
