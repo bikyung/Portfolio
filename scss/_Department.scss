@@ -1,5 +1,5 @@
 .department {
-	background: #fff;
+	background: $white-color;
 	.sub_visual {
 		width: 100%;
 		background: url(../img/subpage01/department/main.jpg) no-repeat center /
@@ -10,7 +10,7 @@
 		width: 1180px;
 		margin: 0 auto;
 		h2 {
-			color: #000;
+			color: $black-color;
 		}
 
 		> h2 {
@@ -59,8 +59,8 @@
 					}
 
 					p {
-						font: normal 18px/1.3 'arial';
-						color: #999;
+						font: $font-small;
+						color: $sub2-color;
 					}
 				}
 			}
@@ -75,13 +75,14 @@
 		> h2 {
 			text-align: left;
 			padding-top: 30px;
-			border-top: 3px solid #000;
+			border-top: 3px solid $black-color;
 		}
 
 		.container1 {
 			> h2 {
 				text-align: center;
-				font: bold 24px/1 'GmarketSansMedium';
+				font: bold $font-middle;
+				font-family: 'GmarketSansMedium';
 				color: violet;
 				margin-bottom: 20px;
 			}
@@ -120,8 +121,9 @@
 						}
 
 						h2 {
-							font: bold 16px/1.3 'GmarketSansMedium';
-							color: #999;
+							font: bold $font-smaller;
+							font-family: 'GmarketSansMedium';
+							color: $sub2-color;
 							margin-top: 20px;
 						}
 
@@ -138,7 +140,8 @@
 				width: 100%;
 				margin: 30px 0;
 				text-align: center;
-				font: bold 24px/1 'GmarketSansMedium';
+				font: bold $font-middle;
+				font-family: 'GmarketSansMedium';
 				color: rgb(91, 211, 107);
 			}
 			span {
@@ -171,8 +174,9 @@
 							}
 						}
 						h2 {
-							font: bold 16px/1.3 'GmarketSansMedium';
-							color: #999;
+							font: bold $font-smaller;
+							font-family: 'GmarketSansMedium';
+							color: $sub2-color;
 							margin-top: 20px;
 							padding: 0 10px;
 						}
@@ -188,7 +192,8 @@
 			> h2 {
 				margin: 30px 0;
 				text-align: center;
-				font: bold 24px/1 'GmarketSansMedium';
+				font: bold $font-middle;
+				font-family: 'GmarketSansMedium';
 				color: rgb(235, 155, 8);
 			}
 			span {
@@ -221,8 +226,9 @@
 							}
 						}
 						h2 {
-							font: bold 16px/1.3 'GmarketSansMedium';
-							color: #999;
+							font: bold $font-smaller;
+							font-family: 'GmarketSansMedium';
+							color: $sub2-color;
 							margin-top: 20px;
 							padding: 0 10px;
 						}
@@ -238,7 +244,8 @@
 			> h2 {
 				margin: 30px 0;
 				text-align: center;
-				font: bold 24px/1 'GmarketSansMedium';
+				font: bold $font-middle;
+				font-family: 'GmarketSansMedium';
 				color: rgb(44, 14, 180);
 			}
 			span {
@@ -271,8 +278,9 @@
 							}
 						}
 						h2 {
-							font: bold 16px/1.3 'GmarketSansMedium';
-							color: #999;
+							font: bold $font-smaller;
+							font-family: 'GmarketSansMedium';
+							color: $sub2-color;
 							margin-top: 20px;
 							padding: 0 10px;
 						}
@@ -289,7 +297,8 @@
 			> h2 {
 				margin: 30px 0;
 				text-align: center;
-				font: bold 24px/1 'GmarketSansMedium';
+				font: bold $font-middle;
+				font-family: 'GmarketSansMedium';
 				color: #393a38;
 			}
 			span {
@@ -322,8 +331,9 @@
 							}
 						}
 						h2 {
-							font: bold 16px/1.3 'GmarketSansMedium';
-							color: #999;
+							font: bold $font-smaller;
+							font-family: 'GmarketSansMedium';
+							color: $sub2-color;
 							margin-top: 20px;
 							padding: 0 25px;
 						}
@@ -401,8 +411,8 @@
 						}
 
 						p {
-							font: normal 16px/1.3 'arial';
-							color: #999;
+							font: $font-small;
+							color: $sub2-color;
 						}
 					}
 				}
@@ -449,7 +459,8 @@
 				}
 				.container1 {
 					> h2 {
-						font: bold 20px/1.3 'GmarketSansMedium';
+						font: bold $font-middle;
+						font-family: 'GmarketSansMedium';
 					}
 					.wrap1 {
 						article {
@@ -479,7 +490,8 @@
 
 				.container2 {
 					> h2 {
-						font: bold 20px/1.3 'GmarketSansMedium';
+						font: bold $font-middle;
+						font-family: 'GmarketSansMedium';
 					}
 					.wrap1 {
 						article {
@@ -509,7 +521,8 @@
 
 				.container3 {
 					> h2 {
-						font: bold 20px/1.3 'GmarketSansMedium';
+						font: bold $font-middle;
+						font-family: 'GmarketSansMedium';
 					}
 					.wrap1 {
 						article {
@@ -539,7 +552,8 @@
 
 				.container4 {
 					> h2 {
-						font: bold 20px/1.3 'GmarketSansMedium';
+						font: bold $font-middle;
+						font-family: 'GmarketSansMedium';
 					}
 					.wrap1 {
 						article {
@@ -569,12 +583,13 @@
 
 				.container5 {
 					> h2 {
-						font: bold 20px/1.3 'GmarketSansMedium';
+						font: bold $font-middle;
+						font-family: 'GmarketSansMedium';
 					}
 					.wrap1 {
 						article {
 							height: 320px;
-							border: 2px solid rgb(183, 250, 0);
+							border: 2px solid #393a38;
 							border-radius: 10px;
 							margin-bottom: 30px;
 							background: #eee;
@@ -588,7 +603,7 @@
 									a {
 										i {
 											font-size: 20px;
-											color: rgb(183, 250, 0);
+											color: #393a38;
 										}
 									}
 								}

@@ -10,8 +10,9 @@
 			padding-top: 55px;
 			margin: 0 auto;
 			h2 {
-				color: #fff;
-				font: 500 20px/1 'Oswald';
+				color: $white-color;
+				font: 500 $font-middle;
+				font-family: 'Oswald';
 				margin-bottom: 10px;
 			}
 			h3 {
