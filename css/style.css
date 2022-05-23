@@ -1,7 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Oswald:wght@300;400;500;600;700&family=Orbitron:wght@400;500;700&display=swap");
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
-@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap");
 @font-face {
   font-family: "GmarketSansMedium";
   src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff") format("woff");
@@ -838,7 +836,7 @@ a {
 .join .sub_visual {
   width: 100%;
   height: 245px;
-  background: url(../img/subpage01/submain03.jpg) no-repeat center/cover;
+  background: url(../img/subpage01/main031.jpg) no-repeat center/cover;
   margin-bottom: 50px;
 }
 .join .sub_visual .info {
@@ -1194,8 +1192,8 @@ a {
   margin-bottom: 30px;
 }
 .department .inner .wrap article .textInfo p {
-  font: normal 18px/1.3 "arial";
-  color: #999;
+  font: 18px/1.3 "pretendard";
+  color: #aaa;
 }
 
 .organization .inner {
@@ -1209,7 +1207,8 @@ a {
 }
 .organization .inner .container1 > h2 {
   text-align: center;
-  font: bold 24px/1 "GmarketSansMedium";
+  font: bold 20px/1.3 "pretendard";
+  font-family: "GmarketSansMedium";
   color: violet;
   margin-bottom: 20px;
 }
@@ -1245,8 +1244,9 @@ a {
   transform: scale(1.1);
 }
 .organization .inner .container1 .wrap1 article .pic1 h2 {
-  font: bold 16px/1.3 "GmarketSansMedium";
-  color: #999;
+  font: bold 14px/1.3 "pretendard";
+  font-family: "GmarketSansMedium";
+  color: #aaa;
   margin-top: 20px;
 }
 .organization .inner .container1 .wrap1 article .pic1 .sns {
@@ -1256,7 +1256,8 @@ a {
   width: 100%;
   margin: 30px 0;
   text-align: center;
-  font: bold 24px/1 "GmarketSansMedium";
+  font: bold 20px/1.3 "pretendard";
+  font-family: "GmarketSansMedium";
   color: rgb(91, 211, 107);
 }
 .organization .inner .container2 span {
@@ -1291,8 +1292,9 @@ a {
   transform: scale(1.1);
 }
 .organization .inner .container2 .wrap1 article .pic1 h2 {
-  font: bold 16px/1.3 "GmarketSansMedium";
-  color: #999;
+  font: bold 14px/1.3 "pretendard";
+  font-family: "GmarketSansMedium";
+  color: #aaa;
   margin-top: 20px;
   padding: 0 10px;
 }
@@ -1302,7 +1304,8 @@ a {
 .organization .inner .container3 > h2 {
   margin: 30px 0;
   text-align: center;
-  font: bold 24px/1 "GmarketSansMedium";
+  font: bold 20px/1.3 "pretendard";
+  font-family: "GmarketSansMedium";
   color: rgb(235, 155, 8);
 }
 .organization .inner .container3 span {
@@ -1337,8 +1340,9 @@ a {
   transform: scale(1.1);
 }
 .organization .inner .container3 .wrap1 article .pic1 h2 {
-  font: bold 16px/1.3 "GmarketSansMedium";
-  color: #999;
+  font: bold 14px/1.3 "pretendard";
+  font-family: "GmarketSansMedium";
+  color: #aaa;
   margin-top: 20px;
   padding: 0 10px;
 }
@@ -1348,7 +1352,8 @@ a {
 .organization .inner .container4 > h2 {
   margin: 30px 0;
   text-align: center;
-  font: bold 24px/1 "GmarketSansMedium";
+  font: bold 20px/1.3 "pretendard";
+  font-family: "GmarketSansMedium";
   color: rgb(44, 14, 180);
 }
 .organization .inner .container4 span {
@@ -1383,8 +1388,9 @@ a {
   transform: scale(1.1);
 }
 .organization .inner .container4 .wrap1 article .pic1 h2 {
-  font: bold 16px/1.3 "GmarketSansMedium";
-  color: #999;
+  font: bold 14px/1.3 "pretendard";
+  font-family: "GmarketSansMedium";
+  color: #aaa;
   margin-top: 20px;
   padding: 0 10px;
 }
@@ -1397,7 +1403,8 @@ a {
 .organization .inner .container5 > h2 {
   margin: 30px 0;
   text-align: center;
-  font: bold 24px/1 "GmarketSansMedium";
+  font: bold 20px/1.3 "pretendard";
+  font-family: "GmarketSansMedium";
   color: #393a38;
 }
 .organization .inner .container5 span {
@@ -1432,8 +1439,9 @@ a {
   transform: scale(1.1);
 }
 .organization .inner .container5 .wrap1 article .pic1 h2 {
-  font: bold 16px/1.3 "GmarketSansMedium";
-  color: #999;
+  font: bold 14px/1.3 "pretendard";
+  font-family: "GmarketSansMedium";
+  color: #aaa;
   margin-top: 20px;
   padding: 0 25px;
 }
@@ -1495,8 +1503,8 @@ a {
     margin-bottom: 20px;
   }
   .department .inner .wrap article .textInfo p {
-    font: normal 16px/1.3 "arial";
-    color: #999;
+    font: 18px/1.3 "pretendard";
+    color: #aaa;
   }
 
   .organization .inner .container4 span {
@@ -1521,7 +1529,8 @@ a {
     display: none;
   }
   .department .organization .inner .container1 > h2 {
-    font: bold 20px/1.3 "GmarketSansMedium";
+    font: bold 20px/1.3 "pretendard";
+    font-family: "GmarketSansMedium";
   }
   .department .organization .inner .container1 .wrap1 article {
     height: 320px;
@@ -1541,7 +1550,8 @@ a {
     color: violet;
   }
   .department .organization .inner .container2 > h2 {
-    font: bold 20px/1.3 "GmarketSansMedium";
+    font: bold 20px/1.3 "pretendard";
+    font-family: "GmarketSansMedium";
   }
   .department .organization .inner .container2 .wrap1 article {
     height: 320px;
@@ -1561,7 +1571,8 @@ a {
     color: rgb(91, 211, 107);
   }
   .department .organization .inner .container3 > h2 {
-    font: bold 20px/1.3 "GmarketSansMedium";
+    font: bold 20px/1.3 "pretendard";
+    font-family: "GmarketSansMedium";
   }
   .department .organization .inner .container3 .wrap1 article {
     height: 320px;
@@ -1581,7 +1592,8 @@ a {
     color: rgb(235, 155, 8);
   }
   .department .organization .inner .container4 > h2 {
-    font: bold 20px/1.3 "GmarketSansMedium";
+    font: bold 20px/1.3 "pretendard";
+    font-family: "GmarketSansMedium";
   }
   .department .organization .inner .container4 .wrap1 article {
     height: 320px;
@@ -1601,11 +1613,12 @@ a {
     color: rgb(44, 14, 180);
   }
   .department .organization .inner .container5 > h2 {
-    font: bold 20px/1.3 "GmarketSansMedium";
+    font: bold 20px/1.3 "pretendard";
+    font-family: "GmarketSansMedium";
   }
   .department .organization .inner .container5 .wrap1 article {
     height: 320px;
-    border: 2px solid rgb(183, 250, 0);
+    border: 2px solid #393a38;
     border-radius: 10px;
     margin-bottom: 30px;
     background: #eee;
@@ -1618,7 +1631,7 @@ a {
   }
   .department .organization .inner .container5 .wrap1 article .pic1 .sns a i {
     font-size: 20px;
-    color: rgb(183, 250, 0);
+    color: #393a38;
   }
 }
 .youtube {
@@ -1813,7 +1826,8 @@ aside .btnClose {
 }
 .gallery .sub_visual .info h2 {
   color: #fff;
-  font: 500 20px/1 "Oswald";
+  font: 500 20px/1.3 "pretendard";
+  font-family: "Oswald";
   margin-bottom: 10px;
 }
 .gallery .sub_visual .info h3 {
@@ -2080,15 +2094,16 @@ aside .con .close:hover {
 .contact .inner h2 {
   text-align: left;
   margin-bottom: 10px;
-  font: bold 50px/1 "orbitron";
+  font: bold bold 50px/1 "Oswald";
+  font-family: "orbitron";
   letter-spacing: 1px;
 }
 .contact .inner > p {
-  font: normal 18px/1 "pretendard";
-  color: #888;
+  font: 18px/1.3 "pretendard";
+  color: #aaa;
   padding-bottom: 10px;
   margin-bottom: 50px;
-  border-bottom: 1px solid #999;
+  border-bottom: 1px solid #aaa;
 }
 .contact .inner .wrap {
   display: flex;
@@ -2102,15 +2117,16 @@ aside .con .close:hover {
   margin-left: 20px;
 }
 .contact .inner .wrap article .text h2 {
-  font: bold 24px/1 "orbitron";
+  font: bold 20px/1.3 "pretendard";
+  font-family: "orbitron";
   letter-spacing: 1px;
 }
 .contact .inner .wrap article .text p {
-  font: 14px/1.2 "pretendard";
+  font: 14px/1.3 "pretendard";
   color: #777;
 }
 .contact .location {
-  background: #e5e5e5;
+  background: #aaa;
   width: 100%;
   margin: 50px 0 0;
 }
@@ -2132,7 +2148,7 @@ aside .con .close:hover {
   height: 500px;
 }
 .contact .location #map .overlay {
-  background: #eee;
+  background: #fff;
   border: 1px solid #000;
   margin-bottom: 110px;
   text-align: center;
@@ -2145,7 +2161,7 @@ aside .con .close:hover {
   content: "";
   width: 20px;
   height: 20px;
-  background: #eee;
+  background: #fff;
   position: absolute;
   border: 1px solid #000;
   border-style: none solid solid none;
@@ -2154,18 +2170,18 @@ aside .con .close:hover {
   transform: translate(-50%) rotate(45deg);
 }
 .contact .location #map .overlay h2 {
-  font: bold 16px/1 "pretendard";
+  font: bold 18px/1.3 "pretendard";
   color: #777;
   margin-bottom: 5px;
 }
 .contact .location #map .overlay p {
-  font: normal 12px/1 "pretendard";
-  color: #999;
+  font: 14px/1.3 "pretendard";
+  color: #aaa;
   margin-bottom: 5px;
 }
 .contact .location #map .overlay span {
-  color: #999;
-  font: 12px/1 "pretendard";
+  color: #aaa;
+  font: 14px/1.3 "pretendard";
 }
 .contact .location .branch {
   padding: 20px 0;
@@ -2186,9 +2202,9 @@ aside .con .close:hover {
   height: 40px;
   font: bold 12px/40px "arial";
   color: #000;
-  background: #eee;
+  background: #fff;
   text-align: center;
-  border: 1px solid #555;
+  border: 1px solid #777;
 }
 .contact .location .branch li a:hover {
   background: #000;
@@ -2229,7 +2245,7 @@ aside .con .close:hover {
 }
 .contact .inner1 fieldset .wrap article table tr th {
   width: 10%;
-  font: bold 14px/1 "pretendard";
+  font: bold 18px/1.3 "pretendard";
   color: #fff;
   margin-top: 50px;
 }
@@ -2238,7 +2254,7 @@ aside .con .close:hover {
 }
 .contact .inner1 fieldset .wrap article table tr td {
   color: #fff;
-  font: normal 13px/1 "pretendard";
+  font: 14px/1.3 "pretendard";
 }
 .contact .inner1 fieldset .wrap article table tr td input[type=text] {
   background: transparent;
@@ -2257,7 +2273,7 @@ aside .con .close:hover {
   color: #fff;
   padding: 20px 0 20px 20px;
   margin-top: 35px;
-  font: bold 14px/1 "pretendard";
+  font: bold 14px/1.3 "pretendard";
 }
 .contact .inner1 fieldset .wrap article:last-of-type table tr td textarea {
   background: none;
@@ -2276,7 +2292,7 @@ aside .con .close:hover {
 .contact .inner1 fieldset .wrap article:last-of-type table tr th input[type=reset] {
   padding: 10px 80px;
   margin-right: 20px;
-  background: #eee;
+  background: #fff;
   cursor: pointer;
 }
 .contact .inner1 fieldset .wrap article:last-of-type table tr th input[type=submit]:hover,
@@ -2306,7 +2322,7 @@ aside .con .close:hover {
     font: bold 40px/1 "orbitron";
   }
   .contact .inner > p {
-    font: normal 16px/1 "pretendard";
+    font: 18px/1.3 "pretendard";
   }
   .contact .inner .wrap {
     flex-direction: column;
@@ -2315,7 +2331,8 @@ aside .con .close:hover {
     margin-bottom: 30px;
   }
   .contact .inner .wrap article .text h2 {
-    font: bold 20px/1 "orbitron";
+    font: bold 20px/1.3 "pretendard";
+    font-family: "orbitron";
   }
   .contact .inner .wrap article .text p {
     font-size: 14px;
@@ -2344,16 +2361,18 @@ aside .con .close:hover {
     padding: 0 10px;
   }
   .contact .inner h2 {
-    font: bold 30px/1 "orbitron";
+    font: bold 30px/1.3 "pretendard";
+    font-family: "orbitron";
   }
   .contact .inner > p {
-    font: normal 16px/1 "pretendard";
+    font: 18px/1.3 "pretendard";
   }
   .contact .inner .wrap article {
     margin-right: 0;
   }
   .contact .inner .wrap article .text h2 {
-    font: bold 18px/1 "orbitron";
+    font: bold 18px/1.3 "pretendard";
+    font-family: "orbitron";
   }
   .contact .inner .wrap article .text p {
     font: 13px/1.3 "pretendard";
@@ -6351,10 +6370,6 @@ aside .con .close:hover {
     flex-direction: column;
   }
 }
-* {
-  font-family: "Pretendard", sans-serif;
-}
-
 body {
   background: #000;
 }
@@ -6467,7 +6482,8 @@ body {
 }
 #header .inner nav .gnb li a {
   display: block;
-  font: normal 16px/1 "Orbitron";
+  font: 18px/1.3 "pretendard";
+  font-family: "orbitron";
   color: #fff;
   padding: 15px 10px;
   transition: all 0.7s;
@@ -6475,7 +6491,7 @@ body {
 }
 #header .inner nav .gnb li:hover a {
   background: #4fb627;
-  color: #cbcaa5;
+  color: #777;
 }
 #header .inner .menuMo {
   display: none;
@@ -6530,35 +6546,36 @@ body {
   position: absolute;
   left: 0;
   top: 30%;
-  border: 1px solid #888;
+  border: 1px solid #777;
   padding: 20px;
 }
 #visual .slider .panel li .description h2:nth-of-type(1) {
-  font: bold 24px/1 "orbitron";
+  font: bold 20px/1.3 "pretendard";
   margin-bottom: 20px;
   color: #999;
   letter-spacing: 1px;
 }
 #visual .slider .panel li .description h2:nth-of-type(2) {
-  font: bold 30px/1 "orbitron";
+  font: bold 30px/1.3 "pretendard";
+  font-family: "orbitron";
   margin-bottom: 20px;
-  color: #eee;
+  color: #aaa;
   letter-spacing: 1px;
 }
 #visual .slider .panel li .description h3 {
-  color: #999;
+  color: #777;
   margin-bottom: 10px;
 }
 #visual .slider .panel li .description p {
-  font: normal 16px/1.3 "pretendard";
+  font: 14px/1.3 "pretendard";
   color: #777;
   margin-bottom: 30px;
 }
 #visual .slider .panel li .description .viewBtn {
   display: block;
   padding: 20px 0;
-  color: #eee;
-  border: 1px solid #999;
+  color: #fff;
+  border: 1px solid #777;
   text-align: center;
   margin-bottom: 20px;
 }
@@ -6582,7 +6599,7 @@ body {
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  border: 1px solid #999;
+  border: 1px solid #777;
   margin-right: 10px;
   cursor: pointer;
 }
@@ -6602,7 +6619,7 @@ body {
   position: absolute;
   left: auto;
   top: -4px;
-  color: #999;
+  color: #aaa;
   transition: 0.7s;
 }
 #visual .slider .navigation .visualBtns a:hover {
@@ -6626,7 +6643,8 @@ body {
 #model .inner > h2 {
   color: #fff;
   margin-top: 80px;
-  font: bold 30px/1 "orbitron";
+  font: bold 30px/1.3 "pretendard";
+  font-family: "orbitron";
   text-align: center;
   letter-spacing: 1px;
 }
@@ -6680,7 +6698,8 @@ body {
 #model .inner .wrap .model_list li h2 {
   color: #fff;
   width: 100%;
-  font: bold 18px/1 "Orbitron";
+  font: bold 20px/1.3 "pretendard";
+  font-family: "orbitron";
   text-align: center;
 }
 #model .inner .wrap .model_list li > a {
@@ -6779,12 +6798,14 @@ body {
 }
 #content .inner .wrap article h1 {
   color: #fff;
-  font: bold 24px/1 "orbitron";
+  font: bold 20px/1.3 "pretendard";
+  font-family: "orbitron";
   margin-bottom: 20px;
 }
 #content .inner .wrap article h2 {
   color: #bbb;
-  font: bold 16px/1 "GmarketSansMedium";
+  font: bold 18px/1.3 "pretendard";
+  font-family: "GmarketSansMedium";
   margin-bottom: 30px;
 }
 #content .inner .wrap article a img {
@@ -6820,13 +6841,14 @@ body {
 #service .inner > h2 {
   text-align: center;
   color: #fff;
-  font: bold 30px/1 "Orbitron";
+  font: bold 30px/1.3 "pretendard";
+  font-family: "orbitron";
   margin-bottom: 30px;
 }
 #service .inner p {
   color: #aaa;
   text-align: center;
-  font: normal 16px/1 "pretendard";
+  font: 18px/1.3 "pretendard";
   margin: 20px 0;
 }
 #service .inner .wrap {
@@ -6889,13 +6911,14 @@ body {
   transition: 0.7s;
 }
 #service .inner .wrap article .icon_text h2 {
-  font: bold 14px/1 "orbitron";
+  font: bold 14px/1.3 "pretendard";
+  font-family: "orbitron";
   letter-spacing: 1px;
   text-align: center;
   color: #fff;
 }
 #service .inner .wrap article .icon_text p {
-  font: 12px/1 "pretendard";
+  font: 14px/1.3 "pretendard";
 }
 #service.on .inner .wrap .icon circle {
   animation: ani 1s linear 1;
@@ -6927,12 +6950,13 @@ body {
   color: #fff;
   text-align: center;
   margin-bottom: 20px;
-  font: bold 30px/1 "orbitron";
+  font: bold 30px/1.3 "pretendard";
+  font-family: "orbitron";
 }
 #news .inner p {
   color: #aaa;
   text-align: center;
-  font: normal 16px/1 "pretendard";
+  font: 18px/1.3 "pretendard";
   margin: 30px 0;
 }
 #news .inner .wrap::after {
@@ -6961,11 +6985,12 @@ body {
 }
 #news .inner .wrap article h2 {
   color: #fff;
-  font: bold 15px/1 "GmarketSansMedium";
+  font: bold 14px/1.3 "pretendard";
+  font-family: "GmarketSansMedium";
   margin-top: 20px;
 }
 #news .inner .wrap article a {
-  color: #999;
+  color: #aaa;
   padding: 30px 0 10px;
   position: relative;
   width: 100%;
@@ -7042,15 +7067,17 @@ body {
   bottom: -10px;
 }
 #popup .popupInfo h2 {
-  color: #888;
-  font: bold 18px/1 "orbitron";
+  color: #777;
+  font: bold 18px/1.3 "pretendard";
+  font-family: "orbitron";
   margin-bottom: 10px;
   letter-spacing: 1px;
   margin-top: 5px;
 }
 #popup .popupInfo h3 {
   color: #999;
-  font: bold 16px/1 "orbitron";
+  font: bold 18px/1.3 "pretendard";
+  font-family: "orbitron";
   letter-spacing: 1px;
   margin-bottom: 25px;
   cursor: pointer;
@@ -7087,7 +7114,6 @@ body {
   position: relative;
 }
 #popup .popupInfo .info label {
-  color: #eee;
   cursor: pointer;
   color: #4fb627;
   font-family: "pretendard";
@@ -7125,14 +7151,14 @@ body {
 #footer .inner .gnb li a {
   display: block;
   padding: 20px;
-  color: #999;
+  color: #aaa;
 }
 #footer .inner .gnb li a:hover {
   color: #fff;
 }
 #footer .inner address {
-  color: #999;
-  font: normal 16px/1.3 "arial";
+  color: #aaa;
+  font: 18px/1.3 "pretendard";
   text-align: center;
 }
 #footer .inner .sns {
@@ -7145,7 +7171,7 @@ body {
 }
 #footer .inner .sns li a {
   font-size: 30px;
-  color: #999;
+  color: #aaa;
   display: block;
   padding: 10px;
 }
@@ -7160,7 +7186,7 @@ body {
   width: 100%;
 }
 #footer .inner .footerLogo p {
-  color: #999;
+  color: #aaa;
   text-align: center;
   padding: 30px 0;
 }
@@ -7218,8 +7244,8 @@ body {
     width: 100%;
     padding: 20px 0;
     border-bottom: 1px solid #444;
-    font: bold 14px/1 "arial";
-    color: #888;
+    font: bold 14px/1.3 "pretendard";
+    color: #777;
     text-align: center;
   }
   #header .inner .menuMo .gnbMo li:hover a {
@@ -7301,8 +7327,8 @@ body {
     display: block;
     border: 2px solid #4fb627;
     text-align: center;
-    color: #999;
-    font: bold 16px/1 "pretendard";
+    color: #aaa;
+    font: bold 18px/1.3 "pretendard";
     margin-top: 30px;
     transition: all 0.7s;
     position: relative;
@@ -7365,7 +7391,8 @@ body {
   }
   #content .inner .wrap article h1,
 #content .inner .wrap article h2 {
-    font: bold 18px/1 "GmarketSansMedium";
+    font: bold 20px/1.3 "pretendard";
+    font-family: "GmarketSansMedium";
   }
   #content .inner .wrap article a img {
     width: 100%;
@@ -7411,7 +7438,8 @@ body {
     padding: 0 40px;
   }
   #news .inner > h2 {
-    font: bold 30px/1 "orbitron";
+    font: bold 30px/1.3 "pretendard";
+    font-family: "orbitron";
     color: #fff;
     text-align: center;
     margin-bottom: 30px;
@@ -7516,7 +7544,8 @@ body {
 
   /* news ------------------------------------------------------*/
   #news .inner > h2 {
-    font: bold 24px/1 "orbitron";
+    font: bold 20px/1.3 "pretendard";
+    font-family: "orbitron";
     color: #fff;
     margin-bottom: 10px;
   }

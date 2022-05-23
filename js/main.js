@@ -15,10 +15,10 @@ visualPrev.addEventListener('click', (e) => {
 	const currentEl = slider.querySelector('.panel > li.on');
 	const current_index = panel_li_arr.indexOf(currentEl);
 	let prev_index;
-	current_index !== leng - 1
+	current_index !== 0
 		? (prev_index = current_index - 1)
 		: (prev_index = leng - 1);
-	if (enableClicks) showSlide(currentEl, prev_index, -1);
+	if (enableClick) showSlide(currentEl, prev_index, -1);
 });
 
 visualNext.addEventListener('click', (e) => {

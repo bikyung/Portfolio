@@ -1,8 +1,8 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Oswald:wght@300;400;500;600;700&family=Orbitron:wght@400;500;700&display=swap');
+
 @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap');
+
 @font-face {
 	font-family: 'GmarketSansMedium';
 	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff')
@@ -11,15 +11,28 @@
 	font-style: normal;
 }
 
-@import 'reset.scss';
-@import 'sub_layout.scss';
-@import 'MotorCycle.scss';
-@import 'News&Event.scss';
-@import 'join.scss';
-@import 'Department.scss';
-@import 'Youtube.scss';
-@import 'gallery.scss';
-@import 'contact.scss';
+$tablet: 1179px;
+$mobile: 539px;
+$main-Color: #4fb627;
+$sub-color: #777;
+$sub2-color: #aaa;
+$white-color: #fff;
+$black-color: #000;
+$font-big: bold 50px/1 'Oswald';
+$font-large: bold 30px/1.3 'pretendard';
+$font-middle: 20px/1.3 'pretendard';
+$font-small: 18px/1.3 'pretendard';
+$font-smaller: 14px/1.3 'pretendard';
+
+@import 'reset';
+@import 'sub_layout';
+@import 'MotorCycle';
+@import 'News&Event';
+@import 'join';
+@import 'Department';
+@import 'Youtube';
+@import 'gallery';
+@import 'contact';
 @import 'sub/model_ninja1000sx.scss';
 @import 'sub/model_ninjah2.scss';
 @import 'sub/model_ninjah2sxse.scss';
@@ -37,26 +50,15 @@
 @import 'sub/model_zh2.scss';
 @import 'sub/model_zh2se.scss';
 
-$tablet: 1179px;
-$mobile: 539px;
-$main-Color: #4fb627;
-$bodyColor: #000;
-$modelfontColor: #cbcaa5;
-$nomalFontColor: #fff;
-
-* {
-	font-family: 'Pretendard', sans-serif;
-}
-
 body {
-	background: #000;
+	background: $black-color;
 }
 
 /* header -------------------------------------------------------------*/
 
 #header {
 	width: 100%;
-	border-bottom: 1px solid #4fb627;
+	border-bottom: 1px solid $main-Color;
 	position: absolute;
 	z-index: 10;
 
@@ -98,13 +100,13 @@ body {
 					display: block;
 					width: 100%;
 					height: 2px;
-					background: #fff;
+					background: $white-color;
 					position: absolute;
 					bottom: 0;
 					left: 0;
 					transition: bottom 0.5s, transform 0.5s 0.5s;
 					&:hover {
-						background: #4fb627;
+						background: $main-Color;
 					}
 				}
 
@@ -113,7 +115,7 @@ body {
 					display: block;
 					width: 100%;
 					height: 2px;
-					background: #fff;
+					background: $white-color;
 					position: absolute;
 					top: 0;
 					left: 0;
@@ -123,7 +125,7 @@ body {
 					display: block;
 					width: 100%;
 					height: 2px;
-					background: #fff;
+					background: $white-color;
 					position: absolute;
 					left: 0;
 					top: 50%;
@@ -135,20 +137,20 @@ body {
 					span {
 						transform: translateX(100%);
 						opacity: 0;
-						background: #4fb627;
+						background: $main-Color;
 					}
 
 					&::after {
 						bottom: 50%;
 						margin-bottom: -1px;
 						transform: rotate(-45deg);
-						background: #4fb627;
+						background: $main-Color;
 					}
 					&::before {
 						top: 50%;
 						margin-top: -1px;
 						transform: rotate(45deg);
-						background: #4fb627;
+						background: $main-Color;
 					}
 				}
 			}
@@ -166,15 +168,16 @@ body {
 				li {
 					a {
 						display: block;
-						font: normal 16px/1 'Orbitron';
-						color: #fff;
+						font: $font-small;
+						font-family: 'orbitron';
+						color: $white-color;
 						padding: 15px 10px;
 						transition: all 0.7s;
 						letter-spacing: 1px;
 					}
 					&:hover a {
-						background: #4fb627;
-						color: #cbcaa5;
+						background: $main-Color;
+						color: $sub-color;
 					}
 				}
 			}
@@ -232,39 +235,40 @@ body {
 					position: absolute;
 					left: 0;
 					top: 30%;
-					border: 1px solid #888;
+					border: 1px solid $sub-color;
 					padding: 20px;
 					h2:nth-of-type(1) {
-						font: bold 24px/1 'orbitron';
+						font: bold $font-middle;
 						margin-bottom: 20px;
 						color: #999;
 						letter-spacing: 1px;
 					}
 					h2:nth-of-type(2) {
-						font: bold 30px/1 'orbitron';
+						font: $font-large;
+						font-family: 'orbitron';
 						margin-bottom: 20px;
-						color: #eee;
+						color: $sub2-color;
 						letter-spacing: 1px;
 					}
 					h3 {
-						color: #999;
+						color: $sub-color;
 						margin-bottom: 10px;
 					}
 					p {
-						font: normal 16px/1.3 'pretendard';
-						color: #777;
+						font: $font-smaller;
+						color: $sub-color;
 						margin-bottom: 30px;
 					}
 					.viewBtn {
 						display: block;
 						padding: 20px 0;
-						color: #eee;
-						border: 1px solid #999;
+						color: $white-color;
+						border: 1px solid $sub-color;
 						text-align: center;
 						margin-bottom: 20px;
 						&:hover {
-							background: #4fb627;
-							color: #000;
+							background: $main-Color;
+							color: $black-color;
 						}
 					}
 				}
@@ -284,16 +288,16 @@ body {
 					width: 10px;
 					height: 10px;
 					border-radius: 50%;
-					border: 1px solid #999;
+					border: 1px solid $sub-color;
 					margin-right: 10px;
 					cursor: pointer;
 					&:hover {
-						background: #4fb627;
-						border: 1px solid #4fb627;
+						background: $main-Color;
+						border: 1px solid $main-Color;
 					}
 					&.on {
-						background: #4fb627;
-						border: 1px solid #4fb627;
+						background: $main-Color;
+						border: 1px solid $main-Color;
 					}
 				}
 			}
@@ -304,10 +308,10 @@ body {
 					position: absolute;
 					left: auto;
 					top: -4px;
-					color: #999;
+					color: $sub2-color;
 					transition: 0.7s;
 					&:hover {
-						color: #4fb627;
+						color: $main-Color;
 						transform: scale(1.5);
 					}
 					&:nth-of-type(2) {
@@ -329,14 +333,15 @@ body {
 		width: 1180px;
 		margin: 0 auto;
 		> h2 {
-			color: #fff;
+			color: $white-color;
 			margin-top: 80px;
-			font: bold 30px/1 'orbitron';
+			font: $font-large;
+			font-family: 'orbitron';
 			text-align: center;
 			letter-spacing: 1px;
 		}
 		p {
-			color: #fff;
+			color: $white-color;
 			margin: 20px 0;
 			text-align: center;
 			font-family: 'orbitron';
@@ -382,7 +387,8 @@ body {
 					h2 {
 						color: #fff;
 						width: 100%;
-						font: bold 18px/1 'Orbitron';
+						font: bold $font-middle;
+						font-family: 'orbitron';
 						text-align: center;
 					}
 					> a {
@@ -401,8 +407,8 @@ body {
 							display: block;
 							padding: 20px 0;
 							width: 100%;
-							color: #fff;
-							border: 1px solid #4fb627;
+							color: $white-color;
+							border: 1px solid $main-Color;
 							position: relative;
 							transition: 0.7s;
 							&::after {
@@ -412,7 +418,7 @@ body {
 								left: 0;
 								bottom: 0;
 								height: 0px;
-								background: #4fb627;
+								background: $main-Color;
 								transition: 0.7s;
 							}
 							&:hover {
@@ -430,7 +436,7 @@ body {
 				}
 			}
 			.prevBtn {
-				color: #fff;
+				color: $white-color;
 				position: absolute;
 				top: 60%;
 				left: -80px;
@@ -441,7 +447,7 @@ body {
 				line-height: 50px;
 			}
 			.nextBtn {
-				color: #fff;
+				color: $white-color;
 				position: absolute;
 				top: 60%;
 				right: -80px;
@@ -487,19 +493,21 @@ body {
 					margin-right: 0;
 				}
 				h1 {
-					color: #fff;
-					font: bold 24px/1 'orbitron';
+					color: $white-color;
+					font: bold $font-middle;
+					font-family: 'orbitron';
 					margin-bottom: 20px;
 				}
 				h2 {
 					color: #bbb;
-					font: bold 16px/1 'GmarketSansMedium';
+					font: bold $font-small;
+					font-family: 'GmarketSansMedium';
 					margin-bottom: 30px;
 				}
 				a {
 					img {
 						transition: all 0.7s;
-						border: 3px solid #4fb627;
+						border: 3px solid $main-Color;
 					}
 					&:hover {
 						img {
@@ -536,14 +544,15 @@ body {
 		margin: 0 auto;
 		> h2 {
 			text-align: center;
-			color: #fff;
-			font: bold 30px/1 'Orbitron';
+			color: $white-color;
+			font: $font-large;
+			font-family: 'orbitron';
 			margin-bottom: 30px;
 		}
 		p {
 			color: #aaa;
 			text-align: center;
-			font: normal 16px/1 'pretendard';
+			font: $font-small;
 			margin: 20px 0;
 		}
 		.wrap {
@@ -577,7 +586,7 @@ body {
 						border-radius: 50%;
 						circle {
 							fill: transparent;
-							stroke: #4fb627;
+							stroke: $main-Color;
 							stroke-width: 3;
 							stroke-dasharray: 880;
 							stroke-dashoffset: 880;
@@ -594,7 +603,7 @@ body {
 							transform: translate(-50%, -50%);
 							stroke-width: 1px;
 							path {
-								fill: #4fb627;
+								fill: $main-Color;
 								stroke-width: 1px;
 							}
 						}
@@ -605,13 +614,14 @@ body {
 					margin-top: 200px;
 					transition: 0.7s;
 					h2 {
-						font: bold 14px/1 'orbitron';
+						font: bold $font-smaller;
+						font-family: 'orbitron';
 						letter-spacing: 1px;
 						text-align: center;
-						color: #fff;
+						color: $white-color;
 					}
 					p {
-						font: 12px/1 'pretendard';
+						font: $font-smaller;
 					}
 				}
 			}
@@ -652,15 +662,16 @@ body {
 		width: 1180px;
 		margin: 0 auto;
 		> h2 {
-			color: #fff;
+			color: $white-color;
 			text-align: center;
 			margin-bottom: 20px;
-			font: bold 30px/1 'orbitron';
+			font: $font-large;
+			font-family: 'orbitron';
 		}
 		p {
-			color: #aaa;
+			color: $sub2-color;
 			text-align: center;
-			font: normal 16px/1 'pretendard';
+			font: $font-small;
 			margin: 30px 0;
 		}
 		.wrap {
@@ -681,7 +692,7 @@ body {
 				img {
 					width: 100%;
 					transition: all 0.7s;
-					border: 4px solid #4fb627;
+					border: 4px solid $main-Color;
 					opacity: 0.8;
 					&:hover {
 						transform: scale(1.1);
@@ -689,12 +700,13 @@ body {
 					}
 				}
 				h2 {
-					color: #fff;
-					font: bold 15px/1 'GmarketSansMedium';
+					color: $white-color;
+					font: bold $font-smaller;
+					font-family: 'GmarketSansMedium';
 					margin-top: 20px;
 				}
 				a {
-					color: #999;
+					color: $sub2-color;
 					padding: 30px 0 10px;
 					position: relative;
 					width: 100%;
@@ -703,7 +715,7 @@ body {
 					&::after {
 						content: '';
 						position: absolute;
-						background: #fff;
+						background: $white-color;
 						width: 100%;
 						height: 2px;
 						left: 0;
@@ -713,7 +725,7 @@ body {
 						transform: translateY(20px);
 					}
 					&:hover {
-						color: #fff;
+						color: $white-color;
 						&::after {
 							opacity: 1;
 							transform: translateX(0);
@@ -737,14 +749,14 @@ body {
 		width: 10px;
 		height: 10px;
 		border-radius: 5px;
-		background: #fff;
+		background: $white-color;
 		margin-bottom: 20px;
 		cursor: pointer;
 		transition: 0.5s;
 
 		&.on {
 			height: 100px;
-			background: #4fb627;
+			background: $main-Color;
 		}
 	}
 }
@@ -778,15 +790,17 @@ body {
 			}
 		}
 		h2 {
-			color: #888;
-			font: bold 18px/1 'orbitron';
+			color: $sub-color;
+			font: bold $font-small;
+			font-family: 'orbitron';
 			margin-bottom: 10px;
 			letter-spacing: 1px;
 			margin-top: 5px;
 		}
 		h3 {
 			color: #999;
-			font: bold 16px/1 'orbitron';
+			font: bold $font-small;
+			font-family: 'orbitron';
 			letter-spacing: 1px;
 			margin-bottom: 25px;
 			cursor: pointer;
@@ -794,7 +808,7 @@ body {
 			display: inline;
 			&::after {
 				content: '';
-				background: #fff;
+				background: $white-color;
 				position: absolute;
 				left: 0;
 				bottom: 0;
@@ -822,9 +836,8 @@ body {
 				position: relative;
 			}
 			label {
-				color: #eee;
 				cursor: pointer;
-				color: #4fb627;
+				color: $main-Color;
 				font-family: 'pretendard';
 			}
 		}
@@ -832,9 +845,9 @@ body {
 			position: absolute;
 			right: 20px;
 			bottom: 20px;
-			color: #aaa;
+			color: $sub2-color;
 			&:hover {
-				color: #4fb627;
+				color: $main-Color;
 			}
 		}
 	}
@@ -860,16 +873,16 @@ body {
 				a {
 					display: block;
 					padding: 20px;
-					color: #999;
+					color: $sub2-color;
 					&:hover {
-						color: #fff;
+						color: $white-color;
 					}
 				}
 			}
 		}
 		address {
-			color: #999;
-			font: normal 16px/1.3 'arial';
+			color: $sub2-color;
+			font: $font-small;
 			text-align: center;
 		}
 		.sns {
@@ -882,11 +895,11 @@ body {
 			li {
 				a {
 					font-size: 30px;
-					color: #999;
+					color: $sub2-color;
 					display: block;
 					padding: 10px;
 					&:hover {
-						color: #4fb627;
+						color: $main-Color;
 					}
 				}
 			}
@@ -900,7 +913,7 @@ body {
 				}
 			}
 			p {
-				color: #999;
+				color: $sub2-color;
 				text-align: center;
 				padding: 30px 0;
 			}
@@ -946,13 +959,13 @@ body {
 						outline: none;
 						border: none;
 						background: transparent;
-						color: #fff;
+						color: $white-color;
 						position: absolute;
 						right: 20px;
 						top: 20px;
 						cursor: pointer;
 						&:hover {
-							color: #4fb627;
+							color: $main-Color;
 							font-weight: bold;
 						}
 					}
@@ -965,14 +978,14 @@ body {
 							width: 100%;
 							padding: 20px 0;
 							border-bottom: 1px solid #444;
-							font: bold 14px/1 'arial';
-							color: #888;
+							font: bold $font-smaller;
+							color: $sub-color;
 							text-align: center;
 						}
 						&:hover {
 							a {
-								background: #4fb627;
-								color: #fff;
+								background: $main-Color;
+								color: $white-color;
 							}
 						}
 					}
@@ -1025,7 +1038,7 @@ body {
 						width: 100%;
 						height: 100%;
 						margin-right: 20px;
-						color: #fff;
+						color: $white-color;
 						background: rgb(20, 20, 20);
 						transition: all 0.7s;
 						&:last-of-type {
@@ -1051,10 +1064,10 @@ body {
 							a {
 								padding: 20px 0;
 								display: block;
-								border: 2px solid #4fb627;
+								border: 2px solid $main-Color;
 								text-align: center;
-								color: #999;
-								font: bold 16px/1 'pretendard';
+								color: $sub2-color;
+								font: bold $font-small;
 								margin-top: 30px;
 								transition: all 0.7s;
 								position: relative;
@@ -1065,7 +1078,7 @@ body {
 									position: absolute;
 									left: 0;
 									bottom: 0;
-									background: #4fb627;
+									background: $main-Color;
 									transition: all 0.7s;
 								}
 								&:hover {
@@ -1125,7 +1138,8 @@ body {
 				margin-right: 2%;
 				h1,
 				h2 {
-					font: bold 18px/1 'GmarketSansMedium';
+					font: bold $font-middle;
+					font-family: 'GmarketSansMedium';
 				}
 				a {
 					img {
@@ -1186,8 +1200,9 @@ body {
 		width: 100%;
 		padding: 0 40px;
 		> h2 {
-			font: bold 30px/1 'orbitron';
-			color: #fff;
+			font: $font-large;
+			font-family: 'orbitron';
+			color: $white-color;
 			text-align: center;
 			margin-bottom: 30px;
 		}
@@ -1200,11 +1215,9 @@ body {
 				padding: 30px 0;
 				h2 {
 					font: bold 13px/1.5 'GmarketSansMedium';
-					// padding: 10px 0;
 				}
 				&:nth-of-type(even) {
 					margin-right: 0;
-					// margin-bottom: 30px;
 				}
 				&:nth-of-type(3) {
 					margin-right: 2%;
@@ -1336,8 +1349,9 @@ body {
 	#news {
 		.inner {
 			> h2 {
-				font: bold 24px/1 'orbitron';
-				color: #fff;
+				font: bold $font-middle;
+				font-family: 'orbitron';
+				color: $white-color;
 				margin-bottom: 10px;
 			}
 			.wrap {
