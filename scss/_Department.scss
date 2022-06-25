@@ -99,9 +99,12 @@
 			.wrap1 {
 				width: 100%;
 				text-align: center;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				margin-bottom: 80px;
 
 				article {
-					display: inline-block;
 					cursor: pointer;
 
 					.pic1 {
@@ -155,8 +158,11 @@
 			.wrap1 {
 				width: 100%;
 				text-align: center;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				margin-bottom: 80px;
 				article {
-					display: inline-block;
 					cursor: pointer;
 
 					.pic1 {
@@ -207,8 +213,12 @@
 			.wrap1 {
 				width: 100%;
 				text-align: center;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				margin-bottom: 80px;
+
 				article {
-					display: inline-block;
 					cursor: pointer;
 
 					.pic1 {
@@ -259,8 +269,13 @@
 			.wrap1 {
 				width: 100%;
 				text-align: center;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				margin-bottom: 80px;
+				flex-wrap: wrap;
 				article {
-					display: inline-block;
+					margin-bottom: 30px;
 					cursor: pointer;
 
 					.pic1 {
@@ -305,21 +320,25 @@
 				display: block;
 				border: 3px solid #393a38;
 				margin: 20px auto;
-				width: 650px;
+				width: 755px;
 				height: 30px;
 				border-bottom: none;
 			}
 			.wrap1 {
 				width: 100%;
 				text-align: center;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				margin-bottom: 80px;
+				flex-wrap: wrap;
 				article {
-					display: inline-block;
 					cursor: pointer;
 
 					.pic1 {
 						width: 150px;
 						height: 150px;
-						margin: 0 30px;
+						margin: 0 50px;
 						img {
 							width: 100%;
 							height: 100%;
@@ -419,18 +438,29 @@
 			}
 		}
 	}
-
 	.organization {
 		.inner {
+			width: 100%;
 			.container4 {
+				width: 100%;
 				span {
-					width: 47%;
+					width: 59%;
+				}
+				.wrap1 {
+					article {
+						margin-bottom: 20px;
+					}
 				}
 			}
-
 			.container5 {
+				width: 100%;
 				span {
-					width: 58%;
+					width: 59%;
+				}
+				.wrap1 {
+					article {
+						margin-bottom: 20px;
+					}
 				}
 			}
 		}
@@ -463,6 +493,7 @@
 						font-family: 'GmarketSansMedium';
 					}
 					.wrap1 {
+						flex-direction: column;
 						article {
 							height: 320px;
 							border: 2px solid violet;
@@ -494,6 +525,7 @@
 						font-family: 'GmarketSansMedium';
 					}
 					.wrap1 {
+						flex-direction: column;
 						article {
 							height: 320px;
 							border: 2px solid rgb(91, 211, 107);
@@ -525,6 +557,7 @@
 						font-family: 'GmarketSansMedium';
 					}
 					.wrap1 {
+						flex-direction: column;
 						article {
 							height: 320px;
 							border: 2px solid rgb(235, 155, 8);
@@ -556,6 +589,7 @@
 						font-family: 'GmarketSansMedium';
 					}
 					.wrap1 {
+						flex-direction: column;
 						article {
 							height: 320px;
 							border: 2px solid rgb(44, 14, 180);
@@ -587,6 +621,7 @@
 						font-family: 'GmarketSansMedium';
 					}
 					.wrap1 {
+						flex-direction: column;
 						article {
 							height: 320px;
 							border: 2px solid #393a38;
